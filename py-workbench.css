@@ -1,0 +1,89 @@
+/* Created by Philip Guo on 2013-12-03, with help from Kyle Murray */
+
+h1 {
+  font-weight: normal;
+  font-size: 16pt;
+  font-family: georgia, serif;
+  line-height: 1em;  /* enforce single spacing so that Georgia works */
+
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 10pt;
+  font-weight: normal;
+  font-family: georgia, serif;
+  line-height: 1.1em; /* enforce single spacing so that Georgia works */
+
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+
+body {
+  background-color: white;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 10pt;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #3D58A2;
+}
+
+.codePane {
+  border: 1px solid #ccc;
+  width: 350px;
+  font-size: 12pt;
+  margin-top: 5px;
+}
+
+textarea {
+  margin-top: 5px;
+
+  /*border: 1px solid #999999;*/
+  font-size: 10pt;
+  padding: 2px;
+  font-family: Andale mono, monospace;
+
+  overflow: auto; /* to look pretty on IE */
+
+}
+
+td {
+  vertical-align: top;
+  padding: 10px;
+}
+
+td.arrow {
+  vertical-align: middle;
+  font-size: 18pt;
+}
+
+.redBorder {
+  border: 1px solid red;
+}
+
+.redBlinkingBackground {
+  -webkit-animation: blink 1.5s linear infinite;
+  -moz-animation: blink 1.5s linear infinite;
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {  
+    0% { background-color: red; }
+    50% { background-color: blue; }
+    100% { background-color: red; }
+}
+@-webkit-keyframes blink {
+    0% { background-color: red; }
+    50% { background-color: blue; }
+    100% { background-color: red; }
+}
+
+/* necessary for CodeMirror error line highlighting to work! */
+/*
+.CodeMirror .errorLine { background: #ffff3f !important; }
+*/

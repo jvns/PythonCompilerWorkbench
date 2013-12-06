@@ -1,0 +1,14 @@
+Known bugs:
+
+- byteplay doesn't seem to properly display the bytecode of function
+  definitions, nor does it recurse into function defs to print out their
+  bytecodes
+  - ohhh, are those byteplay code objects as well, so you can recurse
+    into them?!? that would be sweeeet
+
+- also see if we can get line numbers from the AST
+  - rishabh says that we should be able to get column numbers and token
+    extents (lengths) as well
+  - lots of kinds of AST nodes (but not all of them!) have lineno and
+  col_offset fields
+

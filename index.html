@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Created by Philip Guo on 2013-12-03, with help from Kyle Murray
+ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Python compiler workbench</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+<!-- for shaking effect!!! -->
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<script type="text/javascript" src="codemirror-3.20/lib/codemirror.js"></script>
+<link type="text/css" href="codemirror-3.20/lib/codemirror.css" rel="stylesheet"/>
+<script type="text/javascript" src="codemirror-3.20/mode/python/python.js"></script>
+
+<script type="text/javascript" src="py-workbench.js"></script>
+<link rel="stylesheet" href="py-workbench.css"/>
+
+</head>
+
+<body>
+
+<!-- hidden -->
+<div style="display: none;">
+<audio id="consoleExplosionSound" controls>
+<source src="sounds/console_explo_03.mp3" type="audio/mpeg"/>
+</audio>
+
+<audio id="rikerRedAlertSound" controls>
+<source src="sounds/redalert.mp3" type="audio/mpeg"/>
+</audio>
+
+<audio id="redAlertSirenSound" controls>
+<source src="sounds/tng_red_alert2.mp3" type="audio/mpeg"/>
+</audio>
+</div>
+
+
+<h1>Python compiler workbench</h1>
+<h2>Quickly gain intuitions about Python ASTs and bytecodes. Created by <a href="http://pgbovine.net">Philip Guo</a></h2>
+
+<table> <!-- using an HTML table like a fuddy -->
+<tr>
+  <td>
+    Enter Python code:
+    <div class="codePane" id="codeInputPane"></div> <!-- populate with a CodeMirror instance -->
+  </td>
+  <!-- <td class="arrow">&rarr;</td> -->
+  <td style="min-width: 350px;">
+    AST:
+    <div id="astPane"></div>
+  </td>
+  <!-- <td class="arrow">&rarr;</td> -->
+  <td>
+    Bytecode:<br/>
+    <textarea id="bytecodeOutput" cols="41" rows="25" wrap="off" readonly></textarea>
+  </td>
+</tr>
+
+<!-- for advanced mode ... don't clutter up the UI yet
+
+<tr>
+  <td>
+    AST analysis output:<br/>
+    <textarea id="astAnalysisOutput" cols="41" rows="25" wrap="off" readonly></textarea>
+  </td>
+  <td class="arrow">&larr;</td>
+  <td style="vertical-align: middle;">
+    <div style="text-align: center; font-size: 18pt; margin-bottom: 20pt;" >&darr;</div>
+    AST processor:<br/>
+    <select id="astProcessorSelector">
+      <option value="default">none (decompile to source)</option>
+      <option value="astOptimizer">AST optimizer</option>
+      <option value="test">test.py</option>
+    </select>
+    <div style="text-align: center; font-size: 18pt; margin-top: 20pt;">&darr;</div>
+  </td>
+  <td></td>
+  <td>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    Transformed source code:
+    <div class="codePane" id="transformedCodePane"></div>
+  </td>
+  <td class="arrow">&larr;</td>
+  <td>
+    Transformed AST:
+    <div id="transformedAstPane">[AST diagram goes here]</div>
+  </td>
+  <td class="arrow">&rarr;</td>
+  <td>
+    Transformed Bytecode:<br/>
+    <textarea id="transformedBytecodeOutput" cols="30" rows="20" wrap="off" readonly></textarea>
+  </td>
+</tr>
+
+-->
+
+</table>
+
+<div id="debug_output"/>
+
+</body>
+</html>
+
