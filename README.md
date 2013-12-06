@@ -7,11 +7,12 @@ Python source code compiles to ASTs and bytecodes.
 Watch the [1.5-minute YouTube demo](https://www.youtube.com/watch?v=fMCV3KNYquo).
 
 
-## Installing.
+## Installing
 
-[Download GraphViz](http://www.graphviz.org/Download..php)
+1. [Download GraphViz](http://www.graphviz.org/Download..php) and install it.
+2. Install two Python packages: `bottle` and `pydot`.
 
-Install Python packages:
+One way to install is:
 
     easy_install pip
     pip install bottle
