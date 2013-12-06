@@ -32,6 +32,20 @@ $(document).ready(function() {
   pyTransformedCodeMirror.setSize(null, '200px'); // height
   */
 
+  // only load the sounds if CRAZY_COMPILER_ERRORS is on, to save bandwidth
+  if (CRAZY_COMPILER_ERRORS) {
+    $("#sounds").html('<audio id="consoleExplosionSound" controls>\
+      <source src="sounds/console_explo_03.mp3" type="audio/mpeg"/>\
+      </audio>\
+      <audio id="rikerRedAlertSound" controls>\
+      <source src="sounds/redalert.mp3" type="audio/mpeg"/>\
+      </audio>\
+      <audio id="redAlertSirenSound" controls>\
+      <source src="sounds/tng_red_alert2.mp3" type="audio/mpeg"/>\
+      </audio>');
+  }
+
+
   pyInputCodeMirror.on('change', function(editor, e) {
     // clear the prior timer to prevent multiple firings
     if (priorTimerId) {
