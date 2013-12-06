@@ -4,6 +4,8 @@ Python Compiler Workbench
 This is a live coding environment to help you develop intuitions about how
 Python source code compiles to ASTs and bytecodes.
 
+![screenshot](screenshot.png)
+
 Watch the [1.5-minute YouTube demo](https://www.youtube.com/watch?v=fMCV3KNYquo).
 
 
