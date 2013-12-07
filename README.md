@@ -40,7 +40,16 @@ helpful for gaining intuitions about what real ASTs look like. They are more of 
 not a tutorial. So I figured that the best tutorial would be to create an environment where
 I could easily enter in any piece of Python code and see what it compiled into.
 
-Also, the process of *building* this visualizer -- especially transforming ASTs into the
-GraphViz format for visualization -- gave me even better intuitions for how AST nodes are structured.
+For instance, I wanted to see what a chain of `if-elif-else` blocks looked like in the AST,
+so I just typed in a simple example:
+
+![if-else-screenshot](if-else-screenshot.png)
+
+Low and behold, it compiles into a series of nested `if-else` blocks!
+
+On a meta level, the process of *building* this tool itself -- especially writing the code
+to transform ASTs into the GraphViz format for visualization -- gave me even better intuitions
+for how AST nodes are structured.
+
 So all in all, it's been a very efficient and fun way for me to learn :) And if this project
 helps you learn as well, then even better!
