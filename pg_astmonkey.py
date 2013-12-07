@@ -22,6 +22,9 @@ class PGGraphNodeVisitor(ast.NodeVisitor):
                           **self._dot_node_kwargs(node))
 
     def _dot_node_label(self, node):
+        if isinstance(node, str):
+            return node
+
         fields_labels = []
         for field, value in ast.iter_fields(node):
             # not a list attribute, so possibly inline attrs ...
@@ -31,7 +34,7 @@ class PGGraphNodeVisitor(ast.NodeVisitor):
                     value_label = repr(value)
                 # if value has no fields of its own, then just inline
                 # its label into this node
-                elif not value._fields:
+                elif not (hasattr(value, '_fields') and value._fields):
                     value_label = self._dot_node_label(value)
 
                 if value_label:
@@ -41,10 +44,10 @@ class PGGraphNodeVisitor(ast.NodeVisitor):
             else:
                 value_label_lst = []
                 for i, e in enumerate(value):
-                    if not e._fields:
-                        value_label_lst.append('{0}: {1}'.format(i, self._dot_node_label(e)))
+                    if not (hasattr(e, '_fields') and e._fields):
+                        value_label_lst.append('{0}={1}'.format(i, self._dot_node_label(e)))
                 if value_label_lst:
-                    lst_label = field + '[' + ', '.join(value_label_lst) + ']'
+                    lst_label = field + '[' + ',\n'.join(value_label_lst) + ']'
                     fields_labels.append(lst_label)
 
         if fields_labels:
@@ -68,7 +71,7 @@ class PGGraphEdgeVisitor(ast.NodeVisitor):
         for field, value in ast.iter_fields(node):
             if isinstance(value, list):
                 for i, e in enumerate(value):
-                    if e._fields: # don't add edges to barren children
+                    if hasattr(e, '_fields') and e._fields: # don't add edges to barren children
                         my_edge = pydot.Edge(str(node), str(e),
                                              label='{0}[{1}]'.format(field, i),
                                              **self._dot_edge_kwargs(node))
