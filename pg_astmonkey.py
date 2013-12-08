@@ -51,9 +51,14 @@ class PGGraphNodeVisitor(ast.NodeVisitor):
                     fields_labels.append(lst_label)
 
         if fields_labels:
-          return '{0}\n({1})'.format(node.__class__.__name__, ',\n'.join(fields_labels))
+          lab = '{0}\n({1})'.format(node.__class__.__name__, ',\n'.join(fields_labels))
         else:
-          return '{0}'.format(node.__class__.__name__)
+          lab = '{0}'.format(node.__class__.__name__)
+
+        if hasattr(node, 'lineno'):
+            lab += '\n{0}:{1}'.format(node.lineno, node.col_offset)
+
+        return lab
 
     def _dot_node_kwargs(self, node):
         return {
