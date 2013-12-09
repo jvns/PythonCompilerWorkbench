@@ -1,0 +1,4 @@
+one = call_foo(1 + 2, y, z+w-2)
+two = call_foo(1 + 2, y, z+w-2, optional1=True, optional2=two/one+four)
+three = call_foo(1 + 2, y, z+w-2, optional1=True, *stararg, optional2=two/one+four)
+four = call_foo(1 + 2, y, z+w-2, optional1=True, *stararg, optional2=two/one+four, **my_kwargs)

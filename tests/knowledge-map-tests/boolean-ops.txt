@@ -1,0 +1,12 @@
+not x
+not (x or y)
+x is y
+x is not y
+x in y
+x not in y
+(12 < age) and (age < 20)
+12 < age < 20
+
+# multiline
+((12 < age) and
+ (age < 20))

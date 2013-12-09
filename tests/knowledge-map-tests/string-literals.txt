@@ -1,0 +1,9 @@
+"hello"
+'hello'
+"This is a sentence."
+"John's cat."
+'He liked watching "The Matrix"!'
+""
+" "
+"\t \\ \" \'"
+"John's\n\n\n\ndog."

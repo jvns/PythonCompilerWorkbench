@@ -1,0 +1,10 @@
+# these weird decorators currently don't work so hto ...
+# from Lib/threading.py
+@name.setter
+def name(self, name):
+    pass
+
+# from Lib/csv.py
+@fieldnames.setter
+def fieldnames(self, value):
+    self._fieldnames = value

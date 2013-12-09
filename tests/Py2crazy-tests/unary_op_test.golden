@@ -1,0 +1,30 @@
+x = not not not - + - - ~ xxx
+===
+Module
+  body: [
+    Assign >> 'x = not not not - + - - ~ xxx'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: UnaryOp >> 'not not not - + - - ~ xxx'
+        op: Not
+        operand: UnaryOp >> 'not not - + - - ~ xxx'
+          op: Not
+          operand: UnaryOp >> 'not - + - - ~ xxx'
+            op: Not
+            operand: UnaryOp >> '- + - - ~ xxx'
+              op: USub
+              operand: UnaryOp >> '+ - - ~ xxx'
+                op: UAdd
+                operand: UnaryOp >> '- - ~ xxx'
+                  op: USub
+                  operand: UnaryOp >> '- ~ xxx'
+                    op: USub
+                    operand: UnaryOp >> '~ xxx'
+                      op: Invert
+                      operand: Name >> 'xxx'
+                        id: 'xxx'
+                        ctx: Load
+  ]

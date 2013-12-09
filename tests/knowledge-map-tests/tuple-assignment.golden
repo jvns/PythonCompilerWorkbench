@@ -1,0 +1,83 @@
+a, b = c, d
+(a, b) = (c, d)
+
+# multiline
+(a, b,
+   c) = \
+     (c, d)
+===
+Module
+  body: [
+    Assign >> 'a, b = c, d'
+      targets: [
+        Tuple >> 'a, b'
+          elts: [
+            Name >> 'a'
+              id: 'a'
+              ctx: Store
+            Name >> 'b'
+              id: 'b'
+              ctx: Store
+          ]
+          ctx: Store
+      ]
+      value: Tuple >> 'c, d'
+        elts: [
+          Name >> 'c'
+            id: 'c'
+            ctx: Load
+          Name >> 'd'
+            id: 'd'
+            ctx: Load
+        ]
+        ctx: Load
+    Assign >> '(a, b) = (c, d)'
+      targets: [
+        Tuple >> '(a, b)'
+          elts: [
+            Name >> 'a'
+              id: 'a'
+              ctx: Store
+            Name >> 'b'
+              id: 'b'
+              ctx: Store
+          ]
+          ctx: Store
+      ]
+      value: Tuple >> '(c, d)'
+        elts: [
+          Name >> 'c'
+            id: 'c'
+            ctx: Load
+          Name >> 'd'
+            id: 'd'
+            ctx: Load
+        ]
+        ctx: Load
+    Assign ML>> '(a, b,\n   c) = \\\n     (c, d)'
+      targets: [
+        Tuple ML>> '(a, b,\n   c)'
+          elts: [
+            Name >> 'a'
+              id: 'a'
+              ctx: Store
+            Name >> 'b'
+              id: 'b'
+              ctx: Store
+            Name >> 'c'
+              id: 'c'
+              ctx: Store
+          ]
+          ctx: Store
+      ]
+      value: Tuple >> '(c, d)'
+        elts: [
+          Name >> 'c'
+            id: 'c'
+            ctx: Load
+          Name >> 'd'
+            id: 'd'
+            ctx: Load
+        ]
+        ctx: Load
+  ]

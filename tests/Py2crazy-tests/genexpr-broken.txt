@@ -1,0 +1,3 @@
+x = (i for i in range(10))
+# the FOR_ITER instruction in the generator shouldn't be at column 0,
+# since that's misleading :/

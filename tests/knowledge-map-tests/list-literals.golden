@@ -1,0 +1,131 @@
+[]
+[1]
+[1, 2, 3]
+[1, 2, 3, "hello"]
+[x, y + z]
+[1, [2, 3]]
+[1, 2] + [3, 4]
+[1, 2] * 3
+
+# multiline
+[1,
+      2,
+  3       ,   
+  
+        "hello"]
+===
+Module
+  body: [
+    Expr
+      value: List >> '[]'
+        elts: [
+        ]
+        ctx: Load
+    Expr
+      value: List >> '[1]'
+        elts: [
+          Num >> '1'
+            n: 1
+        ]
+        ctx: Load
+    Expr
+      value: List >> '[1, 2, 3]'
+        elts: [
+          Num >> '1'
+            n: 1
+          Num >> '2'
+            n: 2
+          Num >> '3'
+            n: 3
+        ]
+        ctx: Load
+    Expr
+      value: List >> '[1, 2, 3, "hello"]'
+        elts: [
+          Num >> '1'
+            n: 1
+          Num >> '2'
+            n: 2
+          Num >> '3'
+            n: 3
+          Str >> '"hello"'
+            s: 'hello'
+        ]
+        ctx: Load
+    Expr
+      value: List >> '[x, y + z]'
+        elts: [
+          Name >> 'x'
+            id: 'x'
+            ctx: Load
+          BinOp >> 'y + z'
+            left: Name >> 'y'
+              id: 'y'
+              ctx: Load
+            op: Add
+            right: Name >> 'z'
+              id: 'z'
+              ctx: Load
+        ]
+        ctx: Load
+    Expr
+      value: List >> '[1, [2, 3]]'
+        elts: [
+          Num >> '1'
+            n: 1
+          List >> '[2, 3]'
+            elts: [
+              Num >> '2'
+                n: 2
+              Num >> '3'
+                n: 3
+            ]
+            ctx: Load
+        ]
+        ctx: Load
+    Expr
+      value: BinOp >> '[1, 2] + [3, 4]'
+        left: List >> '[1, 2]'
+          elts: [
+            Num >> '1'
+              n: 1
+            Num >> '2'
+              n: 2
+          ]
+          ctx: Load
+        op: Add
+        right: List >> '[3, 4]'
+          elts: [
+            Num >> '3'
+              n: 3
+            Num >> '4'
+              n: 4
+          ]
+          ctx: Load
+    Expr
+      value: BinOp >> '[1, 2] * 3'
+        left: List >> '[1, 2]'
+          elts: [
+            Num >> '1'
+              n: 1
+            Num >> '2'
+              n: 2
+          ]
+          ctx: Load
+        op: Mult
+        right: Num >> '3'
+          n: 3
+    Expr
+      value: List ML>> '[1,\n      2,\n  3       ,   \n  \n        "hello"]'
+        elts: [
+          Num >> '1'
+            n: 1
+          Num >> '2'
+            n: 2
+          Num >> '3'
+            n: 3
+          Str >> '"hello"'
+            s: 'hello'
+        ]
+        ctx: Load
+  ]

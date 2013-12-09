@@ -1,0 +1,241 @@
+foo()
+foo(1)
+foo(1, 2, 3)
+foo(x)
+foo(y, z)
+foo(x + y / z)
+foo(bar(x))
+spam(x=2, y = 3) # only keyword args
+spam(0, 1, x=2, y=3) # regular and keyword args
+foo(*x)
+foo(**y)
+foo(*x, **y) # star and kwargs
+spam(   1,  x=2  ,  *y  ,    **z) # all four kinds of args!
+===
+Module
+  body: [
+    Expr
+      value: Call >> 'foo()'
+        func: Name >> 'foo'
+          id: 'foo'
+          ctx: Load
+        args: [
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'foo(1)'
+        func: Name >> 'foo'
+          id: 'foo'
+          ctx: Load
+        args: [
+          Num >> '1'
+            n: 1
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'foo(1, 2, 3)'
+        func: Name >> 'foo'
+          id: 'foo'
+          ctx: Load
+        args: [
+          Num >> '1'
+            n: 1
+          Num >> '2'
+            n: 2
+          Num >> '3'
+            n: 3
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'foo(x)'
+        func: Name >> 'foo'
+          id: 'foo'
+          ctx: Load
+        args: [
+          Name >> 'x'
+            id: 'x'
+            ctx: Load
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'foo(y, z)'
+        func: Name >> 'foo'
+          id: 'foo'
+          ctx: Load
+        args: [
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+          Name >> 'z'
+            id: 'z'
+            ctx: Load
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'foo(x + y / z)'
+        func: Name >> 'foo'
+          id: 'foo'
+          ctx: Load
+        args: [
+          BinOp >> 'x + y / z'
+            left: Name >> 'x'
+              id: 'x'
+              ctx: Load
+            op: Add
+            right: BinOp >> 'y / z'
+              left: Name >> 'y'
+                id: 'y'
+                ctx: Load
+              op: Div
+              right: Name >> 'z'
+                id: 'z'
+                ctx: Load
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'foo(bar(x))'
+        func: Name >> 'foo'
+          id: 'foo'
+          ctx: Load
+        args: [
+          Call >> 'bar(x)'
+            func: Name >> 'bar'
+              id: 'bar'
+              ctx: Load
+            args: [
+              Name >> 'x'
+                id: 'x'
+                ctx: Load
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'spam(x=2, y = 3)'
+        func: Name >> 'spam'
+          id: 'spam'
+          ctx: Load
+        args: [
+        ]
+        keywords: [
+          keyword >> '2'
+            arg: 'x'
+            value: Num >> '2'
+              n: 2
+          keyword >> '3'
+            arg: 'y'
+            value: Num >> '3'
+              n: 3
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'spam(0, 1, x=2, y=3)'
+        func: Name >> 'spam'
+          id: 'spam'
+          ctx: Load
+        args: [
+          Num >> '0'
+            n: 0
+          Num >> '1'
+            n: 1
+        ]
+        keywords: [
+          keyword >> '2'
+            arg: 'x'
+            value: Num >> '2'
+              n: 2
+          keyword >> '3'
+            arg: 'y'
+            value: Num >> '3'
+              n: 3
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'foo(*x)'
+        func: Name >> 'foo'
+          id: 'foo'
+          ctx: Load
+        args: [
+        ]
+        keywords: [
+        ]
+        starargs: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        kwargs: None
+    Expr
+      value: Call >> 'foo(**y)'
+        func: Name >> 'foo'
+          id: 'foo'
+          ctx: Load
+        args: [
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: Name >> 'y'
+          id: 'y'
+          ctx: Load
+    Expr
+      value: Call >> 'foo(*x, **y)'
+        func: Name >> 'foo'
+          id: 'foo'
+          ctx: Load
+        args: [
+        ]
+        keywords: [
+        ]
+        starargs: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        kwargs: Name >> 'y'
+          id: 'y'
+          ctx: Load
+    Expr
+      value: Call >> 'spam(   1,  x=2  ,  *y  ,    **z)'
+        func: Name >> 'spam'
+          id: 'spam'
+          ctx: Load
+        args: [
+          Num >> '1'
+            n: 1
+        ]
+        keywords: [
+          keyword >> '2'
+            arg: 'x'
+            value: Num >> '2'
+              n: 2
+        ]
+        starargs: Name >> 'y'
+          id: 'y'
+          ctx: Load
+        kwargs: Name >> 'z'
+          id: 'z'
+          ctx: Load
+  ]

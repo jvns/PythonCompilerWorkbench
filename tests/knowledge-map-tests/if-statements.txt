@@ -1,0 +1,33 @@
+if x < y:
+    print 'x < y'
+
+if x < y:
+    print 'x < y'
+else:
+    print 'x >= y'
+
+if name == 'Larry':
+    print 'whoooo whooo!'
+elif name == 'Curly':
+    print 'aooooga!'
+elif name == 'Moe':
+    print 'whoop whoop!'
+else:
+    print 'Not one of the Three Stooges'
+
+if x > y:
+    if x < 0:
+        print 'foo'
+    else:
+        print 'bar'
+else:
+    if y > 0:
+        print 'baz'
+
+# one-liner
+if x < y: print x, 'is less than', y
+
+# multiline condition
+if (x < y) or \
+   (y < z):
+    print 'boo hoo'

@@ -1,0 +1,308 @@
+if x < y:
+    print 'x < y'
+
+if x < y:
+    print 'x < y'
+else:
+    print 'x >= y'
+
+if name == 'Larry':
+    print 'whoooo whooo!'
+elif name == 'Curly':
+    print 'aooooga!'
+elif name == 'Moe':
+    print 'whoop whoop!'
+else:
+    print 'Not one of the Three Stooges'
+
+if x > y:
+    if x < 0:
+        print 'foo'
+    else:
+        print 'bar'
+else:
+    if y > 0:
+        print 'baz'
+
+# one-liner
+if x < y: print x, 'is less than', y
+
+# multiline condition
+if (x < y) or \
+   (y < z):
+    print 'boo hoo'
+===
+Module
+  body: [
+    If >> 'if x < y'
+      test: Compare >> 'x < y'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          Lt
+        ]
+        comparators: [
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+        ]
+      body: [
+        Print >> "print 'x < y'"
+          dest: None
+          values: [
+            Str >> "'x < y'"
+              s: 'x < y'
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+    If >> 'if x < y'
+      test: Compare >> 'x < y'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          Lt
+        ]
+        comparators: [
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+        ]
+      body: [
+        Print >> "print 'x < y'"
+          dest: None
+          values: [
+            Str >> "'x < y'"
+              s: 'x < y'
+          ]
+          nl: True
+      ]
+      orelse: [
+        Print >> "print 'x >= y'"
+          dest: None
+          values: [
+            Str >> "'x >= y'"
+              s: 'x >= y'
+          ]
+          nl: True
+      ]
+    If >> "if name == 'Larry'"
+      test: Compare >> "name == 'Larry'"
+        left: Name >> 'name'
+          id: 'name'
+          ctx: Load
+        ops: [
+          Eq
+        ]
+        comparators: [
+          Str >> "'Larry'"
+            s: 'Larry'
+        ]
+      body: [
+        Print >> "print 'whoooo whooo!'"
+          dest: None
+          values: [
+            Str >> "'whoooo whooo!'"
+              s: 'whoooo whooo!'
+          ]
+          nl: True
+      ]
+      orelse: [
+        If >> "elif name == 'Curly'"
+          test: Compare >> "name == 'Curly'"
+            left: Name >> 'name'
+              id: 'name'
+              ctx: Load
+            ops: [
+              Eq
+            ]
+            comparators: [
+              Str >> "'Curly'"
+                s: 'Curly'
+            ]
+          body: [
+            Print >> "print 'aooooga!'"
+              dest: None
+              values: [
+                Str >> "'aooooga!'"
+                  s: 'aooooga!'
+              ]
+              nl: True
+          ]
+          orelse: [
+            If >> "elif name == 'Moe'"
+              test: Compare >> "name == 'Moe'"
+                left: Name >> 'name'
+                  id: 'name'
+                  ctx: Load
+                ops: [
+                  Eq
+                ]
+                comparators: [
+                  Str >> "'Moe'"
+                    s: 'Moe'
+                ]
+              body: [
+                Print >> "print 'whoop whoop!'"
+                  dest: None
+                  values: [
+                    Str >> "'whoop whoop!'"
+                      s: 'whoop whoop!'
+                  ]
+                  nl: True
+              ]
+              orelse: [
+                Print >> "print 'Not one of the Three Stooges'"
+                  dest: None
+                  values: [
+                    Str >> "'Not one of the Three Stooges'"
+                      s: 'Not one of the Three Stooges'
+                  ]
+                  nl: True
+              ]
+          ]
+      ]
+    If >> 'if x > y'
+      test: Compare >> 'x > y'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          Gt
+        ]
+        comparators: [
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+        ]
+      body: [
+        If >> 'if x < 0'
+          test: Compare >> 'x < 0'
+            left: Name >> 'x'
+              id: 'x'
+              ctx: Load
+            ops: [
+              Lt
+            ]
+            comparators: [
+              Num >> '0'
+                n: 0
+            ]
+          body: [
+            Print >> "print 'foo'"
+              dest: None
+              values: [
+                Str >> "'foo'"
+                  s: 'foo'
+              ]
+              nl: True
+          ]
+          orelse: [
+            Print >> "print 'bar'"
+              dest: None
+              values: [
+                Str >> "'bar'"
+                  s: 'bar'
+              ]
+              nl: True
+          ]
+      ]
+      orelse: [
+        If >> 'if y > 0'
+          test: Compare >> 'y > 0'
+            left: Name >> 'y'
+              id: 'y'
+              ctx: Load
+            ops: [
+              Gt
+            ]
+            comparators: [
+              Num >> '0'
+                n: 0
+            ]
+          body: [
+            Print >> "print 'baz'"
+              dest: None
+              values: [
+                Str >> "'baz'"
+                  s: 'baz'
+              ]
+              nl: True
+          ]
+          orelse: [
+          ]
+      ]
+    If >> 'if x < y'
+      test: Compare >> 'x < y'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          Lt
+        ]
+        comparators: [
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+        ]
+      body: [
+        Print >> "print x, 'is less than', y"
+          dest: None
+          values: [
+            Name >> 'x'
+              id: 'x'
+              ctx: Load
+            Str >> "'is less than'"
+              s: 'is less than'
+            Name >> 'y'
+              id: 'y'
+              ctx: Load
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+    If ML>> 'if (x < y) or \\\n   (y < z'
+      test: BoolOp ML>> '(x < y) or \\\n   (y < z'
+        op: Or
+        values: [
+          Compare >> 'x < y'
+            left: Name >> 'x'
+              id: 'x'
+              ctx: Load
+            ops: [
+              Lt
+            ]
+            comparators: [
+              Name >> 'y'
+                id: 'y'
+                ctx: Load
+            ]
+          Compare >> 'y < z'
+            left: Name >> 'y'
+              id: 'y'
+              ctx: Load
+            ops: [
+              Lt
+            ]
+            comparators: [
+              Name >> 'z'
+                id: 'z'
+                ctx: Load
+            ]
+        ]
+      body: [
+        Print >> "print 'boo hoo'"
+          dest: None
+          values: [
+            Str >> "'boo hoo'"
+              s: 'boo hoo'
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+  ]

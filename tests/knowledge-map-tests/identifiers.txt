@@ -1,0 +1,11 @@
+i
+name
+my_first_name
+PLANCK_CONSTANT
+MyAwesomeClass
+card
+Card
+_private_attr
+javaStyle
+__super_private
+__init__

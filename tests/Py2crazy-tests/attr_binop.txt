@@ -1,0 +1,8 @@
+# there's an asymmetry when combining an attribute load with a binary
+# op, which looks ugly. it's hard to fix since if we extend the extent
+# of foo.first_attr to start at 'foo', that would be the same start
+# column as LOAD_NAME of 'foo', which would lead to a conflict unless we
+# hack Py2crazy even more :/
+
+x = foo.first_attr + bar.second_attr
+#      ------------^----------------

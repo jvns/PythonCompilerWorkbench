@@ -1,0 +1,2 @@
+if foo() and (x + y > 7):
+  print 'YES!'

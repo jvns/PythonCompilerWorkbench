@@ -1,0 +1,1 @@
+str = '%d %s %s' % (self.x, self.y, self.z)

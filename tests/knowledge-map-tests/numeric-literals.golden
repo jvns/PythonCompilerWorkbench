@@ -1,0 +1,36 @@
+3
+3.0
+3.14
+-3
+-3.14
+3.14159
+3.
+-3.
+===
+Module
+  body: [
+    Expr
+      value: Num >> '3'
+        n: 3
+    Expr
+      value: Num >> '3.0'
+        n: 3.0
+    Expr
+      value: Num >> '3.14'
+        n: 3.14
+    Expr
+      value: Num >> '-3'
+        n: -3
+    Expr
+      value: Num >> '-3.14'
+        n: -3.14
+    Expr
+      value: Num >> '3.14159'
+        n: 3.14159
+    Expr
+      value: Num >> '3.'
+        n: 3.0
+    Expr
+      value: Num >> '-3.'
+        n: -3.0
+  ]

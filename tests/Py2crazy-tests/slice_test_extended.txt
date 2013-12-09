@@ -1,0 +1,6 @@
+arr[one,...,two,...]
+# extended slices aren't currently handled
+# TODO: implement visit_ExtSlice in Lib/ast_extents.py
+# to handle these. But be warned that Ellipsis objects have neither
+# lineno or col_offset, so what happens when the final element is an
+# Ellipsis? ergh!

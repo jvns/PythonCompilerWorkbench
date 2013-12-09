@@ -1,0 +1,257 @@
+while (x > 0):
+    print x
+    x -= 1
+
+while (x > 0):
+    if x % 2 == 0:
+        print x
+    x -= 1
+
+while (x > 0):
+    if x % 2 == 0:
+        print x
+    x -= 1
+
+while (x > 0):
+    if x % 2 == 0:
+        continue
+    print x
+    x -= 1
+
+while True:
+    if x < 0:
+        break
+    x -= 1
+
+while True:
+    pass
+===
+Module
+  body: [
+    While >> 'while (x > 0'
+      test: Compare >> 'x > 0'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          Gt
+        ]
+        comparators: [
+          Num >> '0'
+            n: 0
+        ]
+      body: [
+        Print >> 'print x'
+          dest: None
+          values: [
+            Name >> 'x'
+              id: 'x'
+              ctx: Load
+          ]
+          nl: True
+        AugAssign >> 'x -= 1'
+          target: Name >> 'x'
+            id: 'x'
+            ctx: Store
+          op: Sub
+          value: Num >> '1'
+            n: 1
+      ]
+      orelse: [
+      ]
+    While >> 'while (x > 0'
+      test: Compare >> 'x > 0'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          Gt
+        ]
+        comparators: [
+          Num >> '0'
+            n: 0
+        ]
+      body: [
+        If >> 'if x % 2 == 0'
+          test: Compare >> 'x % 2 == 0'
+            left: BinOp >> 'x % 2'
+              left: Name >> 'x'
+                id: 'x'
+                ctx: Load
+              op: Mod
+              right: Num >> '2'
+                n: 2
+            ops: [
+              Eq
+            ]
+            comparators: [
+              Num >> '0'
+                n: 0
+            ]
+          body: [
+            Print >> 'print x'
+              dest: None
+              values: [
+                Name >> 'x'
+                  id: 'x'
+                  ctx: Load
+              ]
+              nl: True
+          ]
+          orelse: [
+          ]
+        AugAssign >> 'x -= 1'
+          target: Name >> 'x'
+            id: 'x'
+            ctx: Store
+          op: Sub
+          value: Num >> '1'
+            n: 1
+      ]
+      orelse: [
+      ]
+    While >> 'while (x > 0'
+      test: Compare >> 'x > 0'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          Gt
+        ]
+        comparators: [
+          Num >> '0'
+            n: 0
+        ]
+      body: [
+        If >> 'if x % 2 == 0'
+          test: Compare >> 'x % 2 == 0'
+            left: BinOp >> 'x % 2'
+              left: Name >> 'x'
+                id: 'x'
+                ctx: Load
+              op: Mod
+              right: Num >> '2'
+                n: 2
+            ops: [
+              Eq
+            ]
+            comparators: [
+              Num >> '0'
+                n: 0
+            ]
+          body: [
+            Print >> 'print x'
+              dest: None
+              values: [
+                Name >> 'x'
+                  id: 'x'
+                  ctx: Load
+              ]
+              nl: True
+          ]
+          orelse: [
+          ]
+        AugAssign >> 'x -= 1'
+          target: Name >> 'x'
+            id: 'x'
+            ctx: Store
+          op: Sub
+          value: Num >> '1'
+            n: 1
+      ]
+      orelse: [
+      ]
+    While >> 'while (x > 0'
+      test: Compare >> 'x > 0'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          Gt
+        ]
+        comparators: [
+          Num >> '0'
+            n: 0
+        ]
+      body: [
+        If >> 'if x % 2 == 0'
+          test: Compare >> 'x % 2 == 0'
+            left: BinOp >> 'x % 2'
+              left: Name >> 'x'
+                id: 'x'
+                ctx: Load
+              op: Mod
+              right: Num >> '2'
+                n: 2
+            ops: [
+              Eq
+            ]
+            comparators: [
+              Num >> '0'
+                n: 0
+            ]
+          body: [
+            Continue >> 'continue'
+          ]
+          orelse: [
+          ]
+        Print >> 'print x'
+          dest: None
+          values: [
+            Name >> 'x'
+              id: 'x'
+              ctx: Load
+          ]
+          nl: True
+        AugAssign >> 'x -= 1'
+          target: Name >> 'x'
+            id: 'x'
+            ctx: Store
+          op: Sub
+          value: Num >> '1'
+            n: 1
+      ]
+      orelse: [
+      ]
+    While >> 'while True'
+      test: Name >> 'True'
+        id: 'True'
+        ctx: Load
+      body: [
+        If >> 'if x < 0'
+          test: Compare >> 'x < 0'
+            left: Name >> 'x'
+              id: 'x'
+              ctx: Load
+            ops: [
+              Lt
+            ]
+            comparators: [
+              Num >> '0'
+                n: 0
+            ]
+          body: [
+            Break >> 'break'
+          ]
+          orelse: [
+          ]
+        AugAssign >> 'x -= 1'
+          target: Name >> 'x'
+            id: 'x'
+            ctx: Store
+          op: Sub
+          value: Num >> '1'
+            n: 1
+      ]
+      orelse: [
+      ]
+    While >> 'while True'
+      test: Name >> 'True'
+        id: 'True'
+        ctx: Load
+      body: [
+        Pass >> 'pass'
+      ]
+      orelse: [
+      ]
+  ]

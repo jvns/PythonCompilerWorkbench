@@ -1,0 +1,156 @@
+not x
+not (x or y)
+x is y
+x is not y
+x in y
+x not in y
+(12 < age) and (age < 20)
+12 < age < 20
+
+# multiline
+((12 < age) and
+ (age < 20))
+===
+Module
+  body: [
+    Expr
+      value: UnaryOp >> 'not x'
+        op: Not
+        operand: Name >> 'x'
+          id: 'x'
+          ctx: Load
+    Expr
+      value: UnaryOp >> 'not (x or y'
+        op: Not
+        operand: BoolOp >> 'x or y'
+          op: Or
+          values: [
+            Name >> 'x'
+              id: 'x'
+              ctx: Load
+            Name >> 'y'
+              id: 'y'
+              ctx: Load
+          ]
+    Expr
+      value: Compare >> 'x is y'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          Is
+        ]
+        comparators: [
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+        ]
+    Expr
+      value: Compare >> 'x is not y'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          IsNot
+        ]
+        comparators: [
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+        ]
+    Expr
+      value: Compare >> 'x in y'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          In
+        ]
+        comparators: [
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+        ]
+    Expr
+      value: Compare >> 'x not in y'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        ops: [
+          NotIn
+        ]
+        comparators: [
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+        ]
+    Expr
+      value: BoolOp >> '(12 < age) and (age < 20'
+        op: And
+        values: [
+          Compare >> '12 < age'
+            left: Num >> '12'
+              n: 12
+            ops: [
+              Lt
+            ]
+            comparators: [
+              Name >> 'age'
+                id: 'age'
+                ctx: Load
+            ]
+          Compare >> 'age < 20'
+            left: Name >> 'age'
+              id: 'age'
+              ctx: Load
+            ops: [
+              Lt
+            ]
+            comparators: [
+              Num >> '20'
+                n: 20
+            ]
+        ]
+    Expr
+      value: Compare >> '12 < age < 20'
+        left: Num >> '12'
+          n: 12
+        ops: [
+          Lt
+          Lt
+        ]
+        comparators: [
+          Name >> 'age'
+            id: 'age'
+            ctx: Load
+          Num >> '20'
+            n: 20
+        ]
+    Expr
+      value: BoolOp ML>> '(12 < age) and\n (age < 20'
+        op: And
+        values: [
+          Compare >> '12 < age'
+            left: Num >> '12'
+              n: 12
+            ops: [
+              Lt
+            ]
+            comparators: [
+              Name >> 'age'
+                id: 'age'
+                ctx: Load
+            ]
+          Compare >> 'age < 20'
+            left: Name >> 'age'
+              id: 'age'
+              ctx: Load
+            ops: [
+              Lt
+            ]
+            comparators: [
+              Num >> '20'
+                n: 20
+            ]
+        ]
+  ]

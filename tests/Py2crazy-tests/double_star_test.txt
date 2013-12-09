@@ -1,0 +1,7 @@
+# from Lib/doctest.py
+self.val = self.val ** 2
+
+# from Lib/fractions.py
+def foo():
+    return Fraction(a._denominator ** -power,
+                    a._numerator ** -power)

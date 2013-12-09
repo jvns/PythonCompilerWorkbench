@@ -1,0 +1,40 @@
+"hello"
+'hello'
+"This is a sentence."
+"John's cat."
+'He liked watching "The Matrix"!'
+""
+" "
+"\t \\ \" \'"
+"John's\n\n\n\ndog."
+===
+Module
+  body: [
+    Expr
+      value: Str >> '"hello"'
+        s: 'hello'
+    Expr
+      value: Str >> "'hello'"
+        s: 'hello'
+    Expr
+      value: Str >> '"This is a sentence."'
+        s: 'This is a sentence.'
+    Expr
+      value: Str >> '"John\'s cat."'
+        s: "John's cat."
+    Expr
+      value: Str >> '\'He liked watching "The Matrix"!\''
+        s: 'He liked watching "The Matrix"!'
+    Expr
+      value: Str >> '""'
+        s: ''
+    Expr
+      value: Str >> '" "'
+        s: ' '
+    Expr
+      value: Str >> '"\\t \\\\ \\" \\\''
+        s: '\t \\ " \''
+    Expr
+      value: Str >> '"John\'s\\n\\n\\n\\ndog."'
+        s: "John's\n\n\n\ndog."
+  ]

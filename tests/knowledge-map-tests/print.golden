@@ -1,0 +1,162 @@
+print
+print "hello world"
+print "hello world",
+print x
+print "hello", x, y
+print a + b,
+
+# format strings
+print "Hello, %s" % name
+print "Hi %s %s" % (first_name, last_name),
+print "hello %s %d" % (x, y)
+
+# multiline
+print "Hi %s %s" % \
+  \
+  \
+       (first_name, last_name),
+
+
+print "hello", \
+  x, \
+ \
+  y
+===
+Module
+  body: [
+    Print >> 'print'
+      dest: None
+      values: [
+      ]
+      nl: True
+    Print >> 'print "hello world"'
+      dest: None
+      values: [
+        Str >> '"hello world"'
+          s: 'hello world'
+      ]
+      nl: True
+    Print >> 'print "hello world",'
+      dest: None
+      values: [
+        Str >> '"hello world"'
+          s: 'hello world'
+      ]
+      nl: False
+    Print >> 'print x'
+      dest: None
+      values: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Load
+      ]
+      nl: True
+    Print >> 'print "hello", x, y'
+      dest: None
+      values: [
+        Str >> '"hello"'
+          s: 'hello'
+        Name >> 'x'
+          id: 'x'
+          ctx: Load
+        Name >> 'y'
+          id: 'y'
+          ctx: Load
+      ]
+      nl: True
+    Print >> 'print a + b,'
+      dest: None
+      values: [
+        BinOp >> 'a + b'
+          left: Name >> 'a'
+            id: 'a'
+            ctx: Load
+          op: Add
+          right: Name >> 'b'
+            id: 'b'
+            ctx: Load
+      ]
+      nl: False
+    Print >> 'print "Hello, %s" % name'
+      dest: None
+      values: [
+        BinOp >> '"Hello, %s" % name'
+          left: Str >> '"Hello, %s"'
+            s: 'Hello, %s'
+          op: Mod
+          right: Name >> 'name'
+            id: 'name'
+            ctx: Load
+      ]
+      nl: True
+    Print >> 'print "Hi %s %s" % (first_name, last_name),'
+      dest: None
+      values: [
+        BinOp >> '"Hi %s %s" % (first_name, last_name)'
+          left: Str >> '"Hi %s %s"'
+            s: 'Hi %s %s'
+          op: Mod
+          right: Tuple >> '(first_name, last_name)'
+            elts: [
+              Name >> 'first_name'
+                id: 'first_name'
+                ctx: Load
+              Name >> 'last_name'
+                id: 'last_name'
+                ctx: Load
+            ]
+            ctx: Load
+      ]
+      nl: False
+    Print >> 'print "hello %s %d" % (x, y)'
+      dest: None
+      values: [
+        BinOp >> '"hello %s %d" % (x, y)'
+          left: Str >> '"hello %s %d"'
+            s: 'hello %s %d'
+          op: Mod
+          right: Tuple >> '(x, y)'
+            elts: [
+              Name >> 'x'
+                id: 'x'
+                ctx: Load
+              Name >> 'y'
+                id: 'y'
+                ctx: Load
+            ]
+            ctx: Load
+      ]
+      nl: True
+    Print ML>> 'print "Hi %s %s" % \\\n  \\\n  \\\n       (first_name, last_name),'
+      dest: None
+      values: [
+        BinOp ML>> '"Hi %s %s" % \\\n  \\\n  \\\n       (first_name, last_name)'
+          left: Str >> '"Hi %s %s"'
+            s: 'Hi %s %s'
+          op: Mod
+          right: Tuple >> '(first_name, last_name)'
+            elts: [
+              Name >> 'first_name'
+                id: 'first_name'
+                ctx: Load
+              Name >> 'last_name'
+                id: 'last_name'
+                ctx: Load
+            ]
+            ctx: Load
+      ]
+      nl: False
+    Print ML>> 'print "hello", \\\n  x, \\\n \\\n  y'
+      dest: None
+      values: [
+        Str >> '"hello"'
+          s: 'hello'
+        Name >> 'x'
+          id: 'x'
+          ctx: Load
+        Name >> 'y'
+          id: 'y'
+          ctx: Load
+      ]
+      nl: True
+  ]

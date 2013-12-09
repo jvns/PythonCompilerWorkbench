@@ -1,0 +1,59 @@
+i
+name
+my_first_name
+PLANCK_CONSTANT
+MyAwesomeClass
+card
+Card
+_private_attr
+javaStyle
+__super_private
+__init__
+===
+Module
+  body: [
+    Expr
+      value: Name >> 'i'
+        id: 'i'
+        ctx: Load
+    Expr
+      value: Name >> 'name'
+        id: 'name'
+        ctx: Load
+    Expr
+      value: Name >> 'my_first_name'
+        id: 'my_first_name'
+        ctx: Load
+    Expr
+      value: Name >> 'PLANCK_CONSTANT'
+        id: 'PLANCK_CONSTANT'
+        ctx: Load
+    Expr
+      value: Name >> 'MyAwesomeClass'
+        id: 'MyAwesomeClass'
+        ctx: Load
+    Expr
+      value: Name >> 'card'
+        id: 'card'
+        ctx: Load
+    Expr
+      value: Name >> 'Card'
+        id: 'Card'
+        ctx: Load
+    Expr
+      value: Name >> '_private_attr'
+        id: '_private_attr'
+        ctx: Load
+    Expr
+      value: Name >> 'javaStyle'
+        id: 'javaStyle'
+        ctx: Load
+    Expr
+      value: Name >> '__super_private'
+        id: '__super_private'
+        ctx: Load
+    Expr
+      value: Name >> '__init__'
+        id: '__init__'
+        ctx: Load
+  ]

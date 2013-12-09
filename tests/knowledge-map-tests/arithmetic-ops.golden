@@ -1,0 +1,119 @@
+4 / 6.0
+"foo" + "bar"
+"cat" * 5
+x + y
+x * y + z
+(x + 5) * (y + z)
+(one * (two + 3))
+
+# some multiline action
+"foo" + \
+        "bar"
+
+(  one *
+    (two 
+   
+  
+  +
+ 
+
+3))
+===
+Module
+  body: [
+    Expr
+      value: BinOp >> '4 / 6.0'
+        left: Num >> '4'
+          n: 4
+        op: Div
+        right: Num >> '6.0'
+          n: 6.0
+    Expr
+      value: BinOp >> '"foo" + "bar"'
+        left: Str >> '"foo"'
+          s: 'foo'
+        op: Add
+        right: Str >> '"bar"'
+          s: 'bar'
+    Expr
+      value: BinOp >> '"cat" * 5'
+        left: Str >> '"cat"'
+          s: 'cat'
+        op: Mult
+        right: Num >> '5'
+          n: 5
+    Expr
+      value: BinOp >> 'x + y'
+        left: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        op: Add
+        right: Name >> 'y'
+          id: 'y'
+          ctx: Load
+    Expr
+      value: BinOp >> 'x * y + z'
+        left: BinOp >> 'x * y'
+          left: Name >> 'x'
+            id: 'x'
+            ctx: Load
+          op: Mult
+          right: Name >> 'y'
+            id: 'y'
+            ctx: Load
+        op: Add
+        right: Name >> 'z'
+          id: 'z'
+          ctx: Load
+    Expr
+      value: BinOp >> '(x + 5) * (y + z'
+        left: BinOp >> 'x + 5'
+          left: Name >> 'x'
+            id: 'x'
+            ctx: Load
+          op: Add
+          right: Num >> '5'
+            n: 5
+        op: Mult
+        right: BinOp >> 'y + z'
+          left: Name >> 'y'
+            id: 'y'
+            ctx: Load
+          op: Add
+          right: Name >> 'z'
+            id: 'z'
+            ctx: Load
+    Expr
+      value: BinOp >> 'one * (two + 3'
+        left: Name >> 'one'
+          id: 'one'
+          ctx: Load
+        op: Mult
+        right: BinOp >> 'two + 3'
+          left: Name >> 'two'
+            id: 'two'
+            ctx: Load
+          op: Add
+          right: Num >> '3'
+            n: 3
+    Expr
+      value: BinOp ML>> '"foo" + \\\n        "bar"'
+        left: Str >> '"foo"'
+          s: 'foo'
+        op: Add
+        right: Str >> '"bar"'
+          s: 'bar'
+    Expr
+      value: BinOp ML>> 'one *\n    (two \n   \n  \n  +\n \n\n3'
+        left: Name >> 'one'
+          id: 'one'
+          ctx: Load
+        op: Mult
+        right: BinOp ML>> 'two \n   \n  \n  +\n \n\n3'
+          left: Name >> 'two'
+            id: 'two'
+            ctx: Load
+          op: Add
+          right: Num >> '3'
+            n: 3
+  ]

@@ -1,0 +1,1 @@
+w = set(["joe", 5 + 6, "mindy" + "jack" * 2])

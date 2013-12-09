@@ -1,0 +1,3 @@
+# mix up function call and tuple hysteresis, to maximize confusion
+def foo():
+  return (func1(x, y), func2(z, w))

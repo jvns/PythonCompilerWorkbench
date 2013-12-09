@@ -1,0 +1,25 @@
+x = 12 + 34 ** 56.0 / 78
+===
+Module
+  body: [
+    Assign >> 'x = 12 + 34 ** 56.0 / 78'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: BinOp >> '12 + 34 ** 56.0 / 78'
+        left: Num >> '12'
+          n: 12
+        op: Add
+        right: BinOp >> '34 ** 56.0 / 78'
+          left: BinOp >> '34 ** 56.0'
+            left: Num >> '34'
+              n: 34
+            op: Pow
+            right: Num >> '56.0'
+              n: 56.0
+          op: Div
+          right: Num >> '78'
+            n: 78
+  ]

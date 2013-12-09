@@ -1,0 +1,20 @@
+4 / 6.0
+"foo" + "bar"
+"cat" * 5
+x + y
+x * y + z
+(x + 5) * (y + z)
+(one * (two + 3))
+
+# some multiline action
+"foo" + \
+        "bar"
+
+(  one *
+    (two 
+   
+  
+  +
+ 
+
+3))

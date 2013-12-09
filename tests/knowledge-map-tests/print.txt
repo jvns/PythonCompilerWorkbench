@@ -1,0 +1,23 @@
+print
+print "hello world"
+print "hello world",
+print x
+print "hello", x, y
+print a + b,
+
+# format strings
+print "Hello, %s" % name
+print "Hi %s %s" % (first_name, last_name),
+print "hello %s %d" % (x, y)
+
+# multiline
+print "Hi %s %s" % \
+  \
+  \
+       (first_name, last_name),
+
+
+print "hello", \
+  x, \
+ \
+  y

@@ -1,0 +1,34 @@
+for elt in my_list:
+    print elt
+
+for elt in [1, 2, 3]:
+    print elt
+
+for elt in range(5):
+    print elt
+
+for elt in range(len(lst)):
+    print elt
+
+for (i, elt) in enumerate(lst):
+    print i, elt
+
+# multiline test
+for (i, elt) \
+       in \
+           enumerate(lst):
+    print i, elt
+
+for x in range(100):
+    if x < 2:
+        break
+    elif x > 10:
+        continue
+    else:
+        print x
+
+#for k, v in d.iteritems():
+#    print k, v
+#
+#for ty in type(obj).mro():
+#    print 'foo'

@@ -1,0 +1,290 @@
+for elt in my_list:
+    print elt
+
+for elt in [1, 2, 3]:
+    print elt
+
+for elt in range(5):
+    print elt
+
+for elt in range(len(lst)):
+    print elt
+
+for (i, elt) in enumerate(lst):
+    print i, elt
+
+# multiline test
+for (i, elt) \
+       in \
+           enumerate(lst):
+    print i, elt
+
+for x in range(100):
+    if x < 2:
+        break
+    elif x > 10:
+        continue
+    else:
+        print x
+
+#for k, v in d.iteritems():
+#    print k, v
+#
+#for ty in type(obj).mro():
+#    print 'foo'
+===
+Module
+  body: [
+    For >> 'for elt in my_list'
+      target: Name >> 'elt'
+        id: 'elt'
+        ctx: Store
+      iter: Name >> 'my_list'
+        id: 'my_list'
+        ctx: Load
+      body: [
+        Print >> 'print elt'
+          dest: None
+          values: [
+            Name >> 'elt'
+              id: 'elt'
+              ctx: Load
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+    For >> 'for elt in [1, 2, 3]'
+      target: Name >> 'elt'
+        id: 'elt'
+        ctx: Store
+      iter: List >> '[1, 2, 3]'
+        elts: [
+          Num >> '1'
+            n: 1
+          Num >> '2'
+            n: 2
+          Num >> '3'
+            n: 3
+        ]
+        ctx: Load
+      body: [
+        Print >> 'print elt'
+          dest: None
+          values: [
+            Name >> 'elt'
+              id: 'elt'
+              ctx: Load
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+    For >> 'for elt in range(5)'
+      target: Name >> 'elt'
+        id: 'elt'
+        ctx: Store
+      iter: Call >> 'range(5)'
+        func: Name >> 'range'
+          id: 'range'
+          ctx: Load
+        args: [
+          Num >> '5'
+            n: 5
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+      body: [
+        Print >> 'print elt'
+          dest: None
+          values: [
+            Name >> 'elt'
+              id: 'elt'
+              ctx: Load
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+    For >> 'for elt in range(len(lst))'
+      target: Name >> 'elt'
+        id: 'elt'
+        ctx: Store
+      iter: Call >> 'range(len(lst))'
+        func: Name >> 'range'
+          id: 'range'
+          ctx: Load
+        args: [
+          Call >> 'len(lst)'
+            func: Name >> 'len'
+              id: 'len'
+              ctx: Load
+            args: [
+              Name >> 'lst'
+                id: 'lst'
+                ctx: Load
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+      body: [
+        Print >> 'print elt'
+          dest: None
+          values: [
+            Name >> 'elt'
+              id: 'elt'
+              ctx: Load
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+    For >> 'for (i, elt) in enumerate(lst)'
+      target: Tuple >> '(i, elt)'
+        elts: [
+          Name >> 'i'
+            id: 'i'
+            ctx: Store
+          Name >> 'elt'
+            id: 'elt'
+            ctx: Store
+        ]
+        ctx: Store
+      iter: Call >> 'enumerate(lst)'
+        func: Name >> 'enumerate'
+          id: 'enumerate'
+          ctx: Load
+        args: [
+          Name >> 'lst'
+            id: 'lst'
+            ctx: Load
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+      body: [
+        Print >> 'print i, elt'
+          dest: None
+          values: [
+            Name >> 'i'
+              id: 'i'
+              ctx: Load
+            Name >> 'elt'
+              id: 'elt'
+              ctx: Load
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+    For ML>> 'for (i, elt) \\\n       in \\\n           enumerate(lst)'
+      target: Tuple >> '(i, elt)'
+        elts: [
+          Name >> 'i'
+            id: 'i'
+            ctx: Store
+          Name >> 'elt'
+            id: 'elt'
+            ctx: Store
+        ]
+        ctx: Store
+      iter: Call >> 'enumerate(lst)'
+        func: Name >> 'enumerate'
+          id: 'enumerate'
+          ctx: Load
+        args: [
+          Name >> 'lst'
+            id: 'lst'
+            ctx: Load
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+      body: [
+        Print >> 'print i, elt'
+          dest: None
+          values: [
+            Name >> 'i'
+              id: 'i'
+              ctx: Load
+            Name >> 'elt'
+              id: 'elt'
+              ctx: Load
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+    For >> 'for x in range(100)'
+      target: Name >> 'x'
+        id: 'x'
+        ctx: Store
+      iter: Call >> 'range(100)'
+        func: Name >> 'range'
+          id: 'range'
+          ctx: Load
+        args: [
+          Num >> '100'
+            n: 100
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+      body: [
+        If >> 'if x < 2'
+          test: Compare >> 'x < 2'
+            left: Name >> 'x'
+              id: 'x'
+              ctx: Load
+            ops: [
+              Lt
+            ]
+            comparators: [
+              Num >> '2'
+                n: 2
+            ]
+          body: [
+            Break >> 'break'
+          ]
+          orelse: [
+            If >> 'elif x > 10'
+              test: Compare >> 'x > 10'
+                left: Name >> 'x'
+                  id: 'x'
+                  ctx: Load
+                ops: [
+                  Gt
+                ]
+                comparators: [
+                  Num >> '10'
+                    n: 10
+                ]
+              body: [
+                Continue >> 'continue'
+              ]
+              orelse: [
+                Print >> 'print x'
+                  dest: None
+                  values: [
+                    Name >> 'x'
+                      id: 'x'
+                      ctx: Load
+                  ]
+                  nl: True
+              ]
+          ]
+      ]
+      orelse: [
+      ]
+  ]
