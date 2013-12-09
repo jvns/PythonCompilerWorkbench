@@ -1,0 +1,214 @@
+math.pi
+math.sin(45)
+Person.maximum_age
+f.g.h
+os.path.abspath('memo.txt')
+f(x).g(y).h(z)
+res.append(s.capitalize())
+x.f = 5
+x.f += 5
+p.x = rect.x + rect.width / 2.0
+self.age = age
+age = self.age
+===
+Module
+  body: [
+    Expr
+      value: Attribute >> 'math.pi'
+        value: Name >> 'math'
+          id: 'math'
+          ctx: Load
+        attr: 'pi'
+        ctx: Load
+    Expr
+      value: Call >> 'math.sin(45)'
+        func: Attribute >> 'math.sin'
+          value: Name >> 'math'
+            id: 'math'
+            ctx: Load
+          attr: 'sin'
+          ctx: Load
+        args: [
+          Num >> '45'
+            n: 45
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Attribute >> 'Person.maximum_age'
+        value: Name >> 'Person'
+          id: 'Person'
+          ctx: Load
+        attr: 'maximum_age'
+        ctx: Load
+    Expr
+      value: Attribute >> 'f.g.h'
+        value: Attribute >> 'f.g'
+          value: Name >> 'f'
+            id: 'f'
+            ctx: Load
+          attr: 'g'
+          ctx: Load
+        attr: 'h'
+        ctx: Load
+    Expr
+      value: Call >> "os.path.abspath('memo.txt')"
+        func: Attribute >> 'os.path.abspath'
+          value: Attribute >> 'os.path'
+            value: Name >> 'os'
+              id: 'os'
+              ctx: Load
+            attr: 'path'
+            ctx: Load
+          attr: 'abspath'
+          ctx: Load
+        args: [
+          Str >> "'memo.txt'"
+            s: 'memo.txt'
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'f(x).g(y).h(z)'
+        func: Attribute >> 'f(x).g(y).h'
+          value: Call >> 'f(x).g(y)'
+            func: Attribute >> 'f(x).g'
+              value: Call >> 'f(x)'
+                func: Name >> 'f'
+                  id: 'f'
+                  ctx: Load
+                args: [
+                  Name >> 'x'
+                    id: 'x'
+                    ctx: Load
+                ]
+                keywords: [
+                ]
+                starargs: None
+                kwargs: None
+              attr: 'g'
+              ctx: Load
+            args: [
+              Name >> 'y'
+                id: 'y'
+                ctx: Load
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+          attr: 'h'
+          ctx: Load
+        args: [
+          Name >> 'z'
+            id: 'z'
+            ctx: Load
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Expr
+      value: Call >> 'res.append(s.capitalize())'
+        func: Attribute >> 'res.append'
+          value: Name >> 'res'
+            id: 'res'
+            ctx: Load
+          attr: 'append'
+          ctx: Load
+        args: [
+          Call >> 's.capitalize()'
+            func: Attribute >> 's.capitalize'
+              value: Name >> 's'
+                id: 's'
+                ctx: Load
+              attr: 'capitalize'
+              ctx: Load
+            args: [
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Assign >> 'x.f = 5'
+      targets: [
+        Attribute >> 'x.f'
+          value: Name >> 'x'
+            id: 'x'
+            ctx: Load
+          attr: 'f'
+          ctx: Store
+      ]
+      value: Num >> '5'
+        n: 5
+    AugAssign >> 'x.f += 5'
+      target: Attribute >> 'x.f'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        attr: 'f'
+        ctx: Store
+      op: Add
+      value: Num >> '5'
+        n: 5
+    Assign >> 'p.x = rect.x + rect.width / 2.0'
+      targets: [
+        Attribute >> 'p.x'
+          value: Name >> 'p'
+            id: 'p'
+            ctx: Load
+          attr: 'x'
+          ctx: Store
+      ]
+      value: BinOp >> 'rect.x + rect.width / 2.0'
+        left: Attribute >> 'rect.x'
+          value: Name >> 'rect'
+            id: 'rect'
+            ctx: Load
+          attr: 'x'
+          ctx: Load
+        op: Add
+        right: BinOp >> 'rect.width / 2.0'
+          left: Attribute >> 'rect.width'
+            value: Name >> 'rect'
+              id: 'rect'
+              ctx: Load
+            attr: 'width'
+            ctx: Load
+          op: Div
+          right: Num >> '2.0'
+            n: 2.0
+    Assign >> 'self.age = age'
+      targets: [
+        Attribute >> 'self.age'
+          value: Name >> 'self'
+            id: 'self'
+            ctx: Load
+          attr: 'age'
+          ctx: Store
+      ]
+      value: Name >> 'age'
+        id: 'age'
+        ctx: Load
+    Assign >> 'age = self.age'
+      targets: [
+        Name >> 'age'
+          id: 'age'
+          ctx: Store
+      ]
+      value: Attribute >> 'self.age'
+        value: Name >> 'self'
+          id: 'self'
+          ctx: Load
+        attr: 'age'
+        ctx: Load
+  ]

@@ -27,11 +27,11 @@ for x in range(100):
     else:
         print x
 
-#for k, v in d.iteritems():
-#    print k, v
-#
-#for ty in type(obj).mro():
-#    print 'foo'
+for k, v in d.iteritems():
+    print k, v
+
+for ty in type(obj).mro():
+    print 'foo'
 ===
 Module
   body: [
@@ -284,6 +284,83 @@ Module
                   nl: True
               ]
           ]
+      ]
+      orelse: [
+      ]
+    For >> 'for k, v in d.iteritems()'
+      target: Tuple >> 'k, v'
+        elts: [
+          Name >> 'k'
+            id: 'k'
+            ctx: Store
+          Name >> 'v'
+            id: 'v'
+            ctx: Store
+        ]
+        ctx: Store
+      iter: Call >> 'd.iteritems()'
+        func: Attribute >> 'd.iteritems'
+          value: Name >> 'd'
+            id: 'd'
+            ctx: Load
+          attr: 'iteritems'
+          ctx: Load
+        args: [
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+      body: [
+        Print >> 'print k, v'
+          dest: None
+          values: [
+            Name >> 'k'
+              id: 'k'
+              ctx: Load
+            Name >> 'v'
+              id: 'v'
+              ctx: Load
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+    For >> 'for ty in type(obj).mro()'
+      target: Name >> 'ty'
+        id: 'ty'
+        ctx: Store
+      iter: Call >> 'type(obj).mro()'
+        func: Attribute >> 'type(obj).mro'
+          value: Call >> 'type(obj)'
+            func: Name >> 'type'
+              id: 'type'
+              ctx: Load
+            args: [
+              Name >> 'obj'
+                id: 'obj'
+                ctx: Load
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+          attr: 'mro'
+          ctx: Load
+        args: [
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+      body: [
+        Print >> "print 'foo'"
+          dest: None
+          values: [
+            Str >> "'foo'"
+              s: 'foo'
+          ]
+          nl: True
       ]
       orelse: [
       ]

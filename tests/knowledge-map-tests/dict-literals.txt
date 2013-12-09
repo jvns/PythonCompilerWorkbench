@@ -1,0 +1,10 @@
+{}
+{"Joe": 23}
+{"Joe": 23, "Carol": 19, "Bobby": 32}
+{"Joe": 23, 1000: 19, (1, 2): 32}
+{"Joe": a + b}
+
+# multiline
+{"Joe": joe.get_age(),
+ "Carol": carol.get_age(),
+ "Bob": bob.get_age()}

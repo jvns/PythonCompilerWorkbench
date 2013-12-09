@@ -1,0 +1,139 @@
+{}
+{"Joe": 23}
+{"Joe": 23, "Carol": 19, "Bobby": 32}
+{"Joe": 23, 1000: 19, (1, 2): 32}
+{"Joe": a + b}
+
+# multiline
+{"Joe": joe.get_age(),
+ "Carol": carol.get_age(),
+ "Bob": bob.get_age()}
+===
+Module
+  body: [
+    Expr
+      value: Dict >> '{}'
+        keys: [
+        ]
+        values: [
+        ]
+    Expr
+      value: Dict >> '{"Joe": 23}'
+        keys: [
+          Str >> '"Joe"'
+            s: 'Joe'
+        ]
+        values: [
+          Num >> '23'
+            n: 23
+        ]
+    Expr
+      value: Dict >> '{"Joe": 23, "Carol": 19, "Bobby": 32}'
+        keys: [
+          Str >> '"Joe"'
+            s: 'Joe'
+          Str >> '"Carol"'
+            s: 'Carol'
+          Str >> '"Bobby"'
+            s: 'Bobby'
+        ]
+        values: [
+          Num >> '23'
+            n: 23
+          Num >> '19'
+            n: 19
+          Num >> '32'
+            n: 32
+        ]
+    Expr
+      value: Dict >> '{"Joe": 23, 1000: 19, (1, 2): 32}'
+        keys: [
+          Str >> '"Joe"'
+            s: 'Joe'
+          Num >> '1000'
+            n: 1000
+          Tuple >> '(1, 2)'
+            elts: [
+              Num >> '1'
+                n: 1
+              Num >> '2'
+                n: 2
+            ]
+            ctx: Load
+        ]
+        values: [
+          Num >> '23'
+            n: 23
+          Num >> '19'
+            n: 19
+          Num >> '32'
+            n: 32
+        ]
+    Expr
+      value: Dict >> '{"Joe": a + b}'
+        keys: [
+          Str >> '"Joe"'
+            s: 'Joe'
+        ]
+        values: [
+          BinOp >> 'a + b'
+            left: Name >> 'a'
+              id: 'a'
+              ctx: Load
+            op: Add
+            right: Name >> 'b'
+              id: 'b'
+              ctx: Load
+        ]
+    Expr
+      value: Dict ML>> '{"Joe": joe.get_age(),\n "Carol": carol.get_age(),\n "Bob": bob.get_age()}'
+        keys: [
+          Str >> '"Joe"'
+            s: 'Joe'
+          Str >> '"Carol"'
+            s: 'Carol'
+          Str >> '"Bob"'
+            s: 'Bob'
+        ]
+        values: [
+          Call >> 'joe.get_age()'
+            func: Attribute >> 'joe.get_age'
+              value: Name >> 'joe'
+                id: 'joe'
+                ctx: Load
+              attr: 'get_age'
+              ctx: Load
+            args: [
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+          Call >> 'carol.get_age()'
+            func: Attribute >> 'carol.get_age'
+              value: Name >> 'carol'
+                id: 'carol'
+                ctx: Load
+              attr: 'get_age'
+              ctx: Load
+            args: [
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+          Call >> 'bob.get_age()'
+            func: Attribute >> 'bob.get_age'
+              value: Name >> 'bob'
+                id: 'bob'
+                ctx: Load
+              attr: 'get_age'
+              ctx: Load
+            args: [
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+        ]
+  ]

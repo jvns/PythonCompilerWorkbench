@@ -162,36 +162,12 @@ class AddExtentsVisitor(ast.NodeVisitor):
       # TODO: handle me in a similar way as visit_Slice if necessary
       self.visit_children(node)
 
-    def visit_Attribute(self, node):
-        raise NotImplementedError
-        if hasattr(node.value, 'extent'):
-            self.add_attrs(node)
-            node.start_col = node.col_offset
-            node.extent = node.value.extent + 1 + len(node.attr)
-        self.visit_children(node)
-
     def visit_Repr(self, node):
       raise NotImplementedError
       if hasattr(node.value, 'extent'):
         self.add_attrs(node)
         node.start_col = node.col_offset
         node.extent = node.value.extent + 2 # add 2 for surrounding backquotes
-      self.visit_children(node)
-
-    def visit_Dict(self, node):
-      raise NotImplementedError
-      # empty case
-      if len(node.values) == 0:
-        node.start_col = node.col_offset
-        node.extent = 2 # for '{}' case
-      else:
-        last_val = node.values[-1] # this is the best approximation I can come up with
-        if hasattr(last_val, 'extent') and \
-           hasattr(last_val, 'lineno') and \
-           (node.lineno == last_val.lineno):
-          self.add_attrs(node)
-          node.start_col = node.col_offset
-          node.extent = last_val.start_col + last_val.extent + 1 - node.start_col
       self.visit_children(node)
 
 
@@ -281,20 +257,6 @@ class AddExtentsVisitor(ast.NodeVisitor):
       node.extent = len('return')
       self.visit_children(node)
 
-    def visit_Import(self, node):
-      raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('import')
-      self.visit_children(node)
-
-    def visit_ImportFrom(self, node):
-      raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('from')
-      self.visit_children(node)
-
     def visit_Yield(self, node):
       raise NotImplementedError
       self.add_attrs(node)
@@ -356,36 +318,29 @@ class AddExtentsVisitor(ast.NodeVisitor):
                 node.end_lineno = last_arg.end_lineno
 
         self.visit_children(node)
-        '''
-      # find the RIGHTMOST argument and use that one for extent
-      # (could be either in args, keywords, starargs, or kwargs)
-      max_col_offset = -1
-      max_elt = None
 
-      # the 'value' field in each element of node.keywords is most relevant
-      candidates = node.args + [e.value for e in node.keywords]
-      if node.starargs:
-        candidates.append(node.starargs)
-      if node.kwargs:
-        candidates.append(node.kwargs)
+    def visit_Attribute(self, node):
+        if hasattr(node.value, 'start_col'):
+            self.add_attrs(node)
+            node.start_col = node.col_offset
+            node.end_col = len(node.attr) + 1 + node.value.end_col
+            node.end_lineno = node.lineno
+        self.visit_children(node)
 
-      for e in candidates:
-        if e.col_offset > max_col_offset and e.lineno == node.lineno:
-          max_col_offset = e.col_offset
-          max_elt = e
-
-      if max_elt and hasattr(max_elt, 'extent') and hasattr(node.func, 'extent'):
-        self.add_attrs(node)
-        node.start_col = node.func.start_col
-        node.extent = max_elt.start_col + max_elt.extent + 1 - node.start_col
-      elif hasattr(node.func, 'extent'):
-        # punt and just use the function's info
-        self.add_attrs(node)
-        node.start_col = node.func.start_col
-        node.extent = node.func.extent + 2 # 2 extra for '()'
-
-      self.visit_children(node)
-      '''
+    def visit_Dict(self, node):
+        # empty case
+        if len(node.values) == 0:
+            node.start_col = node.col_offset
+            node.end_col = node.start_col + 2 # for '{}' case; doesn't handle blank spaces
+            node.end_lineno = node.lineno
+        else:
+            last_elt = node.values[-1]
+            if hasattr(last_elt, 'start_col'):
+                self.add_attrs(node)
+                node.start_col = node.col_offset
+                copy_end_attrs(last_elt, node)
+                node.end_col += 1 # for the extra trailing '}' character
+        self.visit_children(node)
 
     def visit_List(self, node):
         # empty case
@@ -451,8 +406,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
 
     # grab end_col and end_lineno from the rightmost attribute
-    def standard_visitor(self, node, rightmost_attr_name):
-        rightmost_attr = getattr(node, rightmost_attr_name)
+    def standard_visitor(self, node, rightmost_attr):
         if hasattr(rightmost_attr, 'start_col'):
             self.add_attrs(node)
             node.start_col = node.col_offset
@@ -465,36 +419,43 @@ class AddExtentsVisitor(ast.NodeVisitor):
         node.lineno = node.value.lineno
         node.col_offset = node.value.col_offset
         node._attributes = node._attributes + ('lineno', 'col_offset')
-        self.standard_visitor(node, 'value')
+        self.standard_visitor(node, node.value)
 
     def visit_For(self, node):
-        self.standard_visitor(node, 'iter')
+        self.standard_visitor(node, node.iter)
     def visit_While(self, node):
-        self.standard_visitor(node, 'test')
+        self.standard_visitor(node, node.test)
     def visit_Assign(self, node):
-        self.standard_visitor(node, 'value')
+        self.standard_visitor(node, node.value)
     def visit_AugAssign(self, node):
-        self.standard_visitor(node, 'value')
+        self.standard_visitor(node, node.value)
     def visit_BinOp(self, node):
-        self.standard_visitor(node, 'right')
+        self.standard_visitor(node, node.right)
     def visit_UnaryOp(self, node):
-        self.standard_visitor(node, 'operand')
-
+        self.standard_visitor(node, node.operand)
     def visit_BoolOp(self, node):
-        if hasattr(node.values[-1], 'start_col'):
-            self.add_attrs(node)
-            node.start_col = node.col_offset
-            copy_end_attrs(node.values[-1], node)
-        self.visit_children(node)
-
+        self.standard_visitor(node, node.values[-1])
     def visit_Compare(self, node):
-        assert len(node.comparators) > 0
-        rightmost = node.comparators[-1]
-        if hasattr(rightmost, 'start_col'):
-            self.add_attrs(node)
-            node.start_col = node.col_offset
-            copy_end_attrs(rightmost, node)
-        self.visit_children(node)
+        self.standard_visitor(node, node.comparators[-1])
+
+    def visit_Import(self, node):
+        self.visit_import_hack(node)
+    def visit_ImportFrom(self, node):
+        self.visit_import_hack(node)
+
+    # ugh, we can't get precise line/col info about child nodes of
+    # imports, so just punt and say that they take up the entire line
+    # (up to an optional semicolon, which starts the next line)
+    def visit_import_hack(self, node):
+        cur_line = self.code_lines[node.lineno]
+        node.start_col = node.col_offset
+        node.end_col = len(cur_line)
+        node.end_lineno = node.lineno
+
+        # if there's a semicolon, then truncate there:
+        if ';' in cur_line:
+            node.end_col = cur_line.index(';')
+        
 
     def visit_Print(self, node):
         if len(node.values):

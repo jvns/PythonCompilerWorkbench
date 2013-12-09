@@ -1,0 +1,6 @@
+del x
+del x, y
+del foo.bar
+del foo['bar']
+del foo[1]
+del foo[1:2]

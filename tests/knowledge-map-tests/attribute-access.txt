@@ -1,0 +1,12 @@
+math.pi
+math.sin(45)
+Person.maximum_age
+f.g.h
+os.path.abspath('memo.txt')
+f(x).g(y).h(z)
+res.append(s.capitalize())
+x.f = 5
+x.f += 5
+p.x = rect.x + rect.width / 2.0
+self.age = age
+age = self.age

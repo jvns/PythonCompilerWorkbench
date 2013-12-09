@@ -27,8 +27,8 @@ for x in range(100):
     else:
         print x
 
-#for k, v in d.iteritems():
-#    print k, v
-#
-#for ty in type(obj).mro():
-#    print 'foo'
+for k, v in d.iteritems():
+    print k, v
+
+for ty in type(obj).mro():
+    print 'foo'

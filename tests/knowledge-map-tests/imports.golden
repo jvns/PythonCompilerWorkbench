@@ -1,0 +1,100 @@
+import foo
+from  foo  import bar
+from   foo    import bar   ,  baz
+from foo import  *
+import foo.bar
+from foo.bar import baz
+
+# semicolons to start new lines
+import foo.bar; x += 5; y -= 5
+from foo.bar import baz; baz()
+===
+Module
+  body: [
+    Import >> 'import foo'
+      names: [
+        alias
+          name: 'foo'
+          asname: None
+      ]
+    ImportFrom >> 'from  foo  import bar'
+      module: 'foo'
+      names: [
+        alias
+          name: 'bar'
+          asname: None
+      ]
+      level: 0
+    ImportFrom >> 'from   foo    import bar   ,  baz'
+      module: 'foo'
+      names: [
+        alias
+          name: 'bar'
+          asname: None
+        alias
+          name: 'baz'
+          asname: None
+      ]
+      level: 0
+    ImportFrom >> 'from foo import  *'
+      module: 'foo'
+      names: [
+        alias
+          name: '*'
+          asname: None
+      ]
+      level: 0
+    Import >> 'import foo.bar'
+      names: [
+        alias
+          name: 'foo.bar'
+          asname: None
+      ]
+    ImportFrom >> 'from foo.bar import baz'
+      module: 'foo.bar'
+      names: [
+        alias
+          name: 'baz'
+          asname: None
+      ]
+      level: 0
+    Import >> 'import foo.bar'
+      names: [
+        alias
+          name: 'foo.bar'
+          asname: None
+      ]
+    AugAssign >> 'x += 5'
+      target: Name >> 'x'
+        id: 'x'
+        ctx: Store
+      op: Add
+      value: Num >> '5'
+        n: 5
+    AugAssign >> 'y -= 5'
+      target: Name >> 'y'
+        id: 'y'
+        ctx: Store
+      op: Sub
+      value: Num >> '5'
+        n: 5
+    ImportFrom >> 'from foo.bar import baz'
+      module: 'foo.bar'
+      names: [
+        alias
+          name: 'baz'
+          asname: None
+      ]
+      level: 0
+    Expr
+      value: Call >> 'baz()'
+        func: Name >> 'baz'
+          id: 'baz'
+          ctx: Load
+        args: [
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+  ]
