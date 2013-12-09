@@ -1,0 +1,24 @@
+def foo():
+    print 1
+    print 2
+
+def foo(x):
+    pass
+
+def foo(x, y, z):
+    pass
+
+def foo(x, y=10, z="hello world"):
+    pass
+
+def foo(*x):
+    pass
+
+def foo(x, *y):
+    pass
+
+def foo(x, *y, **z):
+    pass
+
+def foo(xxx, yyy='default arg', *zzz, **www):
+    pass

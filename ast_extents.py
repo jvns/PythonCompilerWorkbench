@@ -110,159 +110,60 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
     # always end with a call to self.visit_children(node) to recurse
     # (unless you know you're a terminal node)
-    # TODO: encapsulate in a decorator
 
     def visit_Subscript(self, node):
       raise NotImplementedError
-      if hasattr(node.value, 'extent') and hasattr(node.slice, 'extent'):
-        self.add_attrs(node)
-        node.start_col = node.value.start_col
-        # add 1 for trailing ']'
-        # of course, that doesn't work so well when you put spaces before
-        # like '  ]', but it's okay for the common case.
-        node.extent = node.slice.start_col + node.slice.extent + 1 - node.start_col
-      self.visit_children(node)
 
     def visit_Index(self, node):
       raise NotImplementedError
-      if hasattr(node.value, 'extent'):
-        self.add_attrs(node)
-        node.start_col = node.value.start_col
-        node.extent = node.value.extent
-      self.visit_children(node)
 
     def visit_Slice(self, node):
       raise NotImplementedError
-      leftmost = node.lower
-      right_padding = 0
-      if node.step:
-        rightmost = node.step  # A[i:j:k]
-      elif node.upper:
-        rightmost = node.upper # A[i:j]
-      else:
-        rightmost = node.lower # A[i:]
-        right_padding = 1 # for trailing ':'
-
-      if hasattr(leftmost, 'extent') and hasattr(rightmost, 'extent'):
-        # TODO: to be really paranoid, check that they're on the same line
-        self.add_attrs(node)
-        node.start_col = leftmost.start_col
-        node.extent = rightmost.start_col + rightmost.extent + right_padding - node.start_col
-
-        # trickllllly! also add lineno and col_offset to Slice object,
-        # since the AST doesn't keep this info for this class, sad :(
-        node._attributes += ('lineno', 'col_offset')
-        node.lineno = leftmost.lineno
-        node.col_offset = leftmost.col_offset
-
-      self.visit_children(node)
 
     def visit_ExtSlice(self, node):
       raise NotImplementedError
-      # TODO: handle me in a similar way as visit_Slice if necessary
-      self.visit_children(node)
 
     def visit_Repr(self, node):
       raise NotImplementedError
-      if hasattr(node.value, 'extent'):
-        self.add_attrs(node)
-        node.start_col = node.col_offset
-        node.extent = node.value.extent + 2 # add 2 for surrounding backquotes
-      self.visit_children(node)
 
-
-    # TODO: abstract out this recurring pattern ...
     def visit_FunctionDef(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('def')
-      self.visit_children(node)
 
     def visit_ClassDef(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('class')
-      self.visit_children(node)
 
     def visit_Raise(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('raise')
-      self.visit_children(node)
 
     def visit_Assert(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('assert')
-      self.visit_children(node)
 
     def visit_TryExcept(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('try')
-      self.visit_children(node)
 
     def visit_TryFinally(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('try')
-      self.visit_children(node)
 
     def visit_ExceptHandler(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('except')
-      self.visit_children(node)
 
     def visit_Global(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('global')
-      self.visit_children(node)
 
     def visit_Lambda(self, node):
       raise NotImplementedError
-      if hasattr(node.body, 'extent'):
-        self.add_attrs(node)
-        node.start_col = node.col_offset
-        node.extent = node.body.start_col + node.body.extent - node.start_col
-      self.visit_children(node)
 
     def visit_Exec(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('exec')
-      self.visit_children(node)
 
     def visit_Delete(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('del')
-      self.visit_children(node)
 
     def visit_Return(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('return')
-      self.visit_children(node)
 
     def visit_Yield(self, node):
       raise NotImplementedError
-      self.add_attrs(node)
-      node.start_col = node.col_offset
-      node.extent = len('yield')
-      self.visit_children(node)
 
 
     ### stuff below is implemented ...

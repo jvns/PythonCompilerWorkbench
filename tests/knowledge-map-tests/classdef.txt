@@ -1,0 +1,13 @@
+class Person:
+    pass
+
+class Person(object):
+    def grow_older(self, x):
+        self.age += x
+
+    def __str__(self):
+        return 'Person: ' + self.name
+
+
+class Man(Person):
+    maximum_age = 100

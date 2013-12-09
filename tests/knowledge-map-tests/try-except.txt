@@ -1,0 +1,6 @@
+try:
+    x = d[name]
+except KeyError:
+    print 'not found'
+    raise NotImplementedError
+

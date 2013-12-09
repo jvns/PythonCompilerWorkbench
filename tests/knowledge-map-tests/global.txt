@@ -1,0 +1,5 @@
+def foo(x, y, z):
+    global x
+    global y, z
+    print x
+    print y, z

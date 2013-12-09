@@ -1,6 +1,8 @@
 del x
 del x, y
 del foo.bar
+del x[5]
 del foo['bar']
+del world_map[x,y]
 del foo[1]
-del foo[1:2]
+del foo[1:5]

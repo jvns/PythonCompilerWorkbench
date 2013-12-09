@@ -1,0 +1,41 @@
+def foo():
+    return
+
+def foo():
+    return 42
+
+def foo():
+    return True
+
+def foo():
+    return a + b
+
+def foo():
+    return foo(n)
+
+def fact(n):
+    return n * fact(n-1)
+
+def foo():
+    return area(distance(xc, yc, xp, yp))
+
+def foo():
+    return lst[3]
+
+def foo():
+    return lst[2:6]
+
+def foo():
+    return (a, b, c)
+
+def foo():
+    return a, b, c
+
+def foo():
+    return min(t), max(t)
+
+def foo():
+    while True:
+        if x < 0:
+            return y
+        x -= 2

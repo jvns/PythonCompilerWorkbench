@@ -1,0 +1,15 @@
+x[5]
+x[-5]
+y["John"]
+world_map[(x,y)]
+world_map[x,y]
+x[i]
+fruit[length - 1]
+fruit[len(fruit) - 1]
+L[L.index(3)]
+inverse[val].append(key)
+letter = fruit[0]
+fruit[0] = "apple"
+counter[c] += 1
+capitals[states["Michigan"]]
+capitals[states["Michigan"]] = "Lansing"
