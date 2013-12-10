@@ -1,0 +1,247 @@
+x[5]
+x[-5]
+y["John"]
+world_map[(x,y)]
+world_map[x,y]
+x[i]
+fruit[length - 1]
+fruit[len(fruit) - 1]
+L[L.index(3)]
+inverse[val].append(key)
+letter = fruit[0]
+fruit[0] = "apple"
+counter[c] += 1
+capitals[states["Michigan"]]
+capitals[states["Michigan"]] = "Lansing"
+===
+Module
+  body: [
+    Expr
+      value: Subscript >> 'x[5]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Index >> '5'
+          value: Num >> '5'
+            n: 5
+        ctx: Load
+    Expr
+      value: Subscript >> 'x[-5]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Index >> '5]'
+          value: Num >> '-5]'
+            n: -5
+        ctx: Load
+    Expr
+      value: Subscript >> 'y["John"]'
+        value: Name >> 'y'
+          id: 'y'
+          ctx: Load
+        slice: Index >> '"John"'
+          value: Str >> '"John"'
+            s: 'John'
+        ctx: Load
+    Expr
+      value: Subscript >> 'world_map[(x,y)]'
+        value: Name >> 'world_map'
+          id: 'world_map'
+          ctx: Load
+        slice: Index >> 'x,y)'
+          value: Tuple >> '(x,y)'
+            elts: [
+              Name >> 'x'
+                id: 'x'
+                ctx: Load
+              Name >> 'y'
+                id: 'y'
+                ctx: Load
+            ]
+            ctx: Load
+        ctx: Load
+    Expr
+      value: Subscript >> 'world_map[x,y]'
+        value: Name >> 'world_map'
+          id: 'world_map'
+          ctx: Load
+        slice: Index >> 'x,y'
+          value: Tuple >> 'x,y'
+            elts: [
+              Name >> 'x'
+                id: 'x'
+                ctx: Load
+              Name >> 'y'
+                id: 'y'
+                ctx: Load
+            ]
+            ctx: Load
+        ctx: Load
+    Expr
+      value: Subscript >> 'x[i]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Index >> 'i'
+          value: Name >> 'i'
+            id: 'i'
+            ctx: Load
+        ctx: Load
+    Expr
+      value: Subscript >> 'fruit[length - 1]'
+        value: Name >> 'fruit'
+          id: 'fruit'
+          ctx: Load
+        slice: Index >> 'length - 1'
+          value: BinOp >> 'length - 1'
+            left: Name >> 'length'
+              id: 'length'
+              ctx: Load
+            op: Sub
+            right: Num >> '1'
+              n: 1
+        ctx: Load
+    Expr
+      value: Subscript >> 'fruit[len(fruit) - 1]'
+        value: Name >> 'fruit'
+          id: 'fruit'
+          ctx: Load
+        slice: Index >> 'len(fruit) - 1'
+          value: BinOp >> 'len(fruit) - 1'
+            left: Call >> 'len(fruit)'
+              func: Name >> 'len'
+                id: 'len'
+                ctx: Load
+              args: [
+                Name >> 'fruit'
+                  id: 'fruit'
+                  ctx: Load
+              ]
+              keywords: [
+              ]
+              starargs: None
+              kwargs: None
+            op: Sub
+            right: Num >> '1'
+              n: 1
+        ctx: Load
+    Expr
+      value: Subscript >> 'L[L.index(3)]'
+        value: Name >> 'L'
+          id: 'L'
+          ctx: Load
+        slice: Index >> 'L.index(3)'
+          value: Call >> 'L.index(3)'
+            func: Attribute >> 'L.index'
+              value: Name >> 'L'
+                id: 'L'
+                ctx: Load
+              attr: 'index'
+              ctx: Load
+            args: [
+              Num >> '3'
+                n: 3
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+        ctx: Load
+    Expr
+      value: Call >> 'inverse[val].append(key)'
+        func: Attribute >> 'inverse[val].append'
+          value: Subscript >> 'inverse[val]'
+            value: Name >> 'inverse'
+              id: 'inverse'
+              ctx: Load
+            slice: Index >> 'val'
+              value: Name >> 'val'
+                id: 'val'
+                ctx: Load
+            ctx: Load
+          attr: 'append'
+          ctx: Load
+        args: [
+          Name >> 'key'
+            id: 'key'
+            ctx: Load
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Assign >> 'letter = fruit[0]'
+      targets: [
+        Name >> 'letter'
+          id: 'letter'
+          ctx: Store
+      ]
+      value: Subscript >> 'fruit[0]'
+        value: Name >> 'fruit'
+          id: 'fruit'
+          ctx: Load
+        slice: Index >> '0'
+          value: Num >> '0'
+            n: 0
+        ctx: Load
+    Assign >> 'fruit[0] = "apple"'
+      targets: [
+        Subscript >> 'fruit[0]'
+          value: Name >> 'fruit'
+            id: 'fruit'
+            ctx: Load
+          slice: Index >> '0'
+            value: Num >> '0'
+              n: 0
+          ctx: Store
+      ]
+      value: Str >> '"apple"'
+        s: 'apple'
+    AugAssign >> 'counter[c] += 1'
+      target: Subscript >> 'counter[c]'
+        value: Name >> 'counter'
+          id: 'counter'
+          ctx: Load
+        slice: Index >> 'c'
+          value: Name >> 'c'
+            id: 'c'
+            ctx: Load
+        ctx: Store
+      op: Add
+      value: Num >> '1'
+        n: 1
+    Expr
+      value: Subscript >> 'capitals[states["Michigan"]]'
+        value: Name >> 'capitals'
+          id: 'capitals'
+          ctx: Load
+        slice: Index >> 'states["Michigan"]'
+          value: Subscript >> 'states["Michigan"]'
+            value: Name >> 'states'
+              id: 'states'
+              ctx: Load
+            slice: Index >> '"Michigan"'
+              value: Str >> '"Michigan"'
+                s: 'Michigan'
+            ctx: Load
+        ctx: Load
+    Assign >> 'capitals[states["Michigan"]] = "Lansing"'
+      targets: [
+        Subscript >> 'capitals[states["Michigan"]]'
+          value: Name >> 'capitals'
+            id: 'capitals'
+            ctx: Load
+          slice: Index >> 'states["Michigan"]'
+            value: Subscript >> 'states["Michigan"]'
+              value: Name >> 'states'
+                id: 'states'
+                ctx: Load
+              slice: Index >> '"Michigan"'
+                value: Str >> '"Michigan"'
+                  s: 'Michigan'
+              ctx: Load
+          ctx: Store
+      ]
+      value: Str >> '"Lansing"'
+        s: 'Lansing'
+  ]

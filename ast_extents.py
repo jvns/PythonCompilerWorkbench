@@ -111,15 +111,6 @@ class AddExtentsVisitor(ast.NodeVisitor):
     # always end with a call to self.visit_children(node) to recurse
     # (unless you know you're a terminal node)
 
-    def visit_Subscript(self, node):
-      raise NotImplementedError
-
-    def visit_Index(self, node):
-      raise NotImplementedError
-
-    def visit_Slice(self, node):
-      raise NotImplementedError
-
     def visit_ExtSlice(self, node):
       raise NotImplementedError
 
@@ -307,13 +298,20 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
 
     # grab end_col and end_lineno from the rightmost attribute
-    def standard_visitor(self, node, rightmost_attr):
+    def standard_visitor(self, node, rightmost_attr, end_col_adjustment=0):
         if hasattr(rightmost_attr, 'start_col'):
             self.add_attrs(node)
             node.start_col = node.col_offset
             copy_end_attrs(rightmost_attr, node)
+            node.end_col += end_col_adjustment
         self.visit_children(node)
 
+
+    def visit_Subscript(self, node):
+        # add 1 for trailing ']'
+        self.standard_visitor(node, node.slice, 1)
+
+    # TODO: merge together ...
     def visit_keyword(self, node):
         # keyword nodes don't have a col_offset or lineno, so STEAL
         # those from child (warning: super hacky but should work!)
@@ -321,6 +319,49 @@ class AddExtentsVisitor(ast.NodeVisitor):
         node.col_offset = node.value.col_offset
         node._attributes = node._attributes + ('lineno', 'col_offset')
         self.standard_visitor(node, node.value)
+
+    def visit_Index(self, node):
+        # index nodes don't have a col_offset or lineno, so STEAL
+        # those from child
+        node.lineno = node.value.lineno
+        node.col_offset = node.value.col_offset
+        node._attributes = node._attributes + ('lineno', 'col_offset')
+        self.standard_visitor(node, node.value)
+
+    def visit_Slice(self, node):
+        # slice nodes don't have a col_offset or lineno, so STEAL
+        # those from a child.
+        # if there is a lower, use that
+        if node.lower:
+            node.lineno = node.lower.lineno
+            node.col_offset = node.lower.col_offset
+            node._attributes = node._attributes + ('lineno', 'col_offset')
+        # otherwise, use upper - 1, to account for ':'
+        # e.g., foo[:5]
+        elif node.upper:
+            node.lineno = node.upper.lineno
+            node.col_offset = node.upper.col_offset - 1
+            node._attributes = node._attributes + ('lineno', 'col_offset')
+        # otherwise use step - 2, to account for '::'
+        # e.g., foo[::3]
+        elif node.step:
+            node.lineno = node.step.lineno
+            node.col_offset = node.step.col_offset - 2
+            node._attributes = node._attributes + ('lineno', 'col_offset')
+        else:
+            # TODO: handle empty case like foo[:]
+            raise NotImplementedError
+
+        # now determine which is the rightmost node to visit
+        if node.step:
+            self.standard_visitor(node, node.step)
+        elif node.upper:
+            self.standard_visitor(node, node.upper)
+        elif node.lower: 
+            self.standard_visitor(node, node.lower)
+        else:
+            # TODO: handle empty case like foo[:]
+            raise NotImplementedError
 
     def visit_For(self, node):
         self.standard_visitor(node, node.iter)
