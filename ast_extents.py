@@ -308,13 +308,22 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
 
     def visit_Subscript(self, node):
-        # add 1 for trailing ']'
-        self.standard_visitor(node, node.slice, 1)
+        # super-special case of an empty slice like 'foo[:]', since
+        # that doesn't have end_col and end_lineno fields of its own
+        if (isinstance(node.slice, ast.Slice) and
+            not node.slice.lower and
+            not node.slice.upper and
+            not node.slice.step):
+            self.standard_visitor(node, node.value, len('[:]'))
+        else:
+            # add 1 for trailing ']'
+            self.standard_visitor(node, node.slice, 1)
 
-    # TODO: merge together ...
+    # TODO: merge together with visit_Index
     def visit_keyword(self, node):
         # keyword nodes don't have a col_offset or lineno, so STEAL
         # those from child (warning: super hacky but should work!)
+        # (this doesn't work if node.value starts on a different line as node)
         node.lineno = node.value.lineno
         node.col_offset = node.value.col_offset
         node._attributes = node._attributes + ('lineno', 'col_offset')
@@ -323,6 +332,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
     def visit_Index(self, node):
         # index nodes don't have a col_offset or lineno, so STEAL
         # those from child
+        # (this doesn't work if node.value starts on a different line as node)
         node.lineno = node.value.lineno
         node.col_offset = node.value.col_offset
         node._attributes = node._attributes + ('lineno', 'col_offset')
@@ -349,8 +359,10 @@ class AddExtentsVisitor(ast.NodeVisitor):
             node.col_offset = node.step.col_offset - 2
             node._attributes = node._attributes + ('lineno', 'col_offset')
         else:
-            # TODO: handle empty case like foo[:]
-            raise NotImplementedError
+            # empty case like foo[:]
+            # oh carp! this doesn't have any child nodes from whom to
+            # steal lineno and col_offset, so leave them empty
+            pass
 
         # now determine which is the rightmost node to visit
         if node.step:
@@ -358,10 +370,10 @@ class AddExtentsVisitor(ast.NodeVisitor):
         elif node.upper:
             self.standard_visitor(node, node.upper)
         elif node.lower: 
-            self.standard_visitor(node, node.lower)
+            self.standard_visitor(node, node.lower, 1) # add 1 for trailing ':'
         else:
-            # TODO: handle empty case like foo[:]
-            raise NotImplementedError
+            # empty case like foo[:]
+            pass
 
     def visit_For(self, node):
         self.standard_visitor(node, node.iter)

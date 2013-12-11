@@ -1,0 +1,128 @@
+x[1:5]
+x[1:]
+x[:5]
+x[a:b]
+x[a:]
+x[:b]
+x[:]
+x[a:b:c]
+part = whole[1:5]
+===
+Module
+  body: [
+    Expr
+      value: Subscript >> 'x[1:5]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Slice >> '1:5'
+          lower: Num >> '1'
+            n: 1
+          upper: Num >> '5'
+            n: 5
+          step: None
+        ctx: Load
+    Expr
+      value: Subscript >> 'x[1:]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Slice >> '1:'
+          lower: Num >> '1'
+            n: 1
+          upper: None
+          step: None
+        ctx: Load
+    Expr
+      value: Subscript >> 'x[:5]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Slice >> ':5'
+          lower: None
+          upper: Num >> '5'
+            n: 5
+          step: None
+        ctx: Load
+    Expr
+      value: Subscript >> 'x[a:b]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Slice >> 'a:b'
+          lower: Name >> 'a'
+            id: 'a'
+            ctx: Load
+          upper: Name >> 'b'
+            id: 'b'
+            ctx: Load
+          step: None
+        ctx: Load
+    Expr
+      value: Subscript >> 'x[a:]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Slice >> 'a:'
+          lower: Name >> 'a'
+            id: 'a'
+            ctx: Load
+          upper: None
+          step: None
+        ctx: Load
+    Expr
+      value: Subscript >> 'x[:b]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Slice >> ':b'
+          lower: None
+          upper: Name >> 'b'
+            id: 'b'
+            ctx: Load
+          step: None
+        ctx: Load
+    Expr
+      value: Subscript >> 'x[:]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Slice
+          lower: None
+          upper: None
+          step: None
+        ctx: Load
+    Expr
+      value: Subscript >> 'x[a:b:c]'
+        value: Name >> 'x'
+          id: 'x'
+          ctx: Load
+        slice: Slice >> 'a:b:c'
+          lower: Name >> 'a'
+            id: 'a'
+            ctx: Load
+          upper: Name >> 'b'
+            id: 'b'
+            ctx: Load
+          step: Name >> 'c'
+            id: 'c'
+            ctx: Load
+        ctx: Load
+    Assign >> 'part = whole[1:5]'
+      targets: [
+        Name >> 'part'
+          id: 'part'
+          ctx: Store
+      ]
+      value: Subscript >> 'whole[1:5]'
+        value: Name >> 'whole'
+          id: 'whole'
+          ctx: Load
+        slice: Slice >> '1:5'
+          lower: Num >> '1'
+            n: 1
+          upper: Num >> '5'
+            n: 5
+          step: None
+        ctx: Load
+  ]
