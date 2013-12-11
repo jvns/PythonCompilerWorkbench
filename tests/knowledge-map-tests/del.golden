@@ -1,0 +1,102 @@
+del x
+del x, y
+del foo.bar
+del x[5]
+del foo['bar']
+del world_map[x,y]
+del foo[1]
+del foo[1:5]
+===
+Module
+  body: [
+    Delete >> 'del x'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Del
+      ]
+    Delete >> 'del x, y'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Del
+        Name >> 'y'
+          id: 'y'
+          ctx: Del
+      ]
+    Delete >> 'del foo.bar'
+      targets: [
+        Attribute >> 'foo.bar'
+          value: Name >> 'foo'
+            id: 'foo'
+            ctx: Load
+          attr: 'bar'
+          ctx: Del
+      ]
+    Delete >> 'del x[5]'
+      targets: [
+        Subscript >> 'x[5]'
+          value: Name >> 'x'
+            id: 'x'
+            ctx: Load
+          slice: Index >> '5'
+            value: Num >> '5'
+              n: 5
+          ctx: Del
+      ]
+    Delete >> "del foo['bar']"
+      targets: [
+        Subscript >> "foo['bar']"
+          value: Name >> 'foo'
+            id: 'foo'
+            ctx: Load
+          slice: Index >> "'bar'"
+            value: Str >> "'bar'"
+              s: 'bar'
+          ctx: Del
+      ]
+    Delete >> 'del world_map[x,y]'
+      targets: [
+        Subscript >> 'world_map[x,y]'
+          value: Name >> 'world_map'
+            id: 'world_map'
+            ctx: Load
+          slice: Index >> 'x,y'
+            value: Tuple >> 'x,y'
+              elts: [
+                Name >> 'x'
+                  id: 'x'
+                  ctx: Load
+                Name >> 'y'
+                  id: 'y'
+                  ctx: Load
+              ]
+              ctx: Load
+          ctx: Del
+      ]
+    Delete >> 'del foo[1]'
+      targets: [
+        Subscript >> 'foo[1]'
+          value: Name >> 'foo'
+            id: 'foo'
+            ctx: Load
+          slice: Index >> '1'
+            value: Num >> '1'
+              n: 1
+          ctx: Del
+      ]
+    Delete >> 'del foo[1:5]'
+      targets: [
+        Subscript >> 'foo[1:5]'
+          value: Name >> 'foo'
+            id: 'foo'
+            ctx: Load
+          slice: Slice >> '1:5'
+            lower: Num >> '1'
+              n: 1
+            upper: Num >> '5'
+              n: 5
+            step: None
+          ctx: Del
+      ]
+  ]

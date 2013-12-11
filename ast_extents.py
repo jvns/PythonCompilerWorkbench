@@ -147,9 +147,6 @@ class AddExtentsVisitor(ast.NodeVisitor):
     def visit_Exec(self, node):
       raise NotImplementedError
 
-    def visit_Delete(self, node):
-      raise NotImplementedError
-
     def visit_Return(self, node):
       raise NotImplementedError
 
@@ -375,6 +372,8 @@ class AddExtentsVisitor(ast.NodeVisitor):
             # empty case like foo[:]
             pass
 
+    def visit_Delete(self, node):
+        self.standard_visitor(node, node.targets[-1])
     def visit_For(self, node):
         self.standard_visitor(node, node.iter)
     def visit_While(self, node):
