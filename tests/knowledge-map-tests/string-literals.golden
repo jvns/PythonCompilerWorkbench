@@ -7,6 +7,8 @@
 " "
 "\t \\ \" \'"
 "John's\n\n\n\ndog."
+
+",".join([1,2,3])
 ===
 Module
   body: [
@@ -37,4 +39,27 @@ Module
     Expr
       value: Str >> '"John\'s\\n\\n\\n\\ndog."'
         s: "John's\n\n\n\ndog."
+    Expr
+      value: Call >> '",".join([1,2,3])'
+        func: Attribute >> '",".join'
+          value: Str >> '","'
+            s: ','
+          attr: 'join'
+          ctx: Load
+        args: [
+          List >> '[1,2,3]'
+            elts: [
+              Num >> '1'
+                n: 1
+              Num >> '2'
+                n: 2
+              Num >> '3'
+                n: 3
+            ]
+            ctx: Load
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
   ]

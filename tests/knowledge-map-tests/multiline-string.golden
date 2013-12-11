@@ -1,0 +1,64 @@
+"""John's cat liked "The Matrix"
+but his dog
+preferred the sequels."""
+
+foo = '''multi
+    line
+  string'''
+
+bar = '''
+multi
+line
+string
+with empty
+first line
+'''
+
+baz = """     
+multi
+line
+string
+with spaces in first line
+"""
+
+# This doesn't work, but it's nuts!!!
+#"""multi
+#    line
+#      string
+#        method
+#          call""".join('''
+#another
+#  multi
+#    line
+#      string''')
+===
+Module
+  body: [
+    Expr
+      value: Str ML>> '"""John\'s cat liked "The Matrix"\nbut his dog\npreferred the sequels."""'
+        s: 'John\'s cat liked "The Matrix"\nbut his dog\npreferred the sequels.'
+    Assign ML>> "foo = '''multi\n    line\n  string'''"
+      targets: [
+        Name >> 'foo'
+          id: 'foo'
+          ctx: Store
+      ]
+      value: Str ML>> "'''multi\n    line\n  string'''"
+        s: 'multi\n    line\n  string'
+    Assign ML>> "bar = '''\nmulti\nline\nstring\nwith empty\nfirst line\n'''"
+      targets: [
+        Name >> 'bar'
+          id: 'bar'
+          ctx: Store
+      ]
+      value: Str ML>> "'''\nmulti\nline\nstring\nwith empty\nfirst line\n'''"
+        s: '\nmulti\nline\nstring\nwith empty\nfirst line\n'
+    Assign ML>> 'baz = """     \nmulti\nline\nstring\nwith spaces in first line\n"""'
+      targets: [
+        Name >> 'baz'
+          id: 'baz'
+          ctx: Store
+      ]
+      value: Str ML>> '"""     \nmulti\nline\nstring\nwith spaces in first line\n"""'
+        s: '     \nmulti\nline\nstring\nwith spaces in first line\n'
+  ]

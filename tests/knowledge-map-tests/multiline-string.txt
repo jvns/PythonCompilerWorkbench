@@ -1,3 +1,33 @@
 """John's cat liked "The Matrix"
 but his dog
 preferred the sequels."""
+
+foo = '''multi
+    line
+  string'''
+
+bar = '''
+multi
+line
+string
+with empty
+first line
+'''
+
+baz = """     
+multi
+line
+string
+with spaces in first line
+"""
+
+# This doesn't work, but it's nuts!!!
+#"""multi
+#    line
+#      string
+#        method
+#          call""".join('''
+#another
+#  multi
+#    line
+#      string''')

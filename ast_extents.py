@@ -438,15 +438,49 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
     def visit_Str(self, node):
         if node.col_offset >= 0:
+            # TRICKY TRICKY! don't run this more than once, ughhhhhh
+            if hasattr(node, 'start_col'):
+                return
             self.add_attrs(node)
             node.start_col = node.col_offset
             # repr() will take escape characters and enclosing quotes into account!
             node.end_col = node.start_col + len(repr(node.s))
             node.end_lineno = node.lineno
         else:
-            raise NotImplementedError
-            # TODO: doesn't work for multi-line strings
-            # (those seem to have col_offset as -1, so ignore them)
+            # multiline strings, which come with weird -1 column offsets!
+            # UGH THIS IS REALLY AGGRAVATING with tons of corner cases
+            self.add_attrs(node)
+            node.end_lineno = node.lineno
+            lines = node.s.splitlines()
+            # SUPER tricky -- if the last character is '\n', then add an
+            # extra blank line to the end, ugh! really subtle.
+            # e.g.,:
+            # my_str = '''hello
+            # world
+            # goodbye
+            # ''' # empty last line!
+            if node.s[-1] == '\n':
+                lines.append('')
+            n_lines = len(lines)
+            node.lineno = node.end_lineno - n_lines + 1
+            full_original_line = self.code_lines[node.lineno]
+            first_line = lines[0]
+            if first_line == '': # if it's an empty first line, ugh!
+                node.col_offset = len(full_original_line) - 3 # for leading """ or '''
+            else:
+                first_line_loc = full_original_line.index(first_line)
+                assert first_line_loc >= 3
+                node.col_offset = first_line_loc - 3 # for leading """ or '''
+            node.start_col = node.col_offset
+            node.end_col = len(lines[-1]) + 3 # for trailing """ or '''
+            # sanity checks
+            sanity_check_first_substr = self.code_lines[node.lineno][node.start_col:]
+            sanity_check_last_substr = self.code_lines[node.end_lineno][:node.end_col]
+            assert (sanity_check_first_substr.startswith('"""') or
+                    sanity_check_first_substr.startswith("'''"))
+            assert (sanity_check_last_substr.endswith('"""') or
+                    sanity_check_last_substr.endswith("'''"))
+
 
     def visit_Num(self, node):
         '''For starters, just handle basic DECIMAL numbers:
