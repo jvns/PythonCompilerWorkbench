@@ -1,0 +1,117 @@
+raise
+raise a
+raise a  ,  b
+raise a  ,b,  c
+
+try:
+    x = d[name]
+except KeyError:
+    print 'not found'
+    raise NotImplementedError
+
+try:
+    x = 5
+except:
+    x = 10
+===
+Module
+  body: [
+    Raise >> 'raise'
+      type: None
+      inst: None
+      tback: None
+    Raise >> 'raise a'
+      type: Name >> 'a'
+        id: 'a'
+        ctx: Load
+      inst: None
+      tback: None
+    Raise >> 'raise a  ,  b'
+      type: Name >> 'a'
+        id: 'a'
+        ctx: Load
+      inst: Name >> 'b'
+        id: 'b'
+        ctx: Load
+      tback: None
+    Raise >> 'raise a  ,b,  c'
+      type: Name >> 'a'
+        id: 'a'
+        ctx: Load
+      inst: Name >> 'b'
+        id: 'b'
+        ctx: Load
+      tback: Name >> 'c'
+        id: 'c'
+        ctx: Load
+    TryExcept >> 'try'
+      body: [
+        Assign >> 'x = d[name]'
+          targets: [
+            Name >> 'x'
+              id: 'x'
+              ctx: Store
+          ]
+          value: Subscript >> 'd[name]'
+            value: Name >> 'd'
+              id: 'd'
+              ctx: Load
+            slice: Index >> 'name'
+              value: Name >> 'name'
+                id: 'name'
+                ctx: Load
+            ctx: Load
+      ]
+      handlers: [
+        ExceptHandler >> 'except KeyError'
+          type: Name >> 'KeyError'
+            id: 'KeyError'
+            ctx: Load
+          name: None
+          body: [
+            Print >> "print 'not found'"
+              dest: None
+              values: [
+                Str >> "'not found'"
+                  s: 'not found'
+              ]
+              nl: True
+            Raise >> 'raise NotImplementedError'
+              type: Name >> 'NotImplementedError'
+                id: 'NotImplementedError'
+                ctx: Load
+              inst: None
+              tback: None
+          ]
+      ]
+      orelse: [
+      ]
+    TryExcept >> 'try'
+      body: [
+        Assign >> 'x = 5'
+          targets: [
+            Name >> 'x'
+              id: 'x'
+              ctx: Store
+          ]
+          value: Num >> '5'
+            n: 5
+      ]
+      handlers: [
+        ExceptHandler >> 'except'
+          type: None
+          name: None
+          body: [
+            Assign >> 'x = 10'
+              targets: [
+                Name >> 'x'
+                  id: 'x'
+                  ctx: Store
+              ]
+              value: Num >> '10'
+                n: 10
+          ]
+      ]
+      orelse: [
+      ]
+  ]

@@ -1,6 +1,15 @@
+raise
+raise a
+raise a  ,  b
+raise a  ,b,  c
+
 try:
     x = d[name]
 except KeyError:
     print 'not found'
     raise NotImplementedError
 
+try:
+    x = 5
+except:
+    x = 10

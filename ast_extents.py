@@ -19,11 +19,6 @@
 # function definitions
 #
 '''
-# broken tests
-"""John's cat liked "The Matrix"
-but his dog
-preferred the sequels."""
-
 weird extra trailing spaces are bad too, e.g.,:
 
 print x  ,
@@ -35,6 +30,7 @@ print x  ,
 # not (x or y)
 # (x + 5) * (y + z)
 # (one * (two + 3))
+
 
 import ast
 import sys
@@ -123,19 +119,10 @@ class AddExtentsVisitor(ast.NodeVisitor):
     def visit_ClassDef(self, node):
       raise NotImplementedError
 
-    def visit_Raise(self, node):
-      raise NotImplementedError
-
     def visit_Assert(self, node):
       raise NotImplementedError
 
-    def visit_TryExcept(self, node):
-      raise NotImplementedError
-
     def visit_TryFinally(self, node):
-      raise NotImplementedError
-
-    def visit_ExceptHandler(self, node):
       raise NotImplementedError
 
     def visit_Global(self, node):
@@ -155,6 +142,27 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
 
     ### stuff below is implemented ...
+
+    def visit_ExceptHandler(self, node):
+        if node.type:
+            self.standard_visitor(node, node.type)
+        else:
+            # naked 'except'
+            self.keyword_visitor(node, 'except')
+
+    def visit_TryExcept(self, node):
+        self.keyword_visitor(node, 'try')
+
+    def visit_Raise(self, node):
+        if node.tback:
+            self.standard_visitor(node, node.tback)
+        elif node.inst:
+            self.standard_visitor(node, node.inst)
+        elif node.type:
+            self.standard_visitor(node, node.type)
+        else:
+            # naked 'raise'
+            self.keyword_visitor(node, 'raise')
 
     def visit_Call(self, node):
         # empty case is a function call with NO arguments, keyword args,
@@ -205,7 +213,6 @@ class AddExtentsVisitor(ast.NodeVisitor):
                 # for trailing ')'; doesn't handle blank spaces before ')'
                 node.end_col = last_arg.end_col + 1
                 node.end_lineno = last_arg.end_lineno
-
         self.visit_children(node)
 
     def visit_Attribute(self, node):
@@ -303,6 +310,12 @@ class AddExtentsVisitor(ast.NodeVisitor):
             node.end_col += end_col_adjustment
         self.visit_children(node)
 
+    def keyword_visitor(self, node, keyword):
+        self.add_attrs(node)
+        node.start_col = node.col_offset
+        node.end_col = node.start_col + len(keyword)
+        node.end_lineno = node.lineno
+        self.visit_children(node)
 
     def visit_Subscript(self, node):
         # super-special case of an empty slice like 'foo[:]', since
