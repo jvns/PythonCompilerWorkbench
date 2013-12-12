@@ -1,0 +1,17 @@
+def foo():
+    yield
+
+def foo():
+    yield 42
+
+def foo():
+    yield True
+
+def foo():
+    yield a + b
+
+def foo():
+    yield foo(n)
+
+def fact(n):
+    yield n * fact(n-1)

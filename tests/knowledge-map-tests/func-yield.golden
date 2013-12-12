@@ -1,0 +1,163 @@
+def foo():
+    yield
+
+def foo():
+    yield 42
+
+def foo():
+    yield True
+
+def foo():
+    yield a + b
+
+def foo():
+    yield foo(n)
+
+def fact(n):
+    yield n * fact(n-1)
+===
+Module
+  body: [
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Expr
+          value: Yield >> 'yield'
+            value: None
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Expr
+          value: Yield >> 'yield 42'
+            value: Num >> '42'
+              n: 42
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Expr
+          value: Yield >> 'yield True'
+            value: Name >> 'True'
+              id: 'True'
+              ctx: Load
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Expr
+          value: Yield >> 'yield a + b'
+            value: BinOp >> 'a + b'
+              left: Name >> 'a'
+                id: 'a'
+                ctx: Load
+              op: Add
+              right: Name >> 'b'
+                id: 'b'
+                ctx: Load
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Expr
+          value: Yield >> 'yield foo(n)'
+            value: Call >> 'foo(n)'
+              func: Name >> 'foo'
+                id: 'foo'
+                ctx: Load
+              args: [
+                Name >> 'n'
+                  id: 'n'
+                  ctx: Load
+              ]
+              keywords: [
+              ]
+              starargs: None
+              kwargs: None
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def fact(n)'
+      name: 'fact'
+      args: arguments
+        args: [
+          Name >> 'n'
+            id: 'n'
+            ctx: Param
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Expr
+          value: Yield >> 'yield n * fact(n-1)'
+            value: BinOp >> 'n * fact(n-1)'
+              left: Name >> 'n'
+                id: 'n'
+                ctx: Load
+              op: Mult
+              right: Call >> 'fact(n-1)'
+                func: Name >> 'fact'
+                  id: 'fact'
+                  ctx: Load
+                args: [
+                  BinOp >> 'n-1'
+                    left: Name >> 'n'
+                      id: 'n'
+                      ctx: Load
+                    op: Sub
+                    right: Num >> '-1'
+                      n: 1
+                ]
+                keywords: [
+                ]
+                starargs: None
+                kwargs: None
+      ]
+      decorator_list: [
+      ]
+  ]

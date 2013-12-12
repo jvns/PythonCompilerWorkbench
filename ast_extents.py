@@ -14,10 +14,11 @@
 # build-tuple.txt
 # str = '%d %s %s' % (self.x, self.y, self.z)
 #
-# decorator_test.txt
-#
-# function definitions
-#
+# - decorators
+# - list comprehensions
+# - generator comprehensions
+# - context managers
+# - advanced exceptions
 '''
 weird extra trailing spaces are bad too, e.g.,:
 
@@ -53,11 +54,13 @@ trailing spaces, and other detailed patches
 NOP_CLASSES = [ast.expr_context, ast.cmpop, ast.boolop,
                ast.unaryop, ast.operator,
                ast.Module, ast.Interactive, ast.Expression,
-               ast.arguments, ast.alias,
+               ast.alias,
                ast.excepthandler,
-               ast.Set, # TODO: maybe keep extents for this, along with Dict, Tuple, and List
-               ast.With, ast.GeneratorExp,
+               ast.Set, # are these 'set' literals?
+               ast.arguments,
                ast.comprehension,
+               ast.With,
+               ast.GeneratorExp,
                ast.ListComp, ast.DictComp, ast.SetComp,
                ast.IfExp,
                ast.Ellipsis, # a rarely-occuring bad egg; it doesn't have col_offset, ugh
@@ -113,31 +116,16 @@ class AddExtentsVisitor(ast.NodeVisitor):
     def visit_Repr(self, node):
       raise NotImplementedError
 
-    def visit_FunctionDef(self, node):
-      raise NotImplementedError
-
-    def visit_ClassDef(self, node):
-      raise NotImplementedError
-
     def visit_Assert(self, node):
       raise NotImplementedError
 
     def visit_TryFinally(self, node):
       raise NotImplementedError
 
-    def visit_Global(self, node):
-      raise NotImplementedError
-
     def visit_Lambda(self, node):
       raise NotImplementedError
 
     def visit_Exec(self, node):
-      raise NotImplementedError
-
-    def visit_Return(self, node):
-      raise NotImplementedError
-
-    def visit_Yield(self, node):
       raise NotImplementedError
 
 
@@ -153,6 +141,15 @@ class AddExtentsVisitor(ast.NodeVisitor):
     def visit_TryExcept(self, node):
         self.keyword_visitor(node, 'try')
 
+    def visit_Global(self, node):
+        # TODO: this doesn't handle a multiline statement that uses '\'
+        # operators
+        self.add_attrs(node)
+        node.start_col = node.col_offset
+        node.end_col = len(self.code_lines[node.lineno])
+        node.end_lineno = node.lineno
+        self.visit_children(node)
+
     def visit_Raise(self, node):
         if node.tback:
             self.standard_visitor(node, node.tback)
@@ -163,6 +160,28 @@ class AddExtentsVisitor(ast.NodeVisitor):
         else:
             # naked 'raise'
             self.keyword_visitor(node, 'raise')
+
+    def visit_FunctionDef(self, node):
+        self.visit_func_and_class_def(node)
+
+    def visit_ClassDef(self, node):
+        self.visit_func_and_class_def(node)
+
+    def visit_func_and_class_def(self, node):
+        # ok this is janky, but I think it works well in practice: just
+        # scan until you find the next ':', either on this line or on a
+        # subsequent line
+        if not hasattr(node, 'start_col'):
+            node.start_col = node.col_offset
+            n = node.lineno
+            while True:
+                cur_line = self.code_lines[n]
+                if ':' in cur_line:
+                    node.end_col = cur_line.index(':')
+                    node.end_lineno = n
+                    break
+                n += 1
+        self.visit_children(node)
 
     def visit_Call(self, node):
         # empty case is a function call with NO arguments, keyword args,
@@ -283,6 +302,8 @@ class AddExtentsVisitor(ast.NodeVisitor):
                         node.end_col += 1
         self.visit_children(node)
 
+    # to make this more robust to parens, etc., we could simply search
+    # for the next ':' character, like visit_func_and_class_def does
     def visit_If(self, node):
         if hasattr(node.test, 'start_col'):
             self.add_attrs(node)
@@ -301,6 +322,19 @@ class AddExtentsVisitor(ast.NodeVisitor):
         self.visit_children(node)
 
 
+    def visit_Return(self, node):
+        self.visit_return_or_yield(node, 'return')
+
+    def visit_Yield(self, node):
+        self.visit_return_or_yield(node, 'yield')
+
+    def visit_return_or_yield(self, node, keyword):
+        if node.value:
+            self.standard_visitor(node, node.value)
+        else:
+            # naked
+            self.keyword_visitor(node, keyword)
+
     # grab end_col and end_lineno from the rightmost attribute
     def standard_visitor(self, node, rightmost_attr, end_col_adjustment=0):
         if hasattr(rightmost_attr, 'start_col'):
@@ -310,10 +344,10 @@ class AddExtentsVisitor(ast.NodeVisitor):
             node.end_col += end_col_adjustment
         self.visit_children(node)
 
-    def keyword_visitor(self, node, keyword):
+    def keyword_visitor(self, node, keyword, end_col_adjustment=0):
         self.add_attrs(node)
         node.start_col = node.col_offset
-        node.end_col = node.start_col + len(keyword)
+        node.end_col = node.start_col + len(keyword) + end_col_adjustment
         node.end_lineno = node.lineno
         self.visit_children(node)
 
@@ -385,12 +419,15 @@ class AddExtentsVisitor(ast.NodeVisitor):
             # empty case like foo[:]
             pass
 
-    def visit_Delete(self, node):
-        self.standard_visitor(node, node.targets[-1])
+    # to make this more robust to parens, etc., we could simply search
+    # for the next ':' character, like visit_func_and_class_def does
     def visit_For(self, node):
         self.standard_visitor(node, node.iter)
     def visit_While(self, node):
         self.standard_visitor(node, node.test)
+
+    def visit_Delete(self, node):
+        self.standard_visitor(node, node.targets[-1])
     def visit_Assign(self, node):
         self.standard_visitor(node, node.value)
     def visit_AugAssign(self, node):

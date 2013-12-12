@@ -1,0 +1,59 @@
+def foo(x, y, z):
+    global a
+    global b, c
+    print a
+    print b, c
+===
+Module
+  body: [
+    FunctionDef >> 'def foo(x, y, z)'
+      name: 'foo'
+      args: arguments
+        args: [
+          Name >> 'x'
+            id: 'x'
+            ctx: Param
+          Name >> 'y'
+            id: 'y'
+            ctx: Param
+          Name >> 'z'
+            id: 'z'
+            ctx: Param
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Global >> 'global a'
+          names: [
+'a'
+          ]
+        Global >> 'global b, c'
+          names: [
+'b'
+'c'
+          ]
+        Print >> 'print a'
+          dest: None
+          values: [
+            Name >> 'a'
+              id: 'a'
+              ctx: Load
+          ]
+          nl: True
+        Print >> 'print b, c'
+          dest: None
+          values: [
+            Name >> 'b'
+              id: 'b'
+              ctx: Load
+            Name >> 'c'
+              id: 'c'
+              ctx: Load
+          ]
+          nl: True
+      ]
+      decorator_list: [
+      ]
+  ]

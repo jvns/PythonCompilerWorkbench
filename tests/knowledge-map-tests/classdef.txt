@@ -6,7 +6,10 @@ class Person(object):
         self.age += x
 
     def __str__(self):
-        return 'Person: ' + self.name
+        return 'Person: ' + \
+        \
+\
+        self.name
 
 
 class Man(Person):

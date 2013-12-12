@@ -1,0 +1,236 @@
+def foo():
+    print 1
+    print 2
+
+def foo(x):
+    pass
+
+def foo(x, y, z):
+    pass
+
+def foo(x, y=10, z="hello world"):
+    pass
+
+def foo(*x):
+    pass
+
+def foo(x,
+
+
+        *y):
+    pass
+
+def foo(x, *y, **z):
+    pass
+
+def foo(xxx,
+        yyy='default arg', *zzz,
+        **www):
+    pass
+
+def foo(a=1,
+        b=2,
+        c=3,d=4,*x, **y):
+    pass
+===
+Module
+  body: [
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Print >> 'print 1'
+          dest: None
+          values: [
+            Num >> '1'
+              n: 1
+          ]
+          nl: True
+        Print >> 'print 2'
+          dest: None
+          values: [
+            Num >> '2'
+              n: 2
+          ]
+          nl: True
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo(x)'
+      name: 'foo'
+      args: arguments
+        args: [
+          Name >> 'x'
+            id: 'x'
+            ctx: Param
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Pass >> 'pass'
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo(x, y, z)'
+      name: 'foo'
+      args: arguments
+        args: [
+          Name >> 'x'
+            id: 'x'
+            ctx: Param
+          Name >> 'y'
+            id: 'y'
+            ctx: Param
+          Name >> 'z'
+            id: 'z'
+            ctx: Param
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Pass >> 'pass'
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo(x, y=10, z="hello world")'
+      name: 'foo'
+      args: arguments
+        args: [
+          Name >> 'x'
+            id: 'x'
+            ctx: Param
+          Name >> 'y'
+            id: 'y'
+            ctx: Param
+          Name >> 'z'
+            id: 'z'
+            ctx: Param
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+          Num >> '10'
+            n: 10
+          Str >> '"hello world"'
+            s: 'hello world'
+        ]
+      body: [
+        Pass >> 'pass'
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo(*x)'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: 'x'
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Pass >> 'pass'
+      ]
+      decorator_list: [
+      ]
+    FunctionDef ML>> 'def foo(x,\n\n\n        *y)'
+      name: 'foo'
+      args: arguments
+        args: [
+          Name >> 'x'
+            id: 'x'
+            ctx: Param
+        ]
+        vararg: 'y'
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Pass >> 'pass'
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo(x, *y, **z)'
+      name: 'foo'
+      args: arguments
+        args: [
+          Name >> 'x'
+            id: 'x'
+            ctx: Param
+        ]
+        vararg: 'y'
+        kwarg: 'z'
+        defaults: [
+        ]
+      body: [
+        Pass >> 'pass'
+      ]
+      decorator_list: [
+      ]
+    FunctionDef ML>> "def foo(xxx,\n        yyy='default arg', *zzz,\n        **www)"
+      name: 'foo'
+      args: arguments
+        args: [
+          Name >> 'xxx'
+            id: 'xxx'
+            ctx: Param
+          Name >> 'yyy'
+            id: 'yyy'
+            ctx: Param
+        ]
+        vararg: 'zzz'
+        kwarg: 'www'
+        defaults: [
+          Str >> "'default arg'"
+            s: 'default arg'
+        ]
+      body: [
+        Pass >> 'pass'
+      ]
+      decorator_list: [
+      ]
+    FunctionDef ML>> 'def foo(a=1,\n        b=2,\n        c=3,d=4,*x, **y)'
+      name: 'foo'
+      args: arguments
+        args: [
+          Name >> 'a'
+            id: 'a'
+            ctx: Param
+          Name >> 'b'
+            id: 'b'
+            ctx: Param
+          Name >> 'c'
+            id: 'c'
+            ctx: Param
+          Name >> 'd'
+            id: 'd'
+            ctx: Param
+        ]
+        vararg: 'x'
+        kwarg: 'y'
+        defaults: [
+          Num >> '1'
+            n: 1
+          Num >> '2'
+            n: 2
+          Num >> '3'
+            n: 3
+          Num >> '4'
+            n: 4
+        ]
+      body: [
+        Pass >> 'pass'
+      ]
+      decorator_list: [
+      ]
+  ]

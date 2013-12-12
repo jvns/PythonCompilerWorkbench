@@ -14,11 +14,21 @@ def foo(x, y=10, z="hello world"):
 def foo(*x):
     pass
 
-def foo(x, *y):
+def foo(x,
+
+
+        *y):
     pass
 
 def foo(x, *y, **z):
     pass
 
-def foo(xxx, yyy='default arg', *zzz, **www):
+def foo(xxx,
+        yyy='default arg', *zzz,
+        **www):
+    pass
+
+def foo(a=1,
+        b=2,
+        c=3,d=4,*x, **y):
     pass

@@ -1,0 +1,420 @@
+def foo():
+    return
+
+def foo():
+    return 42
+
+def foo():
+    return True
+
+def foo():
+    return a + b
+
+def foo():
+    return foo(n)
+
+def fact(n):
+    return n * fact(n-1)
+
+def foo():
+    return area(distance(xc, yc, xp, yp))
+
+def foo():
+    return lst[3]
+
+def foo():
+    return lst[2:6]
+
+def foo():
+    return (a, b, c)
+
+def foo():
+    return a, b, c
+
+def foo():
+    return min(t), max(t)
+
+def foo():
+    while True:
+        if x < 0:
+            return y
+        x -= 2
+===
+Module
+  body: [
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return'
+          value: None
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return 42'
+          value: Num >> '42'
+            n: 42
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return True'
+          value: Name >> 'True'
+            id: 'True'
+            ctx: Load
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return a + b'
+          value: BinOp >> 'a + b'
+            left: Name >> 'a'
+              id: 'a'
+              ctx: Load
+            op: Add
+            right: Name >> 'b'
+              id: 'b'
+              ctx: Load
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return foo(n)'
+          value: Call >> 'foo(n)'
+            func: Name >> 'foo'
+              id: 'foo'
+              ctx: Load
+            args: [
+              Name >> 'n'
+                id: 'n'
+                ctx: Load
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def fact(n)'
+      name: 'fact'
+      args: arguments
+        args: [
+          Name >> 'n'
+            id: 'n'
+            ctx: Param
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return n * fact(n-1)'
+          value: BinOp >> 'n * fact(n-1)'
+            left: Name >> 'n'
+              id: 'n'
+              ctx: Load
+            op: Mult
+            right: Call >> 'fact(n-1)'
+              func: Name >> 'fact'
+                id: 'fact'
+                ctx: Load
+              args: [
+                BinOp >> 'n-1'
+                  left: Name >> 'n'
+                    id: 'n'
+                    ctx: Load
+                  op: Sub
+                  right: Num >> '-1'
+                    n: 1
+              ]
+              keywords: [
+              ]
+              starargs: None
+              kwargs: None
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return area(distance(xc, yc, xp, yp))'
+          value: Call >> 'area(distance(xc, yc, xp, yp))'
+            func: Name >> 'area'
+              id: 'area'
+              ctx: Load
+            args: [
+              Call >> 'distance(xc, yc, xp, yp)'
+                func: Name >> 'distance'
+                  id: 'distance'
+                  ctx: Load
+                args: [
+                  Name >> 'xc'
+                    id: 'xc'
+                    ctx: Load
+                  Name >> 'yc'
+                    id: 'yc'
+                    ctx: Load
+                  Name >> 'xp'
+                    id: 'xp'
+                    ctx: Load
+                  Name >> 'yp'
+                    id: 'yp'
+                    ctx: Load
+                ]
+                keywords: [
+                ]
+                starargs: None
+                kwargs: None
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return lst[3]'
+          value: Subscript >> 'lst[3]'
+            value: Name >> 'lst'
+              id: 'lst'
+              ctx: Load
+            slice: Index >> '3'
+              value: Num >> '3'
+                n: 3
+            ctx: Load
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return lst[2:6]'
+          value: Subscript >> 'lst[2:6]'
+            value: Name >> 'lst'
+              id: 'lst'
+              ctx: Load
+            slice: Slice >> '2:6'
+              lower: Num >> '2'
+                n: 2
+              upper: Num >> '6'
+                n: 6
+              step: None
+            ctx: Load
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return (a, b, c)'
+          value: Tuple >> '(a, b, c)'
+            elts: [
+              Name >> 'a'
+                id: 'a'
+                ctx: Load
+              Name >> 'b'
+                id: 'b'
+                ctx: Load
+              Name >> 'c'
+                id: 'c'
+                ctx: Load
+            ]
+            ctx: Load
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return a, b, c'
+          value: Tuple >> 'a, b, c'
+            elts: [
+              Name >> 'a'
+                id: 'a'
+                ctx: Load
+              Name >> 'b'
+                id: 'b'
+                ctx: Load
+              Name >> 'c'
+                id: 'c'
+                ctx: Load
+            ]
+            ctx: Load
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return min(t), max(t)'
+          value: Tuple >> 'min(t), max(t)'
+            elts: [
+              Call >> 'min(t)'
+                func: Name >> 'min'
+                  id: 'min'
+                  ctx: Load
+                args: [
+                  Name >> 't'
+                    id: 't'
+                    ctx: Load
+                ]
+                keywords: [
+                ]
+                starargs: None
+                kwargs: None
+              Call >> 'max(t)'
+                func: Name >> 'max'
+                  id: 'max'
+                  ctx: Load
+                args: [
+                  Name >> 't'
+                    id: 't'
+                    ctx: Load
+                ]
+                keywords: [
+                ]
+                starargs: None
+                kwargs: None
+            ]
+            ctx: Load
+      ]
+      decorator_list: [
+      ]
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        While >> 'while True'
+          test: Name >> 'True'
+            id: 'True'
+            ctx: Load
+          body: [
+            If >> 'if x < 0'
+              test: Compare >> 'x < 0'
+                left: Name >> 'x'
+                  id: 'x'
+                  ctx: Load
+                ops: [
+                  Lt
+                ]
+                comparators: [
+                  Num >> '0'
+                    n: 0
+                ]
+              body: [
+                Return >> 'return y'
+                  value: Name >> 'y'
+                    id: 'y'
+                    ctx: Load
+              ]
+              orelse: [
+              ]
+            AugAssign >> 'x -= 2'
+              target: Name >> 'x'
+                id: 'x'
+                ctx: Store
+              op: Sub
+              value: Num >> '2'
+                n: 2
+          ]
+          orelse: [
+          ]
+      ]
+      decorator_list: [
+      ]
+  ]

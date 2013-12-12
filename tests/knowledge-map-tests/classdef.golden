@@ -1,0 +1,116 @@
+class Person:
+    pass
+
+class Person(object):
+    def grow_older(self, x):
+        self.age += x
+
+    def __str__(self):
+        return 'Person: ' + \
+        \
+\
+        self.name
+
+
+class Man(Person):
+    maximum_age = 100
+===
+Module
+  body: [
+    ClassDef >> 'class Person'
+      name: 'Person'
+      bases: [
+      ]
+      body: [
+        Pass >> 'pass'
+      ]
+      decorator_list: [
+      ]
+    ClassDef >> 'class Person(object)'
+      name: 'Person'
+      bases: [
+        Name >> 'object'
+          id: 'object'
+          ctx: Load
+      ]
+      body: [
+        FunctionDef >> 'def grow_older(self, x)'
+          name: 'grow_older'
+          args: arguments
+            args: [
+              Name >> 'self'
+                id: 'self'
+                ctx: Param
+              Name >> 'x'
+                id: 'x'
+                ctx: Param
+            ]
+            vararg: None
+            kwarg: None
+            defaults: [
+            ]
+          body: [
+            AugAssign >> 'self.age += x'
+              target: Attribute >> 'self.age'
+                value: Name >> 'self'
+                  id: 'self'
+                  ctx: Load
+                attr: 'age'
+                ctx: Store
+              op: Add
+              value: Name >> 'x'
+                id: 'x'
+                ctx: Load
+          ]
+          decorator_list: [
+          ]
+        FunctionDef >> 'def __str__(self)'
+          name: '__str__'
+          args: arguments
+            args: [
+              Name >> 'self'
+                id: 'self'
+                ctx: Param
+            ]
+            vararg: None
+            kwarg: None
+            defaults: [
+            ]
+          body: [
+            Return ML>> "return 'Person: ' + \\\n        \\\n\\\n        self.name"
+              value: BinOp ML>> "'Person: ' + \\\n        \\\n\\\n        self.name"
+                left: Str >> "'Person: '"
+                  s: 'Person: '
+                op: Add
+                right: Attribute >> 'self.name'
+                  value: Name >> 'self'
+                    id: 'self'
+                    ctx: Load
+                  attr: 'name'
+                  ctx: Load
+          ]
+          decorator_list: [
+          ]
+      ]
+      decorator_list: [
+      ]
+    ClassDef >> 'class Man(Person)'
+      name: 'Man'
+      bases: [
+        Name >> 'Person'
+          id: 'Person'
+          ctx: Load
+      ]
+      body: [
+        Assign >> 'maximum_age = 100'
+          targets: [
+            Name >> 'maximum_age'
+              id: 'maximum_age'
+              ctx: Store
+          ]
+          value: Num >> '100'
+            n: 100
+      ]
+      decorator_list: [
+      ]
+  ]
