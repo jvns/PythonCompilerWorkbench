@@ -147,8 +147,8 @@ if __name__ == "__main__":
 
   for (pwd, subdirs, files) in os.walk('.', followlinks=True): # need to follow example-code symlink
     # stent
-    if pwd.startswith('./Py2crazy-tests'):
-        continue
+    #if pwd.startswith('./Py2crazy-tests'):
+    #    continue
     for f in files:
       (base, ext) = os.path.splitext(f)
       if ext == INPUT_FILE_EXTENSION:

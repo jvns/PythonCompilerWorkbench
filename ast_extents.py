@@ -15,7 +15,7 @@
 # str = '%d %s %s' % (self.x, self.y, self.z)
 #
 # - decorators
-# - list comprehensions
+# - list/dict/set comprehensions
 # - generator comprehensions
 # - context managers
 # - advanced exceptions
@@ -58,10 +58,7 @@ NOP_CLASSES = [ast.expr_context, ast.cmpop, ast.boolop,
                ast.excepthandler,
                ast.Set, # are these 'set' literals?
                ast.arguments,
-               ast.comprehension,
-               ast.With,
-               ast.GeneratorExp,
-               ast.ListComp, ast.DictComp, ast.SetComp,
+
                ast.IfExp,
                ast.Ellipsis, # a rarely-occuring bad egg; it doesn't have col_offset, ugh
 
@@ -126,6 +123,24 @@ class AddExtentsVisitor(ast.NodeVisitor):
       raise NotImplementedError
 
     def visit_Exec(self, node):
+      raise NotImplementedError
+
+    def visit_comprehension(self, node):
+      raise NotImplementedError
+
+    def visit_With(self, node):
+      raise NotImplementedError
+
+    def visit_GeneratorExp(self, node):
+      raise NotImplementedError
+
+    def visit_ListComp(self, node):
+      raise NotImplementedError
+
+    def visit_DictComp(self, node):
+      raise NotImplementedError
+
+    def visit_SetComp(self, node):
       raise NotImplementedError
 
 
