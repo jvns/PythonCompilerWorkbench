@@ -1,0 +1,24 @@
+self.val = self.val ** 2
+===
+Module
+  body: [
+    Assign >> 'self.val = self.val ** 2'
+      targets: [
+        Attribute >> 'self.val'
+          value: Name >> 'self'
+            id: 'self'
+            ctx: Load
+          attr: 'val'
+          ctx: Store
+      ]
+      value: BinOp >> 'self.val ** 2'
+        left: Attribute >> 'self.val'
+          value: Name >> 'self'
+            id: 'self'
+            ctx: Load
+          attr: 'val'
+          ctx: Load
+        op: Pow
+        right: Num >> '2'
+          n: 2
+  ]

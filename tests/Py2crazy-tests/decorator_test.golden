@@ -1,0 +1,77 @@
+# these weird decorators currently don't work so hto ...
+# from Lib/threading.py
+@name.setter
+def name(self, name):
+    pass
+
+# from Lib/csv.py
+@fieldnames.setter
+def fieldnames(self, value):
+    self._fieldnames = value
+===
+Module
+  body: [
+    FunctionDef ML>> '@name.setter\ndef name(self, name)'
+      name: 'name'
+      args: arguments
+        args: [
+          Name >> 'self'
+            id: 'self'
+            ctx: Param
+          Name >> 'name'
+            id: 'name'
+            ctx: Param
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Pass >> 'pass'
+      ]
+      decorator_list: [
+        Attribute >> 'name.setter'
+          value: Name >> 'name'
+            id: 'name'
+            ctx: Load
+          attr: 'setter'
+          ctx: Load
+      ]
+    FunctionDef ML>> '@fieldnames.setter\ndef fieldnames(self, value)'
+      name: 'fieldnames'
+      args: arguments
+        args: [
+          Name >> 'self'
+            id: 'self'
+            ctx: Param
+          Name >> 'value'
+            id: 'value'
+            ctx: Param
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Assign >> 'self._fieldnames = value'
+          targets: [
+            Attribute >> 'self._fieldnames'
+              value: Name >> 'self'
+                id: 'self'
+                ctx: Load
+              attr: '_fieldnames'
+              ctx: Store
+          ]
+          value: Name >> 'value'
+            id: 'value'
+            ctx: Load
+      ]
+      decorator_list: [
+        Attribute >> 'fieldnames.setter'
+          value: Name >> 'fieldnames'
+            id: 'fieldnames'
+            ctx: Load
+          attr: 'setter'
+          ctx: Load
+      ]
+  ]

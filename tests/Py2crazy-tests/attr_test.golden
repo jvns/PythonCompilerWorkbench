@@ -1,0 +1,20 @@
+x.foo = y.baz
+===
+Module
+  body: [
+    Assign >> 'x.foo = y.baz'
+      targets: [
+        Attribute >> 'x.foo'
+          value: Name >> 'x'
+            id: 'x'
+            ctx: Load
+          attr: 'foo'
+          ctx: Store
+      ]
+      value: Attribute >> 'y.baz'
+        value: Name >> 'y'
+          id: 'y'
+          ctx: Load
+        attr: 'baz'
+        ctx: Load
+  ]

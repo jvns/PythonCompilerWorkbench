@@ -1,0 +1,103 @@
+x = [1, [2, [3, [4, None]]]]
+y = (1, (2, (3, (4, (5, None)))))
+# naked tuples
+z = 1, 2, 3, 4, 5, None
+===
+Module
+  body: [
+    Assign >> 'x = [1, [2, [3, [4, None]]]]'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: List >> '[1, [2, [3, [4, None]]]]'
+        elts: [
+          Num >> '1'
+            n: 1
+          List >> '[2, [3, [4, None]]]'
+            elts: [
+              Num >> '2'
+                n: 2
+              List >> '[3, [4, None]]'
+                elts: [
+                  Num >> '3'
+                    n: 3
+                  List >> '[4, None]'
+                    elts: [
+                      Num >> '4'
+                        n: 4
+                      Name >> 'None'
+                        id: 'None'
+                        ctx: Load
+                    ]
+                    ctx: Load
+                ]
+                ctx: Load
+            ]
+            ctx: Load
+        ]
+        ctx: Load
+    Assign >> 'y = (1, (2, (3, (4, (5, None)))))'
+      targets: [
+        Name >> 'y'
+          id: 'y'
+          ctx: Store
+      ]
+      value: Tuple >> '(1, (2, (3, (4, (5, None)))))'
+        elts: [
+          Num >> '1'
+            n: 1
+          Tuple >> '(2, (3, (4, (5, None))))'
+            elts: [
+              Num >> '2'
+                n: 2
+              Tuple >> '(3, (4, (5, None)))'
+                elts: [
+                  Num >> '3'
+                    n: 3
+                  Tuple >> '(4, (5, None))'
+                    elts: [
+                      Num >> '4'
+                        n: 4
+                      Tuple >> '(5, None)'
+                        elts: [
+                          Num >> '5'
+                            n: 5
+                          Name >> 'None'
+                            id: 'None'
+                            ctx: Load
+                        ]
+                        ctx: Load
+                    ]
+                    ctx: Load
+                ]
+                ctx: Load
+            ]
+            ctx: Load
+        ]
+        ctx: Load
+    Assign >> 'z = 1, 2, 3, 4, 5, None'
+      targets: [
+        Name >> 'z'
+          id: 'z'
+          ctx: Store
+      ]
+      value: Tuple >> '1, 2, 3, 4, 5, None'
+        elts: [
+          Num >> '1'
+            n: 1
+          Num >> '2'
+            n: 2
+          Num >> '3'
+            n: 3
+          Num >> '4'
+            n: 4
+          Num >> '5'
+            n: 5
+          Name >> 'None'
+            id: 'None'
+            ctx: Load
+        ]
+        ctx: Load
+  ]

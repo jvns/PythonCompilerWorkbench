@@ -1,0 +1,28 @@
+w = {"joe" : 5, "mindy" : 6, "jack" : 7}
+===
+Module
+  body: [
+    Assign >> 'w = {"joe" : 5, "mindy" : 6, "jack" : 7}'
+      targets: [
+        Name >> 'w'
+          id: 'w'
+          ctx: Store
+      ]
+      value: Dict >> '{"joe" : 5, "mindy" : 6, "jack" : 7}'
+        keys: [
+          Str >> '"joe"'
+            s: 'joe'
+          Str >> '"mindy"'
+            s: 'mindy'
+          Str >> '"jack"'
+            s: 'jack'
+        ]
+        values: [
+          Num >> '5'
+            n: 5
+          Num >> '6'
+            n: 6
+          Num >> '7'
+            n: 7
+        ]
+  ]

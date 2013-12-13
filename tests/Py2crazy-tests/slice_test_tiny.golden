@@ -1,0 +1,19 @@
+arr[one:two]
+===
+Module
+  body: [
+    Expr
+      value: Subscript >> 'arr[one:two]'
+        value: Name >> 'arr'
+          id: 'arr'
+          ctx: Load
+        slice: Slice >> 'one:two'
+          lower: Name >> 'one'
+            id: 'one'
+            ctx: Load
+          upper: Name >> 'two'
+            id: 'two'
+            ctx: Load
+          step: None
+        ctx: Load
+  ]

@@ -1,0 +1,222 @@
+one = call_foo(1 + 2, y, z+w-2)
+two = call_foo(1 + 2, y, z+w-2, optional1=True, optional2=two/one+four)
+three = call_foo(1 + 2, y, z+w-2, optional1=True, *stararg, optional2=two/one+four)
+four = call_foo(1 + 2, y, z+w-2, optional1=True, *stararg, optional2=two/one+four, **my_kwargs)
+===
+Module
+  body: [
+    Assign >> 'one = call_foo(1 + 2, y, z+w-2)'
+      targets: [
+        Name >> 'one'
+          id: 'one'
+          ctx: Store
+      ]
+      value: Call >> 'call_foo(1 + 2, y, z+w-2)'
+        func: Name >> 'call_foo'
+          id: 'call_foo'
+          ctx: Load
+        args: [
+          BinOp >> '1 + 2'
+            left: Num >> '1'
+              n: 1
+            op: Add
+            right: Num >> '2'
+              n: 2
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+          BinOp >> '-2'
+            left: BinOp >> 'z+w'
+              left: Name >> 'z'
+                id: 'z'
+                ctx: Load
+              op: Add
+              right: Name >> 'w'
+                id: 'w'
+                ctx: Load
+            op: Sub
+            right: Num >> '-2'
+              n: 2
+        ]
+        keywords: [
+        ]
+        starargs: None
+        kwargs: None
+    Assign >> 'two = call_foo(1 + 2, y, z+w-2, optional1=True, optional2=two/one+four)'
+      targets: [
+        Name >> 'two'
+          id: 'two'
+          ctx: Store
+      ]
+      value: Call >> 'call_foo(1 + 2, y, z+w-2, optional1=True, optional2=two/one+four)'
+        func: Name >> 'call_foo'
+          id: 'call_foo'
+          ctx: Load
+        args: [
+          BinOp >> '1 + 2'
+            left: Num >> '1'
+              n: 1
+            op: Add
+            right: Num >> '2'
+              n: 2
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+          BinOp >> '-2'
+            left: BinOp >> 'z+w'
+              left: Name >> 'z'
+                id: 'z'
+                ctx: Load
+              op: Add
+              right: Name >> 'w'
+                id: 'w'
+                ctx: Load
+            op: Sub
+            right: Num >> '-2'
+              n: 2
+        ]
+        keywords: [
+          keyword >> 'True'
+            arg: 'optional1'
+            value: Name >> 'True'
+              id: 'True'
+              ctx: Load
+          keyword >> 'two/one+four'
+            arg: 'optional2'
+            value: BinOp >> 'two/one+four'
+              left: BinOp >> 'two/one'
+                left: Name >> 'two'
+                  id: 'two'
+                  ctx: Load
+                op: Div
+                right: Name >> 'one'
+                  id: 'one'
+                  ctx: Load
+              op: Add
+              right: Name >> 'four'
+                id: 'four'
+                ctx: Load
+        ]
+        starargs: None
+        kwargs: None
+    Assign >> 'three = call_foo(1 + 2, y, z+w-2, optional1=True, *stararg,'
+      targets: [
+        Name >> 'three'
+          id: 'three'
+          ctx: Store
+      ]
+      value: Call >> 'call_foo(1 + 2, y, z+w-2, optional1=True, *stararg,'
+        func: Name >> 'call_foo'
+          id: 'call_foo'
+          ctx: Load
+        args: [
+          BinOp >> '1 + 2'
+            left: Num >> '1'
+              n: 1
+            op: Add
+            right: Num >> '2'
+              n: 2
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+          BinOp >> '-2'
+            left: BinOp >> 'z+w'
+              left: Name >> 'z'
+                id: 'z'
+                ctx: Load
+              op: Add
+              right: Name >> 'w'
+                id: 'w'
+                ctx: Load
+            op: Sub
+            right: Num >> '-2'
+              n: 2
+        ]
+        keywords: [
+          keyword >> 'True'
+            arg: 'optional1'
+            value: Name >> 'True'
+              id: 'True'
+              ctx: Load
+          keyword >> 'two/one+four'
+            arg: 'optional2'
+            value: BinOp >> 'two/one+four'
+              left: BinOp >> 'two/one'
+                left: Name >> 'two'
+                  id: 'two'
+                  ctx: Load
+                op: Div
+                right: Name >> 'one'
+                  id: 'one'
+                  ctx: Load
+              op: Add
+              right: Name >> 'four'
+                id: 'four'
+                ctx: Load
+        ]
+        starargs: Name >> 'stararg'
+          id: 'stararg'
+          ctx: Load
+        kwargs: None
+    Assign >> 'four = call_foo(1 + 2, y, z+w-2, optional1=True, *stararg, optional2=two/one+four, **my_kwargs)'
+      targets: [
+        Name >> 'four'
+          id: 'four'
+          ctx: Store
+      ]
+      value: Call >> 'call_foo(1 + 2, y, z+w-2, optional1=True, *stararg, optional2=two/one+four, **my_kwargs)'
+        func: Name >> 'call_foo'
+          id: 'call_foo'
+          ctx: Load
+        args: [
+          BinOp >> '1 + 2'
+            left: Num >> '1'
+              n: 1
+            op: Add
+            right: Num >> '2'
+              n: 2
+          Name >> 'y'
+            id: 'y'
+            ctx: Load
+          BinOp >> '-2'
+            left: BinOp >> 'z+w'
+              left: Name >> 'z'
+                id: 'z'
+                ctx: Load
+              op: Add
+              right: Name >> 'w'
+                id: 'w'
+                ctx: Load
+            op: Sub
+            right: Num >> '-2'
+              n: 2
+        ]
+        keywords: [
+          keyword >> 'True'
+            arg: 'optional1'
+            value: Name >> 'True'
+              id: 'True'
+              ctx: Load
+          keyword >> 'two/one+four'
+            arg: 'optional2'
+            value: BinOp >> 'two/one+four'
+              left: BinOp >> 'two/one'
+                left: Name >> 'two'
+                  id: 'two'
+                  ctx: Load
+                op: Div
+                right: Name >> 'one'
+                  id: 'one'
+                  ctx: Load
+              op: Add
+              right: Name >> 'four'
+                id: 'four'
+                ctx: Load
+        ]
+        starargs: Name >> 'stararg'
+          id: 'stararg'
+          ctx: Load
+        kwargs: Name >> 'my_kwargs'
+          id: 'my_kwargs'
+          ctx: Load
+  ]

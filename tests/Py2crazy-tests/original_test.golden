@@ -1,0 +1,96 @@
+def foo():
+  return True
+
+x = 3
+y = 5
+
+if foo() and (x + y > 7):
+  print 'YES'
+else:
+  print 'NO'
+===
+Module
+  body: [
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return True'
+          value: Name >> 'True'
+            id: 'True'
+            ctx: Load
+      ]
+      decorator_list: [
+      ]
+    Assign >> 'x = 3'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: Num >> '3'
+        n: 3
+    Assign >> 'y = 5'
+      targets: [
+        Name >> 'y'
+          id: 'y'
+          ctx: Store
+      ]
+      value: Num >> '5'
+        n: 5
+    If >> 'if foo() and (x + y > 7'
+      test: BoolOp >> 'foo() and (x + y > 7'
+        op: And
+        values: [
+          Call >> 'foo()'
+            func: Name >> 'foo'
+              id: 'foo'
+              ctx: Load
+            args: [
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+          Compare >> 'x + y > 7'
+            left: BinOp >> 'x + y'
+              left: Name >> 'x'
+                id: 'x'
+                ctx: Load
+              op: Add
+              right: Name >> 'y'
+                id: 'y'
+                ctx: Load
+            ops: [
+              Gt
+            ]
+            comparators: [
+              Num >> '7'
+                n: 7
+            ]
+        ]
+      body: [
+        Print >> "print 'YES'"
+          dest: None
+          values: [
+            Str >> "'YES'"
+              s: 'YES'
+          ]
+          nl: True
+      ]
+      orelse: [
+        Print >> "print 'NO'"
+          dest: None
+          values: [
+            Str >> "'NO'"
+              s: 'NO'
+          ]
+          nl: True
+      ]
+  ]

@@ -1,0 +1,32 @@
+# there's an asymmetry when combining an attribute load with a binary
+# op, which looks ugly. it's hard to fix since if we extend the extent
+# of foo.first_attr to start at 'foo', that would be the same start
+# column as LOAD_NAME of 'foo', which would lead to a conflict unless we
+# hack Py2crazy even more :/
+
+x = foo.first_attr + bar.second_attr
+#      ------------^----------------
+===
+Module
+  body: [
+    Assign >> 'x = foo.first_attr + bar.second_attr'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: BinOp >> 'foo.first_attr + bar.second_attr'
+        left: Attribute >> 'foo.first_attr'
+          value: Name >> 'foo'
+            id: 'foo'
+            ctx: Load
+          attr: 'first_attr'
+          ctx: Load
+        op: Add
+        right: Attribute >> 'bar.second_attr'
+          value: Name >> 'bar'
+            id: 'bar'
+            ctx: Load
+          attr: 'second_attr'
+          ctx: Load
+  ]

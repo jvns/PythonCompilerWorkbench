@@ -1,0 +1,36 @@
+def foo():
+  return (1,2,3)
+
+# the RETURN_VALUE instruction after BUILD_TUPLE should get the benefits
+# of hysteresis (i.e., the same start_col and extent as BUILD_TUPLE).
+# Right now we have hysteresis only for function calls, and that
+# hysteresis might play badly with hysteresis for other types, so think
+# carefully about how to gracefully handle these interactions!
+===
+Module
+  body: [
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return (1,2,3)'
+          value: Tuple >> '(1,2,3)'
+            elts: [
+              Num >> '1'
+                n: 1
+              Num >> '2'
+                n: 2
+              Num >> '3'
+                n: 3
+            ]
+            ctx: Load
+      ]
+      decorator_list: [
+      ]
+  ]

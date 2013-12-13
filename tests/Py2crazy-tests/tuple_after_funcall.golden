@@ -1,0 +1,52 @@
+# make sure BUILD_TUPLE works even right after a CALL_FUNCTION bytecode
+x = (int(tokens[2]), int(tokens[3]))
+===
+Module
+  body: [
+    Assign >> 'x = (int(tokens[2]), int(tokens[3]))'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: Tuple >> '(int(tokens[2]), int(tokens[3]))'
+        elts: [
+          Call >> 'int(tokens[2])'
+            func: Name >> 'int'
+              id: 'int'
+              ctx: Load
+            args: [
+              Subscript >> 'tokens[2]'
+                value: Name >> 'tokens'
+                  id: 'tokens'
+                  ctx: Load
+                slice: Index >> '2'
+                  value: Num >> '2'
+                    n: 2
+                ctx: Load
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+          Call >> 'int(tokens[3])'
+            func: Name >> 'int'
+              id: 'int'
+              ctx: Load
+            args: [
+              Subscript >> 'tokens[3]'
+                value: Name >> 'tokens'
+                  id: 'tokens'
+                  ctx: Load
+                slice: Index >> '3'
+                  value: Num >> '3'
+                    n: 3
+                ctx: Load
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+        ]
+        ctx: Load
+  ]

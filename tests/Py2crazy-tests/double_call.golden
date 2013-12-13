@@ -1,0 +1,68 @@
+x =  [f(xs[0])] + list(map(f, xs[1:]))
+===
+Module
+  body: [
+    Assign >> 'x =  [f(xs[0])] + list(map(f, xs[1:]))'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: BinOp >> '[f(xs[0])] + list(map(f, xs[1:]))'
+        left: List >> '[f(xs[0])]'
+          elts: [
+            Call >> 'f(xs[0])'
+              func: Name >> 'f'
+                id: 'f'
+                ctx: Load
+              args: [
+                Subscript >> 'xs[0]'
+                  value: Name >> 'xs'
+                    id: 'xs'
+                    ctx: Load
+                  slice: Index >> '0'
+                    value: Num >> '0'
+                      n: 0
+                  ctx: Load
+              ]
+              keywords: [
+              ]
+              starargs: None
+              kwargs: None
+          ]
+          ctx: Load
+        op: Add
+        right: Call >> 'list(map(f, xs[1:]))'
+          func: Name >> 'list'
+            id: 'list'
+            ctx: Load
+          args: [
+            Call >> 'map(f, xs[1:])'
+              func: Name >> 'map'
+                id: 'map'
+                ctx: Load
+              args: [
+                Name >> 'f'
+                  id: 'f'
+                  ctx: Load
+                Subscript >> 'xs[1:]'
+                  value: Name >> 'xs'
+                    id: 'xs'
+                    ctx: Load
+                  slice: Slice >> '1:'
+                    lower: Num >> '1'
+                      n: 1
+                    upper: None
+                    step: None
+                  ctx: Load
+              ]
+              keywords: [
+              ]
+              starargs: None
+              kwargs: None
+          ]
+          keywords: [
+          ]
+          starargs: None
+          kwargs: None
+  ]

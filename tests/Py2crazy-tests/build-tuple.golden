@@ -1,0 +1,37 @@
+str = '%d %s %s' % (self.x, self.y, self.z)
+===
+Module
+  body: [
+    Assign >> "str = '%d %s %s' % (self.x, self.y, self.z)"
+      targets: [
+        Name >> 'str'
+          id: 'str'
+          ctx: Store
+      ]
+      value: BinOp >> "'%d %s %s' % (self.x, self.y, self.z)"
+        left: Str >> "'%d %s %s'"
+          s: '%d %s %s'
+        op: Mod
+        right: Tuple >> '(self.x, self.y, self.z)'
+          elts: [
+            Attribute >> 'self.x'
+              value: Name >> 'self'
+                id: 'self'
+                ctx: Load
+              attr: 'x'
+              ctx: Load
+            Attribute >> 'self.y'
+              value: Name >> 'self'
+                id: 'self'
+                ctx: Load
+              attr: 'y'
+              ctx: Load
+            Attribute >> 'self.z'
+              value: Name >> 'self'
+                id: 'self'
+                ctx: Load
+              attr: 'z'
+              ctx: Load
+          ]
+          ctx: Load
+  ]

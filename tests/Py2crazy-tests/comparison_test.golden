@@ -1,0 +1,28 @@
+x = foo + bar < bazzz
+===
+Module
+  body: [
+    Assign >> 'x = foo + bar < bazzz'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: Compare >> 'foo + bar < bazzz'
+        left: BinOp >> 'foo + bar'
+          left: Name >> 'foo'
+            id: 'foo'
+            ctx: Load
+          op: Add
+          right: Name >> 'bar'
+            id: 'bar'
+            ctx: Load
+        ops: [
+          Lt
+        ]
+        comparators: [
+          Name >> 'bazzz'
+            id: 'bazzz'
+            ctx: Load
+        ]
+  ]

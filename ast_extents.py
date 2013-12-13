@@ -31,6 +31,11 @@ print x  ,
 # not (x or y)
 # (x + 5) * (y + z)
 # (one * (two + 3))
+# x = (tokens[5] == 'male')
+
+# TODO: this is also weirdly broken:
+#
+# one = call_foo(1 + 2, y, z+w-2)
 
 
 import ast

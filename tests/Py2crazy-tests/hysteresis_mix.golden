@@ -1,0 +1,57 @@
+# mix up function call and tuple hysteresis, to maximize confusion
+def foo():
+  return (func1(x, y), func2(z, w))
+===
+Module
+  body: [
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return >> 'return (func1(x, y), func2(z, w))'
+          value: Tuple >> '(func1(x, y), func2(z, w))'
+            elts: [
+              Call >> 'func1(x, y)'
+                func: Name >> 'func1'
+                  id: 'func1'
+                  ctx: Load
+                args: [
+                  Name >> 'x'
+                    id: 'x'
+                    ctx: Load
+                  Name >> 'y'
+                    id: 'y'
+                    ctx: Load
+                ]
+                keywords: [
+                ]
+                starargs: None
+                kwargs: None
+              Call >> 'func2(z, w)'
+                func: Name >> 'func2'
+                  id: 'func2'
+                  ctx: Load
+                args: [
+                  Name >> 'z'
+                    id: 'z'
+                    ctx: Load
+                  Name >> 'w'
+                    id: 'w'
+                    ctx: Load
+                ]
+                keywords: [
+                ]
+                starargs: None
+                kwargs: None
+            ]
+            ctx: Load
+      ]
+      decorator_list: [
+      ]
+  ]

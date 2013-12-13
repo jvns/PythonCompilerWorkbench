@@ -1,0 +1,48 @@
+if foo() and (x + y > 7):
+  print 'YES!'
+===
+Module
+  body: [
+    If >> 'if foo() and (x + y > 7'
+      test: BoolOp >> 'foo() and (x + y > 7'
+        op: And
+        values: [
+          Call >> 'foo()'
+            func: Name >> 'foo'
+              id: 'foo'
+              ctx: Load
+            args: [
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+          Compare >> 'x + y > 7'
+            left: BinOp >> 'x + y'
+              left: Name >> 'x'
+                id: 'x'
+                ctx: Load
+              op: Add
+              right: Name >> 'y'
+                id: 'y'
+                ctx: Load
+            ops: [
+              Gt
+            ]
+            comparators: [
+              Num >> '7'
+                n: 7
+            ]
+        ]
+      body: [
+        Print >> "print 'YES!'"
+          dest: None
+          values: [
+            Str >> "'YES!'"
+              s: 'YES!'
+          ]
+          nl: True
+      ]
+      orelse: [
+      ]
+  ]

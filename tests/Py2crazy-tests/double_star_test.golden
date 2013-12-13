@@ -1,0 +1,80 @@
+# from Lib/doctest.py
+self.val = self.val ** 2
+
+# from Lib/fractions.py
+def foo():
+    return Fraction(a._denominator ** -power,
+                    a._numerator ** -power)
+===
+Module
+  body: [
+    Assign >> 'self.val = self.val ** 2'
+      targets: [
+        Attribute >> 'self.val'
+          value: Name >> 'self'
+            id: 'self'
+            ctx: Load
+          attr: 'val'
+          ctx: Store
+      ]
+      value: BinOp >> 'self.val ** 2'
+        left: Attribute >> 'self.val'
+          value: Name >> 'self'
+            id: 'self'
+            ctx: Load
+          attr: 'val'
+          ctx: Load
+        op: Pow
+        right: Num >> '2'
+          n: 2
+    FunctionDef >> 'def foo()'
+      name: 'foo'
+      args: arguments
+        args: [
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+        ]
+      body: [
+        Return ML>> 'return Fraction(a._denominator ** -power,\n                    a._numerator ** -power)'
+          value: Call ML>> 'Fraction(a._denominator ** -power,\n                    a._numerator ** -power)'
+            func: Name >> 'Fraction'
+              id: 'Fraction'
+              ctx: Load
+            args: [
+              BinOp >> 'a._denominator ** -power'
+                left: Attribute >> 'a._denominator'
+                  value: Name >> 'a'
+                    id: 'a'
+                    ctx: Load
+                  attr: '_denominator'
+                  ctx: Load
+                op: Pow
+                right: UnaryOp >> '-power'
+                  op: USub
+                  operand: Name >> 'power'
+                    id: 'power'
+                    ctx: Load
+              BinOp >> 'a._numerator ** -power'
+                left: Attribute >> 'a._numerator'
+                  value: Name >> 'a'
+                    id: 'a'
+                    ctx: Load
+                  attr: '_numerator'
+                  ctx: Load
+                op: Pow
+                right: UnaryOp >> '-power'
+                  op: USub
+                  operand: Name >> 'power'
+                    id: 'power'
+                    ctx: Load
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+      ]
+      decorator_list: [
+      ]
+  ]
