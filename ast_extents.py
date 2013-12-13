@@ -36,6 +36,8 @@ print x  ,
 import ast
 import sys
 
+__all__ = ['parse_and_add_extents']
+
 # Limitations
 # - doesn't support extents that span MULTIPLE LINES
 # - BinOps involving ** and field attribute accesses interact funny
@@ -665,13 +667,11 @@ def pretty_dump(node, code_str):
     return _format(node, 0)
 
 
-if __name__ == "__main__":
-    code_str = open(sys.argv[1]).read()
-
-    m = ast.parse(code_str)
+def parse_and_add_extents(code_str):
+    root_node = ast.parse(code_str)
 
     dcv = DepthCountingVisitor()
-    dcv.visit(m)
+    dcv.visit(root_node)
     max_depth = dcv.max_depth
 
     # To be conservative, run the visitor max_depth number of times, which
@@ -679,7 +679,15 @@ if __name__ == "__main__":
     # the leaves to the root of the tree
     v = AddExtentsVisitor(code_str)
     for i in range(max_depth):
-        v.visit(m)
+        v.visit(root_node)
+
+    return root_node
+
+
+if __name__ == "__main__":
+    code_str = open(sys.argv[1]).read()
+
+    m = parse_and_add_extents(code_str)
 
     print code_str,
     print '==='

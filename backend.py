@@ -15,6 +15,7 @@ import json
 
 from bottle import route, get, request, run, template, static_file
 from pg_astmonkey import PGGraphvizCreator
+from ast_extents import parse_and_add_extents
 
 
 @route('/<filepath:path>')
@@ -32,7 +33,8 @@ def get_compile():
                            'bytecode_str': ''})
 
     try:
-        node = ast.parse(source_code)
+        node = parse_and_add_extents(source_code)
+
         g = PGGraphvizCreator(node)
         ast_svg = g.graph.create_svg()
 

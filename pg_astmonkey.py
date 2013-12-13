@@ -55,8 +55,17 @@ class PGGraphNodeVisitor(ast.NodeVisitor):
         else:
           lab = '{0}'.format(node.__class__.__name__)
 
-        if hasattr(node, 'lineno'):
+        # line numbers and extent
+        if hasattr(node, 'end_col'):
+            if node.lineno == node.end_lineno:
+                lab += '\nL{0}[{1}:{2}]'.format(node.lineno, node.start_col, node.end_col)
+            else:
+                lab += '\nL{0}[{1}] - '.format(node.lineno, node.start_col)
+                lab += 'L{0}[{1}]'.format(node.end_lineno, node.end_col)
+        # fallback ...
+        elif hasattr(node, 'lineno'):
             lab += '\n{0}:{1}'.format(node.lineno, node.col_offset)
+            lab += '\n(no extents)'
 
         return lab
 
