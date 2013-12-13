@@ -65,10 +65,8 @@ NOP_CLASSES = [ast.expr_context, ast.cmpop, ast.boolop,
                ast.excepthandler,
                ast.Set, # are these 'set' literals?
                ast.arguments,
-
                ast.IfExp,
                ast.Ellipsis, # a rarely-occuring bad egg; it doesn't have col_offset, ugh
-
                # TODO: is this still a legit comment?
                ast.Expr, # ALWAYS ignore this or else you get into bad conflicts
                ]
@@ -78,8 +76,18 @@ def copy_end_attrs(from_node, to_node):
     to_node.end_col = from_node.end_col
     to_node.end_lineno = from_node.end_lineno
 
+def gen_children(node):
+    for field, value in ast.iter_fields(node):
+        if isinstance(value, list):
+            for item in value:
+                if isinstance(item, ast.AST):
+                    yield item
+        elif isinstance(value, ast.AST):
+            yield value
 
-# This visitor runs top-down, so we might need to run several times to fixpoint
+# This visitor runs top-down, so we probably NEED to run several times to fixpoint
+# adds extents and also adds lineno and col_offset to certain nodes that
+# don't ordinarily have them
 class AddExtentsVisitor(ast.NodeVisitor):
     def __init__(self, code_str):
         ast.NodeVisitor.__init__(self)
@@ -95,6 +103,20 @@ class AddExtentsVisitor(ast.NodeVisitor):
         # exception: let these pass through unscathed, since we NOP on them
         for c in NOP_CLASSES:
             if isinstance(node, c):
+                # for bookkeeping and consistency reasons, steal lineno
+                # and col_offset from the LEFTMOST child (i.e., the one
+                # with the smallest lineno and col_offset) if it doesn't
+                # have them already
+                for child in gen_children(node):
+                    if hasattr(child, 'lineno'):
+                        if not hasattr(node, 'lineno'):
+                            node._attributes = node._attributes + ('lineno', 'col_offset')
+                            node.lineno = child.lineno
+                            node.col_offset = child.col_offset
+                        else:
+                            node.lineno = min(node.lineno, child.lineno)
+                            node.col_offset = min(node.col_offset, child.col_offset)
+
                 # recurse normally into children (if any)
                 self.visit_children(node)
                 return
