@@ -69,6 +69,9 @@ class PGGraphNodeVisitor(ast.NodeVisitor):
             lab += '\nL{0}[{1}]'.format(node.lineno, node.col_offset)
             lab += '\n(no extents)'
 
+        if node.is_placeholder:
+            lab += '\n[PH]'
+
         return lab
 
     def _dot_node_kwargs(self, node):

@@ -658,6 +658,37 @@ class FixupExtentsVisitor(ast.NodeVisitor):
                     node.start_col = min(node.start_col, child.start_col)
 
 
+# run after FixupExtentsVisitor to designate certain nodes as "placeholders"
+class PlaceholderNodesVisitor(ast.NodeVisitor):
+    def __init__(self):
+        ast.NodeVisitor.__init__(self)
+
+    def visit(self, node):
+        # do a POSTORDER traversal -- make sure to handle all of your
+        # children first before you handle yourself
+        super(PlaceholderNodesVisitor, self).visit(node)
+
+        if not hasattr(node, 'end_col'):
+            node.is_placeholder = True
+            # make this placeholder SPAN as far as possible
+            node._attributes = node._attributes + ('start_col', 'end_col', 'end_lineno')
+            is_first_child = True
+            for child in gen_children(node):
+                if is_first_child:
+                    for attr in ('lineno', 'start_col', 'end_lineno', 'end_col'):
+                        setattr(node, attr, getattr(child, attr))
+                    is_first_child = False
+
+                node.lineno = min(node.lineno, child.lineno)
+                node.start_col = min(node.start_col, child.start_col)
+
+                node.end_lineno = max(node.end_lineno, child.end_lineno)
+                node.end_col = max(node.end_col, child.end_col)
+        else:
+            node.is_placeholder = False
+            # leave it alone
+
+
 # create abs_start_index and abs_end_index attributes for nodes with
 # extent information in the form of:
 #   (lineno, start_col) to (end_lineno, end_col)
@@ -803,6 +834,7 @@ def abs_indices_to_str(node):
 
 
 # sort by abs_start_index
+# pre-req: run AddAbsoluteExtentsVisitor beforehand!!! ergh!
 def get_sorted_children(node):
     ret = [c for c in gen_children(node) if hasattr(c, 'abs_start_index')]
     ret.sort(key=lambda e:e.abs_start_index)
@@ -849,6 +881,8 @@ def parse_and_add_extents(code_str):
     v2 = FixupExtentsVisitor()
     v2.visit(root_node)
 
+    PlaceholderNodesVisitor().visit(root_node)
+
     v3 = AddAbsoluteExtentsVisitor(code_str)
     v3.visit(root_node)
 
@@ -863,6 +897,7 @@ def parse_and_add_extents(code_str):
     verifier.visit(root_node)
 
     return root_node
+
 
 
 class CodeAst(object):
@@ -890,7 +925,7 @@ class CodeAst(object):
                     print node.__class__.__name__,
 
                 if hasattr(node, 'lineno'):
-                    if hasattr(node, 'start_col'):
+                    if not node.is_placeholder:
                         # common case: single line
                         if node.lineno == node.end_lineno:
                             contents = lines[node.lineno][node.start_col:node.end_col]
@@ -941,7 +976,7 @@ class CodeAst(object):
                             self.ast_root.__class__.__name__)
         return _format(self.ast_root, 0)
 
-    
+
     # convert to a JSON format with enough information so that it's
     # directly renderable by, say, d3
     #
@@ -962,6 +997,8 @@ class CodeAst(object):
         # (verify that it matches self.code_str at the end)
         self.gobbled_string_lst = []
 
+        print '{'
+
         # gobble up everything until we reach the root node
         if self.cur_index < self.ast_root.abs_start_index:
             s = self.code_str[self.cur_index:self.ast_root.abs_start_index]
@@ -969,91 +1006,91 @@ class CodeAst(object):
             print 'LEADING:', `s`
             self.cur_index = self.ast_root.abs_start_index
 
-        def _render_helper(node, indent):
-            new_indent = indent
+        def _render_helper(node, indent, parent=None):
+            #if node == self.ast_root:
+            #    process_node = False
+            #else:
+            #    process_node = True
+            process_node = True
 
-            prematurely_done = False # ergh!?!
+            is_placeholder = node.is_placeholder
 
-            # don't do anything for "empty" placeholder nodes with
-            # no extents
-            if node.abs_start_index < node.abs_end_index:
-                new_indent = indent + 2
-                print indent * '  ',
-                print self.cur_index, node.__class__.__name__,
-                #print extent_to_str(node),
-                print abs_indices_to_str(node)
+            if is_placeholder and parent:
+                node_for_output = parent
+                indent -= 1 # 'rewind' up one level
+            else:
+                node_for_output = node
 
-                if self.cur_index < node.abs_start_index:
-                    s = self.code_str[self.cur_index:node.abs_start_index]
-                    self.gobbled_string_lst.append(s)
-                    print indent * '  ', 'B:', `s`
-                    self.cur_index = node.abs_start_index
+            prematurely_done = False
+
+            ind_str = ('    ' * indent)
+
+
+            if not is_placeholder:
+                print ind_str + '{'
+                print ind_str, node.__class__.__name__
+
+            if self.cur_index < node_for_output.abs_start_index:
+                s = self.code_str[self.cur_index:node_for_output.abs_start_index]
+                self.gobbled_string_lst.append(s)
+                print ind_str, 'B:', `s`
+                self.cur_index = node_for_output.abs_start_index
 
             # always recurse to sorted children
-            kids = get_sorted_children(node)
-            n_kids = len(kids)
-            for i in range(n_kids):
-                cur_kid = kids[i]
-                try:
-                    next_kid = kids[i+1]
-                except IndexError:
-                    next_kid = None
+            kids = get_sorted_children(node) # always use node and NOT node_for_output
 
+            for cur_kid in kids:
                 # BEFORE handling each kid, gobble up everything up to
                 # the abs_start_index of that kid
                 # (trust me, it works better this way!)
-                if node.abs_start_index < node.abs_end_index:
-                    assert node.abs_start_index <= self.cur_index
+                if process_node:
+                    assert node_for_output.abs_start_index <= self.cur_index
                     if self.cur_index < cur_kid.abs_start_index:
-
-                        # kinda tricky -- for things like function
-                        # definitions and 'if' blocks,
-                        # node.abs_end_index <= cur_kid.abs_start_index,
-                        # so in that case, separate into two chunks ...
+                        # kinda tricky -- for constructs like function
+                        # definitions and 'if' / 'for' / 'while' blocks,
+                        # node_for_output.abs_end_index <= cur_kid.abs_start_index.
+                        # in that case, separate into two chunks and
+                        # prematurely end this current node
                         # TODO: should this be '<' or '<='?
                         if (not prematurely_done and
-                            node.abs_end_index <= cur_kid.abs_start_index):
-                            s = self.code_str[self.cur_index:node.abs_end_index]
+                            node_for_output.abs_end_index <= cur_kid.abs_start_index):
+                            s = self.code_str[self.cur_index:node_for_output.abs_end_index]
                             self.gobbled_string_lst.append(s)
-                            print indent * '  ', 'K[truncated]:', `s`, 'prematurely_done'
-                            self.cur_index = node.abs_end_index
+                            print ind_str, 'K (prematurely_done):', `s`
+                            self.cur_index = node_for_output.abs_end_index
                             prematurely_done = True
+
+                            assert not is_placeholder
+
+                            print ind_str + '}'
+                            # hacky way to indicate that we've "popped up" a level
+                            indent -= 1
 
                         s = self.code_str[self.cur_index:cur_kid.abs_start_index]
                         self.gobbled_string_lst.append(s)
-                        print indent * '  ', 'K:', `s`
+                        print ind_str, 'K:', `s`
                         self.cur_index = cur_kid.abs_start_index
 
-                _render_helper(cur_kid, new_indent)
-
-                # after handling EACH kid, output everything up until the
-                # abs_start_index of the next kid
-                '''
-                if next_kid:
-                    if node.abs_start_index < node.abs_end_index:
-                        assert node.abs_start_index <= self.cur_index
-                        if self.cur_index < next_kid.abs_start_index:
-                            s = self.code_str[self.cur_index:next_kid.abs_start_index]
-                            self.gobbled_string_lst.append(s)
-                            print indent * '  ', 'K:', `s`
-                            self.cur_index = next_kid.abs_start_index
-                '''
+                _render_helper(cur_kid, indent + 1, node)
 
             # clean up the end
-            if node.abs_start_index < node.abs_end_index:
-                if n_kids > 0:
+            if process_node:
+                if kids:
                     assert kids[-1].abs_end_index <= self.cur_index
-                if self.cur_index < node.abs_end_index:
-                    s = self.code_str[self.cur_index:node.abs_end_index]
+                if self.cur_index < node_for_output.abs_end_index:
+                    s = self.code_str[self.cur_index:node_for_output.abs_end_index]
                     self.gobbled_string_lst.append(s)
-                    print indent * '  ', 'A:', `s`
-                    self.cur_index = node.abs_end_index
+                    print ind_str, 'A:', `s`
+                    self.cur_index = node_for_output.abs_end_index
+
+                if not is_placeholder and not prematurely_done:
+                    print ind_str + '}'
 
         if not isinstance(self.ast_root, ast.Module):
             raise TypeError('expected ast.Module, got %r' %
                             self.ast_root.__class__.__name__)
 
-        _render_helper(self.ast_root, 1)
+        _render_helper(self.ast_root, 0)
 
         # gobble up everything until the end of the string
         assert self.cur_index < len(self.code_str)
@@ -1061,6 +1098,8 @@ class CodeAst(object):
         s = self.code_str[self.cur_index:]
         self.gobbled_string_lst.append(s)
         print 'TRAILING:', `s`
+
+        print '}'
 
         # VERY IMPORTANT sanity check that we've accounted for all
         # characters in self.code_str
