@@ -30,8 +30,8 @@ Module
         value: Name >> 'x'
           id: 'x'
           ctx: Load
-        slice: Index >> '5]'
-          value: Num >> '-5]'
+        slice: Index >> '-5'
+          value: Num >> '-5'
             n: -5
         ctx: Load
     Expr
@@ -48,7 +48,7 @@ Module
         value: Name >> 'world_map'
           id: 'world_map'
           ctx: Load
-        slice: Index >> 'x,y)'
+        slice: Index >> '(x,y)'
           value: Tuple >> '(x,y)'
             elts: [
               Name >> 'x'

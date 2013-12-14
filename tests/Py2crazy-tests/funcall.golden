@@ -25,7 +25,7 @@ Module
           Name >> 'y'
             id: 'y'
             ctx: Load
-          BinOp >> '-2'
+          BinOp >> 'z+w-2'
             left: BinOp >> 'z+w'
               left: Name >> 'z'
                 id: 'z'
@@ -35,7 +35,7 @@ Module
                 id: 'w'
                 ctx: Load
             op: Sub
-            right: Num >> '-2'
+            right: Num >> '2'
               n: 2
         ]
         keywords: [
@@ -62,7 +62,7 @@ Module
           Name >> 'y'
             id: 'y'
             ctx: Load
-          BinOp >> '-2'
+          BinOp >> 'z+w-2'
             left: BinOp >> 'z+w'
               left: Name >> 'z'
                 id: 'z'
@@ -72,7 +72,7 @@ Module
                 id: 'w'
                 ctx: Load
             op: Sub
-            right: Num >> '-2'
+            right: Num >> '2'
               n: 2
         ]
         keywords: [
@@ -119,7 +119,7 @@ Module
           Name >> 'y'
             id: 'y'
             ctx: Load
-          BinOp >> '-2'
+          BinOp >> 'z+w-2'
             left: BinOp >> 'z+w'
               left: Name >> 'z'
                 id: 'z'
@@ -129,7 +129,7 @@ Module
                 id: 'w'
                 ctx: Load
             op: Sub
-            right: Num >> '-2'
+            right: Num >> '2'
               n: 2
         ]
         keywords: [
@@ -178,7 +178,7 @@ Module
           Name >> 'y'
             id: 'y'
             ctx: Load
-          BinOp >> '-2'
+          BinOp >> 'z+w-2'
             left: BinOp >> 'z+w'
               left: Name >> 'z'
                 id: 'z'
@@ -188,7 +188,7 @@ Module
                 id: 'w'
                 ctx: Load
             op: Sub
-            right: Num >> '-2'
+            right: Num >> '2'
               n: 2
         ]
         keywords: [

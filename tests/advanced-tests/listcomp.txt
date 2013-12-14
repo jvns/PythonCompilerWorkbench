@@ -1,0 +1,6 @@
+def myFunc(a):
+    b = [x**2
+         for (x,y)
+         in zip(range(1,10),
+                range(1,10))]
+    return b

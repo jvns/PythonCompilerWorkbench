@@ -85,38 +85,30 @@ def gen_children(node):
         elif isinstance(value, ast.AST):
             yield value
 
-# This visitor runs top-down, so we probably NEED to run several times to fixpoint
-# adds extents and also adds lineno and col_offset to certain nodes that
-# don't ordinarily have them
+def add_extent_attrs(node):
+    if 'start_col' not in node._attributes:
+        node._attributes = node._attributes + ('start_col', 'end_col', 'end_lineno')
+
+# Adds start_col, end_col, and end_lineno fields to each AST node, as
+# appropriate. After running, each node should have extent information
+# in the form of either:
+#   (lineno, start_col) to (end_lineno, end_col)
+#   lineno, col_offset
+#
+# This visitor runs top-down, so we probably NEED to run several times to
+# fixpoint adds extents and also adds lineno and col_offset to certain
+# nodes that don't ordinarily have them
 class AddExtentsVisitor(ast.NodeVisitor):
     def __init__(self, code_str):
         ast.NodeVisitor.__init__(self)
         # add sentinel to support one-indexing
         self.code_lines = [''] + code_str.split('\n')
 
-    def add_attrs(self, node):
-        if 'start_col' not in node._attributes:
-            node._attributes = node._attributes + ('start_col', 'end_col', 'end_lineno')
-
     # this should NEVER be called, since all cases should be exhaustively handled
     def generic_visit(self, node):
         # exception: let these pass through unscathed, since we NOP on them
         for c in NOP_CLASSES:
             if isinstance(node, c):
-                # for bookkeeping and consistency reasons, steal lineno
-                # and col_offset from the LEFTMOST child (i.e., the one
-                # with the smallest lineno and col_offset) if it doesn't
-                # have them already
-                for child in gen_children(node):
-                    if hasattr(child, 'lineno'):
-                        if not hasattr(node, 'lineno'):
-                            node._attributes = node._attributes + ('lineno', 'col_offset')
-                            node.lineno = child.lineno
-                            node.col_offset = child.col_offset
-                        else:
-                            node.lineno = min(node.lineno, child.lineno)
-                            node.col_offset = min(node.col_offset, child.col_offset)
-
                 # recurse normally into children (if any)
                 self.visit_children(node)
                 return
@@ -188,7 +180,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
     def visit_Global(self, node):
         # TODO: this doesn't handle a multiline statement that uses '\'
         # operators
-        self.add_attrs(node)
+        add_extent_attrs(node)
         node.start_col = node.col_offset
         node.end_col = len(self.code_lines[node.lineno])
         node.end_lineno = node.lineno
@@ -280,7 +272,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
     def visit_Attribute(self, node):
         if hasattr(node.value, 'start_col'):
-            self.add_attrs(node)
+            add_extent_attrs(node)
             node.start_col = node.col_offset
             node.end_col = len(node.attr) + 1 + node.value.end_col
             node.end_lineno = node.lineno
@@ -295,7 +287,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
         else:
             last_elt = node.values[-1]
             if hasattr(last_elt, 'start_col'):
-                self.add_attrs(node)
+                add_extent_attrs(node)
                 node.start_col = node.col_offset
                 copy_end_attrs(last_elt, node)
                 node.end_col += 1 # for the extra trailing '}' character
@@ -310,7 +302,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
         else:
             last_elt = node.elts[-1]
             if hasattr(last_elt, 'start_col'):
-                self.add_attrs(node)
+                add_extent_attrs(node)
                 node.start_col = node.col_offset
                 copy_end_attrs(last_elt, node)
                 # TODO: if someone writes extra trailing spaces before the ']',
@@ -334,7 +326,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
                 if len(node.elts) == 1:
                     trailing_offset = 1
 
-                self.add_attrs(node)
+                add_extent_attrs(node)
                 node.start_col = node.col_offset
                 copy_end_attrs(last_elt, node)
                 node.end_col += trailing_offset
@@ -350,7 +342,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
     # for the next ':' character, like visit_func_and_class_def does
     def visit_If(self, node):
         if hasattr(node.test, 'start_col'):
-            self.add_attrs(node)
+            add_extent_attrs(node)
             node.start_col = node.col_offset
             copy_end_attrs(node.test, node)
 
@@ -382,14 +374,14 @@ class AddExtentsVisitor(ast.NodeVisitor):
     # grab end_col and end_lineno from the rightmost attribute
     def standard_visitor(self, node, rightmost_attr, end_col_adjustment=0):
         if hasattr(rightmost_attr, 'start_col'):
-            self.add_attrs(node)
+            add_extent_attrs(node)
             node.start_col = node.col_offset
             copy_end_attrs(rightmost_attr, node)
             node.end_col += end_col_adjustment
         self.visit_children(node)
 
     def keyword_visitor(self, node, keyword, end_col_adjustment=0):
-        self.add_attrs(node)
+        add_extent_attrs(node)
         node.start_col = node.col_offset
         node.end_col = node.start_col + len(keyword) + end_col_adjustment
         node.end_lineno = node.lineno
@@ -524,7 +516,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
     # terminal nodes
     def visit_Name(self, node):
-          self.add_attrs(node)
+          add_extent_attrs(node)
           node.start_col = node.col_offset
           node.end_col = node.start_col + len(node.id)
           node.end_lineno = node.lineno
@@ -534,7 +526,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
             # TRICKY TRICKY! don't run this more than once, ughhhhhh
             if hasattr(node, 'start_col'):
                 return
-            self.add_attrs(node)
+            add_extent_attrs(node)
             node.start_col = node.col_offset
             # repr() will take escape characters and enclosing quotes into account!
             node.end_col = node.start_col + len(repr(node.s))
@@ -542,7 +534,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
         else:
             # multiline strings, which come with weird -1 column offsets!
             # UGH THIS IS REALLY AGGRAVATING with tons of corner cases
-            self.add_attrs(node)
+            add_extent_attrs(node)
             node.end_lineno = node.lineno
             lines = node.s.splitlines()
             # SUPER tricky -- if the last character is '\n', then add an
@@ -586,30 +578,31 @@ class AddExtentsVisitor(ast.NodeVisitor):
   3.
   -3.
         '''
-        self.add_attrs(node)
+        add_extent_attrs(node)
         node.start_col = node.col_offset
         node.end_col = node.start_col + len(str(node.n))
         node.end_lineno = node.lineno
         # adjustment for negative decimal numbers
-        if node.col_offset > 0:
-            char_before = self.code_lines[node.lineno][node.col_offset-1]
-            if char_before == '-':
-                node.start_col -= 1
+        # (ASSUMING WE ARE WRITING IN DECIMAL FORMAT!)
+        if node.n < 0:
+            node.start_col -= 1
+            node.end_col -= 1
 
+    # TODO: maybe refactor using keyword_visitor()?
     def visit_Pass(self, node):
-      self.add_attrs(node)
+      add_extent_attrs(node)
       node.start_col = node.col_offset
       node.end_col = node.start_col + len('pass')
       node.end_lineno = node.lineno
 
     def visit_Break(self, node):
-      self.add_attrs(node)
+      add_extent_attrs(node)
       node.start_col = node.col_offset
       node.end_col = node.start_col + len('break')
       node.end_lineno = node.lineno
 
     def visit_Continue(self, node):
-      self.add_attrs(node)
+      add_extent_attrs(node)
       node.start_col = node.col_offset
       node.end_col = node.start_col + len('continue')
       node.end_lineno = node.lineno
@@ -694,6 +687,126 @@ def pretty_dump(node, code_str):
     return _format(node, 0)
 
 
+
+# ERGH nasty hack to get even simple cases like "d = a + b + c" working
+# clean up extents by propagating the smallest start_col, lineno, and
+# col_offset of each node's child to itself, if necessary
+#
+# again, we need to run this multiple times to fixpoint, ERGH!!!
+class FixupExtentsVisitor(ast.NodeVisitor):
+    def __init__(self):
+        ast.NodeVisitor.__init__(self)
+
+    def visit(self, node):
+        for child in gen_children(node):
+            if hasattr(child, 'lineno'):
+                # grab the minimum lineno and col_offset from any of
+                # your children
+                if not hasattr(node, 'lineno'):
+                    node._attributes = node._attributes + ('lineno', 'col_offset')
+                    node.lineno = child.lineno
+                    node.col_offset = child.col_offset
+                else:
+                    node.lineno = min(node.lineno, child.lineno)
+                    node.col_offset = min(node.col_offset, child.col_offset)
+
+            # if BOTH you and your child have start_col, then grab the
+            # smaller of the two
+            if hasattr(node, 'start_col') and hasattr(child, 'start_col'):
+                # VERY IMPORTANT guard condition!
+                if node.lineno == child.lineno:
+                    node.start_col = min(node.start_col, child.start_col)
+
+        super(FixupExtentsVisitor, self).visit(node)
+
+
+# create abs_start_index and abs_end_index attributes for nodes with
+# extent information in the form of:
+#   (lineno, start_col) to (end_lineno, end_col)
+class AddAbsoluteExtentsVisitor(ast.NodeVisitor):
+    def __init__(self, code_str):
+        ast.NodeVisitor.__init__(self)
+        # add sentinel to support one-indexing
+        self.code_lines = [''] + code_str.split('\n')
+
+    def visit(self, node):
+        if hasattr(node, 'end_col'):
+            node._attributes = node._attributes + ('abs_start_index', 'abs_end_index')
+
+            node.abs_start_index = 0
+            for i in range(1, node.lineno):
+                # +1 for ending newline!
+                node.abs_start_index += len(self.code_lines[i]) + 1
+            node.abs_start_index += node.start_col
+
+            node.abs_end_index = 0
+            for i in range(1, node.end_lineno):
+                # +1 for ending newline!
+                node.abs_end_index += len(self.code_lines[i]) + 1
+            node.abs_end_index += node.end_col
+
+            assert node.abs_start_index <= node.abs_end_index
+
+        super(AddAbsoluteExtentsVisitor, self).visit(node)
+
+
+def extent_contains(parent, child):
+    if hasattr(parent, 'abs_start_index') and hasattr(child, 'abs_start_index'):
+        return (parent.abs_start_index <= child.abs_start_index <=
+                child.abs_end_index <= parent.abs_end_index)
+    return True
+
+def extents_disjoint(parent, child):
+    if hasattr(parent, 'abs_start_index') and hasattr(child, 'abs_start_index'):
+        return ((parent.abs_end_index <= child.abs_start_index) or
+                (child.abs_end_index <= parent.abs_start_index))
+    return True
+
+def extent_to_str(node):
+    lab = ''
+    if hasattr(node, 'end_col'):
+        if node.lineno == node.end_lineno:
+            lab += 'L{0}[{1}:{2}]'.format(node.lineno, node.start_col, node.end_col)
+        else:
+            lab += 'L{0}[{1}] - '.format(node.lineno, node.start_col)
+            lab += 'L{0}[{1}]'.format(node.end_lineno, node.end_col)
+    # fallback ...
+    elif hasattr(node, 'lineno'):
+        lab += 'L{0}[{1}]'.format(node.lineno, node.col_offset)
+        lab += ' (no extents)'
+    else:
+        lab += '<NONE WTF>'
+
+    return lab
+
+
+# verifies the tree after AddExtentsVisitor finishes running on it
+class ExtentsVerifierVisitor(ast.NodeVisitor):
+    def __init__(self):
+        ast.NodeVisitor.__init__(self)
+
+    def visit(self, node):
+        if hasattr(node, 'end_col'):
+            assert node.lineno <= node.end_lineno
+            if node.lineno == node.end_lineno:
+                assert node.start_col < node.end_col
+
+            # make sure no child "overlaps" with myself. children that
+            # are completely contained are okay, as are children that
+            # have NO overlaps.
+            for child in gen_children(node):
+                #print '---'
+                #print 'P:', extent_to_str(node)
+                #print 'C:', extent_to_str(child)
+                assert (extent_contains(node, child) or
+                        extents_disjoint(node, child))
+
+        elif hasattr(node, 'lineno'):
+            pass
+
+        super(ExtentsVerifierVisitor, self).visit(node)
+
+
 def parse_and_add_extents(code_str):
     root_node = ast.parse(code_str)
 
@@ -707,6 +820,18 @@ def parse_and_add_extents(code_str):
     v = AddExtentsVisitor(code_str)
     for i in range(max_depth):
         v.visit(root_node)
+
+    # OH MY GODDD!!! FIXPOINT!!!
+    v2 = FixupExtentsVisitor()
+    for i in range(max_depth):
+        v2.visit(root_node)
+
+    v3 = AddAbsoluteExtentsVisitor(code_str)
+    v3.visit(root_node)
+
+    # sanity check!
+    verifier = ExtentsVerifierVisitor()
+    verifier.visit(root_node)
 
     return root_node
 

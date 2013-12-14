@@ -1,0 +1,29 @@
+e = a + b + c + d
+===
+Module
+  body: [
+    Assign >> 'e = a + b + c + d'
+      targets: [
+        Name >> 'e'
+          id: 'e'
+          ctx: Store
+      ]
+      value: BinOp >> 'a + b + c + d'
+        left: BinOp >> 'a + b + c'
+          left: BinOp >> 'a + b'
+            left: Name >> 'a'
+              id: 'a'
+              ctx: Load
+            op: Add
+            right: Name >> 'b'
+              id: 'b'
+              ctx: Load
+          op: Add
+          right: Name >> 'c'
+            id: 'c'
+            ctx: Load
+        op: Add
+        right: Name >> 'd'
+          id: 'd'
+          ctx: Load
+  ]

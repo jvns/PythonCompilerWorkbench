@@ -168,7 +168,7 @@ Module
                     id: 'n'
                     ctx: Load
                   op: Sub
-                  right: Num >> '-1'
+                  right: Num >> '1'
                     n: 1
               ]
               keywords: [

@@ -59,12 +59,14 @@ class PGGraphNodeVisitor(ast.NodeVisitor):
         if hasattr(node, 'end_col'):
             if node.lineno == node.end_lineno:
                 lab += '\nL{0}[{1}:{2}]'.format(node.lineno, node.start_col, node.end_col)
+                lab += '\n({0}:{1})'.format(node.abs_start_index, node.abs_end_index)
             else:
                 lab += '\nL{0}[{1}] - '.format(node.lineno, node.start_col)
                 lab += 'L{0}[{1}]'.format(node.end_lineno, node.end_col)
+                lab += '\n({0}:{1})'.format(node.abs_start_index, node.abs_end_index)
         # fallback ...
         elif hasattr(node, 'lineno'):
-            lab += '\n{0}:{1}'.format(node.lineno, node.col_offset)
+            lab += '\nL{0}[{1}]'.format(node.lineno, node.col_offset)
             lab += '\n(no extents)'
 
         return lab
