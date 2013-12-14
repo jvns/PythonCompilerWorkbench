@@ -970,12 +970,18 @@ class CodeAst(object):
             self.cur_index = self.ast_root.abs_start_index
 
         def _render_helper(node, indent):
-            print indent * '  ',
-            print self.cur_index, node, extent_to_str(node), abs_indices_to_str(node)
+
+            new_indent = indent
 
             # don't do anything for "empty" placeholder nodes with
             # no extents
             if node.abs_start_index < node.abs_end_index:
+                new_indent = indent + 2
+                print indent * '  ',
+                print self.cur_index, node.__class__.__name__,
+                #print extent_to_str(node),
+                print abs_indices_to_str(node)
+
                 if self.cur_index < node.abs_start_index:
                     s = self.code_str[self.cur_index:node.abs_start_index]
                     self.gobbled_string_lst.append(s)
@@ -992,7 +998,7 @@ class CodeAst(object):
                 except IndexError:
                     next_kid = None
 
-                _render_helper(cur_kid, indent + 2)
+                _render_helper(cur_kid, new_indent)
 
                 # after handling EACH kid, output everything up until the
                 # abs_start_index of the next kid
@@ -1019,10 +1025,10 @@ class CodeAst(object):
             raise TypeError('expected ast.Module, got %r' %
                             self.ast_root.__class__.__name__)
 
-        _render_helper(self.ast_root, 0)
+        _render_helper(self.ast_root, 1)
 
         # gobble up everything until the end of the string
-        assert self.cur_index < len(self.code_str) - 1
+        assert self.cur_index < len(self.code_str)
 
         s = self.code_str[self.cur_index:]
         self.gobbled_string_lst.append(s)
