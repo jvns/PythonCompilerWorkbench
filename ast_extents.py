@@ -89,9 +89,10 @@ def add_extent_attrs(node):
 #   (lineno, start_col) to (end_lineno, end_col)
 #   lineno, col_offset
 #
-# This visitor runs top-down, so we probably NEED to run several times to
-# fixpoint adds extents and also adds lineno and col_offset to certain
-# nodes that don't ordinarily have them
+# it's VERY IMPORTANT that this visitor does a POSTORDER traversal,
+# always fully visiting each child subtree before visiting the current
+# node. this way, extents will bubble up from the leaves all the way up
+# to the root with just a single visit.
 class AddExtentsVisitor(ast.NodeVisitor):
     def __init__(self, code_str):
         ast.NodeVisitor.__init__(self)
@@ -118,9 +119,6 @@ class AddExtentsVisitor(ast.NodeVisitor):
                         self.visit(item)
             elif isinstance(value, ast.AST):
                 self.visit(value)
-
-    # always end with a call to self.visit_children(node) to recurse
-    # (unless you know you're a terminal node)
 
     def visit_ExtSlice(self, node):
       raise NotImplementedError
@@ -161,6 +159,10 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
     ### stuff below is implemented ...
 
+    # always BEGIN each visitor with a call to self.visit_children(node)
+    # to do a POSTORDER traversal of your children before yourself
+    # (unless you know you're a terminal node)
+
     def visit_ExceptHandler(self, node):
         if node.type:
             self.standard_visitor(node, node.type)
@@ -169,13 +171,13 @@ class AddExtentsVisitor(ast.NodeVisitor):
             self.keyword_visitor(node, 'except')
 
     def visit_Global(self, node):
+        self.visit_children(node)
         # TODO: this doesn't handle a multiline statement that uses '\'
         # operators
         add_extent_attrs(node)
         node.start_col = node.col_offset
         node.end_col = len(self.code_lines[node.lineno])
         node.end_lineno = node.lineno
-        self.visit_children(node)
 
     def visit_Raise(self, node):
         if node.tback:
@@ -195,6 +197,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
         self.visit_func_and_class_def(node)
 
     def visit_func_and_class_def(self, node):
+        self.visit_children(node)
         # ok this is janky, but I think it works well in practice: just
         # scan until you find the next ':', either on this line or on a
         # subsequent line
@@ -208,9 +211,9 @@ class AddExtentsVisitor(ast.NodeVisitor):
                     node.end_lineno = n
                     break
                 n += 1
-        self.visit_children(node)
 
     def visit_Call(self, node):
+        self.visit_children(node)
         # empty case is a function call with NO arguments, keyword args,
         # starargs, or kwargs
         has_regular_args = node.args
@@ -259,17 +262,17 @@ class AddExtentsVisitor(ast.NodeVisitor):
                 # for trailing ')'; doesn't handle blank spaces before ')'
                 node.end_col = last_arg.end_col + 1
                 node.end_lineno = last_arg.end_lineno
-        self.visit_children(node)
 
     def visit_Attribute(self, node):
+        self.visit_children(node)
         if hasattr(node.value, 'start_col'):
             add_extent_attrs(node)
             node.start_col = node.col_offset
             node.end_col = len(node.attr) + 1 + node.value.end_col
             node.end_lineno = node.lineno
-        self.visit_children(node)
 
     def visit_Dict(self, node):
+        self.visit_children(node)
         # empty case
         if len(node.values) == 0:
             node.start_col = node.col_offset
@@ -282,9 +285,9 @@ class AddExtentsVisitor(ast.NodeVisitor):
                 node.start_col = node.col_offset
                 copy_end_attrs(last_elt, node)
                 node.end_col += 1 # for the extra trailing '}' character
-        self.visit_children(node)
 
     def visit_List(self, node):
+        self.visit_children(node)
         # empty case
         if len(node.elts) == 0:
             node.start_col = node.col_offset
@@ -301,9 +304,9 @@ class AddExtentsVisitor(ast.NodeVisitor):
                 # first found ']'. Example: [1,2,3    ]
                 # (but let's not worry about this weird case for now)
                 node.end_col += 1 # for the extra trailing ']' character
-        self.visit_children(node)
 
     def visit_Tuple(self, node):
+        self.visit_children(node)
         # empty case
         if len(node.elts) == 0:
             node.start_col = node.col_offset
@@ -327,11 +330,11 @@ class AddExtentsVisitor(ast.NodeVisitor):
                     if self.code_lines[node.lineno][node.start_col - 1] == '(':
                         node.start_col -= 1
                         node.end_col += 1
-        self.visit_children(node)
 
     # to make this more robust to parens, etc., we could simply search
     # for the next ':' character, like visit_func_and_class_def does
     def visit_If(self, node):
+        self.visit_children(node)
         if hasattr(node.test, 'start_col'):
             add_extent_attrs(node)
             node.start_col = node.col_offset
@@ -345,9 +348,6 @@ class AddExtentsVisitor(ast.NodeVisitor):
                 if not l[node.start_col].startswith('if'):
                     if 'elif' in l[:node.start_col]:
                         node.start_col = l.index('elif')
-
-        self.visit_children(node)
-
 
     def visit_Return(self, node):
         self.visit_return_or_yield(node, 'return')
@@ -364,19 +364,19 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
     # grab end_col and end_lineno from the rightmost attribute
     def standard_visitor(self, node, rightmost_attr, end_col_adjustment=0):
+        self.visit_children(node)
         if hasattr(rightmost_attr, 'start_col'):
             add_extent_attrs(node)
             node.start_col = node.col_offset
             copy_end_attrs(rightmost_attr, node)
             node.end_col += end_col_adjustment
-        self.visit_children(node)
 
     def keyword_visitor(self, node, keyword, end_col_adjustment=0):
+        self.visit_children(node)
         add_extent_attrs(node)
         node.start_col = node.col_offset
         node.end_col = node.start_col + len(keyword) + end_col_adjustment
         node.end_lineno = node.lineno
-        self.visit_children(node)
 
     def visit_Subscript(self, node):
         # super-special case of an empty slice like 'foo[:]', since
@@ -488,6 +488,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
         
 
     def visit_Print(self, node):
+        self.visit_children(node)
         if len(node.values):
             if hasattr(node.values[-1], 'start_col'):
                 node.start_col = node.col_offset
@@ -503,7 +504,6 @@ class AddExtentsVisitor(ast.NodeVisitor):
             # adjustment for comma
             if not node.nl:
                 node.end_col += 1
-        self.visit_children(node)
 
     # terminal nodes
     def visit_Name(self, node):
@@ -630,13 +630,14 @@ class DepthCountingVisitor(object):
 # ERGH nasty hack to get even simple cases like "d = a + b + c" working
 # clean up extents by propagating the smallest start_col, lineno, and
 # col_offset of each node's child to itself, if necessary
-#
-# again, we need to run this multiple times to fixpoint, ERGH!!!
 class FixupExtentsVisitor(ast.NodeVisitor):
     def __init__(self):
         ast.NodeVisitor.__init__(self)
 
     def visit(self, node):
+        # do a POSTORDER traversal -- make sure to handle all of your
+        # children first before you handle yourself
+        super(FixupExtentsVisitor, self).visit(node)
         for child in gen_children(node):
             if hasattr(child, 'lineno'):
                 # grab the minimum lineno and col_offset from any of
@@ -655,8 +656,6 @@ class FixupExtentsVisitor(ast.NodeVisitor):
                 # VERY IMPORTANT guard condition!
                 if node.lineno == child.lineno:
                     node.start_col = min(node.start_col, child.start_col)
-
-        super(FixupExtentsVisitor, self).visit(node)
 
 
 # create abs_start_index and abs_end_index attributes for nodes with
@@ -762,24 +761,24 @@ class ExtentsVerifierVisitor(ast.NodeVisitor):
 def parse_and_add_extents(code_str):
     root_node = ast.parse(code_str)
 
-    dcv = DepthCountingVisitor()
-    dcv.visit(root_node)
-    max_depth = dcv.max_depth
+    #dcv = DepthCountingVisitor()
+    #dcv.visit(root_node)
+    #max_depth = dcv.max_depth
 
-    # To be conservative, run the visitor max_depth number of times, which
-    # should be enough to percolate ALL (start_col, extent) values up from
-    # the leaves to the root of the tree
     v = AddExtentsVisitor(code_str)
-    for i in range(max_depth):
-        v.visit(root_node)
+    v.visit(root_node)
 
-    # OH MY GODDD!!! FIXPOINT!!!
     v2 = FixupExtentsVisitor()
-    for i in range(max_depth):
-        v2.visit(root_node)
+    v2.visit(root_node)
 
     v3 = AddAbsoluteExtentsVisitor(code_str)
     v3.visit(root_node)
+
+    # TODO: make sure that every node has balanced parens
+    BALANCE_PARENS_CHECKER = False
+    if BALANCE_PARENS_CHECKER:
+        v4 = BalanceParensVisitor(code_str)
+        v4.visit(root_node)
 
     # sanity check!
     verifier = ExtentsVerifierVisitor()
