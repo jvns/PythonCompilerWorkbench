@@ -1006,91 +1006,72 @@ class CodeAst(object):
             print 'LEADING:', `s`
             self.cur_index = self.ast_root.abs_start_index
 
-        def _render_helper(node, indent, parent=None):
-            #if node == self.ast_root:
-            #    process_node = False
-            #else:
-            #    process_node = True
-            process_node = True
-
-            is_placeholder = node.is_placeholder
-
-            if is_placeholder and parent:
-                node_for_output = parent
-                indent -= 1 # 'rewind' up one level
-            else:
-                node_for_output = node
-
+        def _render_helper(node, indent):
             prematurely_done = False
 
             ind_str = ('    ' * indent)
 
 
-            if not is_placeholder:
-                print ind_str + '{'
-                print ind_str, node.__class__.__name__
+            print ind_str + '{'
+            print ind_str, node.__class__.__name__
 
-            if self.cur_index < node_for_output.abs_start_index:
-                s = self.code_str[self.cur_index:node_for_output.abs_start_index]
+            if self.cur_index < node.abs_start_index:
+                s = self.code_str[self.cur_index:node.abs_start_index]
                 self.gobbled_string_lst.append(s)
                 print ind_str, 'B:', `s`
-                self.cur_index = node_for_output.abs_start_index
+                self.cur_index = node.abs_start_index
 
             # always recurse to sorted children
-            kids = get_sorted_children(node) # always use node and NOT node_for_output
+            kids = get_sorted_children(node) # always use node and NOT node
 
             for cur_kid in kids:
                 # BEFORE handling each kid, gobble up everything up to
                 # the abs_start_index of that kid
                 # (trust me, it works better this way!)
-                if process_node:
-                    assert node_for_output.abs_start_index <= self.cur_index
-                    if self.cur_index < cur_kid.abs_start_index:
-                        # kinda tricky -- for constructs like function
-                        # definitions and 'if' / 'for' / 'while' blocks,
-                        # node_for_output.abs_end_index <= cur_kid.abs_start_index.
-                        # in that case, separate into two chunks and
-                        # prematurely end this current node
-                        # TODO: should this be '<' or '<='?
-                        if (not prematurely_done and
-                            node_for_output.abs_end_index <= cur_kid.abs_start_index):
-                            s = self.code_str[self.cur_index:node_for_output.abs_end_index]
-                            self.gobbled_string_lst.append(s)
-                            print ind_str, 'K (prematurely_done):', `s`
-                            self.cur_index = node_for_output.abs_end_index
-                            prematurely_done = True
-
-                            assert not is_placeholder
-
-                            print ind_str + '}'
-                            # hacky way to indicate that we've "popped up" a level
-                            indent -= 1
-
-                        s = self.code_str[self.cur_index:cur_kid.abs_start_index]
+                assert node.abs_start_index <= self.cur_index
+                if self.cur_index < cur_kid.abs_start_index:
+                    # kinda tricky -- for constructs like function
+                    # definitions and 'if' / 'for' / 'while' blocks,
+                    # node.abs_end_index <= cur_kid.abs_start_index.
+                    # in that case, separate into two chunks and
+                    # prematurely end this current node
+                    # TODO: should this be '<' or '<='?
+                    if (not prematurely_done and
+                        node.abs_end_index <= cur_kid.abs_start_index):
+                        s = self.code_str[self.cur_index:node.abs_end_index]
                         self.gobbled_string_lst.append(s)
-                        print ind_str, 'K:', `s`
-                        self.cur_index = cur_kid.abs_start_index
+                        print ind_str, 'K (prematurely_done):', `s`
+                        self.cur_index = node.abs_end_index
+                        prematurely_done = True
 
-                _render_helper(cur_kid, indent + 1, node)
+                        print ind_str + '}'
+                        # hacky way to indicate that we've "popped up" a level
+                        indent -= 1
+
+                    s = self.code_str[self.cur_index:cur_kid.abs_start_index]
+                    self.gobbled_string_lst.append(s)
+                    print ind_str, 'K:', `s`
+                    self.cur_index = cur_kid.abs_start_index
+
+                _render_helper(cur_kid, indent + 1)
 
             # clean up the end
-            if process_node:
-                if kids:
-                    assert kids[-1].abs_end_index <= self.cur_index
-                if self.cur_index < node_for_output.abs_end_index:
-                    s = self.code_str[self.cur_index:node_for_output.abs_end_index]
-                    self.gobbled_string_lst.append(s)
-                    print ind_str, 'A:', `s`
-                    self.cur_index = node_for_output.abs_end_index
+            if kids:
+                assert kids[-1].abs_end_index <= self.cur_index
+            if self.cur_index < node.abs_end_index:
+                s = self.code_str[self.cur_index:node.abs_end_index]
+                self.gobbled_string_lst.append(s)
+                print ind_str, 'A:', `s`
+                self.cur_index = node.abs_end_index
 
-                if not is_placeholder and not prematurely_done:
-                    print ind_str + '}'
+            if not prematurely_done:
+                print ind_str + '}'
 
         if not isinstance(self.ast_root, ast.Module):
             raise TypeError('expected ast.Module, got %r' %
                             self.ast_root.__class__.__name__)
 
-        _render_helper(self.ast_root, 0)
+        _render_helper(self.ast_root, 1)
 
         # gobble up everything until the end of the string
         assert self.cur_index < len(self.code_str)
