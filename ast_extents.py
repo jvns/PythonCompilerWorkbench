@@ -41,7 +41,7 @@ print x  ,
 import ast
 import sys
 
-__all__ = ['parse_and_add_extents']
+__all__ = ['CodeAst']
 
 # Limitations
 # - doesn't support extents that span MULTIPLE LINES
@@ -820,11 +820,23 @@ def parse_and_add_extents(code_str):
     return root_node
 
 
+class CodeAst(object):
+    def __init__(self, code_str):
+        self.code_str = code_str
+        self.ast_root = parse_and_add_extents(code_str)
+
+    def get_ast(self):
+        return self.ast_root
+
+    def pretty_dump(self):
+        pretty_dump(self.ast_root, self.code_str)
+
+
 if __name__ == "__main__":
     code_str = open(sys.argv[1]).read()
 
-    m = parse_and_add_extents(code_str)
+    obj = CodeAst(code_str)
 
     print code_str,
     print '==='
-    pretty_dump(m, code_str)
+    obj.pretty_dump()
