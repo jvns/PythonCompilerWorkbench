@@ -793,6 +793,14 @@ def extent_to_str(node):
 
     return lab
 
+def abs_indices_to_str(node):
+    lab = ''
+    if hasattr(node, 'abs_start_index'):
+        lab += '{0}:{1}'.format(node.abs_start_index, node.abs_end_index)
+    else:
+        lab += '<no abs indices>'
+    return lab
+
 
 # sort by abs_start_index
 def get_sorted_children(node):
@@ -929,9 +937,100 @@ class CodeAst(object):
                 print repr(node)
 
         if not isinstance(self.ast_root, ast.AST):
-            raise TypeError('expected AST, got %r' % node.__class__.__name__)
-
+            raise TypeError('expected ast.AST, got %r' %
+                            self.ast_root.__class__.__name__)
         return _format(self.ast_root, 0)
+
+    
+    # convert to a JSON format with enough information so that it's
+    # directly renderable by, say, d3
+    #
+    # Acknowledgments: Max G. for the "max_ algorithm" of traversing the
+    # AST and linearly sweeping through the code string simultaneously,
+    # and Tom Lieber for suggesting to represent data as
+    # abs_start_index:abs_end_index to make indexing INFINITELY SIMPLER!
+    def to_renderable_json(self):
+        print repr(self.code_str)
+        print
+
+        # starts at 0 and sweeps through the entirety of self.code_str
+        # so that ALL CHARACTERS in self.code_str end up "printed" in
+        # the JSON in some form. DON'T LEAVE OUT ANY CHARACTER!
+        self.cur_index = 0 # needs to be an attr so that nested func can mutate it
+
+        # the string that this algorithm has "gobbled up" so far
+        # (verify that it matches self.code_str at the end)
+        self.gobbled_string_lst = []
+
+        # gobble up everything until we reach the root node
+        if self.cur_index < self.ast_root.abs_start_index:
+            s = self.code_str[self.cur_index:self.ast_root.abs_start_index]
+            self.gobbled_string_lst.append(s)
+            print 'LEADING:', `s`
+            self.cur_index = self.ast_root.abs_start_index
+
+        def _render_helper(node, indent):
+            print indent * '  ',
+            print self.cur_index, node, extent_to_str(node), abs_indices_to_str(node)
+
+            # don't do anything for "empty" placeholder nodes with
+            # no extents
+            if node.abs_start_index < node.abs_end_index:
+                if self.cur_index < node.abs_start_index:
+                    s = self.code_str[self.cur_index:node.abs_start_index]
+                    self.gobbled_string_lst.append(s)
+                    print indent * '  ', 'B:', `s`
+                    self.cur_index = node.abs_start_index
+
+            # always recurse to sorted children
+            kids = get_sorted_children(node)
+            n_kids = len(kids)
+            for i in range(n_kids):
+                cur_kid = kids[i]
+                try:
+                    next_kid = kids[i+1]
+                except IndexError:
+                    next_kid = None
+
+                _render_helper(cur_kid, indent + 2)
+
+                # after handling EACH kid, output everything up until the
+                # abs_start_index of the next kid
+                if next_kid:
+                    if node.abs_start_index < node.abs_end_index:
+                        assert node.abs_start_index <= self.cur_index
+                        if self.cur_index < next_kid.abs_start_index:
+                            s = self.code_str[self.cur_index:next_kid.abs_start_index]
+                            self.gobbled_string_lst.append(s)
+                            print indent * '  ', 'K:', `s`
+                            self.cur_index = next_kid.abs_start_index
+
+            # clean up the end
+            if node.abs_start_index < node.abs_end_index:
+                if n_kids > 0:
+                    assert kids[-1].abs_end_index <= self.cur_index
+                if self.cur_index < node.abs_end_index:
+                    s = self.code_str[self.cur_index:node.abs_end_index]
+                    self.gobbled_string_lst.append(s)
+                    print indent * '  ', 'A:', `s`
+                    self.cur_index = node.abs_end_index
+
+        if not isinstance(self.ast_root, ast.Module):
+            raise TypeError('expected ast.Module, got %r' %
+                            self.ast_root.__class__.__name__)
+
+        _render_helper(self.ast_root, 0)
+
+        # gobble up everything until the end of the string
+        assert self.cur_index < len(self.code_str) - 1
+
+        s = self.code_str[self.cur_index:]
+        self.gobbled_string_lst.append(s)
+        print 'TRAILING:', `s`
+
+        # VERY IMPORTANT sanity check that we've accounted for all
+        # characters in self.code_str
+        assert ''.join(self.gobbled_string_lst) == self.code_str
 
 
 if __name__ == "__main__":

@@ -1,0 +1,3 @@
+# with extra spaces ...
+c  =  a + b      
+# and a trailing line comment

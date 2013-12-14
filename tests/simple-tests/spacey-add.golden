@@ -1,0 +1,21 @@
+# with extra spaces ...
+c  =  a + b      
+# and a trailing line comment
+===
+Module
+  body: [
+    Assign >> 'c  =  a + b'
+      targets: [
+        Name >> 'c'
+          id: 'c'
+          ctx: Store
+      ]
+      value: BinOp >> 'a + b'
+        left: Name >> 'a'
+          id: 'a'
+          ctx: Load
+        op: Add
+        right: Name >> 'b'
+          id: 'b'
+          ctx: Load
+  ]
