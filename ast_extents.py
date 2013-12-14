@@ -32,6 +32,7 @@
 
 
 import ast
+import json
 import sys
 
 __all__ = ['CodeAst']
@@ -985,8 +986,8 @@ class CodeAst(object):
     # and Tom Lieber for suggesting to represent data as
     # abs_start_index:abs_end_index to make indexing INFINITELY SIMPLER!
     def to_renderable_json(self):
-        print repr(self.code_str)
-        print
+        #print repr(self.code_str)
+        #print
 
         # starts at 0 and sweeps through the entirety of self.code_str
         # so that ALL CHARACTERS in self.code_str end up "printed" in
@@ -997,28 +998,43 @@ class CodeAst(object):
         # (verify that it matches self.code_str at the end)
         self.gobbled_string_lst = []
 
-        print '{'
+        print '{"name": "ROOT_NODE",' # JSON needs double-quoted strings
+        print ' "contents": ['
+
+        has_leading_text = False
 
         # gobble up everything until we reach the root node
         if self.cur_index < self.ast_root.abs_start_index:
             s = self.code_str[self.cur_index:self.ast_root.abs_start_index]
             self.gobbled_string_lst.append(s)
-            print 'LEADING:', `s`
+            #print 'LEADING:', `s`
+            if s:
+                print '   ', json.dumps(s)
+                has_leading_text = True
             self.cur_index = self.ast_root.abs_start_index
 
-        def _render_helper(node, indent):
+        def _render_helper(node, indent, need_leading_comma=False):
             prematurely_done = False
 
             ind_str = ('    ' * indent)
 
+            is_first_json_elt = True
 
-            print ind_str + '{'
-            print ind_str, node.__class__.__name__
+            #print ind_str + '{'
+            #print ind_str, node.__class__.__name__
+            c = ''
+            if need_leading_comma:
+                c = ', '
+
+            print ind_str + c + '{"name": %s,' % json.dumps(node.__class__.__name__)
+            print ind_str + ' "contents": ['
 
             if self.cur_index < node.abs_start_index:
                 s = self.code_str[self.cur_index:node.abs_start_index]
                 self.gobbled_string_lst.append(s)
-                print ind_str, 'B:', `s`
+                #print ind_str, 'B:', `s`
+                print ind_str, json.dumps(s)
+                is_first_json_elt = False
                 self.cur_index = node.abs_start_index
 
             # always recurse to sorted children
@@ -1040,20 +1056,32 @@ class CodeAst(object):
                         node.abs_end_index <= cur_kid.abs_start_index):
                         s = self.code_str[self.cur_index:node.abs_end_index]
                         self.gobbled_string_lst.append(s)
-                        print ind_str, 'K (prematurely_done):', `s`
+                        #print ind_str, 'K (prematurely_done):', `s`
+
+                        if is_first_json_elt:
+                            print ind_str, json.dumps(s)
+                        else:
+                            print ind_str, ',', json.dumps(s)
                         self.cur_index = node.abs_end_index
                         prematurely_done = True
 
+                        print ind_str, ' ]'
                         print ind_str + '}'
                         # hacky way to indicate that we've "popped up" a level
                         indent -= 1
 
                     s = self.code_str[self.cur_index:cur_kid.abs_start_index]
                     self.gobbled_string_lst.append(s)
-                    print ind_str, 'K:', `s`
+                    #print ind_str, 'K:', `s`
+                    if is_first_json_elt:
+                        print ind_str, json.dumps(s)
+                        is_first_json_elt = False
+                    else:
+                        print ind_str, ',', json.dumps(s)
                     self.cur_index = cur_kid.abs_start_index
 
-                _render_helper(cur_kid, indent + 1)
+                _render_helper(cur_kid, indent + 1, (not is_first_json_elt))
+                is_first_json_elt = False
 
             # clean up the end
             if kids:
@@ -1061,25 +1089,34 @@ class CodeAst(object):
             if self.cur_index < node.abs_end_index:
                 s = self.code_str[self.cur_index:node.abs_end_index]
                 self.gobbled_string_lst.append(s)
-                print ind_str, 'A:', `s`
+                #print ind_str, 'A:', `s`
+                if is_first_json_elt:
+                    print ind_str, json.dumps(s)
+                    is_first_json_elt = False
+                else:
+                    print ind_str, ',', json.dumps(s)
                 self.cur_index = node.abs_end_index
 
             if not prematurely_done:
+                print ind_str, ' ]'
                 print ind_str + '}'
 
         if not isinstance(self.ast_root, ast.Module):
             raise TypeError('expected ast.Module, got %r' %
                             self.ast_root.__class__.__name__)
 
-        _render_helper(self.ast_root, 1)
+        _render_helper(self.ast_root, 1, has_leading_text)
 
         # gobble up everything until the end of the string
         assert self.cur_index < len(self.code_str)
 
         s = self.code_str[self.cur_index:]
         self.gobbled_string_lst.append(s)
-        print 'TRAILING:', `s`
+        #print 'TRAILING:', `s`
+        if s:
+            print '   ', ',', json.dumps(s)
 
+        print '  ]'
         print '}'
 
         # VERY IMPORTANT sanity check that we've accounted for all

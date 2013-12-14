@@ -1,0 +1,7 @@
+def foo(a, b, c=3):
+    d = a + b * c - bar()
+
+    for i in range(10):
+        print i, d
+
+    return c, d

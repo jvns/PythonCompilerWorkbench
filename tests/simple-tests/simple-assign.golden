@@ -1,0 +1,31 @@
+x = 1
+y = 2
+z = 3
+===
+Module
+  body: [
+    Assign >> 'x = 1'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: Num >> '1'
+        n: 1
+    Assign >> 'y = 2'
+      targets: [
+        Name >> 'y'
+          id: 'y'
+          ctx: Store
+      ]
+      value: Num >> '2'
+        n: 2
+    Assign >> 'z = 3'
+      targets: [
+        Name >> 'z'
+          id: 'z'
+          ctx: Store
+      ]
+      value: Num >> '3'
+        n: 3
+  ]

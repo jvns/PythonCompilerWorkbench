@@ -1,0 +1,108 @@
+def foo(a, b, c=3):
+    d = a + b * c - bar()
+
+    for i in range(10):
+        print i, d
+
+    return c, d
+===
+Module
+  body: [
+    FunctionDef >> 'def foo(a, b, c=3)'
+      name: 'foo'
+      args: arguments
+        args: [
+          Name >> 'a'
+            id: 'a'
+            ctx: Param
+          Name >> 'b'
+            id: 'b'
+            ctx: Param
+          Name >> 'c'
+            id: 'c'
+            ctx: Param
+        ]
+        vararg: None
+        kwarg: None
+        defaults: [
+          Num >> '3'
+            n: 3
+        ]
+      body: [
+        Assign >> 'd = a + b * c - bar()'
+          targets: [
+            Name >> 'd'
+              id: 'd'
+              ctx: Store
+          ]
+          value: BinOp >> 'a + b * c - bar()'
+            left: BinOp >> 'a + b * c'
+              left: Name >> 'a'
+                id: 'a'
+                ctx: Load
+              op: Add
+              right: BinOp >> 'b * c'
+                left: Name >> 'b'
+                  id: 'b'
+                  ctx: Load
+                op: Mult
+                right: Name >> 'c'
+                  id: 'c'
+                  ctx: Load
+            op: Sub
+            right: Call >> 'bar()'
+              func: Name >> 'bar'
+                id: 'bar'
+                ctx: Load
+              args: [
+              ]
+              keywords: [
+              ]
+              starargs: None
+              kwargs: None
+        For >> 'for i in range(10)'
+          target: Name >> 'i'
+            id: 'i'
+            ctx: Store
+          iter: Call >> 'range(10)'
+            func: Name >> 'range'
+              id: 'range'
+              ctx: Load
+            args: [
+              Num >> '10'
+                n: 10
+            ]
+            keywords: [
+            ]
+            starargs: None
+            kwargs: None
+          body: [
+            Print >> 'print i, d'
+              dest: None
+              values: [
+                Name >> 'i'
+                  id: 'i'
+                  ctx: Load
+                Name >> 'd'
+                  id: 'd'
+                  ctx: Load
+              ]
+              nl: True
+          ]
+          orelse: [
+          ]
+        Return >> 'return c, d'
+          value: Tuple >> 'c, d'
+            elts: [
+              Name >> 'c'
+                id: 'c'
+                ctx: Load
+              Name >> 'd'
+                id: 'd'
+                ctx: Load
+            ]
+            ctx: Load
+      ]
+      decorator_list: [
+      ]
+  ]
