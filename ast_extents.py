@@ -713,6 +713,9 @@ class FixupExtentsVisitor(ast.NodeVisitor):
 # create abs_start_index and abs_end_index attributes for nodes with
 # extent information in the form of:
 #   (lineno, start_col) to (end_lineno, end_col)
+# if only (lineno, col_offset) exist, then just set abs_start_index = abs_end_index
+# (degenerate case)
+# otherwise do nothing
 class AddAbsoluteExtentsVisitor(ast.NodeVisitor):
     def __init__(self, code_str):
         ast.NodeVisitor.__init__(self)
@@ -720,9 +723,8 @@ class AddAbsoluteExtentsVisitor(ast.NodeVisitor):
         self.code_lines = [''] + code_str.split('\n')
 
     def visit(self, node):
+        node._attributes = node._attributes + ('abs_start_index', 'abs_end_index')
         if hasattr(node, 'end_col'):
-            node._attributes = node._attributes + ('abs_start_index', 'abs_end_index')
-
             node.abs_start_index = 0
             for i in range(1, node.lineno):
                 # +1 for ending newline!
@@ -736,6 +738,13 @@ class AddAbsoluteExtentsVisitor(ast.NodeVisitor):
             node.abs_end_index += node.end_col
 
             assert node.abs_start_index < node.abs_end_index
+        elif hasattr(node, 'lineno'):
+            node.abs_start_index = 0
+            for i in range(1, node.lineno):
+                # +1 for ending newline!
+                node.abs_start_index += len(self.code_lines[i]) + 1
+            node.abs_start_index += node.col_offset
+            node.abs_end_index = node.abs_start_index # ugh, degenerate case
 
         super(AddAbsoluteExtentsVisitor, self).visit(node)
 
@@ -767,27 +776,37 @@ def extent_to_str(node):
     return lab
 
 
+# sort by abs_start_index
+def get_sorted_children(node):
+    ret = [c for c in gen_children(node) if hasattr(c, 'abs_start_index')]
+    ret.sort(key=lambda e:e.abs_start_index)
+    return ret
+
+
 # verifies the integrity of the tree, most notably that each child's
 # extent is either completely contained within the parent, or completely
-# disjoint from its parent
+# disjoint from its parent. and also that no siblings overlap
 class ExtentsVerifierVisitor(ast.NodeVisitor):
     def __init__(self):
         ast.NodeVisitor.__init__(self)
 
     def visit(self, node):
-        if hasattr(node, 'abs_start_index'):
+        if hasattr(node, 'end_col'):
             assert node.lineno <= node.end_lineno
             if node.lineno == node.end_lineno:
                 assert node.start_col < node.end_col
             assert node.abs_start_index < node.abs_end_index
 
-            for child in gen_children(node):
-                if hasattr(child, 'abs_start_index'):
-                    #print '---'
-                    #print 'P:', extent_to_str(node)
-                    #print 'C:', extent_to_str(child)
-                    assert (extent_contains(node, child) or
-                            extents_disjoint(node, child))
+            kids = get_sorted_children(node)
+
+            for child in kids:
+                assert (extent_contains(node, child) or
+                        extents_disjoint(node, child))
+
+            # check that neighboring siblings don't overlap
+            for x, y in zip(kids, kids[1:]):
+                assert extents_disjoint(x, y)
+
         super(ExtentsVerifierVisitor, self).visit(node)
 
 
