@@ -1,0 +1,4 @@
+not (x or y)
+(x + 5) * (y + z)
+(one * (two + 3))
+x = (tokens[5] == 'male')

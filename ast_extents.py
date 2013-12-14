@@ -11,19 +11,16 @@
 
 
 # broken tests:
-# build-tuple.txt
-# str = '%d %s %s' % (self.x, self.y, self.z)
 #
 # - decorators
 # - list/dict/set comprehensions
 # - generator comprehensions
 # - context managers
 # - advanced exceptions
-'''
-weird extra trailing spaces are bad too, e.g.,:
+#
+# weird extra trailing spaces are bad too, e.g.,:
+# print x  ,
 
-print x  ,
-'''
 
 # TODO: implement a paren_adjustment function that adjusts for parens
 # that are commonly used around, say, BinOp, BoolOp, or CompareOp
@@ -32,10 +29,6 @@ print x  ,
 # (x + 5) * (y + z)
 # (one * (two + 3))
 # x = (tokens[5] == 'male')
-
-# TODO: this is also weirdly broken:
-#
-# one = call_foo(1 + 2, y, z+w-2)
 
 
 import ast
