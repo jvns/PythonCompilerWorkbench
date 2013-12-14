@@ -1,23 +1,11 @@
-not (x or y)
 (x + 5) * (y + z)
+not (x or y)
 (one * (two + 3))
 x = (tokens[5] == 'male')
+y = (tokens[5] == ' ) ')
 ===
 Module
   body: [
-    Expr
-      value: UnaryOp >> 'not (x or y'
-        op: Not
-        operand: BoolOp >> 'x or y'
-          op: Or
-          values: [
-            Name >> 'x'
-              id: 'x'
-              ctx: Load
-            Name >> 'y'
-              id: 'y'
-              ctx: Load
-          ]
     Expr
       value: BinOp >> '(x + 5) * (y + z'
         left: BinOp >> 'x + 5'
@@ -36,6 +24,19 @@ Module
           right: Name >> 'z'
             id: 'z'
             ctx: Load
+    Expr
+      value: UnaryOp >> 'not (x or y'
+        op: Not
+        operand: BoolOp >> 'x or y'
+          op: Or
+          values: [
+            Name >> 'x'
+              id: 'x'
+              ctx: Load
+            Name >> 'y'
+              id: 'y'
+              ctx: Load
+          ]
     Expr
       value: BinOp >> 'one * (two + 3'
         left: Name >> 'one'
@@ -70,5 +71,27 @@ Module
         comparators: [
           Str >> "'male'"
             s: 'male'
+        ]
+    Assign >> "y = (tokens[5] == ' ) '"
+      targets: [
+        Name >> 'y'
+          id: 'y'
+          ctx: Store
+      ]
+      value: Compare >> "tokens[5] == ' ) '"
+        left: Subscript >> 'tokens[5]'
+          value: Name >> 'tokens'
+            id: 'tokens'
+            ctx: Load
+          slice: Index >> '5'
+            value: Num >> '5'
+              n: 5
+          ctx: Load
+        ops: [
+          Eq
+        ]
+        comparators: [
+          Str >> "' ) '"
+            s: ' ) '
         ]
   ]

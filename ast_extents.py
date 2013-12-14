@@ -671,6 +671,7 @@ class AddAbsoluteExtentsVisitor(ast.NodeVisitor):
         self.code_lines = [''] + code_str.split('\n')
 
     def visit(self, node):
+        super(AddAbsoluteExtentsVisitor, self).visit(node) # POSTORDER
         node._attributes = node._attributes + ('abs_start_index', 'abs_end_index')
         if hasattr(node, 'end_col'):
             node.abs_start_index = 0
@@ -694,8 +695,77 @@ class AddAbsoluteExtentsVisitor(ast.NodeVisitor):
             node.abs_start_index += node.col_offset
             node.abs_end_index = node.abs_start_index # ugh, degenerate case
 
-        super(AddAbsoluteExtentsVisitor, self).visit(node)
 
+# TODO: this is pretty broken, so don't use it for now ... defeated!
+#
+# adjusts extents to account for extra leading and trailing parens,
+# to compensate for the fact that the AST doesn't contain any paren data
+#
+# remember to do a POSTORDER visit so that children are always handled
+# before parents!
+#
+# TODO: do something similar with balancing ']' and '}' for the ends of
+# lists and dicts/sets with trailing spaces, e.g.,: x = [ 1 , 2 , 3 ]
+#
+# TODO: test on strings with embedded parens. e.g., x = (tokens[5] == ' ) ')
+class BalanceParensVisitor(ast.NodeVisitor):
+    def __init__(self, code_str):
+        self.code_str = code_str
+        ast.NodeVisitor.__init__(self)
+
+    # SKIP STRINGS since those can have parens embedded within them,
+    # which totally throws off our paren detector. e.g.,:
+    #   x = (tokens[5] == ' ) ')
+    def visit_Str(self, node):
+        pass
+
+    def visit(self, node):
+        super(BalanceParensVisitor, self).visit(node) # POSTORDER
+        if hasattr(node, 'abs_start_index'):
+            # not a 'zero-sized' fake node
+            if node.abs_start_index < node.abs_end_index:
+                kids = get_sorted_children(node)
+                if kids:
+                    kids_extents = [(e.abs_start_index, e.abs_end_index)
+                                    for e in kids
+                                    if e.abs_start_index < e.abs_end_index]
+                    # match up parens in character within your extent
+                    # but NOT within one of your kids' extents
+                    # (since those could themselves be strings or other
+                    # stuff that throws off the paren detector)
+                    paren_level = 0
+                    for i in range(node.abs_start_index, node.abs_end_index + 1):
+                        skip = False
+                        # check whether i is in any of the extents in
+                        # kids_extents
+                        for x,y in kids_extents:
+                            if x <= i < y:
+                                skip = True
+                        if skip:
+                            continue
+
+                        c = self.code_str[i]
+                        if c == '(':
+                            paren_level += 1
+                        if c == ')':
+                            paren_level -= 1
+                        print '>', i, c
+
+                    if paren_level > 0:
+                        # more '(' than ')'
+                        pass
+                    elif paren_level < 0:
+                        # more ')' than '('
+                        pass
+                        # TODO: adjust node.start_col and node.lineno
+                        # backwards to match
+
+                    print node.abs_start_index, node.abs_end_index
+                    print `self.code_str[node.abs_start_index:node.abs_end_index]`
+                    print kids_extents
+                    print paren_level
+                    print
+                    
 
 def extent_contains(parent, child):
     return (parent.abs_start_index <= child.abs_start_index <=
@@ -774,7 +844,7 @@ def parse_and_add_extents(code_str):
     v3 = AddAbsoluteExtentsVisitor(code_str)
     v3.visit(root_node)
 
-    # TODO: make sure that every node has balanced parens
+    # TODO: this is pretty experimental and busted right now
     BALANCE_PARENS_CHECKER = False
     if BALANCE_PARENS_CHECKER:
         v4 = BalanceParensVisitor(code_str)
