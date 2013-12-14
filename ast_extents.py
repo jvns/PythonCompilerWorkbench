@@ -649,13 +649,27 @@ class FixupExtentsVisitor(ast.NodeVisitor):
                     node.lineno = child.lineno
                     node.col_offset = child.col_offset
                 else:
-                    node.lineno = min(node.lineno, child.lineno)
-                    node.col_offset = min(node.col_offset, child.col_offset)
+                    # broken since we need to take the mininum of BOTH
+                    # fields together ...
+                    #node.lineno = min(node.lineno, child.lineno)
+                    #node.col_offset = min(node.col_offset, child.col_offset)
+
+                    # really tricky because we want to make sure that
+                    # (lineno, col_offset) COMBINED are smaller, not just
+                    # individually. assume that each line has < 10000
+                    # columns, which is quite reasonable
+                    node_ind = node.lineno * 10000 + node.col_offset
+                    child_ind = child.lineno * 10000 + child.col_offset
+                    if child_ind < node_ind:
+                        node.lineno = child.lineno
+                        node.start_col = child.col_offset
+
 
             # if BOTH you and your child have start_col, then grab the
             # smaller of the two
             if hasattr(node, 'start_col') and hasattr(child, 'start_col'):
-                # VERY IMPORTANT guard condition!
+                # VERY IMPORTANT guard condition because if we're not on
+                # the same line, then this is bogus
                 if node.lineno == child.lineno:
                     node.start_col = min(node.start_col, child.start_col)
 
@@ -672,7 +686,7 @@ class PlaceholderNodesVisitor(ast.NodeVisitor):
 
         if not hasattr(node, 'end_col'):
             node.is_placeholder = True
-            # make this placeholder SPAN as far as possible
+
             node._attributes = node._attributes + ('start_col', 'end_col', 'end_lineno')
             is_first_child = True
             for child in gen_children(node):
@@ -681,11 +695,25 @@ class PlaceholderNodesVisitor(ast.NodeVisitor):
                         setattr(node, attr, getattr(child, attr))
                     is_first_child = False
 
-                node.lineno = min(node.lineno, child.lineno)
-                node.start_col = min(node.start_col, child.start_col)
+                # make it span as far as possible across all children
 
-                node.end_lineno = max(node.end_lineno, child.end_lineno)
-                node.end_col = max(node.end_col, child.end_col)
+                # really tricky because we want to make sure that
+                # (lineno, start_col) COMBINED are smaller, not just
+                # individually. assume that each line has < 10000
+                # columns, which is quite reasonable
+                node_ind = node.lineno * 10000 + node.start_col
+                child_ind = child.lineno * 10000 + child.start_col
+                if child_ind < node_ind:
+                    node.lineno = child.lineno
+                    node.start_col = child.start_col
+
+                # likewise for (end_lineno, end_col)
+                node_end_ind = node.end_lineno * 10000 + node.end_col
+                child_end_ind = child.end_lineno * 10000 + child.end_col
+                if child_end_ind > node_end_ind:
+                    node.end_lineno = child.end_lineno
+                    node.end_col = child.end_col
+
         else:
             node.is_placeholder = False
             # leave it alone
@@ -987,8 +1015,9 @@ class CodeAst(object):
     # and Tom Lieber for suggesting to represent data as
     # abs_start_index:abs_end_index to make indexing INFINITELY SIMPLER!
     def to_renderable_json(self, compact=False, debug=False):
-        #print repr(self.code_str)
-        #print
+        if debug:
+            print repr(self.code_str)
+            print
 
         # starts at 0 and sweeps through the entirety of self.code_str
         # so that ALL CHARACTERS in self.code_str end up "printed" in
@@ -1010,7 +1039,7 @@ class CodeAst(object):
         if self.cur_index < self.ast_root.abs_start_index:
             s = self.code_str[self.cur_index:self.ast_root.abs_start_index]
             self.gobbled_string_lst.append(s)
-            #print 'LEADING:', `s`
+            if debug: print 'LEADING:', `s`
             if s:
                 print >> self.outbuf, '   ', json.dumps(s)
                 has_leading_text = True
@@ -1023,8 +1052,8 @@ class CodeAst(object):
 
             is_first_json_elt = True
 
-            #print ind_str + '{'
-            #print ind_str, node.__class__.__name__
+            if debug:
+                print ind_str + '{', node.__class__.__name__, self.cur_index
             c = ''
             if need_leading_comma:
                 c = ', '
@@ -1036,7 +1065,7 @@ class CodeAst(object):
             if self.cur_index < node.abs_start_index:
                 s = self.code_str[self.cur_index:node.abs_start_index]
                 self.gobbled_string_lst.append(s)
-                #print ind_str, 'B:', `s`
+                if debug: print ind_str, 'B:', `s`
                 print >> self.outbuf, ind_str, json.dumps(s)
                 is_first_json_elt = False
                 self.cur_index = node.abs_start_index
@@ -1060,13 +1089,14 @@ class CodeAst(object):
                         node.abs_end_index <= cur_kid.abs_start_index):
                         s = self.code_str[self.cur_index:node.abs_end_index]
                         self.gobbled_string_lst.append(s)
-                        #print ind_str, 'K (prematurely_done):', `s`
+                        if debug: print ind_str, 'K (prematurely_done):', `s`
 
                         c = '' if is_first_json_elt else ','
                         print >> self.outbuf, ind_str, c, json.dumps(s)
                         self.cur_index = node.abs_end_index
                         prematurely_done = True
 
+                        if debug: print ind_str, '} (prematurely_done)', self.cur_index
                         print >> self.outbuf, ind_str, ' ]'
                         print >> self.outbuf, ind_str, '}'
                         # hacky way to indicate that we've "popped up" a level
@@ -1075,7 +1105,7 @@ class CodeAst(object):
 
                     s = self.code_str[self.cur_index:cur_kid.abs_start_index]
                     self.gobbled_string_lst.append(s)
-                    #print ind_str, 'K:', `s`
+                    if debug: print ind_str, 'K:', `s`
                     c = '' if is_first_json_elt else ','
                     print >> self.outbuf, ind_str, c, json.dumps(s)
                     self.cur_index = cur_kid.abs_start_index
@@ -1087,16 +1117,18 @@ class CodeAst(object):
             # clean up the end
             if kids:
                 assert kids[-1].abs_end_index <= self.cur_index
+
             if self.cur_index < node.abs_end_index:
                 s = self.code_str[self.cur_index:node.abs_end_index]
                 self.gobbled_string_lst.append(s)
-                #print ind_str, 'A:', `s`
+                if debug: print ind_str, 'A:', `s`, self.cur_index, node.abs_end_index
                 c = '' if is_first_json_elt else ','
                 print >> self.outbuf, ind_str, c, json.dumps(s)
                 self.cur_index = node.abs_end_index
                 is_first_json_elt = False
 
             if not prematurely_done:
+                if debug: print ind_str, '}', self.cur_index
                 print >> self.outbuf, ind_str, ' ]'
                 print >> self.outbuf, ind_str + '}'
 
@@ -1106,14 +1138,13 @@ class CodeAst(object):
 
         _render_helper(self.ast_root, 1, has_leading_text)
 
-        # TODO: hmmm why doesn't this assert always work?!?
-        #assert self.cur_index < len(self.code_str)
+        assert self.cur_index < len(self.code_str), (self.cur_index, len(self.code_str))
 
         # gobble up everything until the end of the string
 
         s = self.code_str[self.cur_index:]
         self.gobbled_string_lst.append(s)
-        #print 'TRAILING:', `s`
+        if debug: print 'TRAILING:', `s`
         if s:
             print >> self.outbuf, '   ', ',', json.dumps(s)
 
