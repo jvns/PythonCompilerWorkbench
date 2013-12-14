@@ -735,22 +735,19 @@ class AddAbsoluteExtentsVisitor(ast.NodeVisitor):
                 node.abs_end_index += len(self.code_lines[i]) + 1
             node.abs_end_index += node.end_col
 
-            assert node.abs_start_index <= node.abs_end_index
+            assert node.abs_start_index < node.abs_end_index
 
         super(AddAbsoluteExtentsVisitor, self).visit(node)
 
 
 def extent_contains(parent, child):
-    if hasattr(parent, 'abs_start_index') and hasattr(child, 'abs_start_index'):
-        return (parent.abs_start_index <= child.abs_start_index <=
-                child.abs_end_index <= parent.abs_end_index)
-    return True
+    return (parent.abs_start_index <= child.abs_start_index <=
+            child.abs_end_index <= parent.abs_end_index)
 
 def extents_disjoint(parent, child):
-    if hasattr(parent, 'abs_start_index') and hasattr(child, 'abs_start_index'):
-        return ((parent.abs_end_index <= child.abs_start_index) or
-                (child.abs_end_index <= parent.abs_start_index))
-    return True
+    return ((parent.abs_end_index <= child.abs_start_index) or
+            (child.abs_end_index <= parent.abs_start_index))
+
 
 def extent_to_str(node):
     lab = ''
@@ -770,30 +767,27 @@ def extent_to_str(node):
     return lab
 
 
-# verifies the tree after AddExtentsVisitor finishes running on it
+# verifies the integrity of the tree, most notably that each child's
+# extent is either completely contained within the parent, or completely
+# disjoint from its parent
 class ExtentsVerifierVisitor(ast.NodeVisitor):
     def __init__(self):
         ast.NodeVisitor.__init__(self)
 
     def visit(self, node):
-        if hasattr(node, 'end_col'):
+        if hasattr(node, 'abs_start_index'):
             assert node.lineno <= node.end_lineno
             if node.lineno == node.end_lineno:
                 assert node.start_col < node.end_col
+            assert node.abs_start_index < node.abs_end_index
 
-            # make sure no child "overlaps" with myself. children that
-            # are completely contained are okay, as are children that
-            # have NO overlaps.
             for child in gen_children(node):
-                #print '---'
-                #print 'P:', extent_to_str(node)
-                #print 'C:', extent_to_str(child)
-                assert (extent_contains(node, child) or
-                        extents_disjoint(node, child))
-
-        elif hasattr(node, 'lineno'):
-            pass
-
+                if hasattr(child, 'abs_start_index'):
+                    #print '---'
+                    #print 'P:', extent_to_str(node)
+                    #print 'C:', extent_to_str(child)
+                    assert (extent_contains(node, child) or
+                            extents_disjoint(node, child))
         super(ExtentsVerifierVisitor, self).visit(node)
 
 
