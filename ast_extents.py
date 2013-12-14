@@ -174,9 +174,6 @@ class AddExtentsVisitor(ast.NodeVisitor):
             # naked 'except'
             self.keyword_visitor(node, 'except')
 
-    def visit_TryExcept(self, node):
-        self.keyword_visitor(node, 'try')
-
     def visit_Global(self, node):
         # TODO: this doesn't handle a multiline statement that uses '\'
         # operators
@@ -588,24 +585,17 @@ class AddExtentsVisitor(ast.NodeVisitor):
             node.start_col -= 1
             node.end_col -= 1
 
-    # TODO: maybe refactor using keyword_visitor()?
     def visit_Pass(self, node):
-      add_extent_attrs(node)
-      node.start_col = node.col_offset
-      node.end_col = node.start_col + len('pass')
-      node.end_lineno = node.lineno
+      self.keyword_visitor(node, 'pass')
 
     def visit_Break(self, node):
-      add_extent_attrs(node)
-      node.start_col = node.col_offset
-      node.end_col = node.start_col + len('break')
-      node.end_lineno = node.lineno
+      self.keyword_visitor(node, 'break')
 
     def visit_Continue(self, node):
-      add_extent_attrs(node)
-      node.start_col = node.col_offset
-      node.end_col = node.start_col + len('continue')
-      node.end_lineno = node.lineno
+      self.keyword_visitor(node, 'continue')
+
+    def visit_TryExcept(self, node):
+        self.keyword_visitor(node, 'try')
 
 
 # copied from ast.NodeVisitor
