@@ -56,6 +56,7 @@ trailing spaces, and other detailed patches
     e.g., '(x, y)' tuple vs 'x, y' naked tuple
 '''
 
+DIGITS_SET = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}
 
 # NOPs
 NOP_CLASSES = [ast.expr_context, ast.cmpop, ast.boolop,
@@ -585,6 +586,22 @@ class AddExtentsVisitor(ast.NodeVisitor):
             node.start_col -= 1
             node.end_col -= 1
 
+        # properly handle floats
+        # (including '3.', '-3.', '3.0', '3.000', '3.0000000000000002')
+        if type(node.n) is float:
+            assert node.lineno == node.end_lineno
+            substr = self.code_lines[node.lineno][node.start_col:]
+            idx = substr.index('.') + 1
+            while True:
+                try:
+                    if substr[idx] not in DIGITS_SET:
+                        break
+                    idx += 1
+                except IndexError:
+                    break
+            node.end_col = node.start_col + idx
+
+
     def visit_Pass(self, node):
       self.keyword_visitor(node, 'pass')
 
@@ -614,67 +631,6 @@ class DepthCountingVisitor(object):
             # terminal node
             if depth > self.max_depth:
                 self.max_depth = depth
-
-
-# adapted from ast.dump
-def pretty_dump(node, code_str):
-    # add sentinel to support one-indexing
-    lines = [''] + code_str.split('\n')
-
-    def _format(node, indent=0, newline=False):
-        ind = ('  ' * indent)
-        next_ind = ('  ' * (indent+1))
-
-        if isinstance(node, ast.AST):
-            if newline:
-                print ind + node.__class__.__name__,
-            else:
-                print node.__class__.__name__,
-
-            if hasattr(node, 'lineno'):
-                if hasattr(node, 'start_col'):
-                    # common case: single line
-                    if node.lineno == node.end_lineno:
-                        contents = lines[node.lineno][node.start_col:node.end_col]
-                        print '>>', repr(contents)
-                    # multiline
-                    else:
-                        assert node.end_lineno > node.lineno
-                        contents = ''
-                        for i in range(node.lineno, node.end_lineno+1):
-                            l = lines[i]
-                            if i == node.lineno:
-                                contents += l[node.start_col:]
-                            elif i == node.end_lineno:
-                                contents += l[:node.end_col]
-                            else:
-                                contents += l
-                            contents += '\n'
-                        # strip off final \n
-                        if contents[-1] == '\n':
-                            contents = contents[:-1]
-                        print 'ML>>', repr(contents)
-                else:
-                    print
-            else:
-                print
-
-            for (fieldname, f) in ast.iter_fields(node):
-                print next_ind + fieldname + ':',
-                _format(f, indent+1)
-
-        elif isinstance(node, list):
-            print '['
-            for e in node:
-                _format(e, indent+1, True)
-            print ind + ']'
-        else:
-            print repr(node)
-
-    if not isinstance(node, ast.AST):
-        raise TypeError('expected AST, got %r' % node.__class__.__name__)
-
-    return _format(node, 0)
 
 
 
@@ -847,8 +803,73 @@ class CodeAst(object):
     def get_ast(self):
         return self.ast_root
 
+    # adapted from ast.dump
     def pretty_dump(self):
-        pretty_dump(self.ast_root, self.code_str)
+        node = self.ast_root
+        # add sentinel to support one-indexing
+        lines = [''] + self.code_str.split('\n')
+
+        def _format(node, indent=0, newline=False):
+            ind = ('  ' * indent)
+            next_ind = ('  ' * (indent+1))
+
+            if isinstance(node, ast.AST):
+                if newline:
+                    print ind + node.__class__.__name__,
+                else:
+                    print node.__class__.__name__,
+
+                if hasattr(node, 'lineno'):
+                    if hasattr(node, 'start_col'):
+                        # common case: single line
+                        if node.lineno == node.end_lineno:
+                            contents = lines[node.lineno][node.start_col:node.end_col]
+                            # cross-check:
+                            s = self.code_str[node.abs_start_index:node.abs_end_index]
+                            assert s == contents
+                            print '>>', repr(contents)
+                        # multiline
+                        else:
+                            assert node.end_lineno > node.lineno
+                            contents = ''
+                            for i in range(node.lineno, node.end_lineno+1):
+                                l = lines[i]
+                                if i == node.lineno:
+                                    contents += l[node.start_col:]
+                                elif i == node.end_lineno:
+                                    contents += l[:node.end_col]
+                                else:
+                                    contents += l
+                                contents += '\n'
+                            # strip off final \n
+                            if contents[-1] == '\n':
+                                contents = contents[:-1]
+
+                            # cross-check:
+                            s = self.code_str[node.abs_start_index:node.abs_end_index]
+                            assert s == contents
+                            print 'ML>>', repr(contents)
+                    else:
+                        print
+                else:
+                    print
+
+                for (fieldname, f) in ast.iter_fields(node):
+                    print next_ind + fieldname + ':',
+                    _format(f, indent+1)
+
+            elif isinstance(node, list):
+                print '['
+                for e in node:
+                    _format(e, indent+1, True)
+                print ind + ']'
+            else:
+                print repr(node)
+
+        if not isinstance(self.ast_root, ast.AST):
+            raise TypeError('expected AST, got %r' % node.__class__.__name__)
+
+        return _format(self.ast_root, 0)
 
 
 if __name__ == "__main__":

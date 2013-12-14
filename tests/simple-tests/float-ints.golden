@@ -1,0 +1,60 @@
+3.
+-3.
+10.
+-10.
+-10. + -3.
+3.0
+3.00
+3.000
+3.0000
+3.00000
+3.0000000000
+3.000000000000005
+3.00000000000000000000002
+===
+Module
+  body: [
+    Expr
+      value: Num >> '3.'
+        n: 3.0
+    Expr
+      value: Num >> '-3.'
+        n: -3.0
+    Expr
+      value: Num >> '10.'
+        n: 10.0
+    Expr
+      value: Num >> '-10.'
+        n: -10.0
+    Expr
+      value: BinOp >> '-10. + -3.'
+        left: Num >> '-10.'
+          n: -10.0
+        op: Add
+        right: Num >> '-3.'
+          n: -3.0
+    Expr
+      value: Num >> '3.0'
+        n: 3.0
+    Expr
+      value: Num >> '3.00'
+        n: 3.0
+    Expr
+      value: Num >> '3.000'
+        n: 3.0
+    Expr
+      value: Num >> '3.0000'
+        n: 3.0
+    Expr
+      value: Num >> '3.00000'
+        n: 3.0
+    Expr
+      value: Num >> '3.0000000000'
+        n: 3.0
+    Expr
+      value: Num >> '3.000000000000005'
+        n: 3.000000000000005
+    Expr
+      value: Num >> '3.00000000000000000000002'
+        n: 3.0
+  ]
