@@ -6,4 +6,4 @@ if __name__ == "__main__":
 
     obj = CodeAst(code_str)
 
-    obj.to_renderable_json()
+    print obj.to_renderable_json(compact=False)
