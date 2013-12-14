@@ -970,8 +970,9 @@ class CodeAst(object):
             self.cur_index = self.ast_root.abs_start_index
 
         def _render_helper(node, indent):
-
             new_indent = indent
+
+            prematurely_done = False # ergh!?!
 
             # don't do anything for "empty" placeholder nodes with
             # no extents
@@ -998,10 +999,36 @@ class CodeAst(object):
                 except IndexError:
                     next_kid = None
 
+                # BEFORE handling each kid, gobble up everything up to
+                # the abs_start_index of that kid
+                # (trust me, it works better this way!)
+                if node.abs_start_index < node.abs_end_index:
+                    assert node.abs_start_index <= self.cur_index
+                    if self.cur_index < cur_kid.abs_start_index:
+
+                        # kinda tricky -- for things like function
+                        # definitions and 'if' blocks,
+                        # node.abs_end_index <= cur_kid.abs_start_index,
+                        # so in that case, separate into two chunks ...
+                        # TODO: should this be '<' or '<='?
+                        if (not prematurely_done and
+                            node.abs_end_index <= cur_kid.abs_start_index):
+                            s = self.code_str[self.cur_index:node.abs_end_index]
+                            self.gobbled_string_lst.append(s)
+                            print indent * '  ', 'K[truncated]:', `s`, 'prematurely_done'
+                            self.cur_index = node.abs_end_index
+                            prematurely_done = True
+
+                        s = self.code_str[self.cur_index:cur_kid.abs_start_index]
+                        self.gobbled_string_lst.append(s)
+                        print indent * '  ', 'K:', `s`
+                        self.cur_index = cur_kid.abs_start_index
+
                 _render_helper(cur_kid, new_indent)
 
                 # after handling EACH kid, output everything up until the
                 # abs_start_index of the next kid
+                '''
                 if next_kid:
                     if node.abs_start_index < node.abs_end_index:
                         assert node.abs_start_index <= self.cur_index
@@ -1010,6 +1037,7 @@ class CodeAst(object):
                             self.gobbled_string_lst.append(s)
                             print indent * '  ', 'K:', `s`
                             self.cur_index = next_kid.abs_start_index
+                '''
 
             # clean up the end
             if node.abs_start_index < node.abs_end_index:
