@@ -43,8 +43,11 @@ def get_compile():
         c = byteplay.Code.from_code(codeobject)
         bytecode_str = str(c.code)
 
+        ast_json = obj.to_renderable_json()
+
         return json.dumps({'status': 'success',
                            'ast_svg': ast_svg,
+                           'ast_json': ast_json,
                            'bytecode_str': bytecode_str})
     except SyntaxError:
         return json.dumps({'status': 'error', 'data': 'SyntaxError'})

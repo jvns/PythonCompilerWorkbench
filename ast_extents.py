@@ -934,6 +934,7 @@ class CodeAst(object):
     def __init__(self, code_str):
         self.code_str = code_str
         self.ast_root = parse_and_add_extents(code_str)
+        self.all_ids = set()
 
     def get_ast(self):
         return self.ast_root
@@ -1030,7 +1031,7 @@ class CodeAst(object):
 
         self.outbuf = cStringIO.StringIO()
 
-        print >> self.outbuf, '{"name": "ROOT_NODE",'
+        print >> self.outbuf, '{"name": "ROOT_NODE", "id": "id_ROOT", '
         print >> self.outbuf, ' "contents": ['
 
         has_leading_text = False
@@ -1058,8 +1059,12 @@ class CodeAst(object):
             if need_leading_comma:
                 c = ', '
 
+            _id = id(node)
+            assert _id not in self.all_ids # make sure ids are all unique
+            self.all_ids.add(_id)
+ 
             print >> self.outbuf, ind_str + c,
-            print >> self.outbuf, '{"name": %s,' % json.dumps(node.__class__.__name__)
+            print >> self.outbuf, '{"name": %s, "id": "id_%d",' % (json.dumps(node.__class__.__name__), _id)
             print >> self.outbuf, ind_str + ' "contents": ['
 
             if self.cur_index < node.abs_start_index:
@@ -1138,7 +1143,7 @@ class CodeAst(object):
 
         _render_helper(self.ast_root, 1, has_leading_text)
 
-        assert self.cur_index < len(self.code_str), (self.cur_index, len(self.code_str))
+        assert self.cur_index <= len(self.code_str), (self.cur_index, len(self.code_str))
 
         # gobble up everything until the end of the string
 

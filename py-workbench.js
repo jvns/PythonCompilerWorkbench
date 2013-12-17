@@ -69,6 +69,8 @@ $(document).ready(function() {
 
                 $('#astPane').html(dat.ast_svg);
                 $('#bytecodeOutput').html(dat.bytecode_str);
+
+                renderCodePuff(dat.ast_json);
               }
               else {
                 $('#codeInputPane').addClass('redBorder');

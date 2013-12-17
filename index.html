@@ -14,9 +14,13 @@
 <!-- for shaking effect!!! -->
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
+<script type="text/javascript" src="d3.v3.min.js"></script>
+
 <script type="text/javascript" src="codemirror-3.20/lib/codemirror.js"></script>
 <link type="text/css" href="codemirror-3.20/lib/codemirror.css" rel="stylesheet"/>
 <script type="text/javascript" src="codemirror-3.20/mode/python/python.js"></script>
+
+<script type="text/javascript" src="codepuff.js"></script>
 
 <script type="text/javascript" src="py-workbench.js"></script>
 <link rel="stylesheet" href="py-workbench.css"/>
@@ -42,7 +46,7 @@
   <!-- <td class="arrow">&rarr;</td> -->
   <td>
     Bytecode:<br/>
-    <textarea id="bytecodeOutput" cols="41" rows="25" wrap="off" readonly></textarea>
+    <textarea id="bytecodeOutput" cols="41" rows="15" wrap="off" readonly></textarea>
   </td>
 </tr>
 
@@ -87,6 +91,19 @@
 </tr>
 
 -->
+
+<tr>
+  <td>
+    <div id="codePuffPane"></div>
+  </td>
+  <td>
+    <pre id="codePuffJSON"></pre>
+  </td>
+  <td>
+  </td>
+</tr>
+
+
 
 </table>
 
