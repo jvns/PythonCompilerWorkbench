@@ -18,3 +18,52 @@ Module
         attr: 'baz'
         ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".foo"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".baz"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

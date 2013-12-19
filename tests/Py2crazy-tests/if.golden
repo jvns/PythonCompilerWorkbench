@@ -46,3 +46,96 @@ Module
       orelse: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "foo"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "()"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                " and (", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "x"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        " + ", 
+                        {
+                          "contents": [
+                            "y"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    " > ", 
+                    {
+                      "contents": [
+                        "7"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Compare"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BoolOp"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        "):\n  ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'YES!'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

@@ -94,3 +94,178 @@ Module
           nl: True
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n  ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                "True"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "3"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "y"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "5"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "foo"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "()"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                " and (", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "x"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        " + ", 
+                        {
+                          "contents": [
+                            "y"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    " > ", 
+                    {
+                      "contents": [
+                        "7"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Compare"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BoolOp"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        "):\n  ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'YES'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\nelse:\n  ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'NO'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

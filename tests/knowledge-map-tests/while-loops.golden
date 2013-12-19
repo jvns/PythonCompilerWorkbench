@@ -255,3 +255,524 @@ Module
       orelse: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "while (", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " > ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "While"
+        }, 
+        "):\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " -= ", 
+            {
+              "contents": [
+                "1"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "while (", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " > ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "While"
+        }, 
+        "):\n    ", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " % ", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                " == ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " -= ", 
+            {
+              "contents": [
+                "1"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "while (", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " > ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "While"
+        }, 
+        "):\n    ", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " % ", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                " == ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " -= ", 
+            {
+              "contents": [
+                "1"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "while (", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " > ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "While"
+        }, 
+        "):\n    ", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " % ", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                " == ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "continue"
+          ], 
+          "id": "id_0", 
+          "name": "Continue"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " -= ", 
+            {
+              "contents": [
+                "1"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "while ", 
+            {
+              "contents": [
+                "True"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "While"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " < ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "break"
+          ], 
+          "id": "id_0", 
+          "name": "Break"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " -= ", 
+            {
+              "contents": [
+                "1"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "while ", 
+            {
+              "contents": [
+                "True"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "While"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

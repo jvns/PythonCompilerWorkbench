@@ -55,3 +55,102 @@ Module
       decorator_list: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    "# mix up function call and tuple hysteresis, to maximize confusion\n", 
+    {
+      "contents": [
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n  ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "func1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "y"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "func2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        "z"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "w"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

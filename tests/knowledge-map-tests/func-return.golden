@@ -418,3 +418,656 @@ Module
       decorator_list: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return"
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                "42"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                "True"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "a"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " + ", 
+                {
+                  "contents": [
+                    "b"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "n"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def fact(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "n"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "n"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " * ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "fact"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "n"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "-", 
+                        {
+                          "contents": [
+                            "1"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "area"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "distance"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        "xc"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "yc"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "xp"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "yp"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "lst"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "3"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "lst"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ":", 
+                    {
+                      "contents": [
+                        "6"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    "a"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "b"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "c"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "a"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "b"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "c"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "min"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        "t"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "max"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        "t"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "while ", 
+            {
+              "contents": [
+                "True"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "While"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " < ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n            ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                "y"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n        ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " -= ", 
+            {
+              "contents": [
+                "2"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

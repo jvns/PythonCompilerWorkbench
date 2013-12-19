@@ -126,3 +126,369 @@ Module
           step: None
         ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ":", 
+                    {
+                      "contents": [
+                        "5"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ":"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    ":", 
+                    {
+                      "contents": [
+                        "5"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "a"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ":", 
+                    {
+                      "contents": [
+                        "b"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "a"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ":"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    ":", 
+                    {
+                      "contents": [
+                        "b"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[:]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "a"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ":", 
+                    {
+                      "contents": [
+                        "b"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ":", 
+                    {
+                      "contents": [
+                        "c"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "part"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "whole"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ":", 
+                    {
+                      "contents": [
+                        "5"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

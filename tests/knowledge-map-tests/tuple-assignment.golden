@@ -81,3 +81,182 @@ Module
         ]
         ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "a"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "b"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "c"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "d"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    "a"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "b"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    "c"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "d"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n\n# multiline\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    "a"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "b"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ",\n   ", 
+                {
+                  "contents": [
+                    "c"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }, 
+            " = \\\n     ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    "c"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "d"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

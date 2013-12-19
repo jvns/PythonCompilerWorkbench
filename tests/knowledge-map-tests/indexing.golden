@@ -245,3 +245,732 @@ Module
       value: Str >> '"Lansing"'
         s: 'Lansing'
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "5"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "-5"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "\"John\""
+                      ], 
+                      "id": "id_0", 
+                      "name": "Str"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "world_map"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "(", 
+                        {
+                          "contents": [
+                            "x"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ",", 
+                        {
+                          "contents": [
+                            "y"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ")"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Tuple"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "world_map"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "x"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ",", 
+                        {
+                          "contents": [
+                            "y"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "Tuple"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "i"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "fruit"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "length"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        " - ", 
+                        {
+                          "contents": [
+                            "1"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "fruit"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "len"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Name"
+                            }, 
+                            "(", 
+                            {
+                              "contents": [
+                                "fruit"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Name"
+                            }, 
+                            ")"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Call"
+                        }, 
+                        " - ", 
+                        {
+                          "contents": [
+                            "1"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "L"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "L"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Name"
+                            }, 
+                            ".index"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Attribute"
+                        }, 
+                        "(", 
+                        {
+                          "contents": [
+                            "3"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }, 
+                        ")"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Call"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "inverse"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "[", 
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "val"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Name"
+                            }
+                          ], 
+                          "id": "id_0", 
+                          "name": "Index"
+                        }, 
+                        "]"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Subscript"
+                    }, 
+                    ".append"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "key"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "letter"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "fruit"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "0"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "fruit"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "0"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "\"apple\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "counter"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "c"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }, 
+            " += ", 
+            {
+              "contents": [
+                "1"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "capitals"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "states"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "[", 
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "\"Michigan\""
+                              ], 
+                              "id": "id_0", 
+                              "name": "Str"
+                            }
+                          ], 
+                          "id": "id_0", 
+                          "name": "Index"
+                        }, 
+                        "]"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Subscript"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "capitals"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "states"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "[", 
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "\"Michigan\""
+                              ], 
+                              "id": "id_0", 
+                              "name": "Str"
+                            }
+                          ], 
+                          "id": "id_0", 
+                          "name": "Index"
+                        }, 
+                        "]"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Subscript"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "\"Lansing\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

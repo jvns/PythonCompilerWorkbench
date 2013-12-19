@@ -31,32 +31,41 @@ function renderCodePuff(astJson) {
 
   $("#codePuffPane").empty();
 
-  // pair programming with Tom Lieber
-  function renderNodes(ul, nodes) {
-    // select all li's inside of THIS ul
-    var lis = ul.selectAll(function () { return ul[0][0].childNodes })
-                .data(nodes);
+  // from pair programming with Tom Lieber
+  function renderNodes(cur, nodes) {
+    // old code: grab all of the (not-yet-existent) child nodes of this node
+    //var lis = cur.selectAll(function () { return cur[0][0].childNodes })
+    //             .data(nodes);
+
+    var lis = cur.selectAll("div")
+                 .data(nodes);
 
     lis.enter()
-       .append("span")
+       .append("div")
        .each(makeNodeView);
   }
 
   function makeNodeView(node) {
+    var disNode = d3.select(this);
+
     if (typeof node == "string") {
+      // a terminal node
+      disNode.attr("class", "string");
+
       // escape all weird characters
       var s = htmlspecialchars(node);
-      d3.select(this).html(s);
+      disNode.html(s);
     }
     else {
-      // object
-      var ul = d3.select(this).append("span");
-      ul.attr("id", node.id);
-      ul.attr("class", node.name);
-      renderNodes(ul, node.contents);
+      // a compound object
+      disNode.attr("id", node.id);
+      disNode.attr("class", node.name);
+
+      // ... so recurse
+      renderNodes(disNode, node.contents);
     }
   }
 
-  var ul = d3.select("#codePuffPane").insert("span");
-  renderNodes(ul, [ast]);
+  var base = d3.select("#codePuffPane");
+  renderNodes(base, [ast] /* d3 expects a list, eeek! */);
 }

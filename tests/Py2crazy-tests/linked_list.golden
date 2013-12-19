@@ -101,3 +101,272 @@ Module
         ]
         ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "[", 
+                {
+                  "contents": [
+                    "1"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "[", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "[", 
+                        {
+                          "contents": [
+                            "3"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }, 
+                        ", ", 
+                        {
+                          "contents": [
+                            "[", 
+                            {
+                              "contents": [
+                                "4"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Num"
+                            }, 
+                            ", ", 
+                            {
+                              "contents": [
+                                "None"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Name"
+                            }, 
+                            "]"
+                          ], 
+                          "id": "id_0", 
+                          "name": "List"
+                        }, 
+                        "]"
+                      ], 
+                      "id": "id_0", 
+                      "name": "List"
+                    }, 
+                    "]"
+                  ], 
+                  "id": "id_0", 
+                  "name": "List"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "List"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "y"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    "1"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "(", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "(", 
+                        {
+                          "contents": [
+                            "3"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }, 
+                        ", ", 
+                        {
+                          "contents": [
+                            "(", 
+                            {
+                              "contents": [
+                                "4"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Num"
+                            }, 
+                            ", ", 
+                            {
+                              "contents": [
+                                "(", 
+                                {
+                                  "contents": [
+                                    "5"
+                                  ], 
+                                  "id": "id_0", 
+                                  "name": "Num"
+                                }, 
+                                ", ", 
+                                {
+                                  "contents": [
+                                    "None"
+                                  ], 
+                                  "id": "id_0", 
+                                  "name": "Name"
+                                }, 
+                                ")"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Tuple"
+                            }, 
+                            ")"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Tuple"
+                        }, 
+                        ")"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Tuple"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Tuple"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n# naked tuples\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "z"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "1"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "2"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "3"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "4"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "5"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "None"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

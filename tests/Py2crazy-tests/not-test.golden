@@ -25,3 +25,73 @@ Module
               n: 5
           ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "not (", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "1"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }, 
+                        " + ", 
+                        {
+                          "contents": [
+                            "3"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    " == ", 
+                    {
+                      "contents": [
+                        "5"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Compare"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "UnaryOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    ")\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

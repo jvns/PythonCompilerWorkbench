@@ -57,3 +57,170 @@ Module
         id: '__init__'
         ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "i"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "name"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "my_first_name"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "PLANCK_CONSTANT"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "MyAwesomeClass"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "card"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "Card"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "_private_attr"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "javaStyle"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "__super_private"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "__init__"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

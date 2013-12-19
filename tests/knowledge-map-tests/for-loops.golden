@@ -365,3 +365,670 @@ Module
       orelse: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "for ", 
+            {
+              "contents": [
+                "elt"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " in ", 
+            {
+              "contents": [
+                "my_list"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "For"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "elt"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "for ", 
+            {
+              "contents": [
+                "elt"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " in ", 
+            {
+              "contents": [
+                "[", 
+                {
+                  "contents": [
+                    "1"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "2"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "3"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "List"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "For"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "elt"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "for ", 
+            {
+              "contents": [
+                "elt"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " in ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "range"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "5"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "For"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "elt"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "for ", 
+            {
+              "contents": [
+                "elt"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " in ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "range"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "len"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        "lst"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "For"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "elt"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "for ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    "i"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "elt"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }, 
+            " in ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "enumerate"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "lst"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "For"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "i"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ", ", 
+            {
+              "contents": [
+                "elt"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n# multiline test\n", 
+        {
+          "contents": [
+            "for ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    "i"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "elt"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }, 
+            " \\\n       in \\\n           ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "enumerate"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "lst"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "For"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "i"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ", ", 
+            {
+              "contents": [
+                "elt"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "for ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " in ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "range"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "100"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "For"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " < ", 
+                {
+                  "contents": [
+                    "2"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "break"
+          ], 
+          "id": "id_0", 
+          "name": "Break"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            "elif ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " > ", 
+                {
+                  "contents": [
+                    "10"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "continue"
+          ], 
+          "id": "id_0", 
+          "name": "Continue"
+        }, 
+        "\n    else:\n        ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "for ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "k"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "v"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }, 
+            " in ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "d"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ".iteritems"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                "()"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "For"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "k"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ", ", 
+            {
+              "contents": [
+                "v"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "for ", 
+            {
+              "contents": [
+                "ty"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " in ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "type"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "(", 
+                        {
+                          "contents": [
+                            "obj"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ")"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Call"
+                    }, 
+                    ".mro"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                "()"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "For"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'foo'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

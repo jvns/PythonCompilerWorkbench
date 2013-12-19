@@ -19,3 +19,53 @@ Module
           id: 'b'
           ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    "# with extra spaces ...\n", 
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "c"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            "  =  ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "a"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " + ", 
+                {
+                  "contents": [
+                    "b"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "      \n# and a trailing line comment\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

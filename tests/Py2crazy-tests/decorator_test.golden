@@ -75,3 +75,144 @@ Module
           ctx: Load
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    "# these weird decorators currently don't work so hto ...\n# from Lib/threading.py\n", 
+    {
+      "contents": [
+        {
+          "contents": [
+            "@", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "name"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".setter"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }, 
+            "\ndef name(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "self"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "name"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }, 
+        "\n\n# from Lib/csv.py\n", 
+        {
+          "contents": [
+            "@", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "fieldnames"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".setter"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }, 
+            "\ndef fieldnames(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "self"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "value"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "self"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "._fieldnames"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "value"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

@@ -234,3 +234,400 @@ Module
       decorator_list: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "1"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "2"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "z"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "=", 
+                {
+                  "contents": [
+                    "10"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "z"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "=", 
+                {
+                  "contents": [
+                    "\"hello world\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo(*x)"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ",\n\n\n        *y)"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ", *y, **z)"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "xxx"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ",\n        ", 
+                {
+                  "contents": [
+                    "yyy"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "=", 
+                {
+                  "contents": [
+                    "'default arg'"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ", *zzz,\n        **www)"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "a"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "=", 
+                {
+                  "contents": [
+                    "1"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ",\n        ", 
+                {
+                  "contents": [
+                    "b"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "=", 
+                {
+                  "contents": [
+                    "2"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ",\n        ", 
+                {
+                  "contents": [
+                    "c"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "=", 
+                {
+                  "contents": [
+                    "3"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ",", 
+                {
+                  "contents": [
+                    "d"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "=", 
+                {
+                  "contents": [
+                    "4"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ",*x, **y)"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

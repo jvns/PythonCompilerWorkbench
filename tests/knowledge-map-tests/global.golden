@@ -57,3 +57,108 @@ Module
       decorator_list: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "def foo(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "z"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "global a"
+          ], 
+          "id": "id_0", 
+          "name": "Global"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            "global b, c"
+          ], 
+          "id": "id_0", 
+          "name": "Global"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "a"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "b"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ", ", 
+            {
+              "contents": [
+                "c"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

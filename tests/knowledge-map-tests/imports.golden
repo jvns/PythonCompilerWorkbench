@@ -98,3 +98,145 @@ Module
         starargs: None
         kwargs: None
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "import foo"
+          ], 
+          "id": "id_0", 
+          "name": "Import"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "from  foo  import bar"
+          ], 
+          "id": "id_0", 
+          "name": "ImportFrom"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "from   foo    import bar   ,  baz"
+          ], 
+          "id": "id_0", 
+          "name": "ImportFrom"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "from foo import  *"
+          ], 
+          "id": "id_0", 
+          "name": "ImportFrom"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "import foo.bar"
+          ], 
+          "id": "id_0", 
+          "name": "Import"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "from foo.bar import baz"
+          ], 
+          "id": "id_0", 
+          "name": "ImportFrom"
+        }, 
+        "\n\n# semicolons to start new lines\n", 
+        {
+          "contents": [
+            "import foo.bar"
+          ], 
+          "id": "id_0", 
+          "name": "Import"
+        }, 
+        "; ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " += ", 
+            {
+              "contents": [
+                "5"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }, 
+        "; ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "y"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " -= ", 
+            {
+              "contents": [
+                "5"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "from foo.bar import baz"
+          ], 
+          "id": "id_0", 
+          "name": "ImportFrom"
+        }, 
+        "; ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "baz"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "()"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

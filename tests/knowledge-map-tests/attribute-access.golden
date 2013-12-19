@@ -212,3 +212,475 @@ Module
         attr: 'age'
         ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "math"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".pi"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "math"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ".sin"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "45"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "Person"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".maximum_age"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "f"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ".g"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                ".h"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "os"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ".path"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Attribute"
+                    }, 
+                    ".abspath"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "'memo.txt'"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                {
+                                  "contents": [
+                                    "f"
+                                  ], 
+                                  "id": "id_0", 
+                                  "name": "Name"
+                                }, 
+                                "(", 
+                                {
+                                  "contents": [
+                                    "x"
+                                  ], 
+                                  "id": "id_0", 
+                                  "name": "Name"
+                                }, 
+                                ")"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Call"
+                            }, 
+                            ".g"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Attribute"
+                        }, 
+                        "(", 
+                        {
+                          "contents": [
+                            "y"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ")"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Call"
+                    }, 
+                    ".h"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "z"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "res"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ".append"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "s"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ".capitalize"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Attribute"
+                    }, 
+                    "()"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".f"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "5"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".f"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }, 
+            " += ", 
+            {
+              "contents": [
+                "5"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "p"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".x"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "rect"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ".x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                " + ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "rect"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ".width"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Attribute"
+                    }, 
+                    " / ", 
+                    {
+                      "contents": [
+                        "2.0"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "self"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".age"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "age"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "age"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "self"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".age"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

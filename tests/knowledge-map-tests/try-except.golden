@@ -115,3 +115,250 @@ Module
       orelse: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "raise"
+          ], 
+          "id": "id_0", 
+          "name": "Raise"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "raise ", 
+            {
+              "contents": [
+                "a"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Raise"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "raise ", 
+            {
+              "contents": [
+                "a"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            "  ,  ", 
+            {
+              "contents": [
+                "b"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Raise"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "raise ", 
+            {
+              "contents": [
+                "a"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            "  ,", 
+            {
+              "contents": [
+                "b"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ",  ", 
+            {
+              "contents": [
+                "c"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Raise"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "try"
+          ], 
+          "id": "id_0", 
+          "name": "TryExcept"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "d"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "name"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "except ", 
+            {
+              "contents": [
+                "KeyError"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "ExceptHandler"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'not found'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            "raise ", 
+            {
+              "contents": [
+                "NotImplementedError"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Raise"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "try"
+          ], 
+          "id": "id_0", 
+          "name": "TryExcept"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "5"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "except"
+          ], 
+          "id": "id_0", 
+          "name": "ExceptHandler"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "10"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

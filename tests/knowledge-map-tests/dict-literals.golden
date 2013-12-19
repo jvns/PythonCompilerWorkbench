@@ -137,3 +137,348 @@ Module
             kwargs: None
         ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "{}"
+              ], 
+              "id": "id_0", 
+              "name": "Dict"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "{", 
+                {
+                  "contents": [
+                    "\"Joe\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    "23"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                "}"
+              ], 
+              "id": "id_0", 
+              "name": "Dict"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "{", 
+                {
+                  "contents": [
+                    "\"Joe\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    "23"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "\"Carol\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    "19"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "\"Bobby\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    "32"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                "}"
+              ], 
+              "id": "id_0", 
+              "name": "Dict"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "{", 
+                {
+                  "contents": [
+                    "\"Joe\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    "23"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "1000"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    "19"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "(", 
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Tuple"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    "32"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                "}"
+              ], 
+              "id": "id_0", 
+              "name": "Dict"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "{", 
+                {
+                  "contents": [
+                    "\"Joe\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "a"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        "b"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                "}"
+              ], 
+              "id": "id_0", 
+              "name": "Dict"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n\n# multiline\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "{", 
+                {
+                  "contents": [
+                    "\"Joe\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "joe"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ".get_age"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Attribute"
+                    }, 
+                    "()"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ",\n ", 
+                {
+                  "contents": [
+                    "\"Carol\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "carol"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ".get_age"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Attribute"
+                    }, 
+                    "()"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ",\n ", 
+                {
+                  "contents": [
+                    "\"Bob\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                ": ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "bob"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ".get_age"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Attribute"
+                    }, 
+                    "()"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                "}"
+              ], 
+              "id": "id_0", 
+              "name": "Dict"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

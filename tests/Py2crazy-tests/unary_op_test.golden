@@ -28,3 +28,94 @@ Module
                         id: 'xxx'
                         ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "not ", 
+                {
+                  "contents": [
+                    "not ", 
+                    {
+                      "contents": [
+                        "not ", 
+                        {
+                          "contents": [
+                            "- ", 
+                            {
+                              "contents": [
+                                "+ ", 
+                                {
+                                  "contents": [
+                                    "- ", 
+                                    {
+                                      "contents": [
+                                        "- ", 
+                                        {
+                                          "contents": [
+                                            "~ ", 
+                                            {
+                                              "contents": [
+                                                "xxx"
+                                              ], 
+                                              "id": "id_0", 
+                                              "name": "Name"
+                                            }
+                                          ], 
+                                          "id": "id_0", 
+                                          "name": "UnaryOp"
+                                        }
+                                      ], 
+                                      "id": "id_0", 
+                                      "name": "UnaryOp"
+                                    }
+                                  ], 
+                                  "id": "id_0", 
+                                  "name": "UnaryOp"
+                                }
+                              ], 
+                              "id": "id_0", 
+                              "name": "UnaryOp"
+                            }
+                          ], 
+                          "id": "id_0", 
+                          "name": "UnaryOp"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "UnaryOp"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "UnaryOp"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "UnaryOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

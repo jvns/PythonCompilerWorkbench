@@ -100,3 +100,278 @@ Module
           ctx: Del
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "del ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Delete"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "del ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ", ", 
+            {
+              "contents": [
+                "y"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Delete"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "del ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".bar"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Delete"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "del ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "5"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Delete"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "del ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "'bar'"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Str"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Delete"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "del ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "world_map"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "x"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        ",", 
+                        {
+                          "contents": [
+                            "y"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "Tuple"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Delete"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "del ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Delete"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "del ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ":", 
+                    {
+                      "contents": [
+                        "5"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Delete"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

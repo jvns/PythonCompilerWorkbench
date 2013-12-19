@@ -40,6 +40,23 @@ a:hover {
   margin-top: 5px;
 }
 
+#codePuffPane {
+  margin-top: 20px;
+  font-family: Andale mono, monospace;
+  font-size: 12pt;
+  line-height: 1.1em;
+}
+
+/* make all of the divs inside inline divs
+   to emulate spans except with better border wrapping
+
+   http://stackoverflow.com/questions/9251786/border-around-multiline-text-in-a-div-html-css
+*/
+#codePuffPane div {
+  display: inline;
+  border: 1px solid #444;
+}
+
 textarea {
   margin-top: 5px;
 

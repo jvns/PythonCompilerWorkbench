@@ -154,3 +154,334 @@ Module
             ]
         ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "not ", 
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "UnaryOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "not (", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " or ", 
+                    {
+                      "contents": [
+                        "y"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BoolOp"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "UnaryOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        ")\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " is ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " is not ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " in ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " not in ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "12"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    " < ", 
+                    {
+                      "contents": [
+                        "age"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Compare"
+                }, 
+                ") and (", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "age"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " < ", 
+                    {
+                      "contents": [
+                        "20"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Compare"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BoolOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        ")\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "12"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                " < ", 
+                {
+                  "contents": [
+                    "age"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " < ", 
+                {
+                  "contents": [
+                    "20"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n\n# multiline\n(", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "12"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    " < ", 
+                    {
+                      "contents": [
+                        "age"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Compare"
+                }, 
+                ") and\n (", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "age"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " < ", 
+                    {
+                      "contents": [
+                        "20"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Compare"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BoolOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "))\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

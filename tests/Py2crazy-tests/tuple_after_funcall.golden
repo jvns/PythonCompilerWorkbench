@@ -50,3 +50,127 @@ Module
         ]
         ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    "# make sure BUILD_TUPLE works even right after a CALL_FUNCTION bytecode\n", 
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "int"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "tokens"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "[", 
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "2"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Num"
+                            }
+                          ], 
+                          "id": "id_0", 
+                          "name": "Index"
+                        }, 
+                        "]"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Subscript"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "int"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "tokens"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "[", 
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "3"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Num"
+                            }
+                          ], 
+                          "id": "id_0", 
+                          "name": "Index"
+                        }, 
+                        "]"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Subscript"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

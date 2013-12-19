@@ -106,3 +106,224 @@ Module
       decorator_list: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "def foo(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "a"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "b"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "c"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "=", 
+                {
+                  "contents": [
+                    "3"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "d"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "a"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "b"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        " * ", 
+                        {
+                          "contents": [
+                            "c"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                " - ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "bar"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "()"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n\n    ", 
+        {
+          "contents": [
+            "for ", 
+            {
+              "contents": [
+                "i"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " in ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "range"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "10"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "For"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "i"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ", ", 
+            {
+              "contents": [
+                "d"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n    ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "c"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "d"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

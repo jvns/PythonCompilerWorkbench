@@ -114,3 +114,203 @@ Module
       decorator_list: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "class Person"
+          ], 
+          "id": "id_0", 
+          "name": "ClassDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "pass"
+          ], 
+          "id": "id_0", 
+          "name": "Pass"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "class Person(", 
+            {
+              "contents": [
+                "object"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "ClassDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "def grow_older(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "self"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "self"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".age"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }, 
+            " += ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "AugAssign"
+        }, 
+        "\n\n    ", 
+        {
+          "contents": [
+            "def __str__(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "self"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "'Person: '"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                " + \\\n        \\\n\\\n        ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "self"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ".name"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n\n", 
+        {
+          "contents": [
+            "class Man(", 
+            {
+              "contents": [
+                "Person"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "ClassDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "maximum_age"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "100"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

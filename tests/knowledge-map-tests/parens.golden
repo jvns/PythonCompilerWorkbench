@@ -95,3 +95,264 @@ Module
             s: ' ) '
         ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        "5"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                ") * (", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "y"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        "z"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        ")\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "not (", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " or ", 
+                    {
+                      "contents": [
+                        "y"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BoolOp"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "UnaryOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        ")\n(", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "one"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " * (", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "two"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        "3"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "))\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = (", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "tokens"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "[", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "5"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "Index"
+                    }, 
+                    "]"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Subscript"
+                }, 
+                " == ", 
+                {
+                  "contents": [
+                    "'male'"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        ")\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "y"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = (", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "tokens"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "[", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "5"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "Index"
+                    }, 
+                    "]"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Subscript"
+                }, 
+                " == ", 
+                {
+                  "contents": [
+                    "' ) '"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    ")\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

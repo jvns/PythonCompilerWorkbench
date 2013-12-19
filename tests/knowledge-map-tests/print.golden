@@ -160,3 +160,328 @@ Module
       ]
       nl: True
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "print"
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "\"hello world\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "\"hello world\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }, 
+            ","
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "\"hello\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }, 
+            ", ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ", ", 
+            {
+              "contents": [
+                "y"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "a"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " + ", 
+                {
+                  "contents": [
+                    "b"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }, 
+            ","
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n# format strings\n", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "\"Hello, %s\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                " % ", 
+                {
+                  "contents": [
+                    "name"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "\"Hi %s %s\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                " % ", 
+                {
+                  "contents": [
+                    "(", 
+                    {
+                      "contents": [
+                        "first_name"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "last_name"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Tuple"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }, 
+            ","
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "\"hello %s %d\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                " % ", 
+                {
+                  "contents": [
+                    "(", 
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "y"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Tuple"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n# multiline\n", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "\"Hi %s %s\""
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }, 
+                " % \\\n  \\\n  \\\n       ", 
+                {
+                  "contents": [
+                    "(", 
+                    {
+                      "contents": [
+                        "first_name"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        "last_name"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Tuple"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }, 
+            ","
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n\n", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "\"hello\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }, 
+            ", \\\n  ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ", \\\n \\\n  ", 
+            {
+              "contents": [
+                "y"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

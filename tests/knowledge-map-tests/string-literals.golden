@@ -63,3 +63,202 @@ Module
         starargs: None
         kwargs: None
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "\"hello\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "'hello'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "\"This is a sentence.\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "\"John's cat.\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "'He liked watching \"The Matrix\"!'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "\"\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "\" \""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "\"\\t \\\\ \\\" \\'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\"\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "\"John's\\n\\n\\n\\ndog.\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "\",\""
+                      ], 
+                      "id": "id_0", 
+                      "name": "Str"
+                    }, 
+                    ".join"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "[", 
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ",", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    ",", 
+                    {
+                      "contents": [
+                        "3"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    "]"
+                  ], 
+                  "id": "id_0", 
+                  "name": "List"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

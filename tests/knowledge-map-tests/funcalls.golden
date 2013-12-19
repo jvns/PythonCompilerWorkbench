@@ -239,3 +239,546 @@ Module
           id: 'z'
           ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "()"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "1"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "1"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "2"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "3"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "z"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "y"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        " / ", 
+                        {
+                          "contents": [
+                            "z"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "bar"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "spam"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(x=", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "keyword"
+                }, 
+                ", y = ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "3"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "keyword"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        " # only keyword args\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "spam"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "1"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ", x=", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "keyword"
+                }, 
+                ", y=", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "3"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "keyword"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        " # regular and keyword args\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(*", 
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(**", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(*", 
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", **", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        " # star and kwargs\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "spam"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(   ", 
+                {
+                  "contents": [
+                    "1"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ",  x=", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "keyword"
+                }, 
+                "  ,  *", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "  ,    **", 
+                {
+                  "contents": [
+                    "z"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    " # all four kinds of args!\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

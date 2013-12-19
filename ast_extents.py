@@ -1015,7 +1015,7 @@ class CodeAst(object):
     # AST and linearly sweeping through the code string simultaneously,
     # and Tom Lieber for suggesting to represent data as
     # abs_start_index:abs_end_index to make indexing INFINITELY SIMPLER!
-    def to_renderable_json(self, compact=False, debug=False):
+    def to_renderable_json(self, compact=False, debug=False, ignore_id=False):
         if debug:
             print repr(self.code_str)
             print
@@ -1059,9 +1059,12 @@ class CodeAst(object):
             if need_leading_comma:
                 c = ', '
 
-            _id = id(node)
-            assert _id not in self.all_ids # make sure ids are all unique
-            self.all_ids.add(_id)
+            if ignore_id:
+                _id = 0
+            else:
+                _id = id(node)
+                assert _id not in self.all_ids # make sure ids are all unique
+                self.all_ids.add(_id)
  
             print >> self.outbuf, ind_str + c,
             print >> self.outbuf, '{"name": %s, "id": "id_%d",' % (json.dumps(node.__class__.__name__), _id)
@@ -1166,7 +1169,8 @@ class CodeAst(object):
         # make sure this parses as legal JSON!
         out_dat = json.loads(self.outbuf.getvalue())
         indent_level = None if compact else 2
-        return json.dumps(out_dat, indent=indent_level)
+        # sort_keys hopefully leads to printing in some DETERMINISTIC order
+        return json.dumps(out_dat, indent=indent_level, sort_keys=True)
 
 
 if __name__ == "__main__":
@@ -1180,4 +1184,5 @@ if __name__ == "__main__":
 
     # don't print the JSON, but at least confirm that it RENDERS without
     # errors so that we can exercise the code
-    obj.to_renderable_json()
+    print '--- JSON ---'
+    print obj.to_renderable_json(ignore_id=True)

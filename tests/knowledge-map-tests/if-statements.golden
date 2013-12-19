@@ -306,3 +306,541 @@ Module
       orelse: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " < ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'x < y'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " < ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'x < y'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\nelse:\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'x >= y'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "name"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " == ", 
+                {
+                  "contents": [
+                    "'Larry'"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'whoooo whooo!'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "elif ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "name"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " == ", 
+                {
+                  "contents": [
+                    "'Curly'"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'aooooga!'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            "elif ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "name"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " == ", 
+                {
+                  "contents": [
+                    "'Moe'"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'whoop whoop!'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\nelse:\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'Not one of the Three Stooges'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " > ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " < ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'foo'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n    else:\n        ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'bar'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\nelse:\n    ", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " > ", 
+                {
+                  "contents": [
+                    "0"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ":\n        ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'baz'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n# one-liner\n", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "x"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                " < ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        ": ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            ", ", 
+            {
+              "contents": [
+                "'is less than'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }, 
+            ", ", 
+            {
+              "contents": [
+                "y"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }, 
+        "\n\n# multiline condition\n", 
+        {
+          "contents": [
+            "if ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "x"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " < ", 
+                    {
+                      "contents": [
+                        "y"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Compare"
+                }, 
+                ") or \\\n   (", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "y"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " < ", 
+                    {
+                      "contents": [
+                        "z"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Compare"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BoolOp"
+            }, 
+            ""
+          ], 
+          "id": "id_0", 
+          "name": "If"
+        }, 
+        "):\n    ", 
+        {
+          "contents": [
+            "print ", 
+            {
+              "contents": [
+                "'boo hoo'"
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Print"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

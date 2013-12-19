@@ -41,3 +41,119 @@ Module
         starargs: None
         kwargs: None
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "w"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "set"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    "[", 
+                    {
+                      "contents": [
+                        "\"joe\""
+                      ], 
+                      "id": "id_0", 
+                      "name": "Str"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "5"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }, 
+                        " + ", 
+                        {
+                          "contents": [
+                            "6"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    ", ", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "\"mindy\""
+                          ], 
+                          "id": "id_0", 
+                          "name": "Str"
+                        }, 
+                        " + ", 
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "\"jack\""
+                              ], 
+                              "id": "id_0", 
+                              "name": "Str"
+                            }, 
+                            " * ", 
+                            {
+                              "contents": [
+                                "2"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Num"
+                            }
+                          ], 
+                          "id": "id_0", 
+                          "name": "BinOp"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    "]"
+                  ], 
+                  "id": "id_0", 
+                  "name": "List"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

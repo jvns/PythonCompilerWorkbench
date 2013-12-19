@@ -220,3 +220,588 @@ Module
           id: 'my_kwargs'
           ctx: Load
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "one"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "call_foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "z"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "+", 
+                        {
+                          "contents": [
+                            "w"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    "-", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "two"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "call_foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "z"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "+", 
+                        {
+                          "contents": [
+                            "w"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    "-", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                ", optional1=", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "True"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "keyword"
+                }, 
+                ", optional2=", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "two"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Name"
+                            }, 
+                            "/", 
+                            {
+                              "contents": [
+                                "one"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Name"
+                            }
+                          ], 
+                          "id": "id_0", 
+                          "name": "BinOp"
+                        }, 
+                        "+", 
+                        {
+                          "contents": [
+                            "four"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "keyword"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "three"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "call_foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "z"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "+", 
+                        {
+                          "contents": [
+                            "w"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    "-", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                ", optional1=", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "True"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "keyword"
+                }, 
+                ", *", 
+                {
+                  "contents": [
+                    "stararg"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ","
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }, 
+            " optional2=", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "two"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "/", 
+                        {
+                          "contents": [
+                            "one"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    "+", 
+                    {
+                      "contents": [
+                        "four"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "keyword"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        ")\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "four"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "call_foo"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "1"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    "y"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "z"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "+", 
+                        {
+                          "contents": [
+                            "w"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }, 
+                    "-", 
+                    {
+                      "contents": [
+                        "2"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Num"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }, 
+                ", optional1=", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "True"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "keyword"
+                }, 
+                ", *", 
+                {
+                  "contents": [
+                    "stararg"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ", optional2=", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "two"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Name"
+                            }, 
+                            "/", 
+                            {
+                              "contents": [
+                                "one"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Name"
+                            }
+                          ], 
+                          "id": "id_0", 
+                          "name": "BinOp"
+                        }, 
+                        "+", 
+                        {
+                          "contents": [
+                            "four"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "BinOp"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "keyword"
+                }, 
+                ", **", 
+                {
+                  "contents": [
+                    "my_kwargs"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

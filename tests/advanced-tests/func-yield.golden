@@ -161,3 +161,269 @@ Module
       decorator_list: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "yield"
+              ], 
+              "id": "id_0", 
+              "name": "Yield"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "yield ", 
+                {
+                  "contents": [
+                    "42"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Yield"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "yield ", 
+                {
+                  "contents": [
+                    "True"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Yield"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "yield ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "a"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " + ", 
+                    {
+                      "contents": [
+                        "b"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Yield"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "yield ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "foo"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "(", 
+                    {
+                      "contents": [
+                        "n"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Yield"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n\n", 
+        {
+          "contents": [
+            "def fact(", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "n"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "arguments"
+            }, 
+            ")"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n    ", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "yield ", 
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "n"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    " * ", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "fact"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Name"
+                        }, 
+                        "(", 
+                        {
+                          "contents": [
+                            {
+                              "contents": [
+                                "n"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Name"
+                            }, 
+                            "-", 
+                            {
+                              "contents": [
+                                "1"
+                              ], 
+                              "id": "id_0", 
+                              "name": "Num"
+                            }
+                          ], 
+                          "id": "id_0", 
+                          "name": "BinOp"
+                        }, 
+                        ")"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Call"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "BinOp"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Yield"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

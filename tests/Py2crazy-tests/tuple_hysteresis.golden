@@ -34,3 +34,63 @@ Module
       decorator_list: [
       ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            "def foo()"
+          ], 
+          "id": "id_0", 
+          "name": "FunctionDef"
+        }, 
+        ":\n  ", 
+        {
+          "contents": [
+            "return ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "contents": [
+                    "1"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ",", 
+                {
+                  "contents": [
+                    "2"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ",", 
+                {
+                  "contents": [
+                    "3"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Tuple"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n\n# the RETURN_VALUE instruction after BUILD_TUPLE should get the benefits\n# of hysteresis (i.e., the same start_col and extent as BUILD_TUPLE).\n# Right now we have hysteresis only for function calls, and that\n# hysteresis might play badly with hysteresis for other types, so think\n# carefully about how to gracefully handle these interactions!\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

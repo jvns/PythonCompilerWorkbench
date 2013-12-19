@@ -22,3 +22,66 @@ Module
         right: Num >> '2'
           n: 2
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "contents": [
+                    "self"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Name"
+                }, 
+                ".val"
+              ], 
+              "id": "id_0", 
+              "name": "Attribute"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "self"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    ".val"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Attribute"
+                }, 
+                " ** ", 
+                {
+                  "contents": [
+                    "2"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Num"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}

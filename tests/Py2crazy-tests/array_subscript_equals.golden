@@ -28,3 +28,73 @@ Module
             s: 'male'
         ]
   ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = (", 
+            {
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "contents": [
+                        "tokens"
+                      ], 
+                      "id": "id_0", 
+                      "name": "Name"
+                    }, 
+                    "[", 
+                    {
+                      "contents": [
+                        {
+                          "contents": [
+                            "5"
+                          ], 
+                          "id": "id_0", 
+                          "name": "Num"
+                        }
+                      ], 
+                      "id": "id_0", 
+                      "name": "Index"
+                    }, 
+                    "]"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Subscript"
+                }, 
+                " == ", 
+                {
+                  "contents": [
+                    "'male'"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Str"
+                }
+              ], 
+              "id": "id_0", 
+              "name": "Compare"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    ")\n# this is currently broken since we don't properly track start_col and\n# extent of 'tokens[5]'. If we did, then it would conflict with\n# LOAD_NAME of 'tokens', since they start at the same column :(\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}
