@@ -369,7 +369,13 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "\n\n# multiline\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# multiline", 
+        "\n", 
+        "", 
         {
           "contents": [
             {
@@ -404,7 +410,9 @@ Module
                   "id": "id_0", 
                   "name": "Call"
                 }, 
-                ",\n ", 
+                ",", 
+                "\n", 
+                " ", 
                 {
                   "contents": [
                     "\"Carol\""
@@ -434,7 +442,9 @@ Module
                   "id": "id_0", 
                   "name": "Call"
                 }, 
-                ",\n ", 
+                ",", 
+                "\n", 
+                " ", 
                 {
                   "contents": [
                     "\"Bob\""

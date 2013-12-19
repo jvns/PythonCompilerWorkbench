@@ -554,7 +554,9 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        " # only keyword args\n", 
+        " # only keyword args", 
+        "\n", 
+        "", 
         {
           "contents": [
             {
@@ -619,7 +621,9 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        " # regular and keyword args\n", 
+        " # regular and keyword args", 
+        "\n", 
+        "", 
         {
           "contents": [
             {
@@ -714,7 +718,9 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        " # star and kwargs\n", 
+        " # star and kwargs", 
+        "\n", 
+        "", 
         {
           "contents": [
             {
@@ -777,7 +783,9 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    " # all four kinds of args!\n"
+    " # all four kinds of args!", 
+    "\n", 
+    ""
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

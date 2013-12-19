@@ -332,7 +332,9 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        ")\n(", 
+        ")", 
+        "\n", 
+        "(", 
         {
           "contents": [
             {
@@ -374,7 +376,13 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "))\n\n# some multiline action\n", 
+        "))", 
+        "\n", 
+        "", 
+        "\n", 
+        "# some multiline action", 
+        "\n", 
+        "", 
         {
           "contents": [
             {
@@ -386,7 +394,9 @@ Module
                   "id": "id_0", 
                   "name": "Str"
                 }, 
-                " + \\\n        ", 
+                " + \\", 
+                "\n", 
+                "        ", 
                 {
                   "contents": [
                     "\"bar\""
@@ -402,7 +412,11 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "\n\n(  ", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "(  ", 
         {
           "contents": [
             {
@@ -414,7 +428,9 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " *\n    (", 
+                " *", 
+                "\n", 
+                "    (", 
                 {
                   "contents": [
                     {
@@ -424,7 +440,19 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " \n   \n  \n  +\n \n\n", 
+                    " ", 
+                    "\n", 
+                    "   ", 
+                    "\n", 
+                    "  ", 
+                    "\n", 
+                    "  +", 
+                    "\n", 
+                    " ", 
+                    "\n", 
+                    "", 
+                    "\n", 
+                    "", 
                     {
                       "contents": [
                         "3"
@@ -448,7 +476,9 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "))\n"
+    "))", 
+    "\n", 
+    ""
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

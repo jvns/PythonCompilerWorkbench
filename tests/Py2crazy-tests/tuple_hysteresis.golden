@@ -46,7 +46,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n  ", 
+        ":", 
+        "\n", 
+        "  ", 
         {
           "contents": [
             "return ", 
@@ -89,7 +91,21 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "\n\n# the RETURN_VALUE instruction after BUILD_TUPLE should get the benefits\n# of hysteresis (i.e., the same start_col and extent as BUILD_TUPLE).\n# Right now we have hysteresis only for function calls, and that\n# hysteresis might play badly with hysteresis for other types, so think\n# carefully about how to gracefully handle these interactions!\n"
+    "", 
+    "\n", 
+    "", 
+    "\n", 
+    "# the RETURN_VALUE instruction after BUILD_TUPLE should get the benefits", 
+    "\n", 
+    "# of hysteresis (i.e., the same start_col and extent as BUILD_TUPLE).", 
+    "\n", 
+    "# Right now we have hysteresis only for function calls, and that", 
+    "\n", 
+    "# hysteresis might play badly with hysteresis for other types, so think", 
+    "\n", 
+    "# carefully about how to gracefully handle these interactions!", 
+    "\n", 
+    ""
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

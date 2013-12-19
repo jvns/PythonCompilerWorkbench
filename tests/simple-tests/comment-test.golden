@@ -30,7 +30,11 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# comment on top\n\n", 
+    "# comment on top", 
+    "\n", 
+    "", 
+    "\n", 
+    "", 
     {
       "contents": [
         {
@@ -54,7 +58,13 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        " # this is a comment\n  # an another comment\n      # indented even more\n", 
+        " # this is a comment", 
+        "\n", 
+        "  # an another comment", 
+        "\n", 
+        "      # indented even more", 
+        "\n", 
+        "", 
         {
           "contents": [
             {
@@ -80,7 +90,15 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    " # yet another one\n# oh yeahhhh\n\n# one more\n"
+    " # yet another one", 
+    "\n", 
+    "# oh yeahhhh", 
+    "\n", 
+    "", 
+    "\n", 
+    "# one more", 
+    "\n", 
+    ""
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

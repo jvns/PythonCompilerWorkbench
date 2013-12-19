@@ -289,7 +289,9 @@ Module
           "id": "id_0", 
           "name": "While"
         }, 
-        "):\n    ", 
+        "):", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -356,7 +358,9 @@ Module
           "id": "id_0", 
           "name": "While"
         }, 
-        "):\n    ", 
+        "):", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "if ", 
@@ -400,7 +404,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "print ", 
@@ -467,7 +473,9 @@ Module
           "id": "id_0", 
           "name": "While"
         }, 
-        "):\n    ", 
+        "):", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "if ", 
@@ -511,7 +519,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "print ", 
@@ -578,7 +588,9 @@ Module
           "id": "id_0", 
           "name": "While"
         }, 
-        "):\n    ", 
+        "):", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "if ", 
@@ -622,7 +634,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "continue"
@@ -683,7 +697,9 @@ Module
           "id": "id_0", 
           "name": "While"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "if ", 
@@ -713,7 +729,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "break"
@@ -759,7 +777,9 @@ Module
           "id": "id_0", 
           "name": "While"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"

@@ -90,7 +90,9 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    ")\n"
+    ")", 
+    "\n", 
+    ""
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

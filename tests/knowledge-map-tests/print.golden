@@ -279,7 +279,13 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "\n\n# format strings\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# format strings", 
+        "\n", 
+        "", 
         {
           "contents": [
             "print ", 
@@ -399,7 +405,13 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "\n\n# multiline\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# multiline", 
+        "\n", 
+        "", 
         {
           "contents": [
             "print ", 
@@ -412,7 +424,13 @@ Module
                   "id": "id_0", 
                   "name": "Str"
                 }, 
-                " % \\\n  \\\n  \\\n       ", 
+                " % \\", 
+                "\n", 
+                "  \\", 
+                "\n", 
+                "  \\", 
+                "\n", 
+                "       ", 
                 {
                   "contents": [
                     "(", 
@@ -456,7 +474,9 @@ Module
               "id": "id_0", 
               "name": "Str"
             }, 
-            ", \\\n  ", 
+            ", \\", 
+            "\n", 
+            "  ", 
             {
               "contents": [
                 "x"
@@ -464,7 +484,11 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            ", \\\n \\\n  ", 
+            ", \\", 
+            "\n", 
+            " \\", 
+            "\n", 
+            "  ", 
             {
               "contents": [
                 "y"

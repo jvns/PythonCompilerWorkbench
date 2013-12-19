@@ -115,7 +115,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        "):\n  ", 
+        "):", 
+        "\n", 
+        "  ", 
         {
           "contents": [
             "print ", 

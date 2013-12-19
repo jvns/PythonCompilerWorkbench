@@ -71,7 +71,11 @@ Module
           "contents": [
             {
               "contents": [
-                "\"\"\"John's cat liked \"The Matrix\"\nbut his dog\npreferred the sequels.\"\"\""
+                "\"\"\"John's cat liked \"The Matrix\"", 
+                "\n", 
+                "but his dog", 
+                "\n", 
+                "preferred the sequels.\"\"\""
               ], 
               "id": "id_0", 
               "name": "Str"
@@ -93,7 +97,11 @@ Module
             " = ", 
             {
               "contents": [
-                "'''multi\n    line\n  string'''"
+                "'''multi", 
+                "\n", 
+                "    line", 
+                "\n", 
+                "  string'''"
               ], 
               "id": "id_0", 
               "name": "Str"
@@ -115,7 +123,19 @@ Module
             " = ", 
             {
               "contents": [
-                "'''\nmulti\nline\nstring\nwith empty\nfirst line\n'''"
+                "'''", 
+                "\n", 
+                "multi", 
+                "\n", 
+                "line", 
+                "\n", 
+                "string", 
+                "\n", 
+                "with empty", 
+                "\n", 
+                "first line", 
+                "\n", 
+                "'''"
               ], 
               "id": "id_0", 
               "name": "Str"
@@ -137,7 +157,17 @@ Module
             " = ", 
             {
               "contents": [
-                "\"\"\"     \nmulti\nline\nstring\nwith spaces in first line\n\"\"\""
+                "\"\"\"     ", 
+                "\n", 
+                "multi", 
+                "\n", 
+                "line", 
+                "\n", 
+                "string", 
+                "\n", 
+                "with spaces in first line", 
+                "\n", 
+                "\"\"\""
               ], 
               "id": "id_0", 
               "name": "Str"
@@ -150,7 +180,31 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "\n\n# This doesn't work, but it's nuts!!!\n#\"\"\"multi\n#    line\n#      string\n#        method\n#          call\"\"\".join('''\n#another\n#  multi\n#    line\n#      string''')\n"
+    "", 
+    "\n", 
+    "", 
+    "\n", 
+    "# This doesn't work, but it's nuts!!!", 
+    "\n", 
+    "#\"\"\"multi", 
+    "\n", 
+    "#    line", 
+    "\n", 
+    "#      string", 
+    "\n", 
+    "#        method", 
+    "\n", 
+    "#          call\"\"\".join('''", 
+    "\n", 
+    "#another", 
+    "\n", 
+    "#  multi", 
+    "\n", 
+    "#    line", 
+    "\n", 
+    "#      string''')", 
+    "\n", 
+    ""
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

@@ -81,7 +81,9 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# from Lib/doctest.py\n", 
+    "# from Lib/doctest.py", 
+    "\n", 
+    "", 
     {
       "contents": [
         {
@@ -133,7 +135,13 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        "\n\n# from Lib/fractions.py\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# from Lib/fractions.py", 
+        "\n", 
+        "", 
         {
           "contents": [
             "def foo()"
@@ -141,7 +149,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "return ", 
@@ -190,7 +200,9 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                ",\n                    ", 
+                ",", 
+                "\n", 
+                "                    ", 
                 {
                   "contents": [
                     {

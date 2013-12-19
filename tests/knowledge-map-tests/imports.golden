@@ -150,7 +150,13 @@ Module
           "id": "id_0", 
           "name": "ImportFrom"
         }, 
-        "\n\n# semicolons to start new lines\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# semicolons to start new lines", 
+        "\n", 
+        "", 
         {
           "contents": [
             "import foo.bar"

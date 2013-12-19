@@ -156,7 +156,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             {
@@ -266,7 +268,9 @@ Module
           "id": "id_0", 
           "name": "For"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "print ", 

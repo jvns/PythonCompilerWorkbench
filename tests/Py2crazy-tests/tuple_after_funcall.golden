@@ -53,7 +53,9 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# make sure BUILD_TUPLE works even right after a CALL_FUNCTION bytecode\n", 
+    "# make sure BUILD_TUPLE works even right after a CALL_FUNCTION bytecode", 
+    "\n", 
+    "", 
     {
       "contents": [
         {

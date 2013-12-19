@@ -246,7 +246,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -298,7 +300,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"
@@ -344,7 +348,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"
@@ -406,7 +412,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"
@@ -422,7 +430,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"
@@ -447,12 +457,20 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ",\n\n\n        *y)"
+            ",", 
+            "\n", 
+            "", 
+            "\n", 
+            "", 
+            "\n", 
+            "        *y)"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"
@@ -482,7 +500,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"
@@ -503,7 +523,9 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ",\n        ", 
+                ",", 
+                "\n", 
+                "        ", 
                 {
                   "contents": [
                     "yyy"
@@ -523,12 +545,16 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ", *zzz,\n        **www)"
+            ", *zzz,", 
+            "\n", 
+            "        **www)"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"
@@ -557,7 +583,9 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ",\n        ", 
+                ",", 
+                "\n", 
+                "        ", 
                 {
                   "contents": [
                     "b"
@@ -573,7 +601,9 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ",\n        ", 
+                ",", 
+                "\n", 
+                "        ", 
                 {
                   "contents": [
                     "c"
@@ -614,7 +644,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"

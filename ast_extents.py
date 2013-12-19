@@ -529,16 +529,8 @@ class AddExtentsVisitor(ast.NodeVisitor):
             # UGH THIS IS REALLY AGGRAVATING with tons of corner cases
             add_extent_attrs(node)
             node.end_lineno = node.lineno
-            lines = node.s.splitlines()
-            # SUPER tricky -- if the last character is '\n', then add an
-            # extra blank line to the end, ugh! really subtle.
-            # e.g.,:
-            # my_str = '''hello
-            # world
-            # goodbye
-            # ''' # empty last line!
-            if node.s[-1] == '\n':
-                lines.append('')
+            # do NOT call splitlines() since that omits the trailing '\n'
+            lines = node.s.split('\n')
             n_lines = len(lines)
             node.lineno = node.end_lineno - n_lines + 1
             full_original_line = self.code_lines[node.lineno]
@@ -1008,6 +1000,44 @@ class CodeAst(object):
         return _format(self.ast_root, 0)
 
 
+    # some crazy-ass ninja action
+    # s is a string containing "leftovers" that aren't included within
+    # the extents of any AST node. (thus, the nice thing about s is that
+    # it will never be an actual Python string literal, since that's
+    # captured within the extent of a Str AST node.)
+    #
+    # what this function will do is re-lex the string s and print to
+    # self.outbuf JSON-like string nodes corresponding to elements found
+    # in s.
+    def relex_and_print(self, s, leading_str):
+        print >> self.outbuf, leading_str
+
+        idx = 0 # starts at 0  
+
+        # non-trivial multiline case -- multiple lines and not just
+        # SOLELY whitespace characters
+        is_nontrivial_multiline = '\n' in s and s.strip() != ''
+
+        # TODO: step 1 -- grab comments first
+
+        if is_nontrivial_multiline:
+            # do NOT call splitlines() since that omits the trailing '\n'
+            lines = s.split('\n')
+
+            for i, line in enumerate(lines):
+                print >> self.outbuf, json.dumps(line)
+                self.gobbled_string_lst.append(line) # for sanity checking!
+
+                # if it's not the LAST line
+                if i < len(lines) - 1:
+                    print >> self.outbuf, ',', json.dumps('\n'), ','
+                    self.gobbled_string_lst.append('\n')
+        else:
+            # single-line case (or trivial multiline case)
+            print >> self.outbuf, json.dumps(s)
+            self.gobbled_string_lst.append(s) # for sanity checking!
+
+
     # convert to a JSON format with enough information so that it's
     # directly renderable by, say, d3
     #
@@ -1039,10 +1069,9 @@ class CodeAst(object):
         # gobble up everything until we reach the root node
         if self.cur_index < self.ast_root.abs_start_index:
             s = self.code_str[self.cur_index:self.ast_root.abs_start_index]
-            self.gobbled_string_lst.append(s)
             if debug: print 'LEADING:', `s`
             if s:
-                print >> self.outbuf, '   ', json.dumps(s)
+                self.relex_and_print(s, '   ')
                 has_leading_text = True
             self.cur_index = self.ast_root.abs_start_index
 
@@ -1072,9 +1101,8 @@ class CodeAst(object):
 
             if self.cur_index < node.abs_start_index:
                 s = self.code_str[self.cur_index:node.abs_start_index]
-                self.gobbled_string_lst.append(s)
                 if debug: print ind_str, 'B:', `s`
-                print >> self.outbuf, ind_str, json.dumps(s)
+                self.relex_and_print(s, ind_str)
                 is_first_json_elt = False
                 self.cur_index = node.abs_start_index
 
@@ -1096,11 +1124,10 @@ class CodeAst(object):
                     if (not prematurely_done and
                         node.abs_end_index <= cur_kid.abs_start_index):
                         s = self.code_str[self.cur_index:node.abs_end_index]
-                        self.gobbled_string_lst.append(s)
                         if debug: print ind_str, 'K (prematurely_done):', `s`
 
                         c = '' if is_first_json_elt else ','
-                        print >> self.outbuf, ind_str, c, json.dumps(s)
+                        self.relex_and_print(s, ind_str + ' ' + c)
                         self.cur_index = node.abs_end_index
                         prematurely_done = True
 
@@ -1112,10 +1139,9 @@ class CodeAst(object):
                         is_first_json_elt = False # tricky!
 
                     s = self.code_str[self.cur_index:cur_kid.abs_start_index]
-                    self.gobbled_string_lst.append(s)
                     if debug: print ind_str, 'K:', `s`
                     c = '' if is_first_json_elt else ','
-                    print >> self.outbuf, ind_str, c, json.dumps(s)
+                    self.relex_and_print(s, ind_str + ' ' + c)
                     self.cur_index = cur_kid.abs_start_index
                     is_first_json_elt = False
 
@@ -1128,10 +1154,10 @@ class CodeAst(object):
 
             if self.cur_index < node.abs_end_index:
                 s = self.code_str[self.cur_index:node.abs_end_index]
-                self.gobbled_string_lst.append(s)
-                if debug: print ind_str, 'A:', `s`, self.cur_index, node.abs_end_index
+                if debug:
+                    print ind_str, 'A:', `s`, self.cur_index, node.abs_end_index
                 c = '' if is_first_json_elt else ','
-                print >> self.outbuf, ind_str, c, json.dumps(s)
+                self.relex_and_print(s, ind_str + ' ' + c)
                 self.cur_index = node.abs_end_index
                 is_first_json_elt = False
 
@@ -1151,10 +1177,9 @@ class CodeAst(object):
         # gobble up everything until the end of the string
 
         s = self.code_str[self.cur_index:]
-        self.gobbled_string_lst.append(s)
         if debug: print 'TRAILING:', `s`
         if s:
-            print >> self.outbuf, '   ', ',', json.dumps(s)
+            self.relex_and_print(s, '    ,')
 
         print >> self.outbuf, '  ]'
         print >> self.outbuf, '}'

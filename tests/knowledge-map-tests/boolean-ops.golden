@@ -214,7 +214,9 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        ")\n", 
+        ")", 
+        "\n", 
+        "", 
         {
           "contents": [
             {
@@ -383,7 +385,9 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        ")\n", 
+        ")", 
+        "\n", 
+        "", 
         {
           "contents": [
             {
@@ -419,7 +423,13 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "\n\n# multiline\n(", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# multiline", 
+        "\n", 
+        "(", 
         {
           "contents": [
             {
@@ -446,7 +456,9 @@ Module
                   "id": "id_0", 
                   "name": "Compare"
                 }, 
-                ") and\n (", 
+                ") and", 
+                "\n", 
+                " (", 
                 {
                   "contents": [
                     {
@@ -480,7 +492,9 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "))\n"
+    "))", 
+    "\n", 
+    ""
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

@@ -293,7 +293,11 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        "\n# naked tuples\n", 
+        "", 
+        "\n", 
+        "# naked tuples", 
+        "\n", 
+        "", 
         {
           "contents": [
             {

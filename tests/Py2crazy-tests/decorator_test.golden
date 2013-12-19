@@ -78,7 +78,11 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# these weird decorators currently don't work so hto ...\n# from Lib/threading.py\n", 
+    "# these weird decorators currently don't work so hto ...", 
+    "\n", 
+    "# from Lib/threading.py", 
+    "\n", 
+    "", 
     {
       "contents": [
         {
@@ -98,7 +102,9 @@ Module
               "id": "id_0", 
               "name": "Attribute"
             }, 
-            "\ndef name(", 
+            "", 
+            "\n", 
+            "def name(", 
             {
               "contents": [
                 {
@@ -125,7 +131,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"
@@ -133,7 +141,13 @@ Module
           "id": "id_0", 
           "name": "Pass"
         }, 
-        "\n\n# from Lib/csv.py\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# from Lib/csv.py", 
+        "\n", 
+        "", 
         {
           "contents": [
             "@", 
@@ -151,7 +165,9 @@ Module
               "id": "id_0", 
               "name": "Attribute"
             }, 
-            "\ndef fieldnames(", 
+            "", 
+            "\n", 
+            "def fieldnames(", 
             {
               "contents": [
                 {
@@ -178,7 +194,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             {

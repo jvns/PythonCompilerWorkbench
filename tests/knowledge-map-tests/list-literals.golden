@@ -447,7 +447,13 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "\n\n# multiline\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# multiline", 
+        "\n", 
+        "", 
         {
           "contents": [
             {
@@ -460,7 +466,9 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ",\n      ", 
+                ",", 
+                "\n", 
+                "      ", 
                 {
                   "contents": [
                     "2"
@@ -468,7 +476,9 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ",\n  ", 
+                ",", 
+                "\n", 
+                "  ", 
                 {
                   "contents": [
                     "3"
@@ -476,7 +486,11 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                "       ,   \n  \n        ", 
+                "       ,   ", 
+                "\n", 
+                "  ", 
+                "\n", 
+                "        ", 
                 {
                   "contents": [
                     "\"hello\""

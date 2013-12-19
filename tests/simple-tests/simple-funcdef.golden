@@ -62,7 +62,11 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    #c = a + b\n    ", 
+        ":", 
+        "\n", 
+        "    #c = a + b", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "return ", 

@@ -58,7 +58,9 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# mix up function call and tuple hysteresis, to maximize confusion\n", 
+    "# mix up function call and tuple hysteresis, to maximize confusion", 
+    "\n", 
+    "", 
     {
       "contents": [
         {
@@ -68,7 +70,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n  ", 
+        ":", 
+        "\n", 
+        "  ", 
         {
           "contents": [
             "return ", 

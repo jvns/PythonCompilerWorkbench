@@ -340,7 +340,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -385,7 +387,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -400,7 +404,11 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "\nelse:\n    ", 
+        "", 
+        "\n", 
+        "else:", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -445,7 +453,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -490,7 +500,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -535,7 +547,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -550,7 +564,11 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "\nelse:\n    ", 
+        "", 
+        "\n", 
+        "else:", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -595,7 +613,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "if ", 
@@ -625,7 +645,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "print ", 
@@ -640,7 +662,11 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "\n    else:\n        ", 
+        "", 
+        "\n", 
+        "    else:", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "print ", 
@@ -655,7 +681,11 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "\nelse:\n    ", 
+        "", 
+        "\n", 
+        "else:", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "if ", 
@@ -685,7 +715,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "print ", 
@@ -700,7 +732,13 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "\n\n# one-liner\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# one-liner", 
+        "\n", 
+        "", 
         {
           "contents": [
             "if ", 
@@ -761,7 +799,13 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "\n\n# multiline condition\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# multiline condition", 
+        "\n", 
+        "", 
         {
           "contents": [
             "if ", 
@@ -789,7 +833,9 @@ Module
                   "id": "id_0", 
                   "name": "Compare"
                 }, 
-                ") or \\\n   (", 
+                ") or \\", 
+                "\n", 
+                "   (", 
                 {
                   "contents": [
                     {
@@ -820,7 +866,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        "):\n    ", 
+        "):", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 

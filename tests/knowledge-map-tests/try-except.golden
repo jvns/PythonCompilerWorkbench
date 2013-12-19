@@ -204,7 +204,9 @@ Module
           "id": "id_0", 
           "name": "TryExcept"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             {
@@ -263,7 +265,9 @@ Module
           "id": "id_0", 
           "name": "ExceptHandler"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -301,7 +305,9 @@ Module
           "id": "id_0", 
           "name": "TryExcept"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             {
@@ -331,7 +337,9 @@ Module
           "id": "id_0", 
           "name": "ExceptHandler"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             {

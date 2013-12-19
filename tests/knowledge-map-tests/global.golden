@@ -99,7 +99,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "global a"

@@ -393,7 +393,9 @@ Module
           "id": "id_0", 
           "name": "For"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -456,7 +458,9 @@ Module
           "id": "id_0", 
           "name": "For"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -510,7 +514,9 @@ Module
           "id": "id_0", 
           "name": "For"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -579,7 +585,9 @@ Module
           "id": "id_0", 
           "name": "For"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -649,7 +657,9 @@ Module
           "id": "id_0", 
           "name": "For"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -672,7 +682,13 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "\n\n# multiline test\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# multiline test", 
+        "\n", 
+        "", 
         {
           "contents": [
             "for ", 
@@ -699,7 +715,11 @@ Module
               "id": "id_0", 
               "name": "Tuple"
             }, 
-            " \\\n       in \\\n           ", 
+            " \\", 
+            "\n", 
+            "       in \\", 
+            "\n", 
+            "           ", 
             {
               "contents": [
                 {
@@ -727,7 +747,9 @@ Module
           "id": "id_0", 
           "name": "For"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -789,7 +811,9 @@ Module
           "id": "id_0", 
           "name": "For"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "if ", 
@@ -819,7 +843,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "break"
@@ -857,7 +883,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "continue"
@@ -865,7 +893,11 @@ Module
           "id": "id_0", 
           "name": "Continue"
         }, 
-        "\n    else:\n        ", 
+        "", 
+        "\n", 
+        "    else:", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "print ", 
@@ -932,7 +964,9 @@ Module
           "id": "id_0", 
           "name": "For"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 
@@ -1008,7 +1042,9 @@ Module
           "id": "id_0", 
           "name": "For"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "print ", 

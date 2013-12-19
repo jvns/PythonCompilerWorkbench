@@ -629,7 +629,9 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        ")\n", 
+        ")", 
+        "\n", 
+        "", 
         {
           "contents": [
             {

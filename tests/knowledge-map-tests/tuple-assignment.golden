@@ -189,7 +189,13 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        "\n\n# multiline\n", 
+        "", 
+        "\n", 
+        "", 
+        "\n", 
+        "# multiline", 
+        "\n", 
+        "", 
         {
           "contents": [
             {
@@ -210,7 +216,9 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ",\n   ", 
+                ",", 
+                "\n", 
+                "   ", 
                 {
                   "contents": [
                     "c"
@@ -223,7 +231,9 @@ Module
               "id": "id_0", 
               "name": "Tuple"
             }, 
-            " = \\\n     ", 
+            " = \\", 
+            "\n", 
+            "     ", 
             {
               "contents": [
                 "(", 

@@ -22,7 +22,9 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# with extra spaces ...\n", 
+    "# with extra spaces ...", 
+    "\n", 
+    "", 
     {
       "contents": [
         {
@@ -64,7 +66,11 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "      \n# and a trailing line comment\n"
+    "      ", 
+    "\n", 
+    "# and a trailing line comment", 
+    "\n", 
+    ""
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

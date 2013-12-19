@@ -126,7 +126,9 @@ Module
           "id": "id_0", 
           "name": "ClassDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "pass"
@@ -150,7 +152,9 @@ Module
           "id": "id_0", 
           "name": "ClassDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             "def grow_older(", 
@@ -180,7 +184,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             {
@@ -231,7 +237,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n        ", 
+        ":", 
+        "\n", 
+        "        ", 
         {
           "contents": [
             "return ", 
@@ -244,7 +252,13 @@ Module
                   "id": "id_0", 
                   "name": "Str"
                 }, 
-                " + \\\n        \\\n\\\n        ", 
+                " + \\", 
+                "\n", 
+                "        \\", 
+                "\n", 
+                "\\", 
+                "\n", 
+                "        ", 
                 {
                   "contents": [
                     {
@@ -283,7 +297,9 @@ Module
           "id": "id_0", 
           "name": "ClassDef"
         }, 
-        ":\n    ", 
+        ":", 
+        "\n", 
+        "    ", 
         {
           "contents": [
             {

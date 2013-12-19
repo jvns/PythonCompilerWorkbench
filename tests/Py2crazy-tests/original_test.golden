@@ -106,7 +106,9 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":\n  ", 
+        ":", 
+        "\n", 
+        "  ", 
         {
           "contents": [
             "return ", 
@@ -230,7 +232,9 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        "):\n  ", 
+        "):", 
+        "\n", 
+        "  ", 
         {
           "contents": [
             "print ", 
@@ -245,7 +249,11 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "\nelse:\n  ", 
+        "", 
+        "\n", 
+        "else:", 
+        "\n", 
+        "  ", 
         {
           "contents": [
             "print ", 
