@@ -1,0 +1,87 @@
+# comment on top
+
+x = 5 # this is a comment
+  # an another comment
+      # indented even more
+y = 10 # yet another one
+# oh yeahhhh
+
+# one more
+===
+Module
+  body: [
+    Assign >> 'x = 5'
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: Num >> '5'
+        n: 5
+    Assign >> 'y = 10'
+      targets: [
+        Name >> 'y'
+          id: 'y'
+          ctx: Store
+      ]
+      value: Num >> '10'
+        n: 10
+  ]
+--- JSON ---
+{
+  "contents": [
+    "# comment on top\n\n", 
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "contents": [
+                "x"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "5"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }, 
+        " # this is a comment\n  # an another comment\n      # indented even more\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "y"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "10"
+              ], 
+              "id": "id_0", 
+              "name": "Num"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "name": "Module"
+    }, 
+    " # yet another one\n# oh yeahhhh\n\n# one more\n"
+  ], 
+  "id": "id_ROOT", 
+  "name": "ROOT_NODE"
+}
