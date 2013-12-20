@@ -178,7 +178,6 @@ Module
           "value": ")"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -277,9 +276,7 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "))", 
-        "\n", 
-        "", 
+        "))\n", 
         {
           "contents": [
             {
@@ -356,7 +353,6 @@ Module
           "value": ")"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -436,8 +432,7 @@ Module
       "name": "token", 
       "value": ")"
     }, 
-    "\n", 
-    ""
+    "\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

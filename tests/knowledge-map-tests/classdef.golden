@@ -131,8 +131,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -169,8 +168,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             "def grow_older(", 
@@ -214,8 +212,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "        ", 
+        "\n        ", 
         {
           "contents": [
             {
@@ -281,8 +278,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "        ", 
+        "\n        ", 
         {
           "contents": [
             {
@@ -300,9 +296,7 @@ Module
                   "id": "id_0", 
                   "name": "Str"
                 }, 
-                " + \\", 
-                "\n", 
-                "        ", 
+                " + \\\n        ", 
                 {
                   "id": "tid_12", 
                   "name": "token", 
@@ -314,8 +308,7 @@ Module
                   "name": "token", 
                   "value": "\\"
                 }, 
-                "\n", 
-                "        ", 
+                "\n        ", 
                 {
                   "contents": [
                     {
@@ -363,8 +356,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {

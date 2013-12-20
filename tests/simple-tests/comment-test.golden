@@ -40,16 +40,12 @@ Module
 --- JSON ---
 {
   "contents": [
-    "", 
     {
       "id": "tid_1", 
       "name": "comment", 
       "value": "# comment on top"
     }, 
-    "\n", 
-    "", 
-    "\n", 
-    "", 
+    "\n\n", 
     {
       "contents": [
         {
@@ -85,22 +81,19 @@ Module
           "name": "comment", 
           "value": "# this is a comment"
         }, 
-        "\n", 
-        "  ", 
+        "\n  ", 
         {
           "id": "tid_4", 
           "name": "comment", 
           "value": "# an another comment"
         }, 
-        "\n", 
-        "      ", 
+        "\n      ", 
         {
           "id": "tid_5", 
           "name": "comment", 
           "value": "# indented even more # with another comment inside"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -135,16 +128,12 @@ Module
           "value": "# yet another one with triple hash ###"
         }, 
         "\n", 
-        "", 
         {
           "id": "tid_8", 
           "name": "comment", 
           "value": "# oh yeahhhh"
         }, 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "contents": [
             {
@@ -176,18 +165,13 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "", 
-    "\n", 
-    "", 
-    "\n", 
-    "", 
+    "\n\n", 
     {
       "id": "tid_10", 
       "name": "comment", 
       "value": "# one more"
     }, 
-    "\n", 
-    ""
+    "\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

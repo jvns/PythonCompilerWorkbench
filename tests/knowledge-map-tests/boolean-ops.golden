@@ -231,7 +231,6 @@ Module
           "value": ")"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -434,7 +433,6 @@ Module
           "value": ")"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -482,11 +480,7 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_12", 
           "name": "comment", 
@@ -534,9 +528,7 @@ Module
                   "id": "id_0", 
                   "name": "Compare"
                 }, 
-                ") and", 
-                "\n", 
-                " ", 
+                ") and\n ", 
                 {
                   "id": "tid_16", 
                   "name": "token", 
@@ -581,9 +573,7 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "))", 
-    "\n", 
-    ""
+    "))\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

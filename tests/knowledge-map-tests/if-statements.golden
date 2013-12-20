@@ -345,8 +345,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -356,8 +355,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -412,8 +410,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -423,8 +420,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -444,11 +440,7 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "", 
-        "\n", 
-        "else:", 
-        "\n", 
-        "    ", 
+        "\nelse:\n    ", 
         {
           "contents": [
             {
@@ -503,8 +495,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -514,8 +505,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -570,8 +560,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -581,8 +570,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -637,8 +625,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -648,8 +635,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -669,11 +655,7 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "", 
-        "\n", 
-        "else:", 
-        "\n", 
-        "    ", 
+        "\nelse:\n    ", 
         {
           "contents": [
             {
@@ -728,8 +710,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -739,8 +720,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -775,8 +755,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -786,8 +765,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "        ", 
+        "\n        ", 
         {
           "contents": [
             {
@@ -807,11 +785,7 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "", 
-        "\n", 
-        "    else:", 
-        "\n", 
-        "        ", 
+        "\n    else:\n        ", 
         {
           "contents": [
             {
@@ -831,11 +805,7 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "", 
-        "\n", 
-        "else:", 
-        "\n", 
-        "    ", 
+        "\nelse:\n    ", 
         {
           "contents": [
             {
@@ -870,8 +840,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -881,8 +850,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "        ", 
+        "\n        ", 
         {
           "contents": [
             {
@@ -902,18 +870,13 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_35", 
           "name": "comment", 
           "value": "# one-liner"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -948,8 +911,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -1005,18 +967,13 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_42", 
           "name": "comment", 
           "value": "# multiline condition"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -1059,9 +1016,7 @@ Module
                   "id": "id_0", 
                   "name": "Compare"
                 }, 
-                ") or \\", 
-                "\n", 
-                "   ", 
+                ") or \\\n   ", 
                 {
                   "id": "tid_46", 
                   "name": "token", 
@@ -1097,15 +1052,12 @@ Module
               ], 
               "id": "id_0", 
               "name": "BoolOp"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
         }, 
-        "):", 
-        "\n", 
-        "    ", 
+        "):\n    ", 
         {
           "contents": [
             {

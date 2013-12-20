@@ -1350,12 +1350,24 @@ def optimize_output_dict(d):
                 ret[k] = _opt_helper(v)
             return ret
         elif type(obj) is list:
-            ret = []
+            tmp = []
             for e in obj:
                 # eliminate empty strings!
                 if e == '':
                     continue
-                ret.append(_opt_helper(e))
+                tmp.append(_opt_helper(e))
+
+            # now coalesce adjacent strings together
+            ret = []
+            for e in tmp:
+                if not ret:
+                    ret.append(e)
+                elif (type(ret[-1]) in (str, unicode) and
+                      type(e) in (str, unicode)):
+                    ret[-1] += e
+                else:
+                    ret.append(e)
+
             return ret
         else:
             assert type(obj) in (str, unicode)

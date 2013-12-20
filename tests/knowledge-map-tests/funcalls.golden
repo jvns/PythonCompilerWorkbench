@@ -648,7 +648,6 @@ Module
           "value": "# only keyword args"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -733,7 +732,6 @@ Module
           "value": "# regular and keyword args"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -847,7 +845,6 @@ Module
           "value": "# star and kwargs"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -925,8 +922,7 @@ Module
       "name": "comment", 
       "value": "# all four kinds of args!"
     }, 
-    "\n", 
-    ""
+    "\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

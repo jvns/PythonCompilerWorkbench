@@ -332,18 +332,13 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_12", 
           "name": "comment", 
           "value": "# format strings"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -526,18 +521,13 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_26", 
           "name": "comment", 
           "value": "# multiline"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -555,23 +545,19 @@ Module
                   "id": "id_0", 
                   "name": "Str"
                 }, 
-                " % \\", 
-                "\n", 
-                "  ", 
+                " % \\\n  ", 
                 {
                   "id": "tid_28", 
                   "name": "token", 
                   "value": "\\"
                 }, 
-                "\n", 
-                "  ", 
+                "\n  ", 
                 {
                   "id": "tid_29", 
                   "name": "token", 
                   "value": "\\"
                 }, 
-                "\n", 
-                "       ", 
+                "\n       ", 
                 {
                   "contents": [
                     {
@@ -637,9 +623,7 @@ Module
               "id": "id_0", 
               "name": "Str"
             }, 
-            ", \\", 
-            "\n", 
-            "  ", 
+            ", \\\n  ", 
             {
               "contents": [
                 "x"
@@ -647,16 +631,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            ", \\", 
-            "\n", 
-            " ", 
+            ", \\\n ", 
             {
               "id": "tid_35", 
               "name": "token", 
               "value": "\\"
             }, 
-            "\n", 
-            "  ", 
+            "\n  ", 
             {
               "contents": [
                 "y"

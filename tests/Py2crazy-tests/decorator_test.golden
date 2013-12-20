@@ -78,21 +78,18 @@ Module
 --- JSON ---
 {
   "contents": [
-    "", 
     {
       "id": "tid_1", 
       "name": "comment", 
       "value": "# these weird decorators currently don't work so hto ..."
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_2", 
       "name": "comment", 
       "value": "# from Lib/threading.py"
     }, 
     "\n", 
-    "", 
     {
       "contents": [
         {
@@ -116,9 +113,7 @@ Module
               "id": "id_0", 
               "name": "Attribute"
             }, 
-            "", 
-            "\n", 
-            "def name(", 
+            "\ndef name(", 
             {
               "contents": [
                 {
@@ -159,8 +154,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -172,18 +166,13 @@ Module
           "id": "id_0", 
           "name": "Pass"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_8", 
           "name": "comment", 
           "value": "# from Lib/csv.py"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -205,9 +194,7 @@ Module
               "id": "id_0", 
               "name": "Attribute"
             }, 
-            "", 
-            "\n", 
-            "def fieldnames(", 
+            "\ndef fieldnames(", 
             {
               "contents": [
                 {
@@ -248,8 +235,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {

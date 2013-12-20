@@ -33,44 +33,36 @@ Module
 --- JSON ---
 {
   "contents": [
-    "", 
     {
       "id": "tid_1", 
       "name": "comment", 
       "value": "# there's an asymmetry when combining an attribute load with a binary"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_2", 
       "name": "comment", 
       "value": "# op, which looks ugly. it's hard to fix since if we extend the extent"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_3", 
       "name": "comment", 
       "value": "# of foo.first_attr to start at 'foo', that would be the same start"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_4", 
       "name": "comment", 
       "value": "# column as LOAD_NAME of 'foo', which would lead to a conflict unless we"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_5", 
       "name": "comment", 
       "value": "# hack Py2crazy even more :/"
     }, 
-    "\n", 
-    "", 
-    "\n", 
-    "", 
+    "\n\n", 
     {
       "contents": [
         {
@@ -138,16 +130,13 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "", 
     "\n", 
-    "", 
     {
       "id": "tid_8", 
       "name": "comment", 
       "value": "#      ------------^----------------"
     }, 
-    "\n", 
-    ""
+    "\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

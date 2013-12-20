@@ -51,8 +51,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "  ", 
+        "\n  ", 
         {
           "contents": [
             {
@@ -116,46 +115,37 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "", 
-    "\n", 
-    "", 
-    "\n", 
-    "", 
+    "\n\n", 
     {
       "id": "tid_7", 
       "name": "comment", 
       "value": "# the RETURN_VALUE instruction after BUILD_TUPLE should get the benefits"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_8", 
       "name": "comment", 
       "value": "# of hysteresis (i.e., the same start_col and extent as BUILD_TUPLE)."
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_9", 
       "name": "comment", 
       "value": "# Right now we have hysteresis only for function calls, and that"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_10", 
       "name": "comment", 
       "value": "# hysteresis might play badly with hysteresis for other types, so think"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_11", 
       "name": "comment", 
       "value": "# carefully about how to gracefully handle these interactions!"
     }, 
-    "\n", 
-    ""
+    "\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

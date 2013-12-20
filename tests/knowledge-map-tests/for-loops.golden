@@ -398,8 +398,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Name"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "For"
@@ -409,8 +408,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -501,8 +499,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "List"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "For"
@@ -512,8 +509,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -585,8 +581,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Call"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "For"
@@ -596,8 +591,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -692,8 +686,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Call"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "For"
@@ -703,8 +696,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -805,8 +797,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Call"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "For"
@@ -816,8 +807,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -850,18 +840,13 @@ Module
           "id": "id_0", 
           "name": "Print"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_37", 
           "name": "comment", 
           "value": "# multiline test"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -912,10 +897,7 @@ Module
               "name": "token", 
               "value": "\\"
             }, 
-            "\n", 
-            "       in \\", 
-            "\n", 
-            "           ", 
+            "\n       in \\\n           ", 
             {
               "contents": [
                 {
@@ -945,8 +927,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Call"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "For"
@@ -956,8 +937,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -1042,8 +1022,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Call"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "For"
@@ -1053,8 +1032,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -1089,8 +1067,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -1100,8 +1077,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "        ", 
+        "\n        ", 
         {
           "contents": [
             {
@@ -1148,8 +1124,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Compare"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "If"
@@ -1159,8 +1134,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "        ", 
+        "\n        ", 
         {
           "contents": [
             {
@@ -1172,11 +1146,7 @@ Module
           "id": "id_0", 
           "name": "Continue"
         }, 
-        "", 
-        "\n", 
-        "    else:", 
-        "\n", 
-        "        ", 
+        "\n    else:\n        ", 
         {
           "contents": [
             {
@@ -1258,8 +1228,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Call"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "For"
@@ -1269,8 +1238,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -1369,8 +1337,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Call"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "For"
@@ -1380,8 +1347,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {

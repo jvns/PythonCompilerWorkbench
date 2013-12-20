@@ -179,9 +179,7 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "\"", 
-        "\n", 
-        "", 
+        "\"\n", 
         {
           "contents": [
             {

@@ -422,16 +422,13 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        "", 
         "\n", 
-        "", 
         {
           "id": "tid_30", 
           "name": "comment", 
           "value": "# naked tuples"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {

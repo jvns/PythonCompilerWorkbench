@@ -592,18 +592,13 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_33", 
           "name": "comment", 
           "value": "# multiline"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -625,8 +620,7 @@ Module
                   "name": "token", 
                   "value": ","
                 }, 
-                "\n", 
-                "      ", 
+                "\n      ", 
                 {
                   "contents": [
                     "2"
@@ -639,8 +633,7 @@ Module
                   "name": "token", 
                   "value": ","
                 }, 
-                "\n", 
-                "  ", 
+                "\n  ", 
                 {
                   "contents": [
                     "3"
@@ -654,11 +647,7 @@ Module
                   "name": "token", 
                   "value": ","
                 }, 
-                "   ", 
-                "\n", 
-                "  ", 
-                "\n", 
-                "        ", 
+                "   \n  \n        ", 
                 {
                   "contents": [
                     "\"hello\""

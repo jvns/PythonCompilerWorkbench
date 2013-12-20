@@ -237,18 +237,13 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_11", 
           "name": "comment", 
           "value": "# multiline"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -283,8 +278,7 @@ Module
                   "name": "token", 
                   "value": ","
                 }, 
-                "\n", 
-                "   ", 
+                "\n   ", 
                 {
                   "contents": [
                     "c"
@@ -301,9 +295,7 @@ Module
               "id": "id_0", 
               "name": "Tuple"
             }, 
-            " = \\", 
-            "\n", 
-            "     ", 
+            " = \\\n     ", 
             {
               "contents": [
                 {

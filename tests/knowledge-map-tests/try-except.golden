@@ -248,8 +248,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -321,8 +320,7 @@ Module
               ], 
               "id": "id_0", 
               "name": "Name"
-            }, 
-            ""
+            }
           ], 
           "id": "id_0", 
           "name": "ExceptHandler"
@@ -332,8 +330,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -390,8 +387,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -436,8 +432,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {

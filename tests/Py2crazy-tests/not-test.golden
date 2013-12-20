@@ -113,8 +113,7 @@ Module
       "name": "token", 
       "value": ")"
     }, 
-    "\n", 
-    ""
+    "\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

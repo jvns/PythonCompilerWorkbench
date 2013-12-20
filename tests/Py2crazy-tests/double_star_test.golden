@@ -81,14 +81,12 @@ Module
 --- JSON ---
 {
   "contents": [
-    "", 
     {
       "id": "tid_1", 
       "name": "comment", 
       "value": "# from Lib/doctest.py"
     }, 
     "\n", 
-    "", 
     {
       "contents": [
         {
@@ -152,18 +150,13 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_4", 
           "name": "comment", 
           "value": "# from Lib/fractions.py"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             "def foo()"
@@ -176,8 +169,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -250,8 +242,7 @@ Module
                   "name": "token", 
                   "value": ","
                 }, 
-                "\n", 
-                "                    ", 
+                "\n                    ", 
                 {
                   "contents": [
                     {

@@ -58,14 +58,12 @@ Module
 --- JSON ---
 {
   "contents": [
-    "", 
     {
       "id": "tid_1", 
       "name": "comment", 
       "value": "# mix up function call and tuple hysteresis, to maximize confusion"
     }, 
     "\n", 
-    "", 
     {
       "contents": [
         {
@@ -80,8 +78,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "  ", 
+        "\n  ", 
         {
           "contents": [
             {

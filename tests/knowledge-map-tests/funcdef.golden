@@ -251,8 +251,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -323,8 +322,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -393,8 +391,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -487,8 +484,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -513,8 +509,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -548,12 +543,7 @@ Module
               "name": "token", 
               "value": ","
             }, 
-            "\n", 
-            "", 
-            "\n", 
-            "", 
-            "\n", 
-            "        *y)"
+            "\n\n\n        *y)"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
@@ -563,8 +553,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -603,8 +592,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -634,8 +622,7 @@ Module
                   "name": "token", 
                   "value": ","
                 }, 
-                "\n", 
-                "        ", 
+                "\n        ", 
                 {
                   "contents": [
                     "yyy"
@@ -659,9 +646,7 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ", *zzz,", 
-            "\n", 
-            "        **www)"
+            ", *zzz,\n        **www)"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
@@ -671,8 +656,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {
@@ -714,8 +698,7 @@ Module
                   "name": "token", 
                   "value": ","
                 }, 
-                "\n", 
-                "        ", 
+                "\n        ", 
                 {
                   "contents": [
                     "b"
@@ -740,8 +723,7 @@ Module
                   "name": "token", 
                   "value": ","
                 }, 
-                "\n", 
-                "        ", 
+                "\n        ", 
                 {
                   "contents": [
                     "c"
@@ -799,8 +781,7 @@ Module
           "name": "token", 
           "value": ":"
         }, 
-        "\n", 
-        "    ", 
+        "\n    ", 
         {
           "contents": [
             {

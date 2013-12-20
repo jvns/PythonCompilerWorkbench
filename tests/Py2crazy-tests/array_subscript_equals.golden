@@ -113,28 +113,24 @@ Module
       "value": ")"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_5", 
       "name": "comment", 
       "value": "# this is currently broken since we don't properly track start_col and"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_6", 
       "name": "comment", 
       "value": "# extent of 'tokens[5]'. If we did, then it would conflict with"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_7", 
       "name": "comment", 
       "value": "# LOAD_NAME of 'tokens', since they start at the same column :("
     }, 
-    "\n", 
-    ""
+    "\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

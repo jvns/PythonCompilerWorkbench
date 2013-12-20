@@ -150,18 +150,13 @@ Module
           "id": "id_0", 
           "name": "ImportFrom"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_1", 
           "name": "comment", 
           "value": "# semicolons to start new lines"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             "import foo.bar"

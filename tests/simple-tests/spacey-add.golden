@@ -22,14 +22,12 @@ Module
 --- JSON ---
 {
   "contents": [
-    "", 
     {
       "id": "tid_1", 
       "name": "comment", 
       "value": "# with extra spaces ..."
     }, 
     "\n", 
-    "", 
     {
       "contents": [
         {
@@ -83,16 +81,13 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "      ", 
-    "\n", 
-    "", 
+    "      \n", 
     {
       "id": "tid_4", 
       "name": "comment", 
       "value": "# and a trailing line comment"
     }, 
-    "\n", 
-    ""
+    "\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

@@ -53,14 +53,12 @@ Module
 --- JSON ---
 {
   "contents": [
-    "", 
     {
       "id": "tid_1", 
       "name": "comment", 
       "value": "# make sure BUILD_TUPLE works even right after a CALL_FUNCTION bytecode"
     }, 
     "\n", 
-    "", 
     {
       "contents": [
         {

@@ -480,18 +480,13 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "\n\n", 
         {
           "id": "tid_25", 
           "name": "comment", 
           "value": "# multiline"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -540,8 +535,7 @@ Module
                   "name": "token", 
                   "value": ","
                 }, 
-                "\n", 
-                " ", 
+                "\n ", 
                 {
                   "contents": [
                     "\"Carol\""
@@ -581,8 +575,7 @@ Module
                   "name": "token", 
                   "value": ","
                 }, 
-                "\n", 
-                " ", 
+                "\n ", 
                 {
                   "contents": [
                     "\"Bob\""

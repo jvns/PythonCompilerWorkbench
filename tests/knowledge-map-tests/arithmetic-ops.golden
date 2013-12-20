@@ -442,18 +442,13 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "))", 
-        "\n", 
-        "", 
-        "\n", 
-        "", 
+        "))\n\n", 
         {
           "id": "tid_13", 
           "name": "comment", 
           "value": "# some multiline action"
         }, 
         "\n", 
-        "", 
         {
           "contents": [
             {
@@ -465,9 +460,7 @@ Module
                   "id": "id_0", 
                   "name": "Str"
                 }, 
-                " + \\", 
-                "\n", 
-                "        ", 
+                " + \\\n        ", 
                 {
                   "contents": [
                     "\"bar\""
@@ -483,10 +476,7 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "", 
-        "\n", 
-        "", 
-        "\n", 
+        "\n\n", 
         {
           "id": "tid_14", 
           "name": "token", 
@@ -510,8 +500,7 @@ Module
                   "name": "token", 
                   "value": "*"
                 }, 
-                "\n", 
-                "    ", 
+                "\n    ", 
                 {
                   "id": "tid_16", 
                   "name": "token", 
@@ -526,24 +515,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " ", 
-                    "\n", 
-                    "   ", 
-                    "\n", 
-                    "  ", 
-                    "\n", 
-                    "  ", 
+                    " \n   \n  \n  ", 
                     {
                       "id": "tid_17", 
                       "name": "token", 
                       "value": "+"
                     }, 
-                    "\n", 
-                    " ", 
-                    "\n", 
-                    "", 
-                    "\n", 
-                    "", 
+                    "\n \n\n", 
                     {
                       "contents": [
                         "3"
@@ -567,9 +545,7 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "))", 
-    "\n", 
-    ""
+    "))\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

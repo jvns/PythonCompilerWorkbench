@@ -168,81 +168,67 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    "", 
-    "\n", 
-    "", 
-    "\n", 
-    "", 
+    "\n\n", 
     {
       "id": "tid_4", 
       "name": "comment", 
       "value": "# This doesn't work, but it's nuts!!!"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_5", 
       "name": "comment", 
       "value": "#\"\"\"multi"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_6", 
       "name": "comment", 
       "value": "#    line"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_7", 
       "name": "comment", 
       "value": "#      string"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_8", 
       "name": "comment", 
       "value": "#        method"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_9", 
       "name": "comment", 
       "value": "#          call\"\"\".join('''"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_10", 
       "name": "comment", 
       "value": "#another"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_11", 
       "name": "comment", 
       "value": "#  multi"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_12", 
       "name": "comment", 
       "value": "#    line"
     }, 
     "\n", 
-    "", 
     {
       "id": "tid_13", 
       "name": "comment", 
       "value": "#      string''')"
     }, 
-    "\n", 
-    ""
+    "\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"
