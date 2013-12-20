@@ -148,18 +148,14 @@ Module
           "contents": [
             {
               "contents": [
-                {
-                  "id": "tid_4", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "a"
                 }, 
                 {
-                  "id": "tid_5", 
+                  "id": "tid_4", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -169,36 +165,28 @@ Module
                   "name": "Name", 
                   "value": "b"
                 }, 
-                {
-                  "id": "tid_6", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Tuple"
             }, 
             " ", 
             {
-              "id": "tid_7", 
+              "id": "tid_5", 
               "name": "token", 
               "value": "="
             }, 
             " ", 
             {
               "contents": [
-                {
-                  "id": "tid_8", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "c"
                 }, 
                 {
-                  "id": "tid_9", 
+                  "id": "tid_6", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -208,11 +196,7 @@ Module
                   "name": "Name", 
                   "value": "d"
                 }, 
-                {
-                  "id": "tid_10", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Tuple"
@@ -223,7 +207,7 @@ Module
         }, 
         "\n\n", 
         {
-          "id": "tid_11", 
+          "id": "tid_7", 
           "name": "comment", 
           "value": "# multiline"
         }, 
@@ -232,18 +216,14 @@ Module
           "contents": [
             {
               "contents": [
-                {
-                  "id": "tid_12", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "a"
                 }, 
                 {
-                  "id": "tid_13", 
+                  "id": "tid_8", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -254,7 +234,7 @@ Module
                   "value": "b"
                 }, 
                 {
-                  "id": "tid_14", 
+                  "id": "tid_9", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -264,11 +244,7 @@ Module
                   "name": "Name", 
                   "value": "c"
                 }, 
-                {
-                  "id": "tid_15", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Tuple"
@@ -276,18 +252,14 @@ Module
             " = \\\n     ", 
             {
               "contents": [
-                {
-                  "id": "tid_16", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "c"
                 }, 
                 {
-                  "id": "tid_17", 
+                  "id": "tid_10", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -297,11 +269,7 @@ Module
                   "name": "Name", 
                   "value": "d"
                 }, 
-                {
-                  "id": "tid_18", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Tuple"

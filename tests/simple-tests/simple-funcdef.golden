@@ -58,23 +58,19 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            {
-              "id": "tid_2", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
         {
-          "id": "tid_3", 
+          "id": "tid_2", 
           "name": "token", 
           "value": ":"
         }, 
         "\n    ", 
         {
-          "id": "tid_4", 
+          "id": "tid_3", 
           "name": "comment", 
           "value": "#c = a + b"
         }, 
@@ -82,7 +78,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_5", 
+              "id": "tid_4", 
               "name": "token", 
               "value": "return"
             }, 

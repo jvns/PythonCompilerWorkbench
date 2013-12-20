@@ -956,12 +956,13 @@ TILDE ~
 AT @
 
 # The PLY parser replaces these with special functions
-LPAR (
-RPAR )
-LBRACE {
-RBRACE }
-LSQB [
-RSQB ]
+# PG: these aren't super useful for me right now ...
+#LPAR (
+#RPAR )
+#LBRACE {
+#RBRACE }
+#LSQB [
+#RSQB ]
 
 BACKSLASH \\
 """.splitlines():
@@ -1131,8 +1132,13 @@ class CodeAst(object):
             except ValueError:
                 # no comments, so lex away!
 
+                # TODO: use ply for a full-on lexer solution, which
+                # gives us more precision than the simple case of just
+                # looking for one single token:
+                # http://www.dabeaz.com/ply/ply.html#ply_nn3
+
                 # okay, the SIMPLE case is if there's exactly ONE token
-                # in the line, after stripping off whitespace
+                # in the line (after stripping all whitespace)
                 tok = line.strip()
                 if tok in KEYWORDS_SET or tok in TOKENS_SET:
                     prefix, suffix = line.split(tok)

@@ -577,21 +577,13 @@ Module
                   "name": "Name", 
                   "value": "foo"
                 }, 
-                {
-                  "id": "tid_12", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "n"
                 }, 
-                {
-                  "id": "tid_13", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -615,17 +607,13 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            {
-              "id": "tid_14", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
         {
-          "id": "tid_15", 
+          "id": "tid_12", 
           "name": "token", 
           "value": ":"
         }, 
@@ -633,7 +621,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_16", 
+              "id": "tid_13", 
               "name": "token", 
               "value": "return"
             }, 
@@ -647,7 +635,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_17", 
+                  "id": "tid_14", 
                   "name": "token", 
                   "value": "*"
                 }, 
@@ -659,11 +647,7 @@ Module
                       "name": "Name", 
                       "value": "fact"
                     }, 
-                    {
-                      "id": "tid_18", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "contents": [
                         {
@@ -672,7 +656,7 @@ Module
                           "value": "n"
                         }, 
                         {
-                          "id": "tid_19", 
+                          "id": "tid_15", 
                           "name": "token", 
                           "value": "-"
                         }, 
@@ -685,11 +669,7 @@ Module
                       "id": "id_0", 
                       "name": "BinOp"
                     }, 
-                    {
-                      "id": "tid_20", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Call"
@@ -697,6 +677,94 @@ Module
               ], 
               "id": "id_0", 
               "name": "BinOp"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "id": "id_0", 
+          "name": "FunctionDef", 
+          "value": "def foo()"
+        }, 
+        {
+          "id": "tid_16", 
+          "name": "token", 
+          "value": ":"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            {
+              "id": "tid_17", 
+              "name": "token", 
+              "value": "return"
+            }, 
+            " ", 
+            {
+              "contents": [
+                {
+                  "id": "id_0", 
+                  "name": "Name", 
+                  "value": "area"
+                }, 
+                "(", 
+                {
+                  "contents": [
+                    {
+                      "id": "id_0", 
+                      "name": "Name", 
+                      "value": "distance"
+                    }, 
+                    "(", 
+                    {
+                      "id": "id_0", 
+                      "name": "Name", 
+                      "value": "xc"
+                    }, 
+                    {
+                      "id": "tid_18", 
+                      "name": "token", 
+                      "value": ","
+                    }, 
+                    " ", 
+                    {
+                      "id": "id_0", 
+                      "name": "Name", 
+                      "value": "yc"
+                    }, 
+                    {
+                      "id": "tid_19", 
+                      "name": "token", 
+                      "value": ","
+                    }, 
+                    " ", 
+                    {
+                      "id": "id_0", 
+                      "name": "Name", 
+                      "value": "xp"
+                    }, 
+                    {
+                      "id": "tid_20", 
+                      "name": "token", 
+                      "value": ","
+                    }, 
+                    " ", 
+                    {
+                      "id": "id_0", 
+                      "name": "Name", 
+                      "value": "yp"
+                    }, 
+                    ")"
+                  ], 
+                  "id": "id_0", 
+                  "name": "Call"
+                }, 
+                ")"
+              ], 
+              "id": "id_0", 
+              "name": "Call"
             }
           ], 
           "id": "id_0", 
@@ -727,80 +795,141 @@ Module
                 {
                   "id": "id_0", 
                   "name": "Name", 
-                  "value": "area"
+                  "value": "lst"
                 }, 
-                {
-                  "id": "tid_23", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Name", 
-                      "value": "distance"
-                    }, 
-                    {
-                      "id": "tid_24", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                      "name": "Num", 
+                      "value": "3"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Index"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "id": "id_0", 
+          "name": "FunctionDef", 
+          "value": "def foo()"
+        }, 
+        {
+          "id": "tid_23", 
+          "name": "token", 
+          "value": ":"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            {
+              "id": "tid_24", 
+              "name": "token", 
+              "value": "return"
+            }, 
+            " ", 
+            {
+              "contents": [
+                {
+                  "id": "id_0", 
+                  "name": "Name", 
+                  "value": "lst"
+                }, 
+                "[", 
+                {
+                  "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Name", 
-                      "value": "xc"
+                      "name": "Num", 
+                      "value": "2"
                     }, 
                     {
                       "id": "tid_25", 
                       "name": "token", 
-                      "value": ","
+                      "value": ":"
                     }, 
-                    " ", 
                     {
                       "id": "id_0", 
-                      "name": "Name", 
-                      "value": "yc"
-                    }, 
-                    {
-                      "id": "tid_26", 
-                      "name": "token", 
-                      "value": ","
-                    }, 
-                    " ", 
-                    {
-                      "id": "id_0", 
-                      "name": "Name", 
-                      "value": "xp"
-                    }, 
-                    {
-                      "id": "tid_27", 
-                      "name": "token", 
-                      "value": ","
-                    }, 
-                    " ", 
-                    {
-                      "id": "id_0", 
-                      "name": "Name", 
-                      "value": "yp"
-                    }, 
-                    {
-                      "id": "tid_28", 
-                      "name": "token", 
-                      "value": ")"
+                      "name": "Num", 
+                      "value": "6"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Call"
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Return"
+        }, 
+        "\n\n", 
+        {
+          "id": "id_0", 
+          "name": "FunctionDef", 
+          "value": "def foo()"
+        }, 
+        {
+          "id": "tid_26", 
+          "name": "token", 
+          "value": ":"
+        }, 
+        "\n    ", 
+        {
+          "contents": [
+            {
+              "id": "tid_27", 
+              "name": "token", 
+              "value": "return"
+            }, 
+            " ", 
+            {
+              "contents": [
+                "(", 
+                {
+                  "id": "id_0", 
+                  "name": "Name", 
+                  "value": "a"
+                }, 
+                {
+                  "id": "tid_28", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
+                {
+                  "id": "id_0", 
+                  "name": "Name", 
+                  "value": "b"
                 }, 
                 {
                   "id": "tid_29", 
                   "name": "token", 
-                  "value": ")"
-                }
+                  "value": ","
+                }, 
+                " ", 
+                {
+                  "id": "id_0", 
+                  "name": "Name", 
+                  "value": "c"
+                }, 
+                ")"
               ], 
               "id": "id_0", 
-              "name": "Call"
+              "name": "Tuple"
             }
           ], 
           "id": "id_0", 
@@ -831,32 +960,33 @@ Module
                 {
                   "id": "id_0", 
                   "name": "Name", 
-                  "value": "lst"
+                  "value": "a"
                 }, 
                 {
                   "id": "tid_32", 
                   "name": "token", 
-                  "value": "["
+                  "value": ","
                 }, 
+                " ", 
                 {
-                  "contents": [
-                    {
-                      "id": "id_0", 
-                      "name": "Num", 
-                      "value": "3"
-                    }
-                  ], 
                   "id": "id_0", 
-                  "name": "Index"
+                  "name": "Name", 
+                  "value": "b"
                 }, 
                 {
                   "id": "tid_33", 
                   "name": "token", 
-                  "value": "]"
+                  "value": ","
+                }, 
+                " ", 
+                {
+                  "id": "id_0", 
+                  "name": "Name", 
+                  "value": "c"
                 }
               ], 
               "id": "id_0", 
-              "name": "Subscript"
+              "name": "Tuple"
             }
           ], 
           "id": "id_0", 
@@ -885,223 +1015,25 @@ Module
             {
               "contents": [
                 {
-                  "id": "id_0", 
-                  "name": "Name", 
-                  "value": "lst"
-                }, 
-                {
-                  "id": "tid_36", 
-                  "name": "token", 
-                  "value": "["
-                }, 
-                {
-                  "contents": [
-                    {
-                      "id": "id_0", 
-                      "name": "Num", 
-                      "value": "2"
-                    }, 
-                    {
-                      "id": "tid_37", 
-                      "name": "token", 
-                      "value": ":"
-                    }, 
-                    {
-                      "id": "id_0", 
-                      "name": "Num", 
-                      "value": "6"
-                    }
-                  ], 
-                  "id": "id_0", 
-                  "name": "Slice"
-                }, 
-                {
-                  "id": "tid_38", 
-                  "name": "token", 
-                  "value": "]"
-                }
-              ], 
-              "id": "id_0", 
-              "name": "Subscript"
-            }
-          ], 
-          "id": "id_0", 
-          "name": "Return"
-        }, 
-        "\n\n", 
-        {
-          "id": "id_0", 
-          "name": "FunctionDef", 
-          "value": "def foo()"
-        }, 
-        {
-          "id": "tid_39", 
-          "name": "token", 
-          "value": ":"
-        }, 
-        "\n    ", 
-        {
-          "contents": [
-            {
-              "id": "tid_40", 
-              "name": "token", 
-              "value": "return"
-            }, 
-            " ", 
-            {
-              "contents": [
-                {
-                  "id": "tid_41", 
-                  "name": "token", 
-                  "value": "("
-                }, 
-                {
-                  "id": "id_0", 
-                  "name": "Name", 
-                  "value": "a"
-                }, 
-                {
-                  "id": "tid_42", 
-                  "name": "token", 
-                  "value": ","
-                }, 
-                " ", 
-                {
-                  "id": "id_0", 
-                  "name": "Name", 
-                  "value": "b"
-                }, 
-                {
-                  "id": "tid_43", 
-                  "name": "token", 
-                  "value": ","
-                }, 
-                " ", 
-                {
-                  "id": "id_0", 
-                  "name": "Name", 
-                  "value": "c"
-                }, 
-                {
-                  "id": "tid_44", 
-                  "name": "token", 
-                  "value": ")"
-                }
-              ], 
-              "id": "id_0", 
-              "name": "Tuple"
-            }
-          ], 
-          "id": "id_0", 
-          "name": "Return"
-        }, 
-        "\n\n", 
-        {
-          "id": "id_0", 
-          "name": "FunctionDef", 
-          "value": "def foo()"
-        }, 
-        {
-          "id": "tid_45", 
-          "name": "token", 
-          "value": ":"
-        }, 
-        "\n    ", 
-        {
-          "contents": [
-            {
-              "id": "tid_46", 
-              "name": "token", 
-              "value": "return"
-            }, 
-            " ", 
-            {
-              "contents": [
-                {
-                  "id": "id_0", 
-                  "name": "Name", 
-                  "value": "a"
-                }, 
-                {
-                  "id": "tid_47", 
-                  "name": "token", 
-                  "value": ","
-                }, 
-                " ", 
-                {
-                  "id": "id_0", 
-                  "name": "Name", 
-                  "value": "b"
-                }, 
-                {
-                  "id": "tid_48", 
-                  "name": "token", 
-                  "value": ","
-                }, 
-                " ", 
-                {
-                  "id": "id_0", 
-                  "name": "Name", 
-                  "value": "c"
-                }
-              ], 
-              "id": "id_0", 
-              "name": "Tuple"
-            }
-          ], 
-          "id": "id_0", 
-          "name": "Return"
-        }, 
-        "\n\n", 
-        {
-          "id": "id_0", 
-          "name": "FunctionDef", 
-          "value": "def foo()"
-        }, 
-        {
-          "id": "tid_49", 
-          "name": "token", 
-          "value": ":"
-        }, 
-        "\n    ", 
-        {
-          "contents": [
-            {
-              "id": "tid_50", 
-              "name": "token", 
-              "value": "return"
-            }, 
-            " ", 
-            {
-              "contents": [
-                {
                   "contents": [
                     {
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "min"
                     }, 
-                    {
-                      "id": "tid_51", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "t"
                     }, 
-                    {
-                      "id": "tid_52", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Call"
                 }, 
                 {
-                  "id": "tid_53", 
+                  "id": "tid_36", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -1113,21 +1045,13 @@ Module
                       "name": "Name", 
                       "value": "max"
                     }, 
-                    {
-                      "id": "tid_54", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "t"
                     }, 
-                    {
-                      "id": "tid_55", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Call"
@@ -1147,7 +1071,7 @@ Module
           "value": "def foo()"
         }, 
         {
-          "id": "tid_56", 
+          "id": "tid_37", 
           "name": "token", 
           "value": ":"
         }, 
@@ -1155,7 +1079,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_57", 
+              "id": "tid_38", 
               "name": "token", 
               "value": "while"
             }, 
@@ -1170,7 +1094,7 @@ Module
           "name": "While"
         }, 
         {
-          "id": "tid_58", 
+          "id": "tid_39", 
           "name": "token", 
           "value": ":"
         }, 
@@ -1178,7 +1102,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_59", 
+              "id": "tid_40", 
               "name": "token", 
               "value": "if"
             }, 
@@ -1192,7 +1116,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_60", 
+                  "id": "tid_41", 
                   "name": "token", 
                   "value": "<"
                 }, 
@@ -1211,7 +1135,7 @@ Module
           "name": "If"
         }, 
         {
-          "id": "tid_61", 
+          "id": "tid_42", 
           "name": "token", 
           "value": ":"
         }, 
@@ -1219,7 +1143,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_62", 
+              "id": "tid_43", 
               "name": "token", 
               "value": "return"
             }, 
@@ -1243,7 +1167,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_63", 
+              "id": "tid_44", 
               "name": "token", 
               "value": "-="
             }, 

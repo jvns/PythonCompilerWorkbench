@@ -158,11 +158,38 @@ Module
           "contents": [
             {
               "contents": [
+                "{", 
+                {
+                  "id": "id_0", 
+                  "name": "Str", 
+                  "value": "\"Joe\""
+                }, 
                 {
                   "id": "tid_1", 
                   "name": "token", 
-                  "value": "{"
+                  "value": ":"
                 }, 
+                " ", 
+                {
+                  "id": "id_0", 
+                  "name": "Num", 
+                  "value": "23"
+                }, 
+                "}"
+              ], 
+              "id": "id_0", 
+              "name": "Dict"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "{", 
                 {
                   "id": "id_0", 
                   "name": "Str", 
@@ -182,45 +209,6 @@ Module
                 {
                   "id": "tid_3", 
                   "name": "token", 
-                  "value": "}"
-                }
-              ], 
-              "id": "id_0", 
-              "name": "Dict"
-            }
-          ], 
-          "id": "id_0", 
-          "name": "Expr"
-        }, 
-        "\n", 
-        {
-          "contents": [
-            {
-              "contents": [
-                {
-                  "id": "tid_4", 
-                  "name": "token", 
-                  "value": "{"
-                }, 
-                {
-                  "id": "id_0", 
-                  "name": "Str", 
-                  "value": "\"Joe\""
-                }, 
-                {
-                  "id": "tid_5", 
-                  "name": "token", 
-                  "value": ":"
-                }, 
-                " ", 
-                {
-                  "id": "id_0", 
-                  "name": "Num", 
-                  "value": "23"
-                }, 
-                {
-                  "id": "tid_6", 
-                  "name": "token", 
                   "value": ","
                 }, 
                 " ", 
@@ -230,7 +218,7 @@ Module
                   "value": "\"Carol\""
                 }, 
                 {
-                  "id": "tid_7", 
+                  "id": "tid_4", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -241,7 +229,7 @@ Module
                   "value": "19"
                 }, 
                 {
-                  "id": "tid_8", 
+                  "id": "tid_5", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -252,7 +240,7 @@ Module
                   "value": "\"Bobby\""
                 }, 
                 {
-                  "id": "tid_9", 
+                  "id": "tid_6", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -262,11 +250,7 @@ Module
                   "name": "Num", 
                   "value": "32"
                 }, 
-                {
-                  "id": "tid_10", 
-                  "name": "token", 
-                  "value": "}"
-                }
+                "}"
               ], 
               "id": "id_0", 
               "name": "Dict"
@@ -280,18 +264,14 @@ Module
           "contents": [
             {
               "contents": [
-                {
-                  "id": "tid_11", 
-                  "name": "token", 
-                  "value": "{"
-                }, 
+                "{", 
                 {
                   "id": "id_0", 
                   "name": "Str", 
                   "value": "\"Joe\""
                 }, 
                 {
-                  "id": "tid_12", 
+                  "id": "tid_7", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -302,7 +282,7 @@ Module
                   "value": "23"
                 }, 
                 {
-                  "id": "tid_13", 
+                  "id": "tid_8", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -313,7 +293,7 @@ Module
                   "value": "1000"
                 }, 
                 {
-                  "id": "tid_14", 
+                  "id": "tid_9", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -324,25 +304,21 @@ Module
                   "value": "19"
                 }, 
                 {
-                  "id": "tid_15", 
+                  "id": "tid_10", 
                   "name": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "contents": [
-                    {
-                      "id": "tid_16", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Num", 
                       "value": "1"
                     }, 
                     {
-                      "id": "tid_17", 
+                      "id": "tid_11", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -352,17 +328,13 @@ Module
                       "name": "Num", 
                       "value": "2"
                     }, 
-                    {
-                      "id": "tid_18", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Tuple"
                 }, 
                 {
-                  "id": "tid_19", 
+                  "id": "tid_12", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -372,11 +344,7 @@ Module
                   "name": "Num", 
                   "value": "32"
                 }, 
-                {
-                  "id": "tid_20", 
-                  "name": "token", 
-                  "value": "}"
-                }
+                "}"
               ], 
               "id": "id_0", 
               "name": "Dict"
@@ -390,18 +358,14 @@ Module
           "contents": [
             {
               "contents": [
-                {
-                  "id": "tid_21", 
-                  "name": "token", 
-                  "value": "{"
-                }, 
+                "{", 
                 {
                   "id": "id_0", 
                   "name": "Str", 
                   "value": "\"Joe\""
                 }, 
                 {
-                  "id": "tid_22", 
+                  "id": "tid_13", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -415,7 +379,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_23", 
+                      "id": "tid_14", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -429,11 +393,7 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                {
-                  "id": "tid_24", 
-                  "name": "token", 
-                  "value": "}"
-                }
+                "}"
               ], 
               "id": "id_0", 
               "name": "Dict"
@@ -444,7 +404,7 @@ Module
         }, 
         "\n\n", 
         {
-          "id": "tid_25", 
+          "id": "tid_15", 
           "name": "comment", 
           "value": "# multiline"
         }, 
@@ -453,18 +413,14 @@ Module
           "contents": [
             {
               "contents": [
-                {
-                  "id": "tid_26", 
-                  "name": "token", 
-                  "value": "{"
-                }, 
+                "{", 
                 {
                   "id": "id_0", 
                   "name": "Str", 
                   "value": "\"Joe\""
                 }, 
                 {
-                  "id": "tid_27", 
+                  "id": "tid_16", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -489,7 +445,7 @@ Module
                   "name": "Call"
                 }, 
                 {
-                  "id": "tid_28", 
+                  "id": "tid_17", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -500,7 +456,7 @@ Module
                   "value": "\"Carol\""
                 }, 
                 {
-                  "id": "tid_29", 
+                  "id": "tid_18", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -525,7 +481,7 @@ Module
                   "name": "Call"
                 }, 
                 {
-                  "id": "tid_30", 
+                  "id": "tid_19", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -536,7 +492,7 @@ Module
                   "value": "\"Bob\""
                 }, 
                 {
-                  "id": "tid_31", 
+                  "id": "tid_20", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -560,11 +516,7 @@ Module
                   "id": "id_0", 
                   "name": "Call"
                 }, 
-                {
-                  "id": "tid_32", 
-                  "name": "token", 
-                  "value": "}"
-                }
+                "}"
               ], 
               "id": "id_0", 
               "name": "Dict"

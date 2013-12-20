@@ -104,11 +104,7 @@ Module
           "contents": [
             {
               "contents": [
-                {
-                  "id": "tid_1", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -118,7 +114,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_2", 
+                      "id": "tid_1", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -142,7 +138,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_3", 
+                      "id": "tid_2", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -164,12 +160,7 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        {
-          "id": "tid_4", 
-          "name": "token", 
-          "value": ")"
-        }, 
-        "\n", 
+        ")\n", 
         {
           "contents": [
             {
@@ -184,7 +175,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_5", 
+                      "id": "tid_3", 
                       "name": "token", 
                       "value": "or"
                     }, 
@@ -206,17 +197,7 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        {
-          "id": "tid_6", 
-          "name": "token", 
-          "value": ")"
-        }, 
-        "\n", 
-        {
-          "id": "tid_7", 
-          "name": "token", 
-          "value": "("
-        }, 
+        ")\n(", 
         {
           "contents": [
             {
@@ -236,7 +217,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_8", 
+                      "id": "tid_4", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -276,11 +257,7 @@ Module
                       "name": "Name", 
                       "value": "tokens"
                     }, 
-                    {
-                      "id": "tid_9", 
-                      "name": "token", 
-                      "value": "["
-                    }, 
+                    "[", 
                     {
                       "contents": [
                         {
@@ -292,18 +269,14 @@ Module
                       "id": "id_0", 
                       "name": "Index"
                     }, 
-                    {
-                      "id": "tid_10", 
-                      "name": "token", 
-                      "value": "]"
-                    }
+                    "]"
                   ], 
                   "id": "id_0", 
                   "name": "Subscript"
                 }, 
                 " ", 
                 {
-                  "id": "tid_11", 
+                  "id": "tid_5", 
                   "name": "token", 
                   "value": "=="
                 }, 
@@ -321,12 +294,7 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        {
-          "id": "tid_12", 
-          "name": "token", 
-          "value": ")"
-        }, 
-        "\n", 
+        ")\n", 
         {
           "contents": [
             {
@@ -344,11 +312,7 @@ Module
                       "name": "Name", 
                       "value": "tokens"
                     }, 
-                    {
-                      "id": "tid_13", 
-                      "name": "token", 
-                      "value": "["
-                    }, 
+                    "[", 
                     {
                       "contents": [
                         {
@@ -360,18 +324,14 @@ Module
                       "id": "id_0", 
                       "name": "Index"
                     }, 
-                    {
-                      "id": "tid_14", 
-                      "name": "token", 
-                      "value": "]"
-                    }
+                    "]"
                   ], 
                   "id": "id_0", 
                   "name": "Subscript"
                 }, 
                 " ", 
                 {
-                  "id": "tid_15", 
+                  "id": "tid_6", 
                   "name": "token", 
                   "value": "=="
                 }, 
@@ -393,12 +353,7 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    {
-      "id": "tid_16", 
-      "name": "token", 
-      "value": ")"
-    }, 
-    "\n"
+    ")\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

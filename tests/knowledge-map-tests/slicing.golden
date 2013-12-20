@@ -140,11 +140,48 @@ Module
                   "name": "Name", 
                   "value": "x"
                 }, 
+                "[", 
                 {
-                  "id": "tid_1", 
-                  "name": "token", 
-                  "value": "["
+                  "contents": [
+                    {
+                      "id": "id_0", 
+                      "name": "Num", 
+                      "value": "1"
+                    }, 
+                    {
+                      "id": "tid_1", 
+                      "name": "token", 
+                      "value": ":"
+                    }, 
+                    {
+                      "id": "id_0", 
+                      "name": "Num", 
+                      "value": "5"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
                 }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "id": "id_0", 
+                  "name": "Name", 
+                  "value": "x"
+                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -156,21 +193,12 @@ Module
                       "id": "tid_2", 
                       "name": "token", 
                       "value": ":"
-                    }, 
-                    {
-                      "id": "id_0", 
-                      "name": "Num", 
-                      "value": "5"
                     }
                   ], 
                   "id": "id_0", 
                   "name": "Slice"
                 }, 
-                {
-                  "id": "tid_3", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -189,17 +217,90 @@ Module
                   "name": "Name", 
                   "value": "x"
                 }, 
+                "[", 
                 {
-                  "id": "tid_4", 
-                  "name": "token", 
-                  "value": "["
+                  "contents": [
+                    {
+                      "id": "tid_3", 
+                      "name": "token", 
+                      "value": ":"
+                    }, 
+                    {
+                      "id": "id_0", 
+                      "name": "Num", 
+                      "value": "5"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
                 }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "id": "id_0", 
+                  "name": "Name", 
+                  "value": "x"
+                }, 
+                "[", 
                 {
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Num", 
-                      "value": "1"
+                      "name": "Name", 
+                      "value": "a"
+                    }, 
+                    {
+                      "id": "tid_4", 
+                      "name": "token", 
+                      "value": ":"
+                    }, 
+                    {
+                      "id": "id_0", 
+                      "name": "Name", 
+                      "value": "b"
+                    }
+                  ], 
+                  "id": "id_0", 
+                  "name": "Slice"
+                }, 
+                "]"
+              ], 
+              "id": "id_0", 
+              "name": "Subscript"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Expr"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "contents": [
+                {
+                  "id": "id_0", 
+                  "name": "Name", 
+                  "value": "x"
+                }, 
+                "[", 
+                {
+                  "contents": [
+                    {
+                      "id": "id_0", 
+                      "name": "Name", 
+                      "value": "a"
                     }, 
                     {
                       "id": "tid_5", 
@@ -210,11 +311,7 @@ Module
                   "id": "id_0", 
                   "name": "Slice"
                 }, 
-                {
-                  "id": "tid_6", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -233,64 +330,11 @@ Module
                   "name": "Name", 
                   "value": "x"
                 }, 
-                {
-                  "id": "tid_7", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
-                      "id": "tid_8", 
-                      "name": "token", 
-                      "value": ":"
-                    }, 
-                    {
-                      "id": "id_0", 
-                      "name": "Num", 
-                      "value": "5"
-                    }
-                  ], 
-                  "id": "id_0", 
-                  "name": "Slice"
-                }, 
-                {
-                  "id": "tid_9", 
-                  "name": "token", 
-                  "value": "]"
-                }
-              ], 
-              "id": "id_0", 
-              "name": "Subscript"
-            }
-          ], 
-          "id": "id_0", 
-          "name": "Expr"
-        }, 
-        "\n", 
-        {
-          "contents": [
-            {
-              "contents": [
-                {
-                  "id": "id_0", 
-                  "name": "Name", 
-                  "value": "x"
-                }, 
-                {
-                  "id": "tid_10", 
-                  "name": "token", 
-                  "value": "["
-                }, 
-                {
-                  "contents": [
-                    {
-                      "id": "id_0", 
-                      "name": "Name", 
-                      "value": "a"
-                    }, 
-                    {
-                      "id": "tid_11", 
+                      "id": "tid_6", 
                       "name": "token", 
                       "value": ":"
                     }, 
@@ -303,99 +347,7 @@ Module
                   "id": "id_0", 
                   "name": "Slice"
                 }, 
-                {
-                  "id": "tid_12", 
-                  "name": "token", 
-                  "value": "]"
-                }
-              ], 
-              "id": "id_0", 
-              "name": "Subscript"
-            }
-          ], 
-          "id": "id_0", 
-          "name": "Expr"
-        }, 
-        "\n", 
-        {
-          "contents": [
-            {
-              "contents": [
-                {
-                  "id": "id_0", 
-                  "name": "Name", 
-                  "value": "x"
-                }, 
-                {
-                  "id": "tid_13", 
-                  "name": "token", 
-                  "value": "["
-                }, 
-                {
-                  "contents": [
-                    {
-                      "id": "id_0", 
-                      "name": "Name", 
-                      "value": "a"
-                    }, 
-                    {
-                      "id": "tid_14", 
-                      "name": "token", 
-                      "value": ":"
-                    }
-                  ], 
-                  "id": "id_0", 
-                  "name": "Slice"
-                }, 
-                {
-                  "id": "tid_15", 
-                  "name": "token", 
-                  "value": "]"
-                }
-              ], 
-              "id": "id_0", 
-              "name": "Subscript"
-            }
-          ], 
-          "id": "id_0", 
-          "name": "Expr"
-        }, 
-        "\n", 
-        {
-          "contents": [
-            {
-              "contents": [
-                {
-                  "id": "id_0", 
-                  "name": "Name", 
-                  "value": "x"
-                }, 
-                {
-                  "id": "tid_16", 
-                  "name": "token", 
-                  "value": "["
-                }, 
-                {
-                  "contents": [
-                    {
-                      "id": "tid_17", 
-                      "name": "token", 
-                      "value": ":"
-                    }, 
-                    {
-                      "id": "id_0", 
-                      "name": "Name", 
-                      "value": "b"
-                    }
-                  ], 
-                  "id": "id_0", 
-                  "name": "Slice"
-                }, 
-                {
-                  "id": "tid_18", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -433,11 +385,7 @@ Module
                   "name": "Name", 
                   "value": "x"
                 }, 
-                {
-                  "id": "tid_19", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -446,7 +394,7 @@ Module
                       "value": "a"
                     }, 
                     {
-                      "id": "tid_20", 
+                      "id": "tid_7", 
                       "name": "token", 
                       "value": ":"
                     }, 
@@ -456,7 +404,7 @@ Module
                       "value": "b"
                     }, 
                     {
-                      "id": "tid_21", 
+                      "id": "tid_8", 
                       "name": "token", 
                       "value": ":"
                     }, 
@@ -469,11 +417,7 @@ Module
                   "id": "id_0", 
                   "name": "Slice"
                 }, 
-                {
-                  "id": "tid_22", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -492,7 +436,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_23", 
+              "id": "tid_9", 
               "name": "token", 
               "value": "="
             }, 
@@ -504,11 +448,7 @@ Module
                   "name": "Name", 
                   "value": "whole"
                 }, 
-                {
-                  "id": "tid_24", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -517,7 +457,7 @@ Module
                       "value": "1"
                     }, 
                     {
-                      "id": "tid_25", 
+                      "id": "tid_10", 
                       "name": "token", 
                       "value": ":"
                     }, 
@@ -530,11 +470,7 @@ Module
                   "id": "id_0", 
                   "name": "Slice"
                 }, 
-                {
-                  "id": "tid_26", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"

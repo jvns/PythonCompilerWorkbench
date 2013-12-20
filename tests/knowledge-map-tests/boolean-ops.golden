@@ -219,12 +219,7 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        {
-          "id": "tid_3", 
-          "name": "token", 
-          "value": ")"
-        }, 
-        "\n", 
+        ")\n", 
         {
           "contents": [
             {
@@ -236,7 +231,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_4", 
+                  "id": "tid_3", 
                   "name": "token", 
                   "value": "is"
                 }, 
@@ -290,7 +285,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_5", 
+                  "id": "tid_4", 
                   "name": "token", 
                   "value": "in"
                 }, 
@@ -337,11 +332,7 @@ Module
           "contents": [
             {
               "contents": [
-                {
-                  "id": "tid_6", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -351,7 +342,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_7", 
+                      "id": "tid_5", 
                       "name": "token", 
                       "value": "<"
                     }, 
@@ -375,7 +366,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_8", 
+                      "id": "tid_6", 
                       "name": "token", 
                       "value": "<"
                     }, 
@@ -397,12 +388,7 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        {
-          "id": "tid_9", 
-          "name": "token", 
-          "value": ")"
-        }, 
-        "\n", 
+        ")\n", 
         {
           "contents": [
             {
@@ -414,7 +400,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_10", 
+                  "id": "tid_7", 
                   "name": "token", 
                   "value": "<"
                 }, 
@@ -426,7 +412,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_11", 
+                  "id": "tid_8", 
                   "name": "token", 
                   "value": "<"
                 }, 
@@ -446,25 +432,16 @@ Module
         }, 
         "\n\n", 
         {
-          "id": "tid_12", 
+          "id": "tid_9", 
           "name": "comment", 
           "value": "# multiline"
         }, 
-        "\n", 
-        {
-          "id": "tid_13", 
-          "name": "token", 
-          "value": "("
-        }, 
+        "\n(", 
         {
           "contents": [
             {
               "contents": [
-                {
-                  "id": "tid_14", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -474,7 +451,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_15", 
+                      "id": "tid_10", 
                       "name": "token", 
                       "value": "<"
                     }, 
@@ -488,12 +465,7 @@ Module
                   "id": "id_0", 
                   "name": "Compare"
                 }, 
-                ") and\n ", 
-                {
-                  "id": "tid_16", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                ") and\n (", 
                 {
                   "contents": [
                     {
@@ -503,7 +475,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_17", 
+                      "id": "tid_11", 
                       "name": "token", 
                       "value": "<"
                     }, 

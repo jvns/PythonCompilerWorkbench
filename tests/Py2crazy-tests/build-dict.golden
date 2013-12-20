@@ -47,11 +47,7 @@ Module
             " ", 
             {
               "contents": [
-                {
-                  "id": "tid_2", 
-                  "name": "token", 
-                  "value": "{"
-                }, 
+                "{", 
                 {
                   "id": "id_0", 
                   "name": "Str", 
@@ -59,7 +55,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_3", 
+                  "id": "tid_2", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -70,7 +66,7 @@ Module
                   "value": "5"
                 }, 
                 {
-                  "id": "tid_4", 
+                  "id": "tid_3", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -82,7 +78,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_5", 
+                  "id": "tid_4", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -93,7 +89,7 @@ Module
                   "value": "6"
                 }, 
                 {
-                  "id": "tid_6", 
+                  "id": "tid_5", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -105,7 +101,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_7", 
+                  "id": "tid_6", 
                   "name": "token", 
                   "value": ":"
                 }, 
@@ -115,11 +111,7 @@ Module
                   "name": "Num", 
                   "value": "7"
                 }, 
-                {
-                  "id": "tid_8", 
-                  "name": "token", 
-                  "value": "}"
-                }
+                "}"
               ], 
               "id": "id_0", 
               "name": "Dict"

@@ -77,11 +77,7 @@ Module
             " ", 
             {
               "contents": [
-                {
-                  "id": "tid_3", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -89,11 +85,7 @@ Module
                       "name": "Name", 
                       "value": "int"
                     }, 
-                    {
-                      "id": "tid_4", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "contents": [
                         {
@@ -101,11 +93,7 @@ Module
                           "name": "Name", 
                           "value": "tokens"
                         }, 
-                        {
-                          "id": "tid_5", 
-                          "name": "token", 
-                          "value": "["
-                        }, 
+                        "[", 
                         {
                           "contents": [
                             {
@@ -117,26 +105,18 @@ Module
                           "id": "id_0", 
                           "name": "Index"
                         }, 
-                        {
-                          "id": "tid_6", 
-                          "name": "token", 
-                          "value": "]"
-                        }
+                        "]"
                       ], 
                       "id": "id_0", 
                       "name": "Subscript"
                     }, 
-                    {
-                      "id": "tid_7", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Call"
                 }, 
                 {
-                  "id": "tid_8", 
+                  "id": "tid_3", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -148,11 +128,7 @@ Module
                       "name": "Name", 
                       "value": "int"
                     }, 
-                    {
-                      "id": "tid_9", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "contents": [
                         {
@@ -160,11 +136,7 @@ Module
                           "name": "Name", 
                           "value": "tokens"
                         }, 
-                        {
-                          "id": "tid_10", 
-                          "name": "token", 
-                          "value": "["
-                        }, 
+                        "[", 
                         {
                           "contents": [
                             {
@@ -176,29 +148,17 @@ Module
                           "id": "id_0", 
                           "name": "Index"
                         }, 
-                        {
-                          "id": "tid_11", 
-                          "name": "token", 
-                          "value": "]"
-                        }
+                        "]"
                       ], 
                       "id": "id_0", 
                       "name": "Subscript"
                     }, 
-                    {
-                      "id": "tid_12", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Call"
                 }, 
-                {
-                  "id": "tid_13", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Tuple"

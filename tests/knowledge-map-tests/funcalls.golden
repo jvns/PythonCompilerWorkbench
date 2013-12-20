@@ -272,21 +272,13 @@ Module
                   "name": "Name", 
                   "value": "foo"
                 }, 
-                {
-                  "id": "tid_1", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Num", 
                   "value": "1"
                 }, 
-                {
-                  "id": "tid_2", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -305,18 +297,14 @@ Module
                   "name": "Name", 
                   "value": "foo"
                 }, 
-                {
-                  "id": "tid_3", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Num", 
                   "value": "1"
                 }, 
                 {
-                  "id": "tid_4", 
+                  "id": "tid_1", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -327,7 +315,7 @@ Module
                   "value": "2"
                 }, 
                 {
-                  "id": "tid_5", 
+                  "id": "tid_2", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -337,11 +325,7 @@ Module
                   "name": "Num", 
                   "value": "3"
                 }, 
-                {
-                  "id": "tid_6", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -360,21 +344,13 @@ Module
                   "name": "Name", 
                   "value": "foo"
                 }, 
-                {
-                  "id": "tid_7", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "x"
                 }, 
-                {
-                  "id": "tid_8", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -393,18 +369,14 @@ Module
                   "name": "Name", 
                   "value": "foo"
                 }, 
-                {
-                  "id": "tid_9", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
                 }, 
                 {
-                  "id": "tid_10", 
+                  "id": "tid_3", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -414,11 +386,7 @@ Module
                   "name": "Name", 
                   "value": "z"
                 }, 
-                {
-                  "id": "tid_11", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -437,11 +405,7 @@ Module
                   "name": "Name", 
                   "value": "foo"
                 }, 
-                {
-                  "id": "tid_12", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -451,7 +415,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_13", 
+                      "id": "tid_4", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -465,7 +429,7 @@ Module
                         }, 
                         " ", 
                         {
-                          "id": "tid_14", 
+                          "id": "tid_5", 
                           "name": "token", 
                           "value": "/"
                         }, 
@@ -483,11 +447,7 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                {
-                  "id": "tid_15", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -506,11 +466,7 @@ Module
                   "name": "Name", 
                   "value": "foo"
                 }, 
-                {
-                  "id": "tid_16", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -518,30 +474,18 @@ Module
                       "name": "Name", 
                       "value": "bar"
                     }, 
-                    {
-                      "id": "tid_17", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "x"
                     }, 
-                    {
-                      "id": "tid_18", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Call"
                 }, 
-                {
-                  "id": "tid_19", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -584,11 +528,7 @@ Module
                   "id": "id_0", 
                   "name": "keyword"
                 }, 
-                {
-                  "id": "tid_20", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -599,7 +539,7 @@ Module
         }, 
         " ", 
         {
-          "id": "tid_21", 
+          "id": "tid_6", 
           "name": "comment", 
           "value": "# only keyword args"
         }, 
@@ -613,18 +553,14 @@ Module
                   "name": "Name", 
                   "value": "spam"
                 }, 
-                {
-                  "id": "tid_22", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Num", 
                   "value": "0"
                 }, 
                 {
-                  "id": "tid_23", 
+                  "id": "tid_7", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -658,11 +594,7 @@ Module
                   "id": "id_0", 
                   "name": "keyword"
                 }, 
-                {
-                  "id": "tid_24", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -673,7 +605,7 @@ Module
         }, 
         " ", 
         {
-          "id": "tid_25", 
+          "id": "tid_8", 
           "name": "comment", 
           "value": "# regular and keyword args"
         }, 
@@ -693,11 +625,7 @@ Module
                   "name": "Name", 
                   "value": "x"
                 }, 
-                {
-                  "id": "tid_26", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -722,11 +650,7 @@ Module
                   "name": "Name", 
                   "value": "y"
                 }, 
-                {
-                  "id": "tid_27", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -757,11 +681,7 @@ Module
                   "name": "Name", 
                   "value": "y"
                 }, 
-                {
-                  "id": "tid_28", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -772,7 +692,7 @@ Module
         }, 
         " ", 
         {
-          "id": "tid_29", 
+          "id": "tid_9", 
           "name": "comment", 
           "value": "# star and kwargs"
         }, 
@@ -786,12 +706,7 @@ Module
                   "name": "Name", 
                   "value": "spam"
                 }, 
-                {
-                  "id": "tid_30", 
-                  "name": "token", 
-                  "value": "("
-                }, 
-                "   ", 
+                "(   ", 
                 {
                   "id": "id_0", 
                   "name": "Num", 
@@ -821,11 +736,7 @@ Module
                   "name": "Name", 
                   "value": "z"
                 }, 
-                {
-                  "id": "tid_31", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -840,7 +751,7 @@ Module
     }, 
     " ", 
     {
-      "id": "tid_32", 
+      "id": "tid_10", 
       "name": "comment", 
       "value": "# all four kinds of args!"
     }, 

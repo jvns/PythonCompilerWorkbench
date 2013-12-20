@@ -70,11 +70,7 @@ Module
                 " ", 
                 {
                   "contents": [
-                    {
-                      "id": "tid_3", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "contents": [
                         {
@@ -88,7 +84,7 @@ Module
                       "name": "Attribute"
                     }, 
                     {
-                      "id": "tid_4", 
+                      "id": "tid_3", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -106,7 +102,7 @@ Module
                       "name": "Attribute"
                     }, 
                     {
-                      "id": "tid_5", 
+                      "id": "tid_4", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -123,11 +119,7 @@ Module
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 
-                    {
-                      "id": "tid_6", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Tuple"

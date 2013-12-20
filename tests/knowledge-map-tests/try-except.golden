@@ -258,11 +258,7 @@ Module
                   "name": "Name", 
                   "value": "d"
                 }, 
-                {
-                  "id": "tid_11", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -274,11 +270,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_12", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -291,7 +283,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_13", 
+              "id": "tid_11", 
               "name": "token", 
               "value": "except"
             }, 
@@ -306,7 +298,7 @@ Module
           "name": "ExceptHandler"
         }, 
         {
-          "id": "tid_14", 
+          "id": "tid_12", 
           "name": "token", 
           "value": ":"
         }, 
@@ -314,7 +306,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_15", 
+              "id": "tid_13", 
               "name": "token", 
               "value": "print"
             }, 
@@ -332,7 +324,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_16", 
+              "id": "tid_14", 
               "name": "token", 
               "value": "raise"
             }, 
@@ -350,7 +342,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_17", 
+              "id": "tid_15", 
               "name": "token", 
               "value": "try"
             }
@@ -359,7 +351,7 @@ Module
           "name": "TryExcept"
         }, 
         {
-          "id": "tid_18", 
+          "id": "tid_16", 
           "name": "token", 
           "value": ":"
         }, 
@@ -373,7 +365,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_19", 
+              "id": "tid_17", 
               "name": "token", 
               "value": "="
             }, 
@@ -391,7 +383,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_20", 
+              "id": "tid_18", 
               "name": "token", 
               "value": "except"
             }
@@ -400,7 +392,7 @@ Module
           "name": "ExceptHandler"
         }, 
         {
-          "id": "tid_21", 
+          "id": "tid_19", 
           "name": "token", 
           "value": ":"
         }, 
@@ -414,7 +406,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_22", 
+              "id": "tid_20", 
               "name": "token", 
               "value": "="
             }, 

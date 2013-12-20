@@ -31,11 +31,7 @@ Module
                   "name": "Name", 
                   "value": "arr"
                 }, 
-                {
-                  "id": "tid_1", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -44,7 +40,7 @@ Module
                       "value": "one"
                     }, 
                     {
-                      "id": "tid_2", 
+                      "id": "tid_1", 
                       "name": "token", 
                       "value": ":"
                     }, 
@@ -57,11 +53,7 @@ Module
                   "id": "id_0", 
                   "name": "Slice"
                 }, 
-                {
-                  "id": "tid_3", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"

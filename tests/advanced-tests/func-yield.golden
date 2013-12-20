@@ -346,21 +346,13 @@ Module
                       "name": "Name", 
                       "value": "foo"
                     }, 
-                    {
-                      "id": "tid_12", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "n"
                     }, 
-                    {
-                      "id": "tid_13", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Call"
@@ -388,17 +380,13 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            {
-              "id": "tid_14", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
         {
-          "id": "tid_15", 
+          "id": "tid_12", 
           "name": "token", 
           "value": ":"
         }, 
@@ -408,7 +396,7 @@ Module
             {
               "contents": [
                 {
-                  "id": "tid_16", 
+                  "id": "tid_13", 
                   "name": "token", 
                   "value": "yield"
                 }, 
@@ -422,7 +410,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_17", 
+                      "id": "tid_14", 
                       "name": "token", 
                       "value": "*"
                     }, 
@@ -434,11 +422,7 @@ Module
                           "name": "Name", 
                           "value": "fact"
                         }, 
-                        {
-                          "id": "tid_18", 
-                          "name": "token", 
-                          "value": "("
-                        }, 
+                        "(", 
                         {
                           "contents": [
                             {
@@ -447,7 +431,7 @@ Module
                               "value": "n"
                             }, 
                             {
-                              "id": "tid_19", 
+                              "id": "tid_15", 
                               "name": "token", 
                               "value": "-"
                             }, 
@@ -460,11 +444,7 @@ Module
                           "id": "id_0", 
                           "name": "BinOp"
                         }, 
-                        {
-                          "id": "tid_20", 
-                          "name": "token", 
-                          "value": ")"
-                        }
+                        ")"
                       ], 
                       "id": "id_0", 
                       "name": "Call"

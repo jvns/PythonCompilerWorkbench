@@ -122,72 +122,56 @@ Module
             " ", 
             {
               "contents": [
-                {
-                  "id": "tid_2", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "id": "id_0", 
                   "name": "Num", 
                   "value": "1"
                 }, 
                 {
-                  "id": "tid_3", 
+                  "id": "tid_2", 
                   "name": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "contents": [
-                    {
-                      "id": "tid_4", 
-                      "name": "token", 
-                      "value": "["
-                    }, 
+                    "[", 
                     {
                       "id": "id_0", 
                       "name": "Num", 
                       "value": "2"
                     }, 
                     {
-                      "id": "tid_5", 
+                      "id": "tid_3", 
                       "name": "token", 
                       "value": ","
                     }, 
                     " ", 
                     {
                       "contents": [
-                        {
-                          "id": "tid_6", 
-                          "name": "token", 
-                          "value": "["
-                        }, 
+                        "[", 
                         {
                           "id": "id_0", 
                           "name": "Num", 
                           "value": "3"
                         }, 
                         {
-                          "id": "tid_7", 
+                          "id": "tid_4", 
                           "name": "token", 
                           "value": ","
                         }, 
                         " ", 
                         {
                           "contents": [
-                            {
-                              "id": "tid_8", 
-                              "name": "token", 
-                              "value": "["
-                            }, 
+                            "[", 
                             {
                               "id": "id_0", 
                               "name": "Num", 
                               "value": "4"
                             }, 
                             {
-                              "id": "tid_9", 
+                              "id": "tid_5", 
                               "name": "token", 
                               "value": ","
                             }, 
@@ -197,38 +181,22 @@ Module
                               "name": "Name", 
                               "value": "None"
                             }, 
-                            {
-                              "id": "tid_10", 
-                              "name": "token", 
-                              "value": "]"
-                            }
+                            "]"
                           ], 
                           "id": "id_0", 
                           "name": "List"
                         }, 
-                        {
-                          "id": "tid_11", 
-                          "name": "token", 
-                          "value": "]"
-                        }
+                        "]"
                       ], 
                       "id": "id_0", 
                       "name": "List"
                     }, 
-                    {
-                      "id": "tid_12", 
-                      "name": "token", 
-                      "value": "]"
-                    }
+                    "]"
                   ], 
                   "id": "id_0", 
                   "name": "List"
                 }, 
-                {
-                  "id": "tid_13", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "List"
@@ -247,97 +215,77 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_14", 
+              "id": "tid_6", 
               "name": "token", 
               "value": "="
             }, 
             " ", 
             {
               "contents": [
-                {
-                  "id": "tid_15", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Num", 
                   "value": "1"
                 }, 
                 {
-                  "id": "tid_16", 
+                  "id": "tid_7", 
                   "name": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "contents": [
-                    {
-                      "id": "tid_17", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Num", 
                       "value": "2"
                     }, 
                     {
-                      "id": "tid_18", 
+                      "id": "tid_8", 
                       "name": "token", 
                       "value": ","
                     }, 
                     " ", 
                     {
                       "contents": [
-                        {
-                          "id": "tid_19", 
-                          "name": "token", 
-                          "value": "("
-                        }, 
+                        "(", 
                         {
                           "id": "id_0", 
                           "name": "Num", 
                           "value": "3"
                         }, 
                         {
-                          "id": "tid_20", 
+                          "id": "tid_9", 
                           "name": "token", 
                           "value": ","
                         }, 
                         " ", 
                         {
                           "contents": [
-                            {
-                              "id": "tid_21", 
-                              "name": "token", 
-                              "value": "("
-                            }, 
+                            "(", 
                             {
                               "id": "id_0", 
                               "name": "Num", 
                               "value": "4"
                             }, 
                             {
-                              "id": "tid_22", 
+                              "id": "tid_10", 
                               "name": "token", 
                               "value": ","
                             }, 
                             " ", 
                             {
                               "contents": [
-                                {
-                                  "id": "tid_23", 
-                                  "name": "token", 
-                                  "value": "("
-                                }, 
+                                "(", 
                                 {
                                   "id": "id_0", 
                                   "name": "Num", 
                                   "value": "5"
                                 }, 
                                 {
-                                  "id": "tid_24", 
+                                  "id": "tid_11", 
                                   "name": "token", 
                                   "value": ","
                                 }, 
@@ -347,47 +295,27 @@ Module
                                   "name": "Name", 
                                   "value": "None"
                                 }, 
-                                {
-                                  "id": "tid_25", 
-                                  "name": "token", 
-                                  "value": ")"
-                                }
+                                ")"
                               ], 
                               "id": "id_0", 
                               "name": "Tuple"
                             }, 
-                            {
-                              "id": "tid_26", 
-                              "name": "token", 
-                              "value": ")"
-                            }
+                            ")"
                           ], 
                           "id": "id_0", 
                           "name": "Tuple"
                         }, 
-                        {
-                          "id": "tid_27", 
-                          "name": "token", 
-                          "value": ")"
-                        }
+                        ")"
                       ], 
                       "id": "id_0", 
                       "name": "Tuple"
                     }, 
-                    {
-                      "id": "tid_28", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Tuple"
                 }, 
-                {
-                  "id": "tid_29", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Tuple"
@@ -398,7 +326,7 @@ Module
         }, 
         "\n", 
         {
-          "id": "tid_30", 
+          "id": "tid_12", 
           "name": "comment", 
           "value": "# naked tuples"
         }, 
@@ -412,7 +340,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_31", 
+              "id": "tid_13", 
               "name": "token", 
               "value": "="
             }, 
@@ -425,7 +353,7 @@ Module
                   "value": "1"
                 }, 
                 {
-                  "id": "tid_32", 
+                  "id": "tid_14", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -436,7 +364,7 @@ Module
                   "value": "2"
                 }, 
                 {
-                  "id": "tid_33", 
+                  "id": "tid_15", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -447,7 +375,7 @@ Module
                   "value": "3"
                 }, 
                 {
-                  "id": "tid_34", 
+                  "id": "tid_16", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -458,7 +386,7 @@ Module
                   "value": "4"
                 }, 
                 {
-                  "id": "tid_35", 
+                  "id": "tid_17", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -469,7 +397,7 @@ Module
                   "value": "5"
                 }, 
                 {
-                  "id": "tid_36", 
+                  "id": "tid_18", 
                   "name": "token", 
                   "value": ","
                 }, 

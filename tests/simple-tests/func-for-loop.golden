@@ -157,17 +157,13 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            {
-              "id": "tid_4", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
         {
-          "id": "tid_5", 
+          "id": "tid_4", 
           "name": "token", 
           "value": ":"
         }, 
@@ -181,7 +177,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_6", 
+              "id": "tid_5", 
               "name": "token", 
               "value": "="
             }, 
@@ -197,7 +193,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_7", 
+                      "id": "tid_6", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -211,7 +207,7 @@ Module
                         }, 
                         " ", 
                         {
-                          "id": "tid_8", 
+                          "id": "tid_7", 
                           "name": "token", 
                           "value": "*"
                         }, 
@@ -231,7 +227,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_9", 
+                  "id": "tid_8", 
                   "name": "token", 
                   "value": "-"
                 }, 
@@ -260,7 +256,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_10", 
+              "id": "tid_9", 
               "name": "token", 
               "value": "for"
             }, 
@@ -272,7 +268,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_11", 
+              "id": "tid_10", 
               "name": "token", 
               "value": "in"
             }, 
@@ -284,21 +280,13 @@ Module
                   "name": "Name", 
                   "value": "range"
                 }, 
-                {
-                  "id": "tid_12", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Num", 
                   "value": "10"
                 }, 
-                {
-                  "id": "tid_13", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -308,7 +296,7 @@ Module
           "name": "For"
         }, 
         {
-          "id": "tid_14", 
+          "id": "tid_11", 
           "name": "token", 
           "value": ":"
         }, 
@@ -316,7 +304,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_15", 
+              "id": "tid_12", 
               "name": "token", 
               "value": "print"
             }, 
@@ -327,7 +315,7 @@ Module
               "value": "i"
             }, 
             {
-              "id": "tid_16", 
+              "id": "tid_13", 
               "name": "token", 
               "value": ","
             }, 
@@ -345,7 +333,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_17", 
+              "id": "tid_14", 
               "name": "token", 
               "value": "return"
             }, 
@@ -358,7 +346,7 @@ Module
                   "value": "c"
                 }, 
                 {
-                  "id": "tid_18", 
+                  "id": "tid_15", 
                   "name": "token", 
                   "value": ","
                 }, 

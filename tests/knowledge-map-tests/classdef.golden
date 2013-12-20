@@ -150,17 +150,13 @@ Module
               "name": "Name", 
               "value": "object"
             }, 
-            {
-              "id": "tid_3", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "ClassDef"
         }, 
         {
-          "id": "tid_4", 
+          "id": "tid_3", 
           "name": "token", 
           "value": ":"
         }, 
@@ -176,7 +172,7 @@ Module
                   "value": "self"
                 }, 
                 {
-                  "id": "tid_5", 
+                  "id": "tid_4", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -190,17 +186,13 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            {
-              "id": "tid_6", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
         {
-          "id": "tid_7", 
+          "id": "tid_5", 
           "name": "token", 
           "value": ":"
         }, 
@@ -221,7 +213,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_8", 
+              "id": "tid_6", 
               "name": "token", 
               "value": "+="
             }, 
@@ -250,17 +242,13 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            {
-              "id": "tid_9", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
         {
-          "id": "tid_10", 
+          "id": "tid_7", 
           "name": "token", 
           "value": ":"
         }, 
@@ -268,7 +256,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_11", 
+              "id": "tid_8", 
               "name": "token", 
               "value": "return"
             }, 
@@ -282,13 +270,13 @@ Module
                 }, 
                 " + \\\n        ", 
                 {
-                  "id": "tid_12", 
+                  "id": "tid_9", 
                   "name": "token", 
                   "value": "\\"
                 }, 
                 "\n", 
                 {
-                  "id": "tid_13", 
+                  "id": "tid_10", 
                   "name": "token", 
                   "value": "\\"
                 }, 
@@ -322,17 +310,13 @@ Module
               "name": "Name", 
               "value": "Person"
             }, 
-            {
-              "id": "tid_14", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "ClassDef"
         }, 
         {
-          "id": "tid_15", 
+          "id": "tid_11", 
           "name": "token", 
           "value": ":"
         }, 
@@ -346,7 +330,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_16", 
+              "id": "tid_12", 
               "name": "token", 
               "value": "="
             }, 

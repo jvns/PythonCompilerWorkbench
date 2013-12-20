@@ -67,25 +67,17 @@ Module
                   "name": "Name", 
                   "value": "set"
                 }, 
-                {
-                  "id": "tid_2", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
-                    {
-                      "id": "tid_3", 
-                      "name": "token", 
-                      "value": "["
-                    }, 
+                    "[", 
                     {
                       "id": "id_0", 
                       "name": "Str", 
                       "value": "\"joe\""
                     }, 
                     {
-                      "id": "tid_4", 
+                      "id": "tid_2", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -99,7 +91,7 @@ Module
                         }, 
                         " ", 
                         {
-                          "id": "tid_5", 
+                          "id": "tid_3", 
                           "name": "token", 
                           "value": "+"
                         }, 
@@ -114,7 +106,7 @@ Module
                       "name": "BinOp"
                     }, 
                     {
-                      "id": "tid_6", 
+                      "id": "tid_4", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -128,7 +120,7 @@ Module
                         }, 
                         " ", 
                         {
-                          "id": "tid_7", 
+                          "id": "tid_5", 
                           "name": "token", 
                           "value": "+"
                         }, 
@@ -142,7 +134,7 @@ Module
                             }, 
                             " ", 
                             {
-                              "id": "tid_8", 
+                              "id": "tid_6", 
                               "name": "token", 
                               "value": "*"
                             }, 
@@ -160,20 +152,12 @@ Module
                       "id": "id_0", 
                       "name": "BinOp"
                     }, 
-                    {
-                      "id": "tid_9", 
-                      "name": "token", 
-                      "value": "]"
-                    }
+                    "]"
                   ], 
                   "id": "id_0", 
                   "name": "List"
                 }, 
-                {
-                  "id": "tid_10", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"

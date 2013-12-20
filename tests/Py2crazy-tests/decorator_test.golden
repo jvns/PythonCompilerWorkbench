@@ -134,17 +134,13 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            {
-              "id": "tid_5", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
         {
-          "id": "tid_6", 
+          "id": "tid_5", 
           "name": "token", 
           "value": ":"
         }, 
@@ -152,7 +148,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_7", 
+              "id": "tid_6", 
               "name": "token", 
               "value": "pass"
             }
@@ -162,7 +158,7 @@ Module
         }, 
         "\n\n", 
         {
-          "id": "tid_8", 
+          "id": "tid_7", 
           "name": "comment", 
           "value": "# from Lib/csv.py"
         }, 
@@ -170,7 +166,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_9", 
+              "id": "tid_8", 
               "name": "token", 
               "value": "@"
             }, 
@@ -195,7 +191,7 @@ Module
                   "value": "self"
                 }, 
                 {
-                  "id": "tid_10", 
+                  "id": "tid_9", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -209,17 +205,13 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            {
-              "id": "tid_11", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
         {
-          "id": "tid_12", 
+          "id": "tid_10", 
           "name": "token", 
           "value": ":"
         }, 
@@ -240,7 +232,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_13", 
+              "id": "tid_11", 
               "name": "token", 
               "value": "="
             }, 

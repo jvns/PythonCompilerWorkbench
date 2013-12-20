@@ -259,11 +259,7 @@ Module
                   "name": "Name", 
                   "value": "x"
                 }, 
-                {
-                  "id": "tid_1", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -275,11 +271,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_2", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -298,11 +290,7 @@ Module
                   "name": "Name", 
                   "value": "x"
                 }, 
-                {
-                  "id": "tid_3", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -314,11 +302,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_4", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -337,11 +321,7 @@ Module
                   "name": "Name", 
                   "value": "y"
                 }, 
-                {
-                  "id": "tid_5", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -353,11 +333,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_6", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -376,27 +352,19 @@ Module
                   "name": "Name", 
                   "value": "world_map"
                 }, 
-                {
-                  "id": "tid_7", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
                       "contents": [
-                        {
-                          "id": "tid_8", 
-                          "name": "token", 
-                          "value": "("
-                        }, 
+                        "(", 
                         {
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "x"
                         }, 
                         {
-                          "id": "tid_9", 
+                          "id": "tid_1", 
                           "name": "token", 
                           "value": ","
                         }, 
@@ -405,11 +373,7 @@ Module
                           "name": "Name", 
                           "value": "y"
                         }, 
-                        {
-                          "id": "tid_10", 
-                          "name": "token", 
-                          "value": ")"
-                        }
+                        ")"
                       ], 
                       "id": "id_0", 
                       "name": "Tuple"
@@ -418,11 +382,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_11", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -441,11 +401,7 @@ Module
                   "name": "Name", 
                   "value": "world_map"
                 }, 
-                {
-                  "id": "tid_12", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -456,7 +412,7 @@ Module
                           "value": "x"
                         }, 
                         {
-                          "id": "tid_13", 
+                          "id": "tid_2", 
                           "name": "token", 
                           "value": ","
                         }, 
@@ -473,11 +429,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_14", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -496,11 +448,7 @@ Module
                   "name": "Name", 
                   "value": "x"
                 }, 
-                {
-                  "id": "tid_15", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -512,11 +460,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_16", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -535,11 +479,7 @@ Module
                   "name": "Name", 
                   "value": "fruit"
                 }, 
-                {
-                  "id": "tid_17", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -551,7 +491,7 @@ Module
                         }, 
                         " ", 
                         {
-                          "id": "tid_18", 
+                          "id": "tid_3", 
                           "name": "token", 
                           "value": "-"
                         }, 
@@ -569,11 +509,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_19", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -592,11 +528,7 @@ Module
                   "name": "Name", 
                   "value": "fruit"
                 }, 
-                {
-                  "id": "tid_20", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -608,28 +540,20 @@ Module
                               "name": "Name", 
                               "value": "len"
                             }, 
-                            {
-                              "id": "tid_21", 
-                              "name": "token", 
-                              "value": "("
-                            }, 
+                            "(", 
                             {
                               "id": "id_0", 
                               "name": "Name", 
                               "value": "fruit"
                             }, 
-                            {
-                              "id": "tid_22", 
-                              "name": "token", 
-                              "value": ")"
-                            }
+                            ")"
                           ], 
                           "id": "id_0", 
                           "name": "Call"
                         }, 
                         " ", 
                         {
-                          "id": "tid_23", 
+                          "id": "tid_4", 
                           "name": "token", 
                           "value": "-"
                         }, 
@@ -647,11 +571,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_24", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -670,11 +590,7 @@ Module
                   "name": "Name", 
                   "value": "L"
                 }, 
-                {
-                  "id": "tid_25", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -691,21 +607,13 @@ Module
                           "id": "id_0", 
                           "name": "Attribute"
                         }, 
-                        {
-                          "id": "tid_26", 
-                          "name": "token", 
-                          "value": "("
-                        }, 
+                        "(", 
                         {
                           "id": "id_0", 
                           "name": "Num", 
                           "value": "3"
                         }, 
-                        {
-                          "id": "tid_27", 
-                          "name": "token", 
-                          "value": ")"
-                        }
+                        ")"
                       ], 
                       "id": "id_0", 
                       "name": "Call"
@@ -714,11 +622,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_28", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -741,11 +645,7 @@ Module
                           "name": "Name", 
                           "value": "inverse"
                         }, 
-                        {
-                          "id": "tid_29", 
-                          "name": "token", 
-                          "value": "["
-                        }, 
+                        "[", 
                         {
                           "contents": [
                             {
@@ -757,11 +657,7 @@ Module
                           "id": "id_0", 
                           "name": "Index"
                         }, 
-                        {
-                          "id": "tid_30", 
-                          "name": "token", 
-                          "value": "]"
-                        }
+                        "]"
                       ], 
                       "id": "id_0", 
                       "name": "Subscript"
@@ -771,21 +667,13 @@ Module
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
-                {
-                  "id": "tid_31", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "key"
                 }, 
-                {
-                  "id": "tid_32", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -804,7 +692,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_33", 
+              "id": "tid_5", 
               "name": "token", 
               "value": "="
             }, 
@@ -816,11 +704,7 @@ Module
                   "name": "Name", 
                   "value": "fruit"
                 }, 
-                {
-                  "id": "tid_34", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -832,11 +716,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_35", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -855,11 +735,7 @@ Module
                   "name": "Name", 
                   "value": "fruit"
                 }, 
-                {
-                  "id": "tid_36", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -871,18 +747,14 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_37", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
             }, 
             " ", 
             {
-              "id": "tid_38", 
+              "id": "tid_6", 
               "name": "token", 
               "value": "="
             }, 
@@ -906,11 +778,7 @@ Module
                   "name": "Name", 
                   "value": "counter"
                 }, 
-                {
-                  "id": "tid_39", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -922,18 +790,14 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_40", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
             }, 
             " ", 
             {
-              "id": "tid_41", 
+              "id": "tid_7", 
               "name": "token", 
               "value": "+="
             }, 
@@ -957,11 +821,7 @@ Module
                   "name": "Name", 
                   "value": "capitals"
                 }, 
-                {
-                  "id": "tid_42", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -971,11 +831,7 @@ Module
                           "name": "Name", 
                           "value": "states"
                         }, 
-                        {
-                          "id": "tid_43", 
-                          "name": "token", 
-                          "value": "["
-                        }, 
+                        "[", 
                         {
                           "contents": [
                             {
@@ -987,11 +843,7 @@ Module
                           "id": "id_0", 
                           "name": "Index"
                         }, 
-                        {
-                          "id": "tid_44", 
-                          "name": "token", 
-                          "value": "]"
-                        }
+                        "]"
                       ], 
                       "id": "id_0", 
                       "name": "Subscript"
@@ -1000,11 +852,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_45", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -1023,11 +871,7 @@ Module
                   "name": "Name", 
                   "value": "capitals"
                 }, 
-                {
-                  "id": "tid_46", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -1037,11 +881,7 @@ Module
                           "name": "Name", 
                           "value": "states"
                         }, 
-                        {
-                          "id": "tid_47", 
-                          "name": "token", 
-                          "value": "["
-                        }, 
+                        "[", 
                         {
                           "contents": [
                             {
@@ -1053,11 +893,7 @@ Module
                           "id": "id_0", 
                           "name": "Index"
                         }, 
-                        {
-                          "id": "tid_48", 
-                          "name": "token", 
-                          "value": "]"
-                        }
+                        "]"
                       ], 
                       "id": "id_0", 
                       "name": "Subscript"
@@ -1066,18 +902,14 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_49", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
             }, 
             " ", 
             {
-              "id": "tid_50", 
+              "id": "tid_8", 
               "name": "token", 
               "value": "="
             }, 

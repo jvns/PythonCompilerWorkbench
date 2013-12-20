@@ -294,11 +294,7 @@ Module
           "contents": [
             {
               "contents": [
-                {
-                  "id": "tid_7", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -308,7 +304,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_8", 
+                      "id": "tid_7", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -332,7 +328,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_9", 
+                      "id": "tid_8", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -354,17 +350,7 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        {
-          "id": "tid_10", 
-          "name": "token", 
-          "value": ")"
-        }, 
-        "\n", 
-        {
-          "id": "tid_11", 
-          "name": "token", 
-          "value": "("
-        }, 
+        ")\n(", 
         {
           "contents": [
             {
@@ -384,7 +370,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_12", 
+                      "id": "tid_9", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -408,7 +394,7 @@ Module
         }, 
         "))\n\n", 
         {
-          "id": "tid_13", 
+          "id": "tid_10", 
           "name": "comment", 
           "value": "# some multiline action"
         }, 
@@ -436,13 +422,7 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        "\n\n", 
-        {
-          "id": "tid_14", 
-          "name": "token", 
-          "value": "("
-        }, 
-        "  ", 
+        "\n\n(  ", 
         {
           "contents": [
             {
@@ -454,16 +434,11 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_15", 
+                  "id": "tid_11", 
                   "name": "token", 
                   "value": "*"
                 }, 
-                "\n    ", 
-                {
-                  "id": "tid_16", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "\n    (", 
                 {
                   "contents": [
                     {
@@ -473,7 +448,7 @@ Module
                     }, 
                     " \n   \n  \n  ", 
                     {
-                      "id": "tid_17", 
+                      "id": "tid_12", 
                       "name": "token", 
                       "value": "+"
                     }, 

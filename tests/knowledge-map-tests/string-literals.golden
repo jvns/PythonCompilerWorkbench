@@ -192,25 +192,17 @@ Module
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
-                {
-                  "id": "tid_1", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
-                    {
-                      "id": "tid_2", 
-                      "name": "token", 
-                      "value": "["
-                    }, 
+                    "[", 
                     {
                       "id": "id_0", 
                       "name": "Num", 
                       "value": "1"
                     }, 
                     {
-                      "id": "tid_3", 
+                      "id": "tid_1", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -220,7 +212,7 @@ Module
                       "value": "2"
                     }, 
                     {
-                      "id": "tid_4", 
+                      "id": "tid_2", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -229,20 +221,12 @@ Module
                       "name": "Num", 
                       "value": "3"
                     }, 
-                    {
-                      "id": "tid_5", 
-                      "name": "token", 
-                      "value": "]"
-                    }
+                    "]"
                   ], 
                   "id": "id_0", 
                   "name": "List"
                 }, 
-                {
-                  "id": "tid_6", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"

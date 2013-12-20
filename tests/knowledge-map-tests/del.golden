@@ -192,11 +192,7 @@ Module
                   "name": "Name", 
                   "value": "x"
                 }, 
-                {
-                  "id": "tid_6", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -208,11 +204,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_7", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -225,7 +217,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_8", 
+              "id": "tid_6", 
               "name": "token", 
               "value": "del"
             }, 
@@ -237,11 +229,7 @@ Module
                   "name": "Name", 
                   "value": "foo"
                 }, 
-                {
-                  "id": "tid_9", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -253,11 +241,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_10", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -270,7 +254,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_11", 
+              "id": "tid_7", 
               "name": "token", 
               "value": "del"
             }, 
@@ -282,11 +266,7 @@ Module
                   "name": "Name", 
                   "value": "world_map"
                 }, 
-                {
-                  "id": "tid_12", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -297,7 +277,7 @@ Module
                           "value": "x"
                         }, 
                         {
-                          "id": "tid_13", 
+                          "id": "tid_8", 
                           "name": "token", 
                           "value": ","
                         }, 
@@ -314,11 +294,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_14", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -331,7 +307,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_15", 
+              "id": "tid_9", 
               "name": "token", 
               "value": "del"
             }, 
@@ -343,11 +319,7 @@ Module
                   "name": "Name", 
                   "value": "foo"
                 }, 
-                {
-                  "id": "tid_16", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -359,11 +331,7 @@ Module
                   "id": "id_0", 
                   "name": "Index"
                 }, 
-                {
-                  "id": "tid_17", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"
@@ -376,7 +344,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_18", 
+              "id": "tid_10", 
               "name": "token", 
               "value": "del"
             }, 
@@ -388,11 +356,7 @@ Module
                   "name": "Name", 
                   "value": "foo"
                 }, 
-                {
-                  "id": "tid_19", 
-                  "name": "token", 
-                  "value": "["
-                }, 
+                "[", 
                 {
                   "contents": [
                     {
@@ -401,7 +365,7 @@ Module
                       "value": "1"
                     }, 
                     {
-                      "id": "tid_20", 
+                      "id": "tid_11", 
                       "name": "token", 
                       "value": ":"
                     }, 
@@ -414,11 +378,7 @@ Module
                   "id": "id_0", 
                   "name": "Slice"
                 }, 
-                {
-                  "id": "tid_21", 
-                  "name": "token", 
-                  "value": "]"
-                }
+                "]"
               ], 
               "id": "id_0", 
               "name": "Subscript"

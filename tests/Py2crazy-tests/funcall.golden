@@ -246,11 +246,7 @@ Module
                   "name": "Name", 
                   "value": "call_foo"
                 }, 
-                {
-                  "id": "tid_2", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -260,7 +256,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_3", 
+                      "id": "tid_2", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -275,7 +271,7 @@ Module
                   "name": "BinOp"
                 }, 
                 {
-                  "id": "tid_4", 
+                  "id": "tid_3", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -286,7 +282,7 @@ Module
                   "value": "y"
                 }, 
                 {
-                  "id": "tid_5", 
+                  "id": "tid_4", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -301,7 +297,7 @@ Module
                           "value": "z"
                         }, 
                         {
-                          "id": "tid_6", 
+                          "id": "tid_5", 
                           "name": "token", 
                           "value": "+"
                         }, 
@@ -315,7 +311,7 @@ Module
                       "name": "BinOp"
                     }, 
                     {
-                      "id": "tid_7", 
+                      "id": "tid_6", 
                       "name": "token", 
                       "value": "-"
                     }, 
@@ -328,11 +324,7 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                {
-                  "id": "tid_8", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -351,7 +343,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_9", 
+              "id": "tid_7", 
               "name": "token", 
               "value": "="
             }, 
@@ -363,11 +355,7 @@ Module
                   "name": "Name", 
                   "value": "call_foo"
                 }, 
-                {
-                  "id": "tid_10", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -377,7 +365,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_11", 
+                      "id": "tid_8", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -392,7 +380,7 @@ Module
                   "name": "BinOp"
                 }, 
                 {
-                  "id": "tid_12", 
+                  "id": "tid_9", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -403,7 +391,7 @@ Module
                   "value": "y"
                 }, 
                 {
-                  "id": "tid_13", 
+                  "id": "tid_10", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -418,7 +406,7 @@ Module
                           "value": "z"
                         }, 
                         {
-                          "id": "tid_14", 
+                          "id": "tid_11", 
                           "name": "token", 
                           "value": "+"
                         }, 
@@ -432,7 +420,7 @@ Module
                       "name": "BinOp"
                     }, 
                     {
-                      "id": "tid_15", 
+                      "id": "tid_12", 
                       "name": "token", 
                       "value": "-"
                     }, 
@@ -470,7 +458,7 @@ Module
                               "value": "two"
                             }, 
                             {
-                              "id": "tid_16", 
+                              "id": "tid_13", 
                               "name": "token", 
                               "value": "/"
                             }, 
@@ -484,7 +472,7 @@ Module
                           "name": "BinOp"
                         }, 
                         {
-                          "id": "tid_17", 
+                          "id": "tid_14", 
                           "name": "token", 
                           "value": "+"
                         }, 
@@ -501,11 +489,7 @@ Module
                   "id": "id_0", 
                   "name": "keyword"
                 }, 
-                {
-                  "id": "tid_18", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -524,7 +508,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_19", 
+              "id": "tid_15", 
               "name": "token", 
               "value": "="
             }, 
@@ -536,11 +520,7 @@ Module
                   "name": "Name", 
                   "value": "call_foo"
                 }, 
-                {
-                  "id": "tid_20", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -550,7 +530,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_21", 
+                      "id": "tid_16", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -565,7 +545,7 @@ Module
                   "name": "BinOp"
                 }, 
                 {
-                  "id": "tid_22", 
+                  "id": "tid_17", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -576,7 +556,7 @@ Module
                   "value": "y"
                 }, 
                 {
-                  "id": "tid_23", 
+                  "id": "tid_18", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -591,7 +571,7 @@ Module
                           "value": "z"
                         }, 
                         {
-                          "id": "tid_24", 
+                          "id": "tid_19", 
                           "name": "token", 
                           "value": "+"
                         }, 
@@ -605,7 +585,7 @@ Module
                       "name": "BinOp"
                     }, 
                     {
-                      "id": "tid_25", 
+                      "id": "tid_20", 
                       "name": "token", 
                       "value": "-"
                     }, 
@@ -637,7 +617,7 @@ Module
                   "value": "stararg"
                 }, 
                 {
-                  "id": "tid_26", 
+                  "id": "tid_21", 
                   "name": "token", 
                   "value": ","
                 }
@@ -658,7 +638,7 @@ Module
                           "value": "two"
                         }, 
                         {
-                          "id": "tid_27", 
+                          "id": "tid_22", 
                           "name": "token", 
                           "value": "/"
                         }, 
@@ -672,7 +652,7 @@ Module
                       "name": "BinOp"
                     }, 
                     {
-                      "id": "tid_28", 
+                      "id": "tid_23", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -693,12 +673,7 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        {
-          "id": "tid_29", 
-          "name": "token", 
-          "value": ")"
-        }, 
-        "\n", 
+        ")\n", 
         {
           "contents": [
             {
@@ -708,7 +683,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_30", 
+              "id": "tid_24", 
               "name": "token", 
               "value": "="
             }, 
@@ -720,11 +695,7 @@ Module
                   "name": "Name", 
                   "value": "call_foo"
                 }, 
-                {
-                  "id": "tid_31", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -734,7 +705,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_32", 
+                      "id": "tid_25", 
                       "name": "token", 
                       "value": "+"
                     }, 
@@ -749,7 +720,7 @@ Module
                   "name": "BinOp"
                 }, 
                 {
-                  "id": "tid_33", 
+                  "id": "tid_26", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -760,7 +731,7 @@ Module
                   "value": "y"
                 }, 
                 {
-                  "id": "tid_34", 
+                  "id": "tid_27", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -775,7 +746,7 @@ Module
                           "value": "z"
                         }, 
                         {
-                          "id": "tid_35", 
+                          "id": "tid_28", 
                           "name": "token", 
                           "value": "+"
                         }, 
@@ -789,7 +760,7 @@ Module
                       "name": "BinOp"
                     }, 
                     {
-                      "id": "tid_36", 
+                      "id": "tid_29", 
                       "name": "token", 
                       "value": "-"
                     }, 
@@ -833,7 +804,7 @@ Module
                               "value": "two"
                             }, 
                             {
-                              "id": "tid_37", 
+                              "id": "tid_30", 
                               "name": "token", 
                               "value": "/"
                             }, 
@@ -847,7 +818,7 @@ Module
                           "name": "BinOp"
                         }, 
                         {
-                          "id": "tid_38", 
+                          "id": "tid_31", 
                           "name": "token", 
                           "value": "+"
                         }, 
@@ -870,11 +841,7 @@ Module
                   "name": "Name", 
                   "value": "my_kwargs"
                 }, 
-                {
-                  "id": "tid_39", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"

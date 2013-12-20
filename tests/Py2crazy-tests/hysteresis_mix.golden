@@ -87,11 +87,7 @@ Module
             " ", 
             {
               "contents": [
-                {
-                  "id": "tid_4", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -99,18 +95,14 @@ Module
                       "name": "Name", 
                       "value": "func1"
                     }, 
-                    {
-                      "id": "tid_5", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "x"
                     }, 
                     {
-                      "id": "tid_6", 
+                      "id": "tid_4", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -120,17 +112,13 @@ Module
                       "name": "Name", 
                       "value": "y"
                     }, 
-                    {
-                      "id": "tid_7", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Call"
                 }, 
                 {
-                  "id": "tid_8", 
+                  "id": "tid_5", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -142,18 +130,14 @@ Module
                       "name": "Name", 
                       "value": "func2"
                     }, 
-                    {
-                      "id": "tid_9", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "z"
                     }, 
                     {
-                      "id": "tid_10", 
+                      "id": "tid_6", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -163,20 +147,12 @@ Module
                       "name": "Name", 
                       "value": "w"
                     }, 
-                    {
-                      "id": "tid_11", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Call"
                 }, 
-                {
-                  "id": "tid_12", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Tuple"

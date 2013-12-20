@@ -922,11 +922,7 @@ Module
             " ", 
             {
               "contents": [
-                {
-                  "id": "tid_44", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -936,7 +932,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_45", 
+                      "id": "tid_44", 
                       "name": "token", 
                       "value": "<"
                     }, 
@@ -950,12 +946,7 @@ Module
                   "id": "id_0", 
                   "name": "Compare"
                 }, 
-                ") or \\\n   ", 
-                {
-                  "id": "tid_46", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                ") or \\\n   (", 
                 {
                   "contents": [
                     {
@@ -965,7 +956,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_47", 
+                      "id": "tid_45", 
                       "name": "token", 
                       "value": "<"
                     }, 
@@ -991,7 +982,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_48", 
+              "id": "tid_46", 
               "name": "token", 
               "value": "print"
             }, 

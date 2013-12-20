@@ -252,21 +252,13 @@ Module
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
-                {
-                  "id": "tid_1", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Num", 
                   "value": "45"
                 }, 
-                {
-                  "id": "tid_2", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -344,21 +336,13 @@ Module
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
-                {
-                  "id": "tid_3", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Str", 
                   "value": "'memo.txt'"
                 }, 
-                {
-                  "id": "tid_4", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -385,21 +369,13 @@ Module
                                   "name": "Name", 
                                   "value": "f"
                                 }, 
-                                {
-                                  "id": "tid_5", 
-                                  "name": "token", 
-                                  "value": "("
-                                }, 
+                                "(", 
                                 {
                                   "id": "id_0", 
                                   "name": "Name", 
                                   "value": "x"
                                 }, 
-                                {
-                                  "id": "tid_6", 
-                                  "name": "token", 
-                                  "value": ")"
-                                }
+                                ")"
                               ], 
                               "id": "id_0", 
                               "name": "Call"
@@ -409,21 +385,13 @@ Module
                           "id": "id_0", 
                           "name": "Attribute"
                         }, 
-                        {
-                          "id": "tid_7", 
-                          "name": "token", 
-                          "value": "("
-                        }, 
+                        "(", 
                         {
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "y"
                         }, 
-                        {
-                          "id": "tid_8", 
-                          "name": "token", 
-                          "value": ")"
-                        }
+                        ")"
                       ], 
                       "id": "id_0", 
                       "name": "Call"
@@ -433,21 +401,13 @@ Module
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
-                {
-                  "id": "tid_9", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "z"
                 }, 
-                {
-                  "id": "tid_10", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -473,11 +433,7 @@ Module
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
-                {
-                  "id": "tid_11", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -497,11 +453,7 @@ Module
                   "id": "id_0", 
                   "name": "Call"
                 }, 
-                {
-                  "id": "tid_12", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
@@ -527,7 +479,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_13", 
+              "id": "tid_1", 
               "name": "token", 
               "value": "="
             }, 
@@ -558,7 +510,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_14", 
+              "id": "tid_2", 
               "name": "token", 
               "value": "+="
             }, 
@@ -589,7 +541,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_15", 
+              "id": "tid_3", 
               "name": "token", 
               "value": "="
             }, 
@@ -610,7 +562,7 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_16", 
+                  "id": "tid_4", 
                   "name": "token", 
                   "value": "+"
                 }, 
@@ -631,7 +583,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_17", 
+                      "id": "tid_5", 
                       "name": "token", 
                       "value": "/"
                     }, 
@@ -670,7 +622,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_18", 
+              "id": "tid_6", 
               "name": "token", 
               "value": "="
             }, 
@@ -694,7 +646,7 @@ Module
             }, 
             " ", 
             {
-              "id": "tid_19", 
+              "id": "tid_7", 
               "name": "token", 
               "value": "="
             }, 

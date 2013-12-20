@@ -98,17 +98,13 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            {
-              "id": "tid_3", 
-              "name": "token", 
-              "value": ")"
-            }
+            ")"
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
         {
-          "id": "tid_4", 
+          "id": "tid_3", 
           "name": "token", 
           "value": ":"
         }, 
@@ -128,7 +124,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_5", 
+              "id": "tid_4", 
               "name": "token", 
               "value": "print"
             }, 
@@ -146,7 +142,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_6", 
+              "id": "tid_5", 
               "name": "token", 
               "value": "print"
             }, 
@@ -157,7 +153,7 @@ Module
               "value": "b"
             }, 
             {
-              "id": "tid_7", 
+              "id": "tid_6", 
               "name": "token", 
               "value": ","
             }, 

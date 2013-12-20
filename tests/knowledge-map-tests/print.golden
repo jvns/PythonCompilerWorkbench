@@ -383,18 +383,14 @@ Module
                 " ", 
                 {
                   "contents": [
-                    {
-                      "id": "tid_17", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "first_name"
                     }, 
                     {
-                      "id": "tid_18", 
+                      "id": "tid_17", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -404,11 +400,7 @@ Module
                       "name": "Name", 
                       "value": "last_name"
                     }, 
-                    {
-                      "id": "tid_19", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Tuple"
@@ -418,7 +410,7 @@ Module
               "name": "BinOp"
             }, 
             {
-              "id": "tid_20", 
+              "id": "tid_18", 
               "name": "token", 
               "value": ","
             }
@@ -430,7 +422,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_21", 
+              "id": "tid_19", 
               "name": "token", 
               "value": "print"
             }, 
@@ -444,25 +436,21 @@ Module
                 }, 
                 " ", 
                 {
-                  "id": "tid_22", 
+                  "id": "tid_20", 
                   "name": "token", 
                   "value": "%"
                 }, 
                 " ", 
                 {
                   "contents": [
-                    {
-                      "id": "tid_23", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "x"
                     }, 
                     {
-                      "id": "tid_24", 
+                      "id": "tid_21", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -472,11 +460,7 @@ Module
                       "name": "Name", 
                       "value": "y"
                     }, 
-                    {
-                      "id": "tid_25", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Tuple"
@@ -491,7 +475,7 @@ Module
         }, 
         "\n\n", 
         {
-          "id": "tid_26", 
+          "id": "tid_22", 
           "name": "comment", 
           "value": "# multiline"
         }, 
@@ -499,7 +483,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_27", 
+              "id": "tid_23", 
               "name": "token", 
               "value": "print"
             }, 
@@ -513,31 +497,27 @@ Module
                 }, 
                 " % \\\n  ", 
                 {
-                  "id": "tid_28", 
+                  "id": "tid_24", 
                   "name": "token", 
                   "value": "\\"
                 }, 
                 "\n  ", 
                 {
-                  "id": "tid_29", 
+                  "id": "tid_25", 
                   "name": "token", 
                   "value": "\\"
                 }, 
                 "\n       ", 
                 {
                   "contents": [
-                    {
-                      "id": "tid_30", 
-                      "name": "token", 
-                      "value": "("
-                    }, 
+                    "(", 
                     {
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "first_name"
                     }, 
                     {
-                      "id": "tid_31", 
+                      "id": "tid_26", 
                       "name": "token", 
                       "value": ","
                     }, 
@@ -547,11 +527,7 @@ Module
                       "name": "Name", 
                       "value": "last_name"
                     }, 
-                    {
-                      "id": "tid_32", 
-                      "name": "token", 
-                      "value": ")"
-                    }
+                    ")"
                   ], 
                   "id": "id_0", 
                   "name": "Tuple"
@@ -561,7 +537,7 @@ Module
               "name": "BinOp"
             }, 
             {
-              "id": "tid_33", 
+              "id": "tid_27", 
               "name": "token", 
               "value": ","
             }
@@ -573,7 +549,7 @@ Module
         {
           "contents": [
             {
-              "id": "tid_34", 
+              "id": "tid_28", 
               "name": "token", 
               "value": "print"
             }, 
@@ -591,7 +567,7 @@ Module
             }, 
             ", \\\n ", 
             {
-              "id": "tid_35", 
+              "id": "tid_29", 
               "name": "token", 
               "value": "\\"
             }, 

@@ -100,12 +100,7 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    {
-      "id": "tid_4", 
-      "name": "token", 
-      "value": ")"
-    }, 
-    "\n"
+    ")\n"
   ], 
   "id": "id_ROOT", 
   "name": "ROOT_NODE"

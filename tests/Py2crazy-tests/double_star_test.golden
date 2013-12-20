@@ -177,11 +177,7 @@ Module
                   "name": "Name", 
                   "value": "Fraction"
                 }, 
-                {
-                  "id": "tid_7", 
-                  "name": "token", 
-                  "value": "("
-                }, 
+                "(", 
                 {
                   "contents": [
                     {
@@ -198,7 +194,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_8", 
+                      "id": "tid_7", 
                       "name": "token", 
                       "value": "**"
                     }, 
@@ -206,7 +202,7 @@ Module
                     {
                       "contents": [
                         {
-                          "id": "tid_9", 
+                          "id": "tid_8", 
                           "name": "token", 
                           "value": "-"
                         }, 
@@ -224,7 +220,7 @@ Module
                   "name": "BinOp"
                 }, 
                 {
-                  "id": "tid_10", 
+                  "id": "tid_9", 
                   "name": "token", 
                   "value": ","
                 }, 
@@ -245,7 +241,7 @@ Module
                     }, 
                     " ", 
                     {
-                      "id": "tid_11", 
+                      "id": "tid_10", 
                       "name": "token", 
                       "value": "**"
                     }, 
@@ -253,7 +249,7 @@ Module
                     {
                       "contents": [
                         {
-                          "id": "tid_12", 
+                          "id": "tid_11", 
                           "name": "token", 
                           "value": "-"
                         }, 
@@ -270,11 +266,7 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                {
-                  "id": "tid_13", 
-                  "name": "token", 
-                  "value": ")"
-                }
+                ")"
               ], 
               "id": "id_0", 
               "name": "Call"
