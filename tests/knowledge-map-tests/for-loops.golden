@@ -379,11 +379,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "elt"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "elt"
             }, 
             " ", 
             {
@@ -393,11 +391,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "my_list"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "my_list"
             }
           ], 
           "id": "id_0", 
@@ -418,11 +414,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "elt"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "elt"
             }
           ], 
           "id": "id_0", 
@@ -438,11 +432,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "elt"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "elt"
             }, 
             " ", 
             {
@@ -459,11 +451,9 @@ Module
                   "value": "["
                 }, 
                 {
-                  "contents": [
-                    "1"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "1"
                 }, 
                 {
                   "id": "tid_8", 
@@ -472,11 +462,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "2"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "2"
                 }, 
                 {
                   "id": "tid_9", 
@@ -485,11 +473,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "3"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "3"
                 }, 
                 {
                   "id": "tid_10", 
@@ -519,11 +505,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "elt"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "elt"
             }
           ], 
           "id": "id_0", 
@@ -539,11 +523,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "elt"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "elt"
             }, 
             " ", 
             {
@@ -555,11 +537,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "range"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "range"
                 }, 
                 {
                   "id": "tid_15", 
@@ -567,11 +547,9 @@ Module
                   "value": "("
                 }, 
                 {
-                  "contents": [
-                    "5"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "5"
                 }, 
                 {
                   "id": "tid_16", 
@@ -601,11 +579,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "elt"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "elt"
             }
           ], 
           "id": "id_0", 
@@ -621,11 +597,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "elt"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "elt"
             }, 
             " ", 
             {
@@ -637,11 +611,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "range"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "range"
                 }, 
                 {
                   "id": "tid_21", 
@@ -651,11 +623,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "len"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "len"
                     }, 
                     {
                       "id": "tid_22", 
@@ -663,11 +633,9 @@ Module
                       "value": "("
                     }, 
                     {
-                      "contents": [
-                        "lst"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "lst"
                     }, 
                     {
                       "id": "tid_23", 
@@ -706,11 +674,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "elt"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "elt"
             }
           ], 
           "id": "id_0", 
@@ -733,11 +699,9 @@ Module
                   "value": "("
                 }, 
                 {
-                  "contents": [
-                    "i"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "i"
                 }, 
                 {
                   "id": "tid_29", 
@@ -746,11 +710,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "elt"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "elt"
                 }, 
                 {
                   "id": "tid_30", 
@@ -771,11 +733,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "enumerate"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "enumerate"
                 }, 
                 {
                   "id": "tid_32", 
@@ -783,11 +743,9 @@ Module
                   "value": "("
                 }, 
                 {
-                  "contents": [
-                    "lst"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "lst"
                 }, 
                 {
                   "id": "tid_33", 
@@ -817,11 +775,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "i"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "i"
             }, 
             {
               "id": "tid_36", 
@@ -830,11 +786,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "elt"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "elt"
             }
           ], 
           "id": "id_0", 
@@ -863,11 +817,9 @@ Module
                   "value": "("
                 }, 
                 {
-                  "contents": [
-                    "i"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "i"
                 }, 
                 {
                   "id": "tid_40", 
@@ -876,11 +828,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "elt"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "elt"
                 }, 
                 {
                   "id": "tid_41", 
@@ -901,11 +851,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "enumerate"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "enumerate"
                 }, 
                 {
                   "id": "tid_43", 
@@ -913,11 +861,9 @@ Module
                   "value": "("
                 }, 
                 {
-                  "contents": [
-                    "lst"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "lst"
                 }, 
                 {
                   "id": "tid_44", 
@@ -947,11 +893,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "i"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "i"
             }, 
             {
               "id": "tid_47", 
@@ -960,11 +904,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "elt"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "elt"
             }
           ], 
           "id": "id_0", 
@@ -980,11 +922,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -996,11 +936,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "range"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "range"
                 }, 
                 {
                   "id": "tid_50", 
@@ -1008,11 +946,9 @@ Module
                   "value": "("
                 }, 
                 {
-                  "contents": [
-                    "100"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "100"
                 }, 
                 {
                   "id": "tid_51", 
@@ -1044,11 +980,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "x"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "x"
                 }, 
                 " ", 
                 {
@@ -1058,11 +992,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "2"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "2"
                 }
               ], 
               "id": "id_0", 
@@ -1101,11 +1033,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "x"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "x"
                 }, 
                 " ", 
                 {
@@ -1115,11 +1045,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "10"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "10"
                 }
               ], 
               "id": "id_0", 
@@ -1156,11 +1084,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }
           ], 
           "id": "id_0", 
@@ -1178,11 +1104,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "k"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "k"
                 }, 
                 {
                   "id": "tid_63", 
@@ -1191,11 +1115,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "v"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "v"
                 }
               ], 
               "id": "id_0", 
@@ -1213,11 +1135,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "d"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "d"
                     }, 
                     ".iteritems"
                   ], 
@@ -1248,11 +1168,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "k"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "k"
             }, 
             {
               "id": "tid_67", 
@@ -1261,11 +1179,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "v"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "v"
             }
           ], 
           "id": "id_0", 
@@ -1281,11 +1197,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "ty"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "ty"
             }, 
             " ", 
             {
@@ -1301,11 +1215,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "type"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "type"
                         }, 
                         {
                           "id": "tid_70", 
@@ -1313,11 +1225,9 @@ Module
                           "value": "("
                         }, 
                         {
-                          "contents": [
-                            "obj"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "obj"
                         }, 
                         {
                           "id": "tid_71", 
@@ -1357,11 +1267,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "'foo'"
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "'foo'"
             }
           ], 
           "id": "id_0", 

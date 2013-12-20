@@ -64,11 +64,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -87,11 +85,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "int"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "int"
                     }, 
                     {
                       "id": "tid_4", 
@@ -101,11 +97,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "tokens"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "tokens"
                         }, 
                         {
                           "id": "tid_5", 
@@ -115,11 +109,9 @@ Module
                         {
                           "contents": [
                             {
-                              "contents": [
-                                "2"
-                              ], 
                               "id": "id_0", 
-                              "name": "Num"
+                              "name": "Num", 
+                              "value": "2"
                             }
                           ], 
                           "id": "id_0", 
@@ -152,11 +144,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "int"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "int"
                     }, 
                     {
                       "id": "tid_9", 
@@ -166,11 +156,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "tokens"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "tokens"
                         }, 
                         {
                           "id": "tid_10", 
@@ -180,11 +168,9 @@ Module
                         {
                           "contents": [
                             {
-                              "contents": [
-                                "3"
-                              ], 
                               "id": "id_0", 
-                              "name": "Num"
+                              "name": "Num", 
+                              "value": "3"
                             }
                           ], 
                           "id": "id_0", 

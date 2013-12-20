@@ -109,11 +109,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -130,11 +128,9 @@ Module
                   "value": "["
                 }, 
                 {
-                  "contents": [
-                    "1"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "1"
                 }, 
                 {
                   "id": "tid_3", 
@@ -150,11 +146,9 @@ Module
                       "value": "["
                     }, 
                     {
-                      "contents": [
-                        "2"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "2"
                     }, 
                     {
                       "id": "tid_5", 
@@ -170,11 +164,9 @@ Module
                           "value": "["
                         }, 
                         {
-                          "contents": [
-                            "3"
-                          ], 
                           "id": "id_0", 
-                          "name": "Num"
+                          "name": "Num", 
+                          "value": "3"
                         }, 
                         {
                           "id": "tid_7", 
@@ -190,11 +182,9 @@ Module
                               "value": "["
                             }, 
                             {
-                              "contents": [
-                                "4"
-                              ], 
                               "id": "id_0", 
-                              "name": "Num"
+                              "name": "Num", 
+                              "value": "4"
                             }, 
                             {
                               "id": "tid_9", 
@@ -203,11 +193,9 @@ Module
                             }, 
                             " ", 
                             {
-                              "contents": [
-                                "None"
-                              ], 
                               "id": "id_0", 
-                              "name": "Name"
+                              "name": "Name", 
+                              "value": "None"
                             }, 
                             {
                               "id": "tid_10", 
@@ -253,11 +241,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "y"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "y"
             }, 
             " ", 
             {
@@ -274,11 +260,9 @@ Module
                   "value": "("
                 }, 
                 {
-                  "contents": [
-                    "1"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "1"
                 }, 
                 {
                   "id": "tid_16", 
@@ -294,11 +278,9 @@ Module
                       "value": "("
                     }, 
                     {
-                      "contents": [
-                        "2"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "2"
                     }, 
                     {
                       "id": "tid_18", 
@@ -314,11 +296,9 @@ Module
                           "value": "("
                         }, 
                         {
-                          "contents": [
-                            "3"
-                          ], 
                           "id": "id_0", 
-                          "name": "Num"
+                          "name": "Num", 
+                          "value": "3"
                         }, 
                         {
                           "id": "tid_20", 
@@ -334,11 +314,9 @@ Module
                               "value": "("
                             }, 
                             {
-                              "contents": [
-                                "4"
-                              ], 
                               "id": "id_0", 
-                              "name": "Num"
+                              "name": "Num", 
+                              "value": "4"
                             }, 
                             {
                               "id": "tid_22", 
@@ -354,11 +332,9 @@ Module
                                   "value": "("
                                 }, 
                                 {
-                                  "contents": [
-                                    "5"
-                                  ], 
                                   "id": "id_0", 
-                                  "name": "Num"
+                                  "name": "Num", 
+                                  "value": "5"
                                 }, 
                                 {
                                   "id": "tid_24", 
@@ -367,11 +343,9 @@ Module
                                 }, 
                                 " ", 
                                 {
-                                  "contents": [
-                                    "None"
-                                  ], 
                                   "id": "id_0", 
-                                  "name": "Name"
+                                  "name": "Name", 
+                                  "value": "None"
                                 }, 
                                 {
                                   "id": "tid_25", 
@@ -432,11 +406,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "z"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "z"
             }, 
             " ", 
             {
@@ -448,11 +420,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "1"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "1"
                 }, 
                 {
                   "id": "tid_32", 
@@ -461,11 +431,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "2"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "2"
                 }, 
                 {
                   "id": "tid_33", 
@@ -474,11 +442,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "3"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "3"
                 }, 
                 {
                   "id": "tid_34", 
@@ -487,11 +453,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "4"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "4"
                 }, 
                 {
                   "id": "tid_35", 
@@ -500,11 +464,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "5"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "5"
                 }, 
                 {
                   "id": "tid_36", 
@@ -513,11 +475,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "None"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "None"
                 }
               ], 
               "id": "id_0", 

@@ -68,11 +68,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -86,11 +84,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "foo"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "foo"
                     }, 
                     ".first_attr"
                   ], 
@@ -107,11 +103,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "bar"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "bar"
                     }, 
                     ".second_attr"
                   ], 

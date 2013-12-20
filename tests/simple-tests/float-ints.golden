@@ -66,11 +66,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3."
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3."
             }
           ], 
           "id": "id_0", 
@@ -80,11 +78,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "-3."
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "-3."
             }
           ], 
           "id": "id_0", 
@@ -94,11 +90,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "10."
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "10."
             }
           ], 
           "id": "id_0", 
@@ -108,11 +102,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "-10."
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "-10."
             }
           ], 
           "id": "id_0", 
@@ -124,11 +116,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "-10."
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "-10."
                 }, 
                 " ", 
                 {
@@ -138,11 +128,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "-3."
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "-3."
                 }
               ], 
               "id": "id_0", 
@@ -156,11 +144,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.0"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.0"
             }
           ], 
           "id": "id_0", 
@@ -170,11 +156,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.00"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.00"
             }
           ], 
           "id": "id_0", 
@@ -184,11 +168,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.000"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.000"
             }
           ], 
           "id": "id_0", 
@@ -198,11 +180,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.0000"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.0000"
             }
           ], 
           "id": "id_0", 
@@ -212,11 +192,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.00000"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.00000"
             }
           ], 
           "id": "id_0", 
@@ -226,11 +204,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.0000000000"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.0000000000"
             }
           ], 
           "id": "id_0", 
@@ -240,11 +216,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.000000000000005"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.000000000000005"
             }
           ], 
           "id": "id_0", 
@@ -254,11 +228,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.00000000000000000000002"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.00000000000000000000002"
             }
           ], 
           "id": "id_0", 

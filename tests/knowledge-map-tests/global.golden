@@ -68,11 +68,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "x"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "x"
                 }, 
                 {
                   "id": "tid_1", 
@@ -81,11 +79,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "y"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "y"
                 }, 
                 {
                   "id": "tid_2", 
@@ -94,11 +90,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "z"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "z"
                 }
               ], 
               "id": "id_0", 
@@ -120,19 +114,15 @@ Module
         }, 
         "\n    ", 
         {
-          "contents": [
-            "global a"
-          ], 
           "id": "id_0", 
-          "name": "Global"
+          "name": "Global", 
+          "value": "global a"
         }, 
         "\n    ", 
         {
-          "contents": [
-            "global b, c"
-          ], 
           "id": "id_0", 
-          "name": "Global"
+          "name": "Global", 
+          "value": "global b, c"
         }, 
         "\n    ", 
         {
@@ -144,11 +134,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "a"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "a"
             }
           ], 
           "id": "id_0", 
@@ -164,11 +152,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "b"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "b"
             }, 
             {
               "id": "tid_7", 
@@ -177,11 +163,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "c"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "c"
             }
           ], 
           "id": "id_0", 

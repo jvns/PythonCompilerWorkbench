@@ -27,11 +27,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "arr"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "arr"
                 }, 
                 {
                   "id": "tid_1", 
@@ -41,11 +39,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "one"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "one"
                     }, 
                     {
                       "id": "tid_2", 
@@ -53,11 +49,9 @@ Module
                       "value": ":"
                     }, 
                     {
-                      "contents": [
-                        "two"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "two"
                     }
                   ], 
                   "id": "id_0", 

@@ -33,11 +33,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -54,11 +52,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "1"
-                          ], 
                           "id": "id_0", 
-                          "name": "Num"
+                          "name": "Num", 
+                          "value": "1"
                         }, 
                         " ", 
                         {
@@ -68,11 +64,9 @@ Module
                         }, 
                         " ", 
                         {
-                          "contents": [
-                            "3"
-                          ], 
                           "id": "id_0", 
-                          "name": "Num"
+                          "name": "Num", 
+                          "value": "3"
                         }
                       ], 
                       "id": "id_0", 
@@ -86,11 +80,9 @@ Module
                     }, 
                     " ", 
                     {
-                      "contents": [
-                        "5"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "5"
                     }
                   ], 
                   "id": "id_0", 

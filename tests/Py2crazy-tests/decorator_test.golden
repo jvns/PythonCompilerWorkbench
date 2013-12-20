@@ -102,11 +102,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "name"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "name"
                 }, 
                 ".setter"
               ], 
@@ -117,11 +115,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "self"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "self"
                 }, 
                 {
                   "id": "tid_4", 
@@ -130,11 +126,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "name"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "name"
                 }
               ], 
               "id": "id_0", 
@@ -183,11 +177,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "fieldnames"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "fieldnames"
                 }, 
                 ".setter"
               ], 
@@ -198,11 +190,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "self"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "self"
                 }, 
                 {
                   "id": "tid_10", 
@@ -211,11 +201,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "value"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "value"
                 }
               ], 
               "id": "id_0", 
@@ -241,11 +229,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "self"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "self"
                 }, 
                 "._fieldnames"
               ], 
@@ -260,11 +246,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "value"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "value"
             }
           ], 
           "id": "id_0", 

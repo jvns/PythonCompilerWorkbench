@@ -104,51 +104,39 @@ Module
     {
       "contents": [
         {
-          "contents": [
-            "import foo"
-          ], 
           "id": "id_0", 
-          "name": "Import"
+          "name": "Import", 
+          "value": "import foo"
         }, 
         "\n", 
         {
-          "contents": [
-            "from  foo  import bar"
-          ], 
           "id": "id_0", 
-          "name": "ImportFrom"
+          "name": "ImportFrom", 
+          "value": "from  foo  import bar"
         }, 
         "\n", 
         {
-          "contents": [
-            "from   foo    import bar   ,  baz"
-          ], 
           "id": "id_0", 
-          "name": "ImportFrom"
+          "name": "ImportFrom", 
+          "value": "from   foo    import bar   ,  baz"
         }, 
         "\n", 
         {
-          "contents": [
-            "from foo import  *"
-          ], 
           "id": "id_0", 
-          "name": "ImportFrom"
+          "name": "ImportFrom", 
+          "value": "from foo import  *"
         }, 
         "\n", 
         {
-          "contents": [
-            "import foo.bar"
-          ], 
           "id": "id_0", 
-          "name": "Import"
+          "name": "Import", 
+          "value": "import foo.bar"
         }, 
         "\n", 
         {
-          "contents": [
-            "from foo.bar import baz"
-          ], 
           "id": "id_0", 
-          "name": "ImportFrom"
+          "name": "ImportFrom", 
+          "value": "from foo.bar import baz"
         }, 
         "\n\n", 
         {
@@ -158,11 +146,9 @@ Module
         }, 
         "\n", 
         {
-          "contents": [
-            "import foo.bar"
-          ], 
           "id": "id_0", 
-          "name": "Import"
+          "name": "Import", 
+          "value": "import foo.bar"
         }, 
         {
           "id": "tid_2", 
@@ -173,11 +159,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -187,11 +171,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "5"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "5"
             }
           ], 
           "id": "id_0", 
@@ -206,11 +188,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "y"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "y"
             }, 
             " ", 
             {
@@ -220,11 +200,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "5"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "5"
             }
           ], 
           "id": "id_0", 
@@ -232,11 +210,9 @@ Module
         }, 
         "\n", 
         {
-          "contents": [
-            "from foo.bar import baz"
-          ], 
           "id": "id_0", 
-          "name": "ImportFrom"
+          "name": "ImportFrom", 
+          "value": "from foo.bar import baz"
         }, 
         {
           "id": "tid_6", 
@@ -249,11 +225,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "baz"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "baz"
                 }, 
                 "()"
               ], 

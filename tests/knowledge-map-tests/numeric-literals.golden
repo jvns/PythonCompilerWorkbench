@@ -42,11 +42,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3"
             }
           ], 
           "id": "id_0", 
@@ -56,11 +54,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.0"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.0"
             }
           ], 
           "id": "id_0", 
@@ -70,11 +66,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.14"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.14"
             }
           ], 
           "id": "id_0", 
@@ -84,11 +78,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "-3"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "-3"
             }
           ], 
           "id": "id_0", 
@@ -98,11 +90,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "-3.14"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "-3.14"
             }
           ], 
           "id": "id_0", 
@@ -112,11 +102,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3.14159"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3.14159"
             }
           ], 
           "id": "id_0", 
@@ -126,11 +114,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "3."
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3."
             }
           ], 
           "id": "id_0", 
@@ -140,11 +126,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "-3."
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "-3."
             }
           ], 
           "id": "id_0", 

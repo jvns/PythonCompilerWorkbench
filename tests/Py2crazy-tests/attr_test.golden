@@ -28,11 +28,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "x"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "x"
                 }, 
                 ".foo"
               ], 
@@ -49,11 +47,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "y"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "y"
                 }, 
                 ".baz"
               ], 

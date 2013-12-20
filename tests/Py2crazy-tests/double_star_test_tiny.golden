@@ -32,11 +32,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "self"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "self"
                 }, 
                 ".val"
               ], 
@@ -55,11 +53,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "self"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "self"
                     }, 
                     ".val"
                   ], 
@@ -74,11 +70,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "2"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "2"
                 }
               ], 
               "id": "id_0", 

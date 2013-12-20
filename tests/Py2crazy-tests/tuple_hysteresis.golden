@@ -40,11 +40,9 @@ Module
     {
       "contents": [
         {
-          "contents": [
-            "def foo()"
-          ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "FunctionDef", 
+          "value": "def foo()"
         }, 
         {
           "id": "tid_1", 
@@ -68,11 +66,9 @@ Module
                   "value": "("
                 }, 
                 {
-                  "contents": [
-                    "1"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "1"
                 }, 
                 {
                   "id": "tid_4", 
@@ -80,11 +76,9 @@ Module
                   "value": ","
                 }, 
                 {
-                  "contents": [
-                    "2"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "2"
                 }, 
                 {
                   "id": "tid_5", 
@@ -92,11 +86,9 @@ Module
                   "value": ","
                 }, 
                 {
-                  "contents": [
-                    "3"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "3"
                 }, 
                 {
                   "id": "tid_6", 

@@ -33,11 +33,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "c"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "c"
             }, 
             "  ", 
             {
@@ -49,11 +47,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "a"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "a"
                 }, 
                 " ", 
                 {
@@ -63,11 +59,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "b"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "b"
                 }
               ], 
               "id": "id_0", 

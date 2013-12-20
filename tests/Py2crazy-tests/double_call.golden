@@ -74,11 +74,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -99,11 +97,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "f"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "f"
                         }, 
                         {
                           "id": "tid_3", 
@@ -113,11 +109,9 @@ Module
                         {
                           "contents": [
                             {
-                              "contents": [
-                                "xs"
-                              ], 
                               "id": "id_0", 
-                              "name": "Name"
+                              "name": "Name", 
+                              "value": "xs"
                             }, 
                             {
                               "id": "tid_4", 
@@ -127,11 +121,9 @@ Module
                             {
                               "contents": [
                                 {
-                                  "contents": [
-                                    "0"
-                                  ], 
                                   "id": "id_0", 
-                                  "name": "Num"
+                                  "name": "Num", 
+                                  "value": "0"
                                 }
                               ], 
                               "id": "id_0", 
@@ -174,11 +166,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "list"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "list"
                     }, 
                     {
                       "id": "tid_9", 
@@ -188,11 +178,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "map"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "map"
                         }, 
                         {
                           "id": "tid_10", 
@@ -200,11 +188,9 @@ Module
                           "value": "("
                         }, 
                         {
-                          "contents": [
-                            "f"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "f"
                         }, 
                         {
                           "id": "tid_11", 
@@ -215,11 +201,9 @@ Module
                         {
                           "contents": [
                             {
-                              "contents": [
-                                "xs"
-                              ], 
                               "id": "id_0", 
-                              "name": "Name"
+                              "name": "Name", 
+                              "value": "xs"
                             }, 
                             {
                               "id": "tid_12", 
@@ -229,11 +213,9 @@ Module
                             {
                               "contents": [
                                 {
-                                  "contents": [
-                                    "1"
-                                  ], 
                                   "id": "id_0", 
-                                  "name": "Num"
+                                  "name": "Num", 
+                                  "value": "1"
                                 }, 
                                 {
                                   "id": "tid_13", 

@@ -43,11 +43,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "str"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "str"
             }, 
             " ", 
             {
@@ -59,11 +57,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "'%d %s %s'"
-                  ], 
                   "id": "id_0", 
-                  "name": "Str"
+                  "name": "Str", 
+                  "value": "'%d %s %s'"
                 }, 
                 " ", 
                 {
@@ -82,11 +78,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "self"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "self"
                         }, 
                         ".x"
                       ], 
@@ -102,11 +96,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "self"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "self"
                         }, 
                         ".y"
                       ], 
@@ -122,11 +114,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "self"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "self"
                         }, 
                         ".z"
                       ], 

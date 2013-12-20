@@ -114,11 +114,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }
           ], 
           "id": "id_0", 
@@ -134,11 +132,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             {
               "id": "tid_3", 
@@ -147,11 +143,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "y"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "y"
             }
           ], 
           "id": "id_0", 
@@ -169,11 +163,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "foo"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "foo"
                 }, 
                 ".bar"
               ], 
@@ -196,11 +188,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "x"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "x"
                 }, 
                 {
                   "id": "tid_6", 
@@ -210,11 +200,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "5"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "5"
                     }
                   ], 
                   "id": "id_0", 
@@ -245,11 +233,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "foo"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "foo"
                 }, 
                 {
                   "id": "tid_9", 
@@ -259,11 +245,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "'bar'"
-                      ], 
                       "id": "id_0", 
-                      "name": "Str"
+                      "name": "Str", 
+                      "value": "'bar'"
                     }
                   ], 
                   "id": "id_0", 
@@ -294,11 +278,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "world_map"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "world_map"
                 }, 
                 {
                   "id": "tid_12", 
@@ -310,11 +292,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "x"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "x"
                         }, 
                         {
                           "id": "tid_13", 
@@ -322,11 +302,9 @@ Module
                           "value": ","
                         }, 
                         {
-                          "contents": [
-                            "y"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "y"
                         }
                       ], 
                       "id": "id_0", 
@@ -361,11 +339,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "foo"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "foo"
                 }, 
                 {
                   "id": "tid_16", 
@@ -375,11 +351,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "1"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "1"
                     }
                   ], 
                   "id": "id_0", 
@@ -410,11 +384,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "foo"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "foo"
                 }, 
                 {
                   "id": "tid_19", 
@@ -424,11 +396,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "1"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "1"
                     }, 
                     {
                       "id": "tid_20", 
@@ -436,11 +406,9 @@ Module
                       "value": ":"
                     }, 
                     {
-                      "contents": [
-                        "5"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "5"
                     }
                   ], 
                   "id": "id_0", 

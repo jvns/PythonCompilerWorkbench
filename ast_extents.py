@@ -1331,23 +1331,28 @@ class CodeAst(object):
         # make sure this parses as legal JSON!
         out_dat = json.loads(self.outbuf.getvalue())
 
-        optimized_dat = optimize_output_dict(out_dat)
+        optimized_dat = optimize_output_dict(out_dat) # clean it up
+
+        # BIG SANITY CHECK!
+        assert (output_dict_to_str(out_dat) ==
+                output_dict_to_str(optimized_dat)
+                == self.code_str)
 
         indent_level = None if compact else 2
         # sort_keys hopefully leads to printing in some DETERMINISTIC order
         return json.dumps(optimized_dat, indent=indent_level, sort_keys=True)
 
 
-# do some cleanups to d, in this order:
-# - eliminate empty strings
-# - coalesce adjacent strings in a "contents" list into one single string
-# - turn a singleton "contents" list into a "value" node
+# do some cleanups to the output dict d before encoding it as JSON:
 def optimize_output_dict(d):
-    def _opt_helper(obj):
+    # Phase 1:
+    # - eliminate empty strings
+    # - coalesce adjacent strings in a "contents" list into one single string
+    def _opt_helper_1(obj):
         if type(obj) is dict:
             ret = {}
             for k, v in obj.iteritems():
-                ret[k] = _opt_helper(v)
+                ret[k] = _opt_helper_1(v)
             return ret
         elif type(obj) is list:
             tmp = []
@@ -1355,7 +1360,7 @@ def optimize_output_dict(d):
                 # eliminate empty strings!
                 if e == '':
                     continue
-                tmp.append(_opt_helper(e))
+                tmp.append(_opt_helper_1(e))
 
             # now coalesce adjacent strings together
             ret = []
@@ -1373,8 +1378,56 @@ def optimize_output_dict(d):
             assert type(obj) in (str, unicode)
             return obj # verbatim
 
+    # Phase 2:
+    # - turn a singleton "contents" list with single string into a "value" node
+    def _opt_helper_2(obj):
+        if type(obj) is dict:
+            ret = {}
+            for k, v in obj.iteritems():
+                if (k == "contents" and
+                    type(v) is list and
+                    len(v) == 1 and
+                    type(v[0]) in (str, unicode)):
+                    ret["value"] = v[0]
+                else:
+                    ret[k] = _opt_helper_2(v)
+            return ret
+        elif type(obj) is list:
+            ret = []
+            for e in obj:
+                ret.append(_opt_helper_2(e))
+            return ret
+        else:
+            assert type(obj) in (str, unicode)
+            return obj # verbatim
+
     assert type(d) is dict
-    return _opt_helper(d)
+    t1 = _opt_helper_1(d)
+    return _opt_helper_2(t1)
+
+
+# walk the dict and create a string from it, for sanity checking
+# optimizations and against the original code
+def output_dict_to_str(d):
+    output_str = []
+    def _helper(obj):
+        if type(obj) is dict:
+            if "value" in obj:
+                output_str.append(obj["value"])
+            elif "contents" in obj:
+                _helper(obj["contents"])
+        elif type(obj) is list:
+            for e in obj:
+                if type(e) is dict:
+                    _helper(e)
+                else:
+                    assert type(e) in (str, unicode)
+                    output_str.append(e)
+        else:
+            assert False
+
+    _helper(d)
+    return ''.join(output_str)
 
 
 if __name__ == "__main__":

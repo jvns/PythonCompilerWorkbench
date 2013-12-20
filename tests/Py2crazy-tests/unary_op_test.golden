@@ -36,11 +36,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -114,11 +112,9 @@ Module
                                             }, 
                                             " ", 
                                             {
-                                              "contents": [
-                                                "xxx"
-                                              ], 
                                               "id": "id_0", 
-                                              "name": "Name"
+                                              "name": "Name", 
+                                              "value": "xxx"
                                             }
                                           ], 
                                           "id": "id_0", 

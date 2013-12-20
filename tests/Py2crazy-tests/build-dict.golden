@@ -34,11 +34,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "w"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "w"
             }, 
             " ", 
             {
@@ -55,11 +53,9 @@ Module
                   "value": "{"
                 }, 
                 {
-                  "contents": [
-                    "\"joe\""
-                  ], 
                   "id": "id_0", 
-                  "name": "Str"
+                  "name": "Str", 
+                  "value": "\"joe\""
                 }, 
                 " ", 
                 {
@@ -69,11 +65,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "5"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "5"
                 }, 
                 {
                   "id": "tid_4", 
@@ -82,11 +76,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "\"mindy\""
-                  ], 
                   "id": "id_0", 
-                  "name": "Str"
+                  "name": "Str", 
+                  "value": "\"mindy\""
                 }, 
                 " ", 
                 {
@@ -96,11 +88,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "6"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "6"
                 }, 
                 {
                   "id": "tid_6", 
@@ -109,11 +99,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "\"jack\""
-                  ], 
                   "id": "id_0", 
-                  "name": "Str"
+                  "name": "Str", 
+                  "value": "\"jack\""
                 }, 
                 " ", 
                 {
@@ -123,11 +111,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "7"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "7"
                 }, 
                 {
                   "id": "tid_8", 

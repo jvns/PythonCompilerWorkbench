@@ -94,11 +94,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "self"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "self"
                 }, 
                 ".val"
               ], 
@@ -117,11 +115,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "self"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "self"
                     }, 
                     ".val"
                   ], 
@@ -136,11 +132,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "2"
-                  ], 
                   "id": "id_0", 
-                  "name": "Num"
+                  "name": "Num", 
+                  "value": "2"
                 }
               ], 
               "id": "id_0", 
@@ -158,11 +152,9 @@ Module
         }, 
         "\n", 
         {
-          "contents": [
-            "def foo()"
-          ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "FunctionDef", 
+          "value": "def foo()"
         }, 
         {
           "id": "tid_5", 
@@ -181,11 +173,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "Fraction"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "Fraction"
                 }, 
                 {
                   "id": "tid_7", 
@@ -197,11 +187,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "a"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "a"
                         }, 
                         "._denominator"
                       ], 
@@ -223,11 +211,9 @@ Module
                           "value": "-"
                         }, 
                         {
-                          "contents": [
-                            "power"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "power"
                         }
                       ], 
                       "id": "id_0", 
@@ -248,11 +234,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "a"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "a"
                         }, 
                         "._numerator"
                       ], 
@@ -274,11 +258,9 @@ Module
                           "value": "-"
                         }, 
                         {
-                          "contents": [
-                            "power"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "power"
                         }
                       ], 
                       "id": "id_0", 

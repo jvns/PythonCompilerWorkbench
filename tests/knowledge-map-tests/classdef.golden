@@ -120,11 +120,9 @@ Module
     {
       "contents": [
         {
-          "contents": [
-            "class Person"
-          ], 
           "id": "id_0", 
-          "name": "ClassDef"
+          "name": "ClassDef", 
+          "value": "class Person"
         }, 
         {
           "id": "tid_1", 
@@ -148,11 +146,9 @@ Module
           "contents": [
             "class Person(", 
             {
-              "contents": [
-                "object"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "object"
             }, 
             {
               "id": "tid_3", 
@@ -175,11 +171,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "self"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "self"
                 }, 
                 {
                   "id": "tid_5", 
@@ -188,11 +182,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "x"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "x"
                 }
               ], 
               "id": "id_0", 
@@ -218,11 +210,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "self"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "self"
                 }, 
                 ".age"
               ], 
@@ -237,11 +227,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }
           ], 
           "id": "id_0", 
@@ -254,11 +242,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "self"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "self"
                 }
               ], 
               "id": "id_0", 
@@ -290,11 +276,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "'Person: '"
-                  ], 
                   "id": "id_0", 
-                  "name": "Str"
+                  "name": "Str", 
+                  "value": "'Person: '"
                 }, 
                 " + \\\n        ", 
                 {
@@ -312,11 +296,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "self"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "self"
                     }, 
                     ".name"
                   ], 
@@ -336,11 +318,9 @@ Module
           "contents": [
             "class Man(", 
             {
-              "contents": [
-                "Person"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "Person"
             }, 
             {
               "id": "tid_14", 
@@ -360,11 +340,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "maximum_age"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "maximum_age"
             }, 
             " ", 
             {
@@ -374,11 +352,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "100"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "100"
             }
           ], 
           "id": "id_0", 

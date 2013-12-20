@@ -89,11 +89,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -103,11 +101,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "5"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "5"
             }
           ], 
           "id": "id_0", 
@@ -117,11 +113,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -131,11 +125,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "y"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "y"
             }
           ], 
           "id": "id_0", 
@@ -145,11 +137,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -161,11 +151,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "y"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "y"
                 }, 
                 " ", 
                 {
@@ -175,11 +163,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "z"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "z"
                 }
               ], 
               "id": "id_0", 
@@ -193,11 +179,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -207,11 +191,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "5"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "5"
             }
           ], 
           "id": "id_0", 
@@ -221,11 +203,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -235,11 +215,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "y"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "y"
             }
           ], 
           "id": "id_0", 
@@ -249,11 +227,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -265,11 +241,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "y"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "y"
                 }, 
                 " ", 
                 {
@@ -279,11 +253,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "z"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "z"
                 }
               ], 
               "id": "id_0", 
@@ -297,11 +269,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -313,11 +283,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "y"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "y"
                 }, 
                 " ", 
                 {
@@ -327,11 +295,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "z"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "z"
                 }
               ], 
               "id": "id_0", 

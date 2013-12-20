@@ -71,11 +71,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "\"hello\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"hello\""
             }
           ], 
           "id": "id_0", 
@@ -85,11 +83,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "'hello'"
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "'hello'"
             }
           ], 
           "id": "id_0", 
@@ -99,11 +95,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "\"This is a sentence.\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"This is a sentence.\""
             }
           ], 
           "id": "id_0", 
@@ -113,11 +107,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "\"John's cat.\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"John's cat.\""
             }
           ], 
           "id": "id_0", 
@@ -127,11 +119,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "'He liked watching \"The Matrix\"!'"
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "'He liked watching \"The Matrix\"!'"
             }
           ], 
           "id": "id_0", 
@@ -141,11 +131,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "\"\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"\""
             }
           ], 
           "id": "id_0", 
@@ -155,11 +143,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "\" \""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\" \""
             }
           ], 
           "id": "id_0", 
@@ -169,11 +155,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "\"\\t \\\\ \\\" \\'"
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"\\t \\\\ \\\" \\'"
             }
           ], 
           "id": "id_0", 
@@ -183,11 +167,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "\"John's\\n\\n\\n\\ndog.\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"John's\\n\\n\\n\\ndog.\""
             }
           ], 
           "id": "id_0", 
@@ -201,11 +183,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "\",\""
-                      ], 
                       "id": "id_0", 
-                      "name": "Str"
+                      "name": "Str", 
+                      "value": "\",\""
                     }, 
                     ".join"
                   ], 
@@ -225,11 +205,9 @@ Module
                       "value": "["
                     }, 
                     {
-                      "contents": [
-                        "1"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "1"
                     }, 
                     {
                       "id": "tid_3", 
@@ -237,11 +215,9 @@ Module
                       "value": ","
                     }, 
                     {
-                      "contents": [
-                        "2"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "2"
                     }, 
                     {
                       "id": "tid_4", 
@@ -249,11 +225,9 @@ Module
                       "value": ","
                     }, 
                     {
-                      "contents": [
-                        "3"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "3"
                     }, 
                     {
                       "id": "tid_5", 

@@ -186,11 +186,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "\"hello world\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"hello world\""
             }
           ], 
           "id": "id_0", 
@@ -206,11 +204,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "\"hello world\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"hello world\""
             }, 
             {
               "id": "tid_4", 
@@ -231,11 +227,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }
           ], 
           "id": "id_0", 
@@ -251,11 +245,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "\"hello\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"hello\""
             }, 
             {
               "id": "tid_7", 
@@ -264,11 +256,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             {
               "id": "tid_8", 
@@ -277,11 +267,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "y"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "y"
             }
           ], 
           "id": "id_0", 
@@ -299,11 +287,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "a"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "a"
                 }, 
                 " ", 
                 {
@@ -313,11 +299,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "b"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "b"
                 }
               ], 
               "id": "id_0", 
@@ -350,11 +334,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "\"Hello, %s\""
-                  ], 
                   "id": "id_0", 
-                  "name": "Str"
+                  "name": "Str", 
+                  "value": "\"Hello, %s\""
                 }, 
                 " ", 
                 {
@@ -364,11 +346,9 @@ Module
                 }, 
                 " ", 
                 {
-                  "contents": [
-                    "name"
-                  ], 
                   "id": "id_0", 
-                  "name": "Name"
+                  "name": "Name", 
+                  "value": "name"
                 }
               ], 
               "id": "id_0", 
@@ -390,11 +370,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "\"Hi %s %s\""
-                  ], 
                   "id": "id_0", 
-                  "name": "Str"
+                  "name": "Str", 
+                  "value": "\"Hi %s %s\""
                 }, 
                 " ", 
                 {
@@ -411,11 +389,9 @@ Module
                       "value": "("
                     }, 
                     {
-                      "contents": [
-                        "first_name"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "first_name"
                     }, 
                     {
                       "id": "tid_18", 
@@ -424,11 +400,9 @@ Module
                     }, 
                     " ", 
                     {
-                      "contents": [
-                        "last_name"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "last_name"
                     }, 
                     {
                       "id": "tid_19", 
@@ -464,11 +438,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "\"hello %s %d\""
-                  ], 
                   "id": "id_0", 
-                  "name": "Str"
+                  "name": "Str", 
+                  "value": "\"hello %s %d\""
                 }, 
                 " ", 
                 {
@@ -485,11 +457,9 @@ Module
                       "value": "("
                     }, 
                     {
-                      "contents": [
-                        "x"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "x"
                     }, 
                     {
                       "id": "tid_24", 
@@ -498,11 +468,9 @@ Module
                     }, 
                     " ", 
                     {
-                      "contents": [
-                        "y"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "y"
                     }, 
                     {
                       "id": "tid_25", 
@@ -539,11 +507,9 @@ Module
             {
               "contents": [
                 {
-                  "contents": [
-                    "\"Hi %s %s\""
-                  ], 
                   "id": "id_0", 
-                  "name": "Str"
+                  "name": "Str", 
+                  "value": "\"Hi %s %s\""
                 }, 
                 " % \\\n  ", 
                 {
@@ -566,11 +532,9 @@ Module
                       "value": "("
                     }, 
                     {
-                      "contents": [
-                        "first_name"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "first_name"
                     }, 
                     {
                       "id": "tid_31", 
@@ -579,11 +543,9 @@ Module
                     }, 
                     " ", 
                     {
-                      "contents": [
-                        "last_name"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "last_name"
                     }, 
                     {
                       "id": "tid_32", 
@@ -617,19 +579,15 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "\"hello\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"hello\""
             }, 
             ", \\\n  ", 
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             ", \\\n ", 
             {
@@ -639,11 +597,9 @@ Module
             }, 
             "\n  ", 
             {
-              "contents": [
-                "y"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "y"
             }
           ], 
           "id": "id_0", 

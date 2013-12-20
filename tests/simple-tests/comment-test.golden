@@ -51,11 +51,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -65,11 +63,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "5"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "5"
             }
           ], 
           "id": "id_0", 
@@ -97,11 +93,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "y"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "y"
             }, 
             " ", 
             {
@@ -111,11 +105,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "10"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "10"
             }
           ], 
           "id": "id_0", 
@@ -137,11 +129,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "z"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "z"
             }, 
             " ", 
             {
@@ -151,11 +141,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "\"a hash # within a string shouldn't be a comment\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"a hash # within a string shouldn't be a comment\""
             }
           ], 
           "id": "id_0", 

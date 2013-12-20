@@ -65,11 +65,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "i"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "i"
             }
           ], 
           "id": "id_0", 
@@ -79,11 +77,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "name"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "name"
             }
           ], 
           "id": "id_0", 
@@ -93,11 +89,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "my_first_name"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "my_first_name"
             }
           ], 
           "id": "id_0", 
@@ -107,11 +101,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "PLANCK_CONSTANT"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "PLANCK_CONSTANT"
             }
           ], 
           "id": "id_0", 
@@ -121,11 +113,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "MyAwesomeClass"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "MyAwesomeClass"
             }
           ], 
           "id": "id_0", 
@@ -135,11 +125,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "card"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "card"
             }
           ], 
           "id": "id_0", 
@@ -149,11 +137,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "Card"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "Card"
             }
           ], 
           "id": "id_0", 
@@ -163,11 +149,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "_private_attr"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "_private_attr"
             }
           ], 
           "id": "id_0", 
@@ -177,11 +161,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "javaStyle"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "javaStyle"
             }
           ], 
           "id": "id_0", 
@@ -191,11 +173,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "__super_private"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "__super_private"
             }
           ], 
           "id": "id_0", 
@@ -205,11 +185,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "__init__"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "__init__"
             }
           ], 
           "id": "id_0", 

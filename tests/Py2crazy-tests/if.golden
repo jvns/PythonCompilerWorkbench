@@ -64,11 +64,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "foo"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "foo"
                     }, 
                     "()"
                   ], 
@@ -81,11 +79,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "x"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "x"
                         }, 
                         " ", 
                         {
@@ -95,11 +91,9 @@ Module
                         }, 
                         " ", 
                         {
-                          "contents": [
-                            "y"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "y"
                         }
                       ], 
                       "id": "id_0", 
@@ -113,11 +107,9 @@ Module
                     }, 
                     " ", 
                     {
-                      "contents": [
-                        "7"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "7"
                     }
                   ], 
                   "id": "id_0", 
@@ -141,11 +133,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "'YES!'"
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "'YES!'"
             }
           ], 
           "id": "id_0", 

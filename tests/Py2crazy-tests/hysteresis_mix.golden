@@ -67,11 +67,9 @@ Module
     {
       "contents": [
         {
-          "contents": [
-            "def foo()"
-          ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "FunctionDef", 
+          "value": "def foo()"
         }, 
         {
           "id": "tid_2", 
@@ -97,11 +95,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "func1"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "func1"
                     }, 
                     {
                       "id": "tid_5", 
@@ -109,11 +105,9 @@ Module
                       "value": "("
                     }, 
                     {
-                      "contents": [
-                        "x"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "x"
                     }, 
                     {
                       "id": "tid_6", 
@@ -122,11 +116,9 @@ Module
                     }, 
                     " ", 
                     {
-                      "contents": [
-                        "y"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "y"
                     }, 
                     {
                       "id": "tid_7", 
@@ -146,11 +138,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "func2"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "func2"
                     }, 
                     {
                       "id": "tid_9", 
@@ -158,11 +148,9 @@ Module
                       "value": "("
                     }, 
                     {
-                      "contents": [
-                        "z"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "z"
                     }, 
                     {
                       "id": "tid_10", 
@@ -171,11 +159,9 @@ Module
                     }, 
                     " ", 
                     {
-                      "contents": [
-                        "w"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "w"
                     }, 
                     {
                       "id": "tid_11", 

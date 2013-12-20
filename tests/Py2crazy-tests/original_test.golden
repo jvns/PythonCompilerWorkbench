@@ -100,11 +100,9 @@ Module
     {
       "contents": [
         {
-          "contents": [
-            "def foo()"
-          ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "FunctionDef", 
+          "value": "def foo()"
         }, 
         {
           "id": "tid_1", 
@@ -121,11 +119,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "True"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "True"
             }
           ], 
           "id": "id_0", 
@@ -135,11 +131,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "x"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "x"
             }, 
             " ", 
             {
@@ -149,11 +143,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "3"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "3"
             }
           ], 
           "id": "id_0", 
@@ -163,11 +155,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "y"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "y"
             }, 
             " ", 
             {
@@ -177,11 +167,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "5"
-              ], 
               "id": "id_0", 
-              "name": "Num"
+              "name": "Num", 
+              "value": "5"
             }
           ], 
           "id": "id_0", 
@@ -201,11 +189,9 @@ Module
                 {
                   "contents": [
                     {
-                      "contents": [
-                        "foo"
-                      ], 
                       "id": "id_0", 
-                      "name": "Name"
+                      "name": "Name", 
+                      "value": "foo"
                     }, 
                     "()"
                   ], 
@@ -218,11 +204,9 @@ Module
                     {
                       "contents": [
                         {
-                          "contents": [
-                            "x"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "x"
                         }, 
                         " ", 
                         {
@@ -232,11 +216,9 @@ Module
                         }, 
                         " ", 
                         {
-                          "contents": [
-                            "y"
-                          ], 
                           "id": "id_0", 
-                          "name": "Name"
+                          "name": "Name", 
+                          "value": "y"
                         }
                       ], 
                       "id": "id_0", 
@@ -250,11 +232,9 @@ Module
                     }, 
                     " ", 
                     {
-                      "contents": [
-                        "7"
-                      ], 
                       "id": "id_0", 
-                      "name": "Num"
+                      "name": "Num", 
+                      "value": "7"
                     }
                   ], 
                   "id": "id_0", 
@@ -278,11 +258,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "'YES'"
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "'YES'"
             }
           ], 
           "id": "id_0", 
@@ -298,11 +276,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "'NO'"
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "'NO'"
             }
           ], 
           "id": "id_0", 

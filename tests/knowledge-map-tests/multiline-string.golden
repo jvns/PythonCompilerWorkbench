@@ -70,11 +70,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "\"\"\"John's cat liked \"The Matrix\"\nbut his dog\npreferred the sequels.\"\"\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"\"\"John's cat liked \"The Matrix\"\nbut his dog\npreferred the sequels.\"\"\""
             }
           ], 
           "id": "id_0", 
@@ -84,11 +82,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "foo"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "foo"
             }, 
             " ", 
             {
@@ -98,11 +94,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "'''multi\n    line\n  string'''"
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "'''multi\n    line\n  string'''"
             }
           ], 
           "id": "id_0", 
@@ -112,11 +106,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "bar"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "bar"
             }, 
             " ", 
             {
@@ -126,11 +118,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "'''\nmulti\nline\nstring\nwith empty\nfirst line\n'''"
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "'''\nmulti\nline\nstring\nwith empty\nfirst line\n'''"
             }
           ], 
           "id": "id_0", 
@@ -140,11 +130,9 @@ Module
         {
           "contents": [
             {
-              "contents": [
-                "baz"
-              ], 
               "id": "id_0", 
-              "name": "Name"
+              "name": "Name", 
+              "value": "baz"
             }, 
             " ", 
             {
@@ -154,11 +142,9 @@ Module
             }, 
             " ", 
             {
-              "contents": [
-                "\"\"\"     \nmulti\nline\nstring\nwith spaces in first line\n\"\"\""
-              ], 
               "id": "id_0", 
-              "name": "Str"
+              "name": "Str", 
+              "value": "\"\"\"     \nmulti\nline\nstring\nwith spaces in first line\n\"\"\""
             }
           ], 
           "id": "id_0", 
