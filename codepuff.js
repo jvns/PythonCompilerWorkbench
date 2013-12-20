@@ -61,8 +61,13 @@ function renderCodePuff(astJson) {
       disNode.attr("id", node.id);
       disNode.attr("class", node.name);
 
-      // ... so recurse
-      renderNodes(disNode, node.contents);
+      // ... so recurse into either value or contents
+      if (node.value !== undefined) {
+        renderNodes(disNode, [node.value]); // need a singleton list
+      }
+      else {
+        renderNodes(disNode, node.contents);
+      }
     }
   }
 

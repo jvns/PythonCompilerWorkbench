@@ -1330,9 +1330,39 @@ class CodeAst(object):
 
         # make sure this parses as legal JSON!
         out_dat = json.loads(self.outbuf.getvalue())
+
+        optimized_dat = optimize_output_dict(out_dat)
+
         indent_level = None if compact else 2
         # sort_keys hopefully leads to printing in some DETERMINISTIC order
-        return json.dumps(out_dat, indent=indent_level, sort_keys=True)
+        return json.dumps(optimized_dat, indent=indent_level, sort_keys=True)
+
+
+# do some cleanups to d, in this order:
+# - eliminate empty strings
+# - coalesce adjacent strings in a "contents" list into one single string
+# - turn a singleton "contents" list into a "value" node
+def optimize_output_dict(d):
+    def _opt_helper(obj):
+        if type(obj) is dict:
+            ret = {}
+            for k, v in obj.iteritems():
+                ret[k] = _opt_helper(v)
+            return ret
+        elif type(obj) is list:
+            ret = []
+            for e in obj:
+                # eliminate empty strings!
+                if e == '':
+                    continue
+                ret.append(_opt_helper(e))
+            return ret
+        else:
+            assert type(obj) in (str, unicode)
+            return obj # verbatim
+
+    assert type(d) is dict
+    return _opt_helper(d)
 
 
 if __name__ == "__main__":
