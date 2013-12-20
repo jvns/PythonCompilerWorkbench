@@ -2,8 +2,8 @@
 
 x = 5 # this is a comment
   # an another comment
-      # indented even more
-y = 10 # yet another one
+      # indented even more # with another comment inside
+y = 10 # yet another one with triple hash ###
 # oh yeahhhh
 
 # one more

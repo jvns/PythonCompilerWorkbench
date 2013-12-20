@@ -1,0 +1,3 @@
+# ugh, a multi-line string with a continuation character breaks
+x = "hello \
+  world"

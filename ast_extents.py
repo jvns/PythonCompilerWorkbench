@@ -1012,30 +1012,52 @@ class CodeAst(object):
     def relex_and_print(self, s, leading_str):
         print >> self.outbuf, leading_str
 
-        idx = 0 # starts at 0  
 
-        # non-trivial multiline case -- multiple lines and not just
-        # SOLELY whitespace characters
-        is_nontrivial_multiline = '\n' in s and s.strip() != ''
+        # 'line' is guaranteed to be a single line
+        def _relex_helper(line):
+            # Step 1 -- grab comments first
+            # we can't possibly be within a string literal, so the first
+            # '#' marks the start of a comment
+            try:
+                i = line.index('#') # grab the FIRST '#'
+                prefix_str = line[:i]
+                comment_str = line[i:]
 
-        # TODO: step 1 -- grab comments first
+                # recurse!
+                _relex_helper(prefix_str)
 
-        if is_nontrivial_multiline:
-            # do NOT call splitlines() since that omits the trailing '\n'
-            lines = s.split('\n')
+                print >> self.outbuf, "," # ugh commas
 
-            for i, line in enumerate(lines):
+                # then dump out the comment
+                t = '{"token_kind": "comment", "value": %s}'
+                print >> self.outbuf, t % json.dumps(comment_str)
+                self.gobbled_string_lst.append(comment_str)
+            except ValueError:
+                # no comments
                 print >> self.outbuf, json.dumps(line)
-                self.gobbled_string_lst.append(line) # for sanity checking!
+                self.gobbled_string_lst.append(line) # sanity checking!
 
-                # if it's not the LAST line
-                if i < len(lines) - 1:
-                    print >> self.outbuf, ',', json.dumps('\n'), ','
-                    self.gobbled_string_lst.append('\n')
+
+        if '\n' in s:
+            # multiline case
+
+            # trivial -- multiple lines of whitespace and junk
+            if s.strip() == '':
+                print >> self.outbuf, json.dumps(s)
+                self.gobbled_string_lst.append(s) # for sanity checking!
+            else:
+                # do NOT call splitlines() since that omits the trailing '\n'
+                lines = s.split('\n')
+
+                for i, line in enumerate(lines):
+                    _relex_helper(line)
+                    # if it's not the LAST line
+                    if i < len(lines) - 1:
+                        print >> self.outbuf, ',', json.dumps('\n'), ','
+                        self.gobbled_string_lst.append('\n')
         else:
-            # single-line case (or trivial multiline case)
-            print >> self.outbuf, json.dumps(s)
-            self.gobbled_string_lst.append(s) # for sanity checking!
+            # single-line case, so gobble up the entire line
+            _relex_helper(s)
 
 
     # convert to a JSON format with enough information so that it's

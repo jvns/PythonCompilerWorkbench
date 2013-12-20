@@ -2,8 +2,8 @@
 
 x = 5 # this is a comment
   # an another comment
-      # indented even more
-y = 10 # yet another one
+      # indented even more # with another comment inside
+y = 10 # yet another one with triple hash ###
 # oh yeahhhh
 
 # one more
@@ -62,7 +62,7 @@ Module
         "\n", 
         "  # an another comment", 
         "\n", 
-        "      # indented even more", 
+        "      # indented even more # with another comment inside", 
         "\n", 
         "", 
         {
@@ -90,7 +90,7 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    " # yet another one", 
+    " # yet another one with triple hash ###", 
     "\n", 
     "# oh yeahhhh", 
     "\n", 
