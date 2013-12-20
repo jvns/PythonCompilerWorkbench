@@ -173,14 +173,22 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_1", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
             {
               "contents": [
-                "yield"
+                {
+                  "id": "tid_2", 
+                  "name": "token", 
+                  "value": "yield"
+                }
               ], 
               "id": "id_0", 
               "name": "Yield"
@@ -197,14 +205,23 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_3", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
             {
               "contents": [
-                "yield ", 
+                {
+                  "id": "tid_4", 
+                  "name": "token", 
+                  "value": "yield"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "42"
@@ -228,14 +245,23 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_5", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
             {
               "contents": [
-                "yield ", 
+                {
+                  "id": "tid_6", 
+                  "name": "token", 
+                  "value": "yield"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "True"
@@ -259,14 +285,23 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_7", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
             {
               "contents": [
-                "yield ", 
+                {
+                  "id": "tid_8", 
+                  "name": "token", 
+                  "value": "yield"
+                }, 
+                " ", 
                 {
                   "contents": [
                     {
@@ -276,7 +311,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " + ", 
+                    " ", 
+                    {
+                      "id": "tid_9", 
+                      "name": "token", 
+                      "value": "+"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "b"
@@ -304,14 +345,23 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_10", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
             {
               "contents": [
-                "yield ", 
+                {
+                  "id": "tid_11", 
+                  "name": "token", 
+                  "value": "yield"
+                }, 
+                " ", 
                 {
                   "contents": [
                     {
@@ -321,7 +371,11 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    "(", 
+                    {
+                      "id": "tid_12", 
+                      "name": "token", 
+                      "value": "("
+                    }, 
                     {
                       "contents": [
                         "n"
@@ -329,7 +383,11 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    ")"
+                    {
+                      "id": "tid_13", 
+                      "name": "token", 
+                      "value": ")"
+                    }
                   ], 
                   "id": "id_0", 
                   "name": "Call"
@@ -359,19 +417,32 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ")"
+            {
+              "id": "tid_14", 
+              "name": "token", 
+              "value": ")"
+            }
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_15", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
             {
               "contents": [
-                "yield ", 
+                {
+                  "id": "tid_16", 
+                  "name": "token", 
+                  "value": "yield"
+                }, 
+                " ", 
                 {
                   "contents": [
                     {
@@ -381,7 +452,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " * ", 
+                    " ", 
+                    {
+                      "id": "tid_17", 
+                      "name": "token", 
+                      "value": "*"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         {
@@ -391,7 +468,11 @@ Module
                           "id": "id_0", 
                           "name": "Name"
                         }, 
-                        "(", 
+                        {
+                          "id": "tid_18", 
+                          "name": "token", 
+                          "value": "("
+                        }, 
                         {
                           "contents": [
                             {
@@ -401,7 +482,11 @@ Module
                               "id": "id_0", 
                               "name": "Name"
                             }, 
-                            "-", 
+                            {
+                              "id": "tid_19", 
+                              "name": "token", 
+                              "value": "-"
+                            }, 
                             {
                               "contents": [
                                 "1"
@@ -413,7 +498,11 @@ Module
                           "id": "id_0", 
                           "name": "BinOp"
                         }, 
-                        ")"
+                        {
+                          "id": "tid_20", 
+                          "name": "token", 
+                          "value": ")"
+                        }
                       ], 
                       "id": "id_0", 
                       "name": "Call"

@@ -46,15 +46,28 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_1", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "  ", 
         {
           "contents": [
-            "return ", 
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "return"
+            }, 
+            " ", 
             {
               "contents": [
-                "(", 
+                {
+                  "id": "tid_3", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     "1"
@@ -62,7 +75,11 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ",", 
+                {
+                  "id": "tid_4", 
+                  "name": "token", 
+                  "value": ","
+                }, 
                 {
                   "contents": [
                     "2"
@@ -70,7 +87,11 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ",", 
+                {
+                  "id": "tid_5", 
+                  "name": "token", 
+                  "value": ","
+                }, 
                 {
                   "contents": [
                     "3"
@@ -78,7 +99,11 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ")"
+                {
+                  "id": "tid_6", 
+                  "name": "token", 
+                  "value": ")"
+                }
               ], 
               "id": "id_0", 
               "name": "Tuple"
@@ -97,31 +122,36 @@ Module
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_7", 
+      "name": "comment", 
       "value": "# the RETURN_VALUE instruction after BUILD_TUPLE should get the benefits"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_8", 
+      "name": "comment", 
       "value": "# of hysteresis (i.e., the same start_col and extent as BUILD_TUPLE)."
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_9", 
+      "name": "comment", 
       "value": "# Right now we have hysteresis only for function calls, and that"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_10", 
+      "name": "comment", 
       "value": "# hysteresis might play badly with hysteresis for other types, so think"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_11", 
+      "name": "comment", 
       "value": "# carefully about how to gracefully handle these interactions!"
     }, 
     "\n", 

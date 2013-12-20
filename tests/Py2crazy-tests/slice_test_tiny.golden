@@ -33,7 +33,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                "[", 
+                {
+                  "id": "tid_1", 
+                  "name": "token", 
+                  "value": "["
+                }, 
                 {
                   "contents": [
                     {
@@ -43,7 +47,11 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    ":", 
+                    {
+                      "id": "tid_2", 
+                      "name": "token", 
+                      "value": ":"
+                    }, 
                     {
                       "contents": [
                         "two"
@@ -55,7 +63,11 @@ Module
                   "id": "id_0", 
                   "name": "Slice"
                 }, 
-                "]"
+                {
+                  "id": "tid_3", 
+                  "name": "token", 
+                  "value": "]"
+                }
               ], 
               "id": "id_0", 
               "name": "Subscript"

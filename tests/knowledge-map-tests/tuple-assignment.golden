@@ -97,7 +97,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_1", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "b"
@@ -109,7 +114,13 @@ Module
               "id": "id_0", 
               "name": "Tuple"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -119,7 +130,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_3", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "d"
@@ -140,7 +156,11 @@ Module
           "contents": [
             {
               "contents": [
-                "(", 
+                {
+                  "id": "tid_4", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     "a"
@@ -148,7 +168,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_5", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "b"
@@ -156,15 +181,29 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ")"
+                {
+                  "id": "tid_6", 
+                  "name": "token", 
+                  "value": ")"
+                }
               ], 
               "id": "id_0", 
               "name": "Tuple"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_7", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
-                "(", 
+                {
+                  "id": "tid_8", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     "c"
@@ -172,7 +211,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_9", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "d"
@@ -180,7 +224,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ")"
+                {
+                  "id": "tid_10", 
+                  "name": "token", 
+                  "value": ")"
+                }
               ], 
               "id": "id_0", 
               "name": "Tuple"
@@ -195,7 +243,8 @@ Module
         "\n", 
         "", 
         {
-          "token_kind": "comment", 
+          "id": "tid_11", 
+          "name": "comment", 
           "value": "# multiline"
         }, 
         "\n", 
@@ -204,7 +253,11 @@ Module
           "contents": [
             {
               "contents": [
-                "(", 
+                {
+                  "id": "tid_12", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     "a"
@@ -212,7 +265,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_13", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "b"
@@ -220,7 +278,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ",", 
+                {
+                  "id": "tid_14", 
+                  "name": "token", 
+                  "value": ","
+                }, 
                 "\n", 
                 "   ", 
                 {
@@ -230,7 +292,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ")"
+                {
+                  "id": "tid_15", 
+                  "name": "token", 
+                  "value": ")"
+                }
               ], 
               "id": "id_0", 
               "name": "Tuple"
@@ -240,7 +306,11 @@ Module
             "     ", 
             {
               "contents": [
-                "(", 
+                {
+                  "id": "tid_16", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     "c"
@@ -248,7 +318,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_17", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "d"
@@ -256,7 +331,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ")"
+                {
+                  "id": "tid_18", 
+                  "name": "token", 
+                  "value": ")"
+                }
               ], 
               "id": "id_0", 
               "name": "Tuple"

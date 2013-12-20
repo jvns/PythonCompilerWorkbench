@@ -246,12 +246,21 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_1", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "1"
@@ -266,7 +275,12 @@ Module
         "\n    ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_3", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "2"
@@ -295,17 +309,29 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ")"
+            {
+              "id": "tid_4", 
+              "name": "token", 
+              "value": ")"
+            }
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_5", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "pass"
+            {
+              "id": "tid_6", 
+              "name": "token", 
+              "value": "pass"
+            }
           ], 
           "id": "id_0", 
           "name": "Pass"
@@ -323,7 +349,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_7", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "y"
@@ -331,7 +362,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_8", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "z"
@@ -343,17 +379,29 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ")"
+            {
+              "id": "tid_9", 
+              "name": "token", 
+              "value": ")"
+            }
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_10", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "pass"
+            {
+              "id": "tid_11", 
+              "name": "token", 
+              "value": "pass"
+            }
           ], 
           "id": "id_0", 
           "name": "Pass"
@@ -371,7 +419,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_12", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "y"
@@ -379,7 +432,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                "=", 
+                {
+                  "id": "tid_13", 
+                  "name": "token", 
+                  "value": "="
+                }, 
                 {
                   "contents": [
                     "10"
@@ -387,7 +444,12 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_14", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "z"
@@ -395,7 +457,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                "=", 
+                {
+                  "id": "tid_15", 
+                  "name": "token", 
+                  "value": "="
+                }, 
                 {
                   "contents": [
                     "\"hello world\""
@@ -407,17 +473,29 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ")"
+            {
+              "id": "tid_16", 
+              "name": "token", 
+              "value": ")"
+            }
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_17", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "pass"
+            {
+              "id": "tid_18", 
+              "name": "token", 
+              "value": "pass"
+            }
           ], 
           "id": "id_0", 
           "name": "Pass"
@@ -430,12 +508,20 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_19", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "pass"
+            {
+              "id": "tid_20", 
+              "name": "token", 
+              "value": "pass"
+            }
           ], 
           "id": "id_0", 
           "name": "Pass"
@@ -457,7 +543,11 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ",", 
+            {
+              "id": "tid_21", 
+              "name": "token", 
+              "value": ","
+            }, 
             "\n", 
             "", 
             "\n", 
@@ -468,12 +558,20 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_22", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "pass"
+            {
+              "id": "tid_23", 
+              "name": "token", 
+              "value": "pass"
+            }
           ], 
           "id": "id_0", 
           "name": "Pass"
@@ -500,12 +598,20 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_24", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "pass"
+            {
+              "id": "tid_25", 
+              "name": "token", 
+              "value": "pass"
+            }
           ], 
           "id": "id_0", 
           "name": "Pass"
@@ -523,7 +629,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ",", 
+                {
+                  "id": "tid_26", 
+                  "name": "token", 
+                  "value": ","
+                }, 
                 "\n", 
                 "        ", 
                 {
@@ -533,7 +643,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                "=", 
+                {
+                  "id": "tid_27", 
+                  "name": "token", 
+                  "value": "="
+                }, 
                 {
                   "contents": [
                     "'default arg'"
@@ -552,12 +666,20 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_28", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "pass"
+            {
+              "id": "tid_29", 
+              "name": "token", 
+              "value": "pass"
+            }
           ], 
           "id": "id_0", 
           "name": "Pass"
@@ -575,7 +697,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                "=", 
+                {
+                  "id": "tid_30", 
+                  "name": "token", 
+                  "value": "="
+                }, 
                 {
                   "contents": [
                     "1"
@@ -583,7 +709,11 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ",", 
+                {
+                  "id": "tid_31", 
+                  "name": "token", 
+                  "value": ","
+                }, 
                 "\n", 
                 "        ", 
                 {
@@ -593,7 +723,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                "=", 
+                {
+                  "id": "tid_32", 
+                  "name": "token", 
+                  "value": "="
+                }, 
                 {
                   "contents": [
                     "2"
@@ -601,7 +735,11 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ",", 
+                {
+                  "id": "tid_33", 
+                  "name": "token", 
+                  "value": ","
+                }, 
                 "\n", 
                 "        ", 
                 {
@@ -611,7 +749,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                "=", 
+                {
+                  "id": "tid_34", 
+                  "name": "token", 
+                  "value": "="
+                }, 
                 {
                   "contents": [
                     "3"
@@ -619,7 +761,11 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                ",", 
+                {
+                  "id": "tid_35", 
+                  "name": "token", 
+                  "value": ","
+                }, 
                 {
                   "contents": [
                     "d"
@@ -627,7 +773,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                "=", 
+                {
+                  "id": "tid_36", 
+                  "name": "token", 
+                  "value": "="
+                }, 
                 {
                   "contents": [
                     "4"
@@ -644,12 +794,20 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_37", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "pass"
+            {
+              "id": "tid_38", 
+              "name": "token", 
+              "value": "pass"
+            }
           ], 
           "id": "id_0", 
           "name": "Pass"

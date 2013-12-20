@@ -53,7 +53,12 @@ Module
       "contents": [
         {
           "contents": [
-            "if ", 
+            {
+              "id": "tid_1", 
+              "name": "token", 
+              "value": "if"
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -82,7 +87,13 @@ Module
                           "id": "id_0", 
                           "name": "Name"
                         }, 
-                        " + ", 
+                        " ", 
+                        {
+                          "id": "tid_2", 
+                          "name": "token", 
+                          "value": "+"
+                        }, 
+                        " ", 
                         {
                           "contents": [
                             "y"
@@ -94,7 +105,13 @@ Module
                       "id": "id_0", 
                       "name": "BinOp"
                     }, 
-                    " > ", 
+                    " ", 
+                    {
+                      "id": "tid_3", 
+                      "name": "token", 
+                      "value": ">"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "7"
@@ -120,7 +137,12 @@ Module
         "  ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_4", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "'YES!'"

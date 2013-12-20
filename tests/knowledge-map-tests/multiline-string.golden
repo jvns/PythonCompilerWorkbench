@@ -90,7 +90,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_1", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "'''multi\n    line\n  string'''"
@@ -112,7 +118,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "'''\nmulti\nline\nstring\nwith empty\nfirst line\n'''"
@@ -134,7 +146,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_3", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "\"\"\"     \nmulti\nline\nstring\nwith spaces in first line\n\"\"\""
@@ -156,61 +174,71 @@ Module
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_4", 
+      "name": "comment", 
       "value": "# This doesn't work, but it's nuts!!!"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_5", 
+      "name": "comment", 
       "value": "#\"\"\"multi"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_6", 
+      "name": "comment", 
       "value": "#    line"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_7", 
+      "name": "comment", 
       "value": "#      string"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_8", 
+      "name": "comment", 
       "value": "#        method"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_9", 
+      "name": "comment", 
       "value": "#          call\"\"\".join('''"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_10", 
+      "name": "comment", 
       "value": "#another"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_11", 
+      "name": "comment", 
       "value": "#  multi"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_12", 
+      "name": "comment", 
       "value": "#    line"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_13", 
+      "name": "comment", 
       "value": "#      string''')"
     }, 
     "\n", 

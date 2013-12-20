@@ -156,7 +156,8 @@ Module
         "\n", 
         "", 
         {
-          "token_kind": "comment", 
+          "id": "tid_1", 
+          "name": "comment", 
           "value": "# semicolons to start new lines"
         }, 
         "\n", 
@@ -168,7 +169,12 @@ Module
           "id": "id_0", 
           "name": "Import"
         }, 
-        "; ", 
+        {
+          "id": "tid_2", 
+          "name": "token", 
+          "value": ";"
+        }, 
+        " ", 
         {
           "contents": [
             {
@@ -178,7 +184,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " += ", 
+            " ", 
+            {
+              "id": "tid_3", 
+              "name": "token", 
+              "value": "+="
+            }, 
+            " ", 
             {
               "contents": [
                 "5"
@@ -190,7 +202,12 @@ Module
           "id": "id_0", 
           "name": "AugAssign"
         }, 
-        "; ", 
+        {
+          "id": "tid_4", 
+          "name": "token", 
+          "value": ";"
+        }, 
+        " ", 
         {
           "contents": [
             {
@@ -200,7 +217,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " -= ", 
+            " ", 
+            {
+              "id": "tid_5", 
+              "name": "token", 
+              "value": "-="
+            }, 
+            " ", 
             {
               "contents": [
                 "5"
@@ -220,7 +243,12 @@ Module
           "id": "id_0", 
           "name": "ImportFrom"
         }, 
-        "; ", 
+        {
+          "id": "tid_6", 
+          "name": "token", 
+          "value": ";"
+        }, 
+        " ", 
         {
           "contents": [
             {

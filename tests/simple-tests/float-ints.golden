@@ -130,7 +130,13 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_1", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "-3."

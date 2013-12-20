@@ -163,7 +163,12 @@ Module
           "contents": [
             {
               "contents": [
-                "not ", 
+                {
+                  "id": "tid_1", 
+                  "name": "token", 
+                  "value": "not"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "x"
@@ -194,7 +199,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " or ", 
+                    " ", 
+                    {
+                      "id": "tid_2", 
+                      "name": "token", 
+                      "value": "or"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "y"
@@ -214,7 +225,11 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        ")", 
+        {
+          "id": "tid_3", 
+          "name": "token", 
+          "value": ")"
+        }, 
         "\n", 
         "", 
         {
@@ -228,7 +243,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " is ", 
+                " ", 
+                {
+                  "id": "tid_4", 
+                  "name": "token", 
+                  "value": "is"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "y"
@@ -284,7 +305,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " in ", 
+                " ", 
+                {
+                  "id": "tid_5", 
+                  "name": "token", 
+                  "value": "in"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "y"
@@ -333,7 +360,11 @@ Module
           "contents": [
             {
               "contents": [
-                "(", 
+                {
+                  "id": "tid_6", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     {
@@ -343,7 +374,13 @@ Module
                       "id": "id_0", 
                       "name": "Num"
                     }, 
-                    " < ", 
+                    " ", 
+                    {
+                      "id": "tid_7", 
+                      "name": "token", 
+                      "value": "<"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "age"
@@ -365,7 +402,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " < ", 
+                    " ", 
+                    {
+                      "id": "tid_8", 
+                      "name": "token", 
+                      "value": "<"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "20"
@@ -385,7 +428,11 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        ")", 
+        {
+          "id": "tid_9", 
+          "name": "token", 
+          "value": ")"
+        }, 
         "\n", 
         "", 
         {
@@ -399,7 +446,13 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                " < ", 
+                " ", 
+                {
+                  "id": "tid_10", 
+                  "name": "token", 
+                  "value": "<"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "age"
@@ -407,7 +460,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " < ", 
+                " ", 
+                {
+                  "id": "tid_11", 
+                  "name": "token", 
+                  "value": "<"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "20"
@@ -429,16 +488,25 @@ Module
         "\n", 
         "", 
         {
-          "token_kind": "comment", 
+          "id": "tid_12", 
+          "name": "comment", 
           "value": "# multiline"
         }, 
         "\n", 
-        "(", 
+        {
+          "id": "tid_13", 
+          "name": "token", 
+          "value": "("
+        }, 
         {
           "contents": [
             {
               "contents": [
-                "(", 
+                {
+                  "id": "tid_14", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     {
@@ -448,7 +516,13 @@ Module
                       "id": "id_0", 
                       "name": "Num"
                     }, 
-                    " < ", 
+                    " ", 
+                    {
+                      "id": "tid_15", 
+                      "name": "token", 
+                      "value": "<"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "age"
@@ -462,7 +536,12 @@ Module
                 }, 
                 ") and", 
                 "\n", 
-                " (", 
+                " ", 
+                {
+                  "id": "tid_16", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     {
@@ -472,7 +551,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " < ", 
+                    " ", 
+                    {
+                      "id": "tid_17", 
+                      "name": "token", 
+                      "value": "<"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "20"

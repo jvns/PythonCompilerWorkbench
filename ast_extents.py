@@ -902,20 +902,17 @@ class ExtentsVerifierVisitor(ast.NodeVisitor):
 
 
 # adapted from python_tokens.py in the python4ply project
-
 # for Python 2.7
+KEYWORDS_SET = set(['and', 'as', 'assert', 'break', 'class', 'continue', 'def',
+                    'del', 'elif', 'else', 'except', 'exec', 'finally', 'for',
+                    'from', 'global', 'if', 'import', 'in', 'is', 'lambda',
+                    'not', 'or', 'pass', 'print', 'raise', 'return', 'try',
+                    'while', 'with', 'yield'])
 
-# this list comes from keyword.list
-# "as" is currently special, but with 2.6 it becomes a reserved keyword
-#  (this is legal in pre 2.6: from UserDict import UserDict as as )
-kwlist = ['and', 'as', 'assert', 'break', 'class', 'continue', 'def',
-          'del', 'elif', 'else', 'except', 'exec', 'finally', 'for',
-          'from', 'global', 'if', 'import', 'in', 'is', 'lambda',
-          'not', 'or', 'pass', 'print', 'raise', 'return', 'try',
-          'while', 'with', 'yield']
+TOKEN_NAMES = {}
 
 # These are sorted with 3-character tokens first, then 2-character then 1.
-toks = """
+for line in """
 LEFTSHIFTEQUAL  <<=
 RIGHTSHIFTEQUAL  >>=
 DOUBLESTAREQUAL  **=
@@ -965,7 +962,16 @@ LBRACE {
 RBRACE }
 LSQB [
 RSQB ]
-"""
+
+BACKSLASH \\
+""".splitlines():
+    line = line.strip()
+    if not line or line.startswith('#'):
+        continue
+    name, tok = line.split()
+    TOKEN_NAMES[tok] = name
+
+TOKENS_SET = set(TOKEN_NAMES.keys())
 
 
 def parse_and_add_extents(code_str):
@@ -1005,9 +1011,14 @@ class CodeAst(object):
         self.code_str = code_str
         self.ast_root = parse_and_add_extents(code_str)
         self.all_ids = set()
+        self._tid = 0 # unique token IDs accessed using self.get_tid()
 
     def get_ast(self):
         return self.ast_root
+
+    def get_tid(self):
+        self._tid += 1
+        return self._tid
 
     # adapted from ast.dump
     def pretty_dump(self):
@@ -1114,13 +1125,32 @@ class CodeAst(object):
                 print >> self.outbuf, "," # ugh commas
 
                 # then dump out the comment
-                t = '{"token_kind": "comment", "value": %s}'
-                print >> self.outbuf, t % json.dumps(comment_str)
+                t = '{"name": "comment", "value": %s, "id": "tid_%d"}'
+                print >> self.outbuf, t % (json.dumps(comment_str), self.get_tid())
                 self.gobbled_string_lst.append(comment_str)
             except ValueError:
-                # no comments
-                print >> self.outbuf, json.dumps(line)
-                self.gobbled_string_lst.append(line) # sanity checking!
+                # no comments, so lex away!
+
+                # okay, the SIMPLE case is if there's exactly ONE token
+                # in the line, after stripping off whitespace
+                tok = line.strip()
+                if tok in KEYWORDS_SET or tok in TOKENS_SET:
+                    prefix, suffix = line.split(tok)
+                    if prefix:
+                        assert not prefix.strip() # should be ALL whitespace
+                        _relex_helper(prefix)
+                        print >> self.outbuf, "," # ugh commas
+                    t = '{"name": "token", "value": %s, "id": "tid_%d"}'
+                    print >> self.outbuf, t % (json.dumps(tok), self.get_tid())
+                    self.gobbled_string_lst.append(tok)
+                    if suffix:
+                        assert not suffix.strip() # should be ALL whitespace
+                        print >> self.outbuf, "," # ugh commas
+                        _relex_helper(suffix)
+                else:
+                    # degenerate case -- let it pass through un-lexed for now
+                    print >> self.outbuf, json.dumps(line)
+                    self.gobbled_string_lst.append(line) # sanity checking!
 
 
         if '\n' in s:

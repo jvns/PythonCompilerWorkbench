@@ -35,31 +35,36 @@ Module
   "contents": [
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_1", 
+      "name": "comment", 
       "value": "# there's an asymmetry when combining an attribute load with a binary"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_2", 
+      "name": "comment", 
       "value": "# op, which looks ugly. it's hard to fix since if we extend the extent"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_3", 
+      "name": "comment", 
       "value": "# of foo.first_attr to start at 'foo', that would be the same start"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_4", 
+      "name": "comment", 
       "value": "# column as LOAD_NAME of 'foo', which would lead to a conflict unless we"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_5", 
+      "name": "comment", 
       "value": "# hack Py2crazy even more :/"
     }, 
     "\n", 
@@ -77,7 +82,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_6", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -94,7 +105,13 @@ Module
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_7", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     {
@@ -125,7 +142,8 @@ Module
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_8", 
+      "name": "comment", 
       "value": "#      ------------^----------------"
     }, 
     "\n", 

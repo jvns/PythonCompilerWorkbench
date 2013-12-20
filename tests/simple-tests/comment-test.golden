@@ -42,7 +42,8 @@ Module
   "contents": [
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_1", 
+      "name": "comment", 
       "value": "# comment on top"
     }, 
     "\n", 
@@ -60,7 +61,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "5"
@@ -74,19 +81,22 @@ Module
         }, 
         " ", 
         {
-          "token_kind": "comment", 
+          "id": "tid_3", 
+          "name": "comment", 
           "value": "# this is a comment"
         }, 
         "\n", 
         "  ", 
         {
-          "token_kind": "comment", 
+          "id": "tid_4", 
+          "name": "comment", 
           "value": "# an another comment"
         }, 
         "\n", 
         "      ", 
         {
-          "token_kind": "comment", 
+          "id": "tid_5", 
+          "name": "comment", 
           "value": "# indented even more # with another comment inside"
         }, 
         "\n", 
@@ -100,7 +110,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_6", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "10"
@@ -114,13 +130,15 @@ Module
         }, 
         " ", 
         {
-          "token_kind": "comment", 
+          "id": "tid_7", 
+          "name": "comment", 
           "value": "# yet another one with triple hash ###"
         }, 
         "\n", 
         "", 
         {
-          "token_kind": "comment", 
+          "id": "tid_8", 
+          "name": "comment", 
           "value": "# oh yeahhhh"
         }, 
         "\n", 
@@ -136,7 +154,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_9", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "\"a hash # within a string shouldn't be a comment\""
@@ -158,7 +182,8 @@ Module
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_10", 
+      "name": "comment", 
       "value": "# one more"
     }, 
     "\n", 

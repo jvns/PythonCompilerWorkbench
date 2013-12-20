@@ -80,12 +80,22 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " =  ", 
+            " ", 
+            {
+              "id": "tid_1", 
+              "name": "token", 
+              "value": "="
+            }, 
+            "  ", 
             {
               "contents": [
                 {
                   "contents": [
-                    "[", 
+                    {
+                      "id": "tid_2", 
+                      "name": "token", 
+                      "value": "["
+                    }, 
                     {
                       "contents": [
                         {
@@ -95,7 +105,11 @@ Module
                           "id": "id_0", 
                           "name": "Name"
                         }, 
-                        "(", 
+                        {
+                          "id": "tid_3", 
+                          "name": "token", 
+                          "value": "("
+                        }, 
                         {
                           "contents": [
                             {
@@ -105,7 +119,11 @@ Module
                               "id": "id_0", 
                               "name": "Name"
                             }, 
-                            "[", 
+                            {
+                              "id": "tid_4", 
+                              "name": "token", 
+                              "value": "["
+                            }, 
                             {
                               "contents": [
                                 {
@@ -119,22 +137,40 @@ Module
                               "id": "id_0", 
                               "name": "Index"
                             }, 
-                            "]"
+                            {
+                              "id": "tid_5", 
+                              "name": "token", 
+                              "value": "]"
+                            }
                           ], 
                           "id": "id_0", 
                           "name": "Subscript"
                         }, 
-                        ")"
+                        {
+                          "id": "tid_6", 
+                          "name": "token", 
+                          "value": ")"
+                        }
                       ], 
                       "id": "id_0", 
                       "name": "Call"
                     }, 
-                    "]"
+                    {
+                      "id": "tid_7", 
+                      "name": "token", 
+                      "value": "]"
+                    }
                   ], 
                   "id": "id_0", 
                   "name": "List"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_8", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     {
@@ -144,7 +180,11 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    "(", 
+                    {
+                      "id": "tid_9", 
+                      "name": "token", 
+                      "value": "("
+                    }, 
                     {
                       "contents": [
                         {
@@ -154,7 +194,11 @@ Module
                           "id": "id_0", 
                           "name": "Name"
                         }, 
-                        "(", 
+                        {
+                          "id": "tid_10", 
+                          "name": "token", 
+                          "value": "("
+                        }, 
                         {
                           "contents": [
                             "f"
@@ -162,7 +206,12 @@ Module
                           "id": "id_0", 
                           "name": "Name"
                         }, 
-                        ", ", 
+                        {
+                          "id": "tid_11", 
+                          "name": "token", 
+                          "value": ","
+                        }, 
+                        " ", 
                         {
                           "contents": [
                             {
@@ -172,7 +221,11 @@ Module
                               "id": "id_0", 
                               "name": "Name"
                             }, 
-                            "[", 
+                            {
+                              "id": "tid_12", 
+                              "name": "token", 
+                              "value": "["
+                            }, 
                             {
                               "contents": [
                                 {
@@ -182,22 +235,38 @@ Module
                                   "id": "id_0", 
                                   "name": "Num"
                                 }, 
-                                ":"
+                                {
+                                  "id": "tid_13", 
+                                  "name": "token", 
+                                  "value": ":"
+                                }
                               ], 
                               "id": "id_0", 
                               "name": "Slice"
                             }, 
-                            "]"
+                            {
+                              "id": "tid_14", 
+                              "name": "token", 
+                              "value": "]"
+                            }
                           ], 
                           "id": "id_0", 
                           "name": "Subscript"
                         }, 
-                        ")"
+                        {
+                          "id": "tid_15", 
+                          "name": "token", 
+                          "value": ")"
+                        }
                       ], 
                       "id": "id_0", 
                       "name": "Call"
                     }, 
-                    ")"
+                    {
+                      "id": "tid_16", 
+                      "name": "token", 
+                      "value": ")"
+                    }
                   ], 
                   "id": "id_0", 
                   "name": "Call"

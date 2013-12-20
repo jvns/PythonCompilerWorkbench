@@ -42,31 +42,77 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_1", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
-                "not ", 
+                {
+                  "id": "tid_2", 
+                  "name": "token", 
+                  "value": "not"
+                }, 
+                " ", 
                 {
                   "contents": [
-                    "not ", 
+                    {
+                      "id": "tid_3", 
+                      "name": "token", 
+                      "value": "not"
+                    }, 
+                    " ", 
                     {
                       "contents": [
-                        "not ", 
+                        {
+                          "id": "tid_4", 
+                          "name": "token", 
+                          "value": "not"
+                        }, 
+                        " ", 
                         {
                           "contents": [
-                            "- ", 
+                            {
+                              "id": "tid_5", 
+                              "name": "token", 
+                              "value": "-"
+                            }, 
+                            " ", 
                             {
                               "contents": [
-                                "+ ", 
+                                {
+                                  "id": "tid_6", 
+                                  "name": "token", 
+                                  "value": "+"
+                                }, 
+                                " ", 
                                 {
                                   "contents": [
-                                    "- ", 
+                                    {
+                                      "id": "tid_7", 
+                                      "name": "token", 
+                                      "value": "-"
+                                    }, 
+                                    " ", 
                                     {
                                       "contents": [
-                                        "- ", 
+                                        {
+                                          "id": "tid_8", 
+                                          "name": "token", 
+                                          "value": "-"
+                                        }, 
+                                        " ", 
                                         {
                                           "contents": [
-                                            "~ ", 
+                                            {
+                                              "id": "tid_9", 
+                                              "name": "token", 
+                                              "value": "~"
+                                            }, 
+                                            " ", 
                                             {
                                               "contents": [
                                                 "xxx"

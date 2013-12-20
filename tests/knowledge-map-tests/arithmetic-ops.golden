@@ -133,7 +133,13 @@ Module
                   "id": "id_0", 
                   "name": "Num"
                 }, 
-                " / ", 
+                " ", 
+                {
+                  "id": "tid_1", 
+                  "name": "token", 
+                  "value": "/"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "6.0"
@@ -161,7 +167,13 @@ Module
                   "id": "id_0", 
                   "name": "Str"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_2", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "\"bar\""
@@ -189,7 +201,13 @@ Module
                   "id": "id_0", 
                   "name": "Str"
                 }, 
-                " * ", 
+                " ", 
+                {
+                  "id": "tid_3", 
+                  "name": "token", 
+                  "value": "*"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "5"
@@ -217,7 +235,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_4", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "y"
@@ -247,7 +271,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " * ", 
+                    " ", 
+                    {
+                      "id": "tid_5", 
+                      "name": "token", 
+                      "value": "*"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "y"
@@ -259,7 +289,13 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_6", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "z"
@@ -280,7 +316,11 @@ Module
           "contents": [
             {
               "contents": [
-                "(", 
+                {
+                  "id": "tid_7", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     {
@@ -290,7 +330,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " + ", 
+                    " ", 
+                    {
+                      "id": "tid_8", 
+                      "name": "token", 
+                      "value": "+"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "5"
@@ -312,7 +358,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " + ", 
+                    " ", 
+                    {
+                      "id": "tid_9", 
+                      "name": "token", 
+                      "value": "+"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "z"
@@ -332,9 +384,17 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        ")", 
+        {
+          "id": "tid_10", 
+          "name": "token", 
+          "value": ")"
+        }, 
         "\n", 
-        "(", 
+        {
+          "id": "tid_11", 
+          "name": "token", 
+          "value": "("
+        }, 
         {
           "contents": [
             {
@@ -356,7 +416,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " + ", 
+                    " ", 
+                    {
+                      "id": "tid_12", 
+                      "name": "token", 
+                      "value": "+"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "3"
@@ -382,7 +448,8 @@ Module
         "\n", 
         "", 
         {
-          "token_kind": "comment", 
+          "id": "tid_13", 
+          "name": "comment", 
           "value": "# some multiline action"
         }, 
         "\n", 
@@ -420,7 +487,12 @@ Module
         "\n", 
         "", 
         "\n", 
-        "(  ", 
+        {
+          "id": "tid_14", 
+          "name": "token", 
+          "value": "("
+        }, 
+        "  ", 
         {
           "contents": [
             {
@@ -432,9 +504,19 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " *", 
+                " ", 
+                {
+                  "id": "tid_15", 
+                  "name": "token", 
+                  "value": "*"
+                }, 
                 "\n", 
-                "    (", 
+                "    ", 
+                {
+                  "id": "tid_16", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     {
@@ -450,7 +532,12 @@ Module
                     "\n", 
                     "  ", 
                     "\n", 
-                    "  +", 
+                    "  ", 
+                    {
+                      "id": "tid_17", 
+                      "name": "token", 
+                      "value": "+"
+                    }, 
                     "\n", 
                     " ", 
                     "\n", 

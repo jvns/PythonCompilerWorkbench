@@ -95,7 +95,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_1", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "5"
@@ -117,7 +123,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "y"
@@ -139,7 +151,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_3", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -149,7 +167,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_4", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "z"
@@ -175,7 +199,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " += ", 
+            " ", 
+            {
+              "id": "tid_5", 
+              "name": "token", 
+              "value": "+="
+            }, 
+            " ", 
             {
               "contents": [
                 "5"
@@ -197,7 +227,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " -= ", 
+            " ", 
+            {
+              "id": "tid_6", 
+              "name": "token", 
+              "value": "-="
+            }, 
+            " ", 
             {
               "contents": [
                 "y"
@@ -219,7 +255,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " *= ", 
+            " ", 
+            {
+              "id": "tid_7", 
+              "name": "token", 
+              "value": "*="
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -229,7 +271,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_8", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "z"
@@ -255,7 +303,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " /= ", 
+            " ", 
+            {
+              "id": "tid_9", 
+              "name": "token", 
+              "value": "/="
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -265,7 +319,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_10", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "z"

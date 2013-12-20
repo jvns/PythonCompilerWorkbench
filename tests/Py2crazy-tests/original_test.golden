@@ -106,12 +106,21 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_1", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "  ", 
         {
           "contents": [
-            "return ", 
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "return"
+            }, 
+            " ", 
             {
               "contents": [
                 "True"
@@ -133,7 +142,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_3", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "3"
@@ -155,7 +170,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_4", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "5"
@@ -170,7 +191,12 @@ Module
         "\n\n", 
         {
           "contents": [
-            "if ", 
+            {
+              "id": "tid_5", 
+              "name": "token", 
+              "value": "if"
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -199,7 +225,13 @@ Module
                           "id": "id_0", 
                           "name": "Name"
                         }, 
-                        " + ", 
+                        " ", 
+                        {
+                          "id": "tid_6", 
+                          "name": "token", 
+                          "value": "+"
+                        }, 
+                        " ", 
                         {
                           "contents": [
                             "y"
@@ -211,7 +243,13 @@ Module
                       "id": "id_0", 
                       "name": "BinOp"
                     }, 
-                    " > ", 
+                    " ", 
+                    {
+                      "id": "tid_7", 
+                      "name": "token", 
+                      "value": ">"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "7"
@@ -237,7 +275,12 @@ Module
         "  ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_8", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "'YES'"
@@ -256,7 +299,12 @@ Module
         "  ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_9", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "'NO'"

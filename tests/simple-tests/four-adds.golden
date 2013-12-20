@@ -41,7 +41,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_1", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -55,7 +61,13 @@ Module
                           "id": "id_0", 
                           "name": "Name"
                         }, 
-                        " + ", 
+                        " ", 
+                        {
+                          "id": "tid_2", 
+                          "name": "token", 
+                          "value": "+"
+                        }, 
+                        " ", 
                         {
                           "contents": [
                             "b"
@@ -67,7 +79,13 @@ Module
                       "id": "id_0", 
                       "name": "BinOp"
                     }, 
-                    " + ", 
+                    " ", 
+                    {
+                      "id": "tid_3", 
+                      "name": "token", 
+                      "value": "+"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "c"
@@ -79,7 +97,13 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_4", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "d"

@@ -24,7 +24,8 @@ Module
   "contents": [
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_1", 
+      "name": "comment", 
       "value": "# with extra spaces ..."
     }, 
     "\n", 
@@ -40,7 +41,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            "  =  ", 
+            "  ", 
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "="
+            }, 
+            "  ", 
             {
               "contents": [
                 {
@@ -50,7 +57,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " + ", 
+                " ", 
+                {
+                  "id": "tid_3", 
+                  "name": "token", 
+                  "value": "+"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "b"
@@ -74,7 +87,8 @@ Module
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_4", 
+      "name": "comment", 
       "value": "# and a trailing line comment"
     }, 
     "\n", 

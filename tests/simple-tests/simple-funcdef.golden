@@ -45,7 +45,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_1", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "b"
@@ -57,23 +62,37 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ")"
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": ")"
+            }
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_3", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
-          "token_kind": "comment", 
+          "id": "tid_4", 
+          "name": "comment", 
           "value": "#c = a + b"
         }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "return ", 
+            {
+              "id": "tid_5", 
+              "name": "token", 
+              "value": "return"
+            }, 
+            " ", 
             {
               "contents": [
                 "c"

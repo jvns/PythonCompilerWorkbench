@@ -272,7 +272,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " > ", 
+                " ", 
+                {
+                  "id": "tid_1", 
+                  "name": "token", 
+                  "value": ">"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "0"
@@ -294,7 +300,12 @@ Module
         "    ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "x"
@@ -316,7 +327,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " -= ", 
+            " ", 
+            {
+              "id": "tid_3", 
+              "name": "token", 
+              "value": "-="
+            }, 
+            " ", 
             {
               "contents": [
                 "1"
@@ -341,7 +358,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " > ", 
+                " ", 
+                {
+                  "id": "tid_4", 
+                  "name": "token", 
+                  "value": ">"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "0"
@@ -363,7 +386,12 @@ Module
         "    ", 
         {
           "contents": [
-            "if ", 
+            {
+              "id": "tid_5", 
+              "name": "token", 
+              "value": "if"
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -375,7 +403,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " % ", 
+                    " ", 
+                    {
+                      "id": "tid_6", 
+                      "name": "token", 
+                      "value": "%"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "2"
@@ -387,7 +421,13 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                " == ", 
+                " ", 
+                {
+                  "id": "tid_7", 
+                  "name": "token", 
+                  "value": "=="
+                }, 
+                " ", 
                 {
                   "contents": [
                     "0"
@@ -404,12 +444,21 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":", 
+        {
+          "id": "tid_8", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "        ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_9", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "x"
@@ -431,7 +480,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " -= ", 
+            " ", 
+            {
+              "id": "tid_10", 
+              "name": "token", 
+              "value": "-="
+            }, 
+            " ", 
             {
               "contents": [
                 "1"
@@ -456,7 +511,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " > ", 
+                " ", 
+                {
+                  "id": "tid_11", 
+                  "name": "token", 
+                  "value": ">"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "0"
@@ -478,7 +539,12 @@ Module
         "    ", 
         {
           "contents": [
-            "if ", 
+            {
+              "id": "tid_12", 
+              "name": "token", 
+              "value": "if"
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -490,7 +556,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " % ", 
+                    " ", 
+                    {
+                      "id": "tid_13", 
+                      "name": "token", 
+                      "value": "%"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "2"
@@ -502,7 +574,13 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                " == ", 
+                " ", 
+                {
+                  "id": "tid_14", 
+                  "name": "token", 
+                  "value": "=="
+                }, 
+                " ", 
                 {
                   "contents": [
                     "0"
@@ -519,12 +597,21 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":", 
+        {
+          "id": "tid_15", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "        ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_16", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "x"
@@ -546,7 +633,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " -= ", 
+            " ", 
+            {
+              "id": "tid_17", 
+              "name": "token", 
+              "value": "-="
+            }, 
+            " ", 
             {
               "contents": [
                 "1"
@@ -571,7 +664,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " > ", 
+                " ", 
+                {
+                  "id": "tid_18", 
+                  "name": "token", 
+                  "value": ">"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "0"
@@ -593,7 +692,12 @@ Module
         "    ", 
         {
           "contents": [
-            "if ", 
+            {
+              "id": "tid_19", 
+              "name": "token", 
+              "value": "if"
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -605,7 +709,13 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    " % ", 
+                    " ", 
+                    {
+                      "id": "tid_20", 
+                      "name": "token", 
+                      "value": "%"
+                    }, 
+                    " ", 
                     {
                       "contents": [
                         "2"
@@ -617,7 +727,13 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                " == ", 
+                " ", 
+                {
+                  "id": "tid_21", 
+                  "name": "token", 
+                  "value": "=="
+                }, 
+                " ", 
                 {
                   "contents": [
                     "0"
@@ -634,12 +750,20 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":", 
+        {
+          "id": "tid_22", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "        ", 
         {
           "contents": [
-            "continue"
+            {
+              "id": "tid_23", 
+              "name": "token", 
+              "value": "continue"
+            }
           ], 
           "id": "id_0", 
           "name": "Continue"
@@ -647,7 +771,12 @@ Module
         "\n    ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_24", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "x"
@@ -669,7 +798,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " -= ", 
+            " ", 
+            {
+              "id": "tid_25", 
+              "name": "token", 
+              "value": "-="
+            }, 
+            " ", 
             {
               "contents": [
                 "1"
@@ -684,7 +819,12 @@ Module
         "\n\n", 
         {
           "contents": [
-            "while ", 
+            {
+              "id": "tid_26", 
+              "name": "token", 
+              "value": "while"
+            }, 
+            " ", 
             {
               "contents": [
                 "True"
@@ -697,12 +837,21 @@ Module
           "id": "id_0", 
           "name": "While"
         }, 
-        ":", 
+        {
+          "id": "tid_27", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "if ", 
+            {
+              "id": "tid_28", 
+              "name": "token", 
+              "value": "if"
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -712,7 +861,13 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                " < ", 
+                " ", 
+                {
+                  "id": "tid_29", 
+                  "name": "token", 
+                  "value": "<"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "0"
@@ -729,12 +884,20 @@ Module
           "id": "id_0", 
           "name": "If"
         }, 
-        ":", 
+        {
+          "id": "tid_30", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "        ", 
         {
           "contents": [
-            "break"
+            {
+              "id": "tid_31", 
+              "name": "token", 
+              "value": "break"
+            }
           ], 
           "id": "id_0", 
           "name": "Break"
@@ -749,7 +912,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " -= ", 
+            " ", 
+            {
+              "id": "tid_32", 
+              "name": "token", 
+              "value": "-="
+            }, 
+            " ", 
             {
               "contents": [
                 "1"
@@ -764,7 +933,12 @@ Module
         "\n\n", 
         {
           "contents": [
-            "while ", 
+            {
+              "id": "tid_33", 
+              "name": "token", 
+              "value": "while"
+            }, 
+            " ", 
             {
               "contents": [
                 "True"
@@ -777,12 +951,20 @@ Module
           "id": "id_0", 
           "name": "While"
         }, 
-        ":", 
+        {
+          "id": "tid_34", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "pass"
+            {
+              "id": "tid_35", 
+              "name": "token", 
+              "value": "pass"
+            }
           ], 
           "id": "id_0", 
           "name": "Pass"

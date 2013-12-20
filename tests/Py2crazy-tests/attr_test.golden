@@ -39,7 +39,13 @@ Module
               "id": "id_0", 
               "name": "Attribute"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_1", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 {

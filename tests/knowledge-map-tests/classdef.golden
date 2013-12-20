@@ -126,12 +126,20 @@ Module
           "id": "id_0", 
           "name": "ClassDef"
         }, 
-        ":", 
+        {
+          "id": "tid_1", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "pass"
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "pass"
+            }
           ], 
           "id": "id_0", 
           "name": "Pass"
@@ -147,12 +155,20 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            ")"
+            {
+              "id": "tid_3", 
+              "name": "token", 
+              "value": ")"
+            }
           ], 
           "id": "id_0", 
           "name": "ClassDef"
         }, 
-        ":", 
+        {
+          "id": "tid_4", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
@@ -167,7 +183,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_5", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "x"
@@ -179,12 +200,20 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ")"
+            {
+              "id": "tid_6", 
+              "name": "token", 
+              "value": ")"
+            }
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_7", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "        ", 
         {
@@ -203,7 +232,13 @@ Module
               "id": "id_0", 
               "name": "Attribute"
             }, 
-            " += ", 
+            " ", 
+            {
+              "id": "tid_8", 
+              "name": "token", 
+              "value": "+="
+            }, 
+            " ", 
             {
               "contents": [
                 "x"
@@ -232,17 +267,30 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ")"
+            {
+              "id": "tid_9", 
+              "name": "token", 
+              "value": ")"
+            }
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_10", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "        ", 
         {
           "contents": [
-            "return ", 
+            {
+              "id": "tid_11", 
+              "name": "token", 
+              "value": "return"
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -254,9 +302,18 @@ Module
                 }, 
                 " + \\", 
                 "\n", 
-                "        \\", 
+                "        ", 
+                {
+                  "id": "tid_12", 
+                  "name": "token", 
+                  "value": "\\"
+                }, 
                 "\n", 
-                "\\", 
+                {
+                  "id": "tid_13", 
+                  "name": "token", 
+                  "value": "\\"
+                }, 
                 "\n", 
                 "        ", 
                 {
@@ -292,12 +349,20 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            ")"
+            {
+              "id": "tid_14", 
+              "name": "token", 
+              "value": ")"
+            }
           ], 
           "id": "id_0", 
           "name": "ClassDef"
         }, 
-        ":", 
+        {
+          "id": "tid_15", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
@@ -309,7 +374,13 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_16", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 "100"

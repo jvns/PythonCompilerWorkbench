@@ -54,7 +54,11 @@ Module
                       "id": "id_0", 
                       "name": "Name"
                     }, 
-                    "[", 
+                    {
+                      "id": "tid_1", 
+                      "name": "token", 
+                      "value": "["
+                    }, 
                     {
                       "contents": [
                         {
@@ -68,12 +72,22 @@ Module
                       "id": "id_0", 
                       "name": "Index"
                     }, 
-                    "]"
+                    {
+                      "id": "tid_2", 
+                      "name": "token", 
+                      "value": "]"
+                    }
                   ], 
                   "id": "id_0", 
                   "name": "Subscript"
                 }, 
-                " == ", 
+                " ", 
+                {
+                  "id": "tid_3", 
+                  "name": "token", 
+                  "value": "=="
+                }, 
+                " ", 
                 {
                   "contents": [
                     "'male'"
@@ -93,23 +107,30 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    ")", 
+    {
+      "id": "tid_4", 
+      "name": "token", 
+      "value": ")"
+    }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_5", 
+      "name": "comment", 
       "value": "# this is currently broken since we don't properly track start_col and"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_6", 
+      "name": "comment", 
       "value": "# extent of 'tokens[5]'. If we did, then it would conflict with"
     }, 
     "\n", 
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_7", 
+      "name": "comment", 
       "value": "# LOAD_NAME of 'tokens', since they start at the same column :("
     }, 
     "\n", 

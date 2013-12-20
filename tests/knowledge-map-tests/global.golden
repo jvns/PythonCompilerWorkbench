@@ -74,7 +74,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_1", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "y"
@@ -82,7 +87,12 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                ", ", 
+                {
+                  "id": "tid_2", 
+                  "name": "token", 
+                  "value": ","
+                }, 
+                " ", 
                 {
                   "contents": [
                     "z"
@@ -94,12 +104,20 @@ Module
               "id": "id_0", 
               "name": "arguments"
             }, 
-            ")"
+            {
+              "id": "tid_3", 
+              "name": "token", 
+              "value": ")"
+            }
           ], 
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_4", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
@@ -120,7 +138,12 @@ Module
         "\n    ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_5", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "a"
@@ -135,7 +158,12 @@ Module
         "\n    ", 
         {
           "contents": [
-            "print ", 
+            {
+              "id": "tid_6", 
+              "name": "token", 
+              "value": "print"
+            }, 
+            " ", 
             {
               "contents": [
                 "b"
@@ -143,7 +171,12 @@ Module
               "id": "id_0", 
               "name": "Name"
             }, 
-            ", ", 
+            {
+              "id": "tid_7", 
+              "name": "token", 
+              "value": ","
+            }, 
+            " ", 
             {
               "contents": [
                 "c"

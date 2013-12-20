@@ -83,7 +83,8 @@ Module
   "contents": [
     "", 
     {
-      "token_kind": "comment", 
+      "id": "tid_1", 
+      "name": "comment", 
       "value": "# from Lib/doctest.py"
     }, 
     "\n", 
@@ -106,7 +107,13 @@ Module
               "id": "id_0", 
               "name": "Attribute"
             }, 
-            " = ", 
+            " ", 
+            {
+              "id": "tid_2", 
+              "name": "token", 
+              "value": "="
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -123,7 +130,13 @@ Module
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
-                " ** ", 
+                " ", 
+                {
+                  "id": "tid_3", 
+                  "name": "token", 
+                  "value": "**"
+                }, 
+                " ", 
                 {
                   "contents": [
                     "2"
@@ -145,7 +158,8 @@ Module
         "\n", 
         "", 
         {
-          "token_kind": "comment", 
+          "id": "tid_4", 
+          "name": "comment", 
           "value": "# from Lib/fractions.py"
         }, 
         "\n", 
@@ -157,12 +171,21 @@ Module
           "id": "id_0", 
           "name": "FunctionDef"
         }, 
-        ":", 
+        {
+          "id": "tid_5", 
+          "name": "token", 
+          "value": ":"
+        }, 
         "\n", 
         "    ", 
         {
           "contents": [
-            "return ", 
+            {
+              "id": "tid_6", 
+              "name": "token", 
+              "value": "return"
+            }, 
+            " ", 
             {
               "contents": [
                 {
@@ -172,7 +195,11 @@ Module
                   "id": "id_0", 
                   "name": "Name"
                 }, 
-                "(", 
+                {
+                  "id": "tid_7", 
+                  "name": "token", 
+                  "value": "("
+                }, 
                 {
                   "contents": [
                     {
@@ -189,10 +216,20 @@ Module
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 
-                    " ** ", 
+                    " ", 
+                    {
+                      "id": "tid_8", 
+                      "name": "token", 
+                      "value": "**"
+                    }, 
+                    " ", 
                     {
                       "contents": [
-                        "-", 
+                        {
+                          "id": "tid_9", 
+                          "name": "token", 
+                          "value": "-"
+                        }, 
                         {
                           "contents": [
                             "power"
@@ -208,7 +245,11 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                ",", 
+                {
+                  "id": "tid_10", 
+                  "name": "token", 
+                  "value": ","
+                }, 
                 "\n", 
                 "                    ", 
                 {
@@ -227,10 +268,20 @@ Module
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 
-                    " ** ", 
+                    " ", 
+                    {
+                      "id": "tid_11", 
+                      "name": "token", 
+                      "value": "**"
+                    }, 
+                    " ", 
                     {
                       "contents": [
-                        "-", 
+                        {
+                          "id": "tid_12", 
+                          "name": "token", 
+                          "value": "-"
+                        }, 
                         {
                           "contents": [
                             "power"
@@ -246,7 +297,11 @@ Module
                   "id": "id_0", 
                   "name": "BinOp"
                 }, 
-                ")"
+                {
+                  "id": "tid_13", 
+                  "name": "token", 
+                  "value": ")"
+                }
               ], 
               "id": "id_0", 
               "name": "Call"
