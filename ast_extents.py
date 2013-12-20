@@ -507,7 +507,17 @@ class AddExtentsVisitor(ast.NodeVisitor):
             if not node.nl:
                 node.end_col += 1
 
+
     # terminal nodes
+    TERMINAL_NODES = (ast.Name,
+                      ast.Str,
+                      ast.Num)
+                      # maybe include these too ...
+                      #ast.Pass,
+                      #ast.Break,
+                      #ast.Continue)
+
+
     def visit_Name(self, node):
           add_extent_attrs(node)
           node.start_col = node.col_offset
@@ -590,13 +600,13 @@ class AddExtentsVisitor(ast.NodeVisitor):
 
 
     def visit_Pass(self, node):
-      self.keyword_visitor(node, 'pass')
+        self.keyword_visitor(node, 'pass')
 
     def visit_Break(self, node):
-      self.keyword_visitor(node, 'break')
+        self.keyword_visitor(node, 'break')
 
     def visit_Continue(self, node):
-      self.keyword_visitor(node, 'continue')
+        self.keyword_visitor(node, 'continue')
 
     def visit_TryExcept(self, node):
         self.keyword_visitor(node, 'try')
@@ -890,6 +900,74 @@ class ExtentsVerifierVisitor(ast.NodeVisitor):
         super(ExtentsVerifierVisitor, self).visit(node)
 
 
+
+# adapted from python_tokens.py in the python4ply project
+
+# for Python 2.7
+
+# this list comes from keyword.list
+# "as" is currently special, but with 2.6 it becomes a reserved keyword
+#  (this is legal in pre 2.6: from UserDict import UserDict as as )
+kwlist = ['and', 'as', 'assert', 'break', 'class', 'continue', 'def',
+          'del', 'elif', 'else', 'except', 'exec', 'finally', 'for',
+          'from', 'global', 'if', 'import', 'in', 'is', 'lambda',
+          'not', 'or', 'pass', 'print', 'raise', 'return', 'try',
+          'while', 'with', 'yield']
+
+# These are sorted with 3-character tokens first, then 2-character then 1.
+toks = """
+LEFTSHIFTEQUAL  <<=
+RIGHTSHIFTEQUAL  >>=
+DOUBLESTAREQUAL  **=
+DOUBLESLASHEQUAL  //=
+
+EQEQUAL ==
+NOTEQUAL !=
+NOTEQUAL <>
+LESSEQUAL <=
+LEFTSHIFT <<
+GREATEREQUAL >=
+RIGHTSHIFT >>
+PLUSEQUAL +=
+MINEQUAL -=
+DOUBLESTAR **
+STAREQUAL *=
+DOUBLESLASH //
+SLASHEQUAL /=
+VBAREQUAL |=
+PERCENTEQUAL %=
+AMPEREQUAL &=
+CIRCUMFLEXEQUAL ^=
+
+COLON :
+COMMA ,
+SEMI ;
+PLUS +
+MINUS -
+STAR *
+SLASH /
+VBAR |
+AMPER &
+LESS <
+GREATER >
+EQUAL =
+DOT .
+PERCENT %
+BACKQUOTE `
+CIRCUMFLEX ^
+TILDE ~
+AT @
+
+# The PLY parser replaces these with special functions
+LPAR (
+RPAR )
+LBRACE {
+RBRACE }
+LSQB [
+RSQB ]
+"""
+
+
 def parse_and_add_extents(code_str):
     root_node = ast.parse(code_str)
 
@@ -1002,23 +1080,30 @@ class CodeAst(object):
 
     # some crazy-ass ninja action
     # s is a string containing "leftovers" that aren't included within
-    # the extents of any AST node. (thus, the nice thing about s is that
-    # it will never be an actual Python string literal, since that's
-    # captured within the extent of a Str AST node.)
+    # the extents of any AST node.
     #
     # what this function will do is re-lex the string s and print to
     # self.outbuf JSON-like string nodes corresponding to elements found
     # in s.
-    def relex_and_print(self, s, leading_str):
+    def relex_and_print(self, s, leading_str, node):
+        # if we're in a special terminal node, then just print out s
+        # literally and DON'T try to lex it. if we don't do that, then
+        # we might falsely grab a '#' comment out of a string literal,
+        # or a dot out of a numeric literal
+        if node.__class__ in AddExtentsVisitor.TERMINAL_NODES:
+            print >> self.outbuf, leading_str, json.dumps(s)
+            self.gobbled_string_lst.append(s)
+            return # get out!
+
         print >> self.outbuf, leading_str
 
 
         # 'line' is guaranteed to be a single line
         def _relex_helper(line):
-            # Step 1 -- grab comments first
-            # we can't possibly be within a string literal, so the first
-            # '#' marks the start of a comment
+            # Step 1 -- grab comments first and recurse
             try:
+                # we can't possibly be within a string literal, so the
+                # first '#' marks the start of a comment
                 i = line.index('#') # grab the FIRST '#'
                 prefix_str = line[:i]
                 comment_str = line[i:]
@@ -1093,7 +1178,7 @@ class CodeAst(object):
             s = self.code_str[self.cur_index:self.ast_root.abs_start_index]
             if debug: print 'LEADING:', `s`
             if s:
-                self.relex_and_print(s, '   ')
+                self.relex_and_print(s, '   ', self.ast_root)
                 has_leading_text = True
             self.cur_index = self.ast_root.abs_start_index
 
@@ -1124,7 +1209,7 @@ class CodeAst(object):
             if self.cur_index < node.abs_start_index:
                 s = self.code_str[self.cur_index:node.abs_start_index]
                 if debug: print ind_str, 'B:', `s`
-                self.relex_and_print(s, ind_str)
+                self.relex_and_print(s, ind_str, node)
                 is_first_json_elt = False
                 self.cur_index = node.abs_start_index
 
@@ -1149,7 +1234,7 @@ class CodeAst(object):
                         if debug: print ind_str, 'K (prematurely_done):', `s`
 
                         c = '' if is_first_json_elt else ','
-                        self.relex_and_print(s, ind_str + ' ' + c)
+                        self.relex_and_print(s, ind_str + ' ' + c, node)
                         self.cur_index = node.abs_end_index
                         prematurely_done = True
 
@@ -1163,7 +1248,7 @@ class CodeAst(object):
                     s = self.code_str[self.cur_index:cur_kid.abs_start_index]
                     if debug: print ind_str, 'K:', `s`
                     c = '' if is_first_json_elt else ','
-                    self.relex_and_print(s, ind_str + ' ' + c)
+                    self.relex_and_print(s, ind_str + ' ' + c, node)
                     self.cur_index = cur_kid.abs_start_index
                     is_first_json_elt = False
 
@@ -1179,7 +1264,7 @@ class CodeAst(object):
                 if debug:
                     print ind_str, 'A:', `s`, self.cur_index, node.abs_end_index
                 c = '' if is_first_json_elt else ','
-                self.relex_and_print(s, ind_str + ' ' + c)
+                self.relex_and_print(s, ind_str + ' ' + c, node)
                 self.cur_index = node.abs_end_index
                 is_first_json_elt = False
 
@@ -1201,7 +1286,7 @@ class CodeAst(object):
         s = self.code_str[self.cur_index:]
         if debug: print 'TRAILING:', `s`
         if s:
-            self.relex_and_print(s, '    ,')
+            self.relex_and_print(s, '    ,', self.ast_root)
 
         print >> self.outbuf, '  ]'
         print >> self.outbuf, '}'

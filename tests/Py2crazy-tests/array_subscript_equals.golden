@@ -95,11 +95,23 @@ Module
     }, 
     ")", 
     "\n", 
-    "# this is currently broken since we don't properly track start_col and", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# this is currently broken since we don't properly track start_col and"
+    }, 
     "\n", 
-    "# extent of 'tokens[5]'. If we did, then it would conflict with", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# extent of 'tokens[5]'. If we did, then it would conflict with"
+    }, 
     "\n", 
-    "# LOAD_NAME of 'tokens', since they start at the same column :(", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# LOAD_NAME of 'tokens', since they start at the same column :("
+    }, 
     "\n", 
     ""
   ], 

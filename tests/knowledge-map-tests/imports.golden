@@ -154,7 +154,11 @@ Module
         "\n", 
         "", 
         "\n", 
-        "# semicolons to start new lines", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# semicolons to start new lines"
+        }, 
         "\n", 
         "", 
         {

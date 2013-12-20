@@ -427,7 +427,11 @@ Module
         "\n", 
         "", 
         "\n", 
-        "# multiline", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# multiline"
+        }, 
         "\n", 
         "(", 
         {

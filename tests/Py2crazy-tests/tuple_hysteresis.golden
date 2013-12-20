@@ -95,15 +95,35 @@ Module
     "\n", 
     "", 
     "\n", 
-    "# the RETURN_VALUE instruction after BUILD_TUPLE should get the benefits", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# the RETURN_VALUE instruction after BUILD_TUPLE should get the benefits"
+    }, 
     "\n", 
-    "# of hysteresis (i.e., the same start_col and extent as BUILD_TUPLE).", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# of hysteresis (i.e., the same start_col and extent as BUILD_TUPLE)."
+    }, 
     "\n", 
-    "# Right now we have hysteresis only for function calls, and that", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# Right now we have hysteresis only for function calls, and that"
+    }, 
     "\n", 
-    "# hysteresis might play badly with hysteresis for other types, so think", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# hysteresis might play badly with hysteresis for other types, so think"
+    }, 
     "\n", 
-    "# carefully about how to gracefully handle these interactions!", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# carefully about how to gracefully handle these interactions!"
+    }, 
     "\n", 
     ""
   ], 

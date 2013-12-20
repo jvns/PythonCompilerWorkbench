@@ -380,7 +380,11 @@ Module
         "\n", 
         "", 
         "\n", 
-        "# some multiline action", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# some multiline action"
+        }, 
         "\n", 
         "", 
         {

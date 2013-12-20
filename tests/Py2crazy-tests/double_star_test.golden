@@ -81,7 +81,11 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# from Lib/doctest.py", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# from Lib/doctest.py"
+    }, 
     "\n", 
     "", 
     {
@@ -139,7 +143,11 @@ Module
         "\n", 
         "", 
         "\n", 
-        "# from Lib/fractions.py", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# from Lib/fractions.py"
+        }, 
         "\n", 
         "", 
         {

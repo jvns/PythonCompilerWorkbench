@@ -283,7 +283,11 @@ Module
         "\n", 
         "", 
         "\n", 
-        "# format strings", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# format strings"
+        }, 
         "\n", 
         "", 
         {
@@ -409,7 +413,11 @@ Module
         "\n", 
         "", 
         "\n", 
-        "# multiline", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# multiline"
+        }, 
         "\n", 
         "", 
         {

@@ -6,6 +6,8 @@ x = 5 # this is a comment
 y = 10 # yet another one with triple hash ###
 # oh yeahhhh
 
+z = "a hash # within a string shouldn't be a comment"
+
 # one more
 ===
 Module
@@ -26,11 +28,23 @@ Module
       ]
       value: Num >> '10'
         n: 10
+    Assign >> 'z = "a hash # within a string shouldn\'t be a comment"'
+      targets: [
+        Name >> 'z'
+          id: 'z'
+          ctx: Store
+      ]
+      value: Str >> '"a hash # within a string shouldn\'t be a comment"'
+        s: "a hash # within a string shouldn't be a comment"
   ]
 --- JSON ---
 {
   "contents": [
-    "# comment on top", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# comment on top"
+    }, 
     "\n", 
     "", 
     "\n", 
@@ -58,11 +72,23 @@ Module
           "id": "id_0", 
           "name": "Assign"
         }, 
-        " # this is a comment", 
+        " ", 
+        {
+          "token_kind": "comment", 
+          "value": "# this is a comment"
+        }, 
         "\n", 
-        "  # an another comment", 
+        "  ", 
+        {
+          "token_kind": "comment", 
+          "value": "# an another comment"
+        }, 
         "\n", 
-        "      # indented even more # with another comment inside", 
+        "      ", 
+        {
+          "token_kind": "comment", 
+          "value": "# indented even more # with another comment inside"
+        }, 
         "\n", 
         "", 
         {
@@ -85,18 +111,56 @@ Module
           ], 
           "id": "id_0", 
           "name": "Assign"
+        }, 
+        " ", 
+        {
+          "token_kind": "comment", 
+          "value": "# yet another one with triple hash ###"
+        }, 
+        "\n", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# oh yeahhhh"
+        }, 
+        "\n", 
+        "", 
+        "\n", 
+        "", 
+        {
+          "contents": [
+            {
+              "contents": [
+                "z"
+              ], 
+              "id": "id_0", 
+              "name": "Name"
+            }, 
+            " = ", 
+            {
+              "contents": [
+                "\"a hash # within a string shouldn't be a comment\""
+              ], 
+              "id": "id_0", 
+              "name": "Str"
+            }
+          ], 
+          "id": "id_0", 
+          "name": "Assign"
         }
       ], 
       "id": "id_0", 
       "name": "Module"
     }, 
-    " # yet another one with triple hash ###", 
-    "\n", 
-    "# oh yeahhhh", 
+    "", 
     "\n", 
     "", 
     "\n", 
-    "# one more", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# one more"
+    }, 
     "\n", 
     ""
   ], 

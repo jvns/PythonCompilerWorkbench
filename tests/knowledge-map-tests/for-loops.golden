@@ -686,7 +686,11 @@ Module
         "\n", 
         "", 
         "\n", 
-        "# multiline test", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# multiline test"
+        }, 
         "\n", 
         "", 
         {

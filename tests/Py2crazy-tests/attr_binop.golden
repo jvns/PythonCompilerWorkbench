@@ -33,15 +33,35 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# there's an asymmetry when combining an attribute load with a binary", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# there's an asymmetry when combining an attribute load with a binary"
+    }, 
     "\n", 
-    "# op, which looks ugly. it's hard to fix since if we extend the extent", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# op, which looks ugly. it's hard to fix since if we extend the extent"
+    }, 
     "\n", 
-    "# of foo.first_attr to start at 'foo', that would be the same start", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# of foo.first_attr to start at 'foo', that would be the same start"
+    }, 
     "\n", 
-    "# column as LOAD_NAME of 'foo', which would lead to a conflict unless we", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# column as LOAD_NAME of 'foo', which would lead to a conflict unless we"
+    }, 
     "\n", 
-    "# hack Py2crazy even more :/", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# hack Py2crazy even more :/"
+    }, 
     "\n", 
     "", 
     "\n", 
@@ -103,7 +123,11 @@ Module
     }, 
     "", 
     "\n", 
-    "#      ------------^----------------", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "#      ------------^----------------"
+    }, 
     "\n", 
     ""
   ], 

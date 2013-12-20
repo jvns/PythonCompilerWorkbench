@@ -78,9 +78,17 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# these weird decorators currently don't work so hto ...", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# these weird decorators currently don't work so hto ..."
+    }, 
     "\n", 
-    "# from Lib/threading.py", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# from Lib/threading.py"
+    }, 
     "\n", 
     "", 
     {
@@ -145,7 +153,11 @@ Module
         "\n", 
         "", 
         "\n", 
-        "# from Lib/csv.py", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# from Lib/csv.py"
+        }, 
         "\n", 
         "", 
         {

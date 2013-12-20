@@ -6,4 +6,6 @@ x = 5 # this is a comment
 y = 10 # yet another one with triple hash ###
 # oh yeahhhh
 
+z = "a hash # within a string shouldn't be a comment"
+
 # one more

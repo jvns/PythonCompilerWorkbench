@@ -736,7 +736,11 @@ Module
         "\n", 
         "", 
         "\n", 
-        "# one-liner", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# one-liner"
+        }, 
         "\n", 
         "", 
         {
@@ -803,7 +807,11 @@ Module
         "\n", 
         "", 
         "\n", 
-        "# multiline condition", 
+        "", 
+        {
+          "token_kind": "comment", 
+          "value": "# multiline condition"
+        }, 
         "\n", 
         "", 
         {

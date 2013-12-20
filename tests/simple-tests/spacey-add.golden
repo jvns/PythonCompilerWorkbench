@@ -22,7 +22,11 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# with extra spaces ...", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# with extra spaces ..."
+    }, 
     "\n", 
     "", 
     {
@@ -68,7 +72,11 @@ Module
     }, 
     "      ", 
     "\n", 
-    "# and a trailing line comment", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# and a trailing line comment"
+    }, 
     "\n", 
     ""
   ], 

@@ -71,11 +71,7 @@ Module
           "contents": [
             {
               "contents": [
-                "\"\"\"John's cat liked \"The Matrix\"", 
-                "\n", 
-                "but his dog", 
-                "\n", 
-                "preferred the sequels.\"\"\""
+                "\"\"\"John's cat liked \"The Matrix\"\nbut his dog\npreferred the sequels.\"\"\""
               ], 
               "id": "id_0", 
               "name": "Str"
@@ -97,11 +93,7 @@ Module
             " = ", 
             {
               "contents": [
-                "'''multi", 
-                "\n", 
-                "    line", 
-                "\n", 
-                "  string'''"
+                "'''multi\n    line\n  string'''"
               ], 
               "id": "id_0", 
               "name": "Str"
@@ -123,19 +115,7 @@ Module
             " = ", 
             {
               "contents": [
-                "'''", 
-                "\n", 
-                "multi", 
-                "\n", 
-                "line", 
-                "\n", 
-                "string", 
-                "\n", 
-                "with empty", 
-                "\n", 
-                "first line", 
-                "\n", 
-                "'''"
+                "'''\nmulti\nline\nstring\nwith empty\nfirst line\n'''"
               ], 
               "id": "id_0", 
               "name": "Str"
@@ -157,17 +137,7 @@ Module
             " = ", 
             {
               "contents": [
-                "\"\"\"     ", 
-                "\n", 
-                "multi", 
-                "\n", 
-                "line", 
-                "\n", 
-                "string", 
-                "\n", 
-                "with spaces in first line", 
-                "\n", 
-                "\"\"\""
+                "\"\"\"     \nmulti\nline\nstring\nwith spaces in first line\n\"\"\""
               ], 
               "id": "id_0", 
               "name": "Str"
@@ -184,25 +154,65 @@ Module
     "\n", 
     "", 
     "\n", 
-    "# This doesn't work, but it's nuts!!!", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# This doesn't work, but it's nuts!!!"
+    }, 
     "\n", 
-    "#\"\"\"multi", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "#\"\"\"multi"
+    }, 
     "\n", 
-    "#    line", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "#    line"
+    }, 
     "\n", 
-    "#      string", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "#      string"
+    }, 
     "\n", 
-    "#        method", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "#        method"
+    }, 
     "\n", 
-    "#          call\"\"\".join('''", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "#          call\"\"\".join('''"
+    }, 
     "\n", 
-    "#another", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "#another"
+    }, 
     "\n", 
-    "#  multi", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "#  multi"
+    }, 
     "\n", 
-    "#    line", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "#    line"
+    }, 
     "\n", 
-    "#      string''')", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "#      string''')"
+    }, 
     "\n", 
     ""
   ], 

@@ -554,7 +554,11 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        " # only keyword args", 
+        " ", 
+        {
+          "token_kind": "comment", 
+          "value": "# only keyword args"
+        }, 
         "\n", 
         "", 
         {
@@ -621,7 +625,11 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        " # regular and keyword args", 
+        " ", 
+        {
+          "token_kind": "comment", 
+          "value": "# regular and keyword args"
+        }, 
         "\n", 
         "", 
         {
@@ -718,7 +726,11 @@ Module
           "id": "id_0", 
           "name": "Expr"
         }, 
-        " # star and kwargs", 
+        " ", 
+        {
+          "token_kind": "comment", 
+          "value": "# star and kwargs"
+        }, 
         "\n", 
         "", 
         {
@@ -783,7 +795,11 @@ Module
       "id": "id_0", 
       "name": "Module"
     }, 
-    " # all four kinds of args!", 
+    " ", 
+    {
+      "token_kind": "comment", 
+      "value": "# all four kinds of args!"
+    }, 
     "\n", 
     ""
   ], 

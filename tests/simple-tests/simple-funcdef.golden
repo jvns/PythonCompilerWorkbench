@@ -64,7 +64,11 @@ Module
         }, 
         ":", 
         "\n", 
-        "    #c = a + b", 
+        "    ", 
+        {
+          "token_kind": "comment", 
+          "value": "#c = a + b"
+        }, 
         "\n", 
         "    ", 
         {

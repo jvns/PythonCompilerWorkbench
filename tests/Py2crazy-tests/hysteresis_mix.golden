@@ -58,7 +58,11 @@ Module
 --- JSON ---
 {
   "contents": [
-    "# mix up function call and tuple hysteresis, to maximize confusion", 
+    "", 
+    {
+      "token_kind": "comment", 
+      "value": "# mix up function call and tuple hysteresis, to maximize confusion"
+    }, 
     "\n", 
     "", 
     {
