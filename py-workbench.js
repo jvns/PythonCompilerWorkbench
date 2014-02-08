@@ -69,6 +69,7 @@ $(document).ready(function() {
 
                 $('#astPane').html(dat.ast_svg);
                 $('#bytecodeOutput').html(dat.bytecode_str);
+                $("#codePuffJSON").html(dat.ast_json);
 
                 renderCodePuff(dat.ast_json);
               }

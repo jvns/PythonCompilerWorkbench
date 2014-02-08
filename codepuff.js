@@ -25,8 +25,6 @@ function htmlspecialchars(str) {
 
 // remember, d3 thinks of everything as lists
 function renderCodePuff(astJson) {
-  $("#codePuffJSON").html(astJson);
-
   var ast = $.parseJSON(astJson);
 
   $("#codePuffPane").empty();
