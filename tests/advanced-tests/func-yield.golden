@@ -168,12 +168,13 @@ Module
       "contents": [
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_1", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -183,26 +184,27 @@ Module
               "contents": [
                 {
                   "id": "tid_2", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "yield"
                 }
               ], 
               "id": "id_0", 
-              "name": "Yield"
+              "type": "Yield"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_3", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -212,32 +214,33 @@ Module
               "contents": [
                 {
                   "id": "tid_4", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "yield"
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "42"
                 }
               ], 
               "id": "id_0", 
-              "name": "Yield"
+              "type": "Yield"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_5", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -247,33 +250,34 @@ Module
               "contents": [
                 {
                   "id": "tid_6", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "yield"
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "True"
                 }
               ], 
               "id": "id_0", 
-              "name": "Yield"
+              "type": "Yield"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_7", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -283,7 +287,7 @@ Module
               "contents": [
                 {
                   "id": "tid_8", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "yield"
                 }, 
                 " ", 
@@ -292,44 +296,45 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "a"
                     }, 
                     " ", 
                     {
                       "id": "tid_9", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "+"
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "b"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp", 
-                  "op": "Add"
+                  "op": "Add", 
+                  "type": "BinOp"
                 }
               ], 
               "id": "id_0", 
-              "name": "Yield"
+              "type": "Yield"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_10", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -339,7 +344,7 @@ Module
               "contents": [
                 {
                   "id": "tid_11", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "yield"
                 }, 
                 " ", 
@@ -348,28 +353,28 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "foo"
                     }, 
                     "(", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "n"
                     }, 
                     ")"
                   ], 
                   "id": "id_0", 
-                  "name": "Call"
+                  "type": "Call"
                 }
               ], 
               "id": "id_0", 
-              "name": "Yield"
+              "type": "Yield"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n\n", 
         {
@@ -380,21 +385,22 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "n"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "fact", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_12", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -404,7 +410,7 @@ Module
               "contents": [
                 {
                   "id": "tid_13", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "yield"
                 }, 
                 " ", 
@@ -413,13 +419,13 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "n"
                     }, 
                     " ", 
                     {
                       "id": "tid_14", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "*"
                     }, 
                     " ", 
@@ -428,7 +434,7 @@ Module
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "fact"
                         }, 
                         "(", 
@@ -437,48 +443,48 @@ Module
                             {
                               "ctx": "Load", 
                               "id": "id_0", 
-                              "name": "Name", 
+                              "type": "Name", 
                               "value": "n"
                             }, 
                             {
                               "id": "tid_15", 
-                              "name": "token", 
+                              "type": "token", 
                               "value": "-"
                             }, 
                             {
                               "id": "id_0", 
-                              "name": "Num", 
+                              "type": "Num", 
                               "value": "1"
                             }
                           ], 
                           "id": "id_0", 
-                          "name": "BinOp", 
-                          "op": "Sub"
+                          "op": "Sub", 
+                          "type": "BinOp"
                         }, 
                         ")"
                       ], 
                       "id": "id_0", 
-                      "name": "Call"
+                      "type": "Call"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp", 
-                  "op": "Mult"
+                  "op": "Mult", 
+                  "type": "BinOp"
                 }
               ], 
               "id": "id_0", 
-              "name": "Yield"
+              "type": "Yield"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

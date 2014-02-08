@@ -105,54 +105,54 @@ Module
       "contents": [
         {
           "id": "id_0", 
-          "name": "Import", 
+          "type": "Import", 
           "value": "import foo"
         }, 
         "\n", 
         {
           "id": "id_0", 
-          "name": "ImportFrom", 
+          "type": "ImportFrom", 
           "value": "from  foo  import bar"
         }, 
         "\n", 
         {
           "id": "id_0", 
-          "name": "ImportFrom", 
+          "type": "ImportFrom", 
           "value": "from   foo    import bar   ,  baz"
         }, 
         "\n", 
         {
           "id": "id_0", 
-          "name": "ImportFrom", 
+          "type": "ImportFrom", 
           "value": "from foo import  *"
         }, 
         "\n", 
         {
           "id": "id_0", 
-          "name": "Import", 
+          "type": "Import", 
           "value": "import foo.bar"
         }, 
         "\n", 
         {
           "id": "id_0", 
-          "name": "ImportFrom", 
+          "type": "ImportFrom", 
           "value": "from foo.bar import baz"
         }, 
         "\n\n", 
         {
           "id": "tid_1", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# semicolons to start new lines"
         }, 
         "\n", 
         {
           "id": "id_0", 
-          "name": "Import", 
+          "type": "Import", 
           "value": "import foo.bar"
         }, 
         {
           "id": "tid_2", 
-          "name": "token", 
+          "type": "token", 
           "value": ";"
         }, 
         " ", 
@@ -161,29 +161,29 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_3", 
-              "name": "token", 
+              "type": "token", 
               "value": "+="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "5"
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign", 
-          "op": "Add"
+          "op": "Add", 
+          "type": "AugAssign"
         }, 
         {
           "id": "tid_4", 
-          "name": "token", 
+          "type": "token", 
           "value": ";"
         }, 
         " ", 
@@ -192,35 +192,35 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "y"
             }, 
             " ", 
             {
               "id": "tid_5", 
-              "name": "token", 
+              "type": "token", 
               "value": "-="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "5"
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign", 
-          "op": "Sub"
+          "op": "Sub", 
+          "type": "AugAssign"
         }, 
         "\n", 
         {
           "id": "id_0", 
-          "name": "ImportFrom", 
+          "type": "ImportFrom", 
           "value": "from foo.bar import baz"
         }, 
         {
           "id": "tid_6", 
-          "name": "token", 
+          "type": "token", 
           "value": ";"
         }, 
         " ", 
@@ -231,24 +231,24 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "baz"
                 }, 
                 "()"
               ], 
               "id": "id_0", 
-              "name": "Call"
+              "type": "Call"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

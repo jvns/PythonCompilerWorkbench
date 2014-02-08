@@ -165,24 +165,24 @@ Module
               "contents": [
                 {
                   "id": "tid_1", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "not"
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }
               ], 
               "id": "id_0", 
-              "name": "UnaryOp", 
-              "op": "Not"
+              "op": "Not", 
+              "type": "UnaryOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -195,35 +195,35 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "x"
                     }, 
                     " ", 
                     {
                       "id": "tid_2", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "or"
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "y"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BoolOp", 
-                  "op": "Or"
+                  "op": "Or", 
+                  "type": "BoolOp"
                 }
               ], 
               "id": "id_0", 
-              "name": "UnaryOp", 
-              "op": "Not"
+              "op": "Not", 
+              "type": "UnaryOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         ")\n", 
         {
@@ -233,32 +233,32 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 " ", 
                 {
                   "id": "tid_3", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "is"
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "y"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Is"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -268,26 +268,26 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 " is not ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "y"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "IsNot"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -297,32 +297,32 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 " ", 
                 {
                   "id": "tid_4", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "in"
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "y"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "In"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -332,26 +332,26 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 " not in ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "y"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "NotIn"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -363,28 +363,28 @@ Module
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "12"
                     }, 
                     " ", 
                     {
                       "id": "tid_5", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "<"
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "age"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare", 
                   "ops": [
                     "Lt"
-                  ]
+                  ], 
+                  "type": "Compare"
                 }, 
                 ") and (", 
                 {
@@ -392,36 +392,36 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "age"
                     }, 
                     " ", 
                     {
                       "id": "tid_6", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "<"
                     }, 
                     " ", 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "20"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare", 
                   "ops": [
                     "Lt"
-                  ]
+                  ], 
+                  "type": "Compare"
                 }
               ], 
               "id": "id_0", 
-              "name": "BoolOp", 
-              "op": "And"
+              "op": "And", 
+              "type": "BoolOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         ")\n", 
         {
@@ -430,49 +430,49 @@ Module
               "contents": [
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "12"
                 }, 
                 " ", 
                 {
                   "id": "tid_7", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "<"
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "age"
                 }, 
                 " ", 
                 {
                   "id": "tid_8", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "<"
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "20"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "LtLt"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n\n", 
         {
           "id": "tid_9", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# multiline"
         }, 
         "\n(", 
@@ -485,28 +485,28 @@ Module
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "12"
                     }, 
                     " ", 
                     {
                       "id": "tid_10", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "<"
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "age"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare", 
                   "ops": [
                     "Lt"
-                  ]
+                  ], 
+                  "type": "Compare"
                 }, 
                 ") and\n (", 
                 {
@@ -514,43 +514,43 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "age"
                     }, 
                     " ", 
                     {
                       "id": "tid_11", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "<"
                     }, 
                     " ", 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "20"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare", 
                   "ops": [
                     "Lt"
-                  ]
+                  ], 
+                  "type": "Compare"
                 }
               ], 
               "id": "id_0", 
-              "name": "BoolOp", 
-              "op": "And"
+              "op": "And", 
+              "type": "BoolOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "))\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

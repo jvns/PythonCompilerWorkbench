@@ -93,30 +93,30 @@ Module
                 {
                   "ctx": "Store", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "a"
                 }, 
                 {
                   "id": "tid_1", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Store", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "b"
                 }
               ], 
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }, 
             " ", 
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -125,29 +125,29 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "c"
                 }, 
                 {
                   "id": "tid_3", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "d"
                 }
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }, 
         "\n", 
         {
@@ -158,31 +158,31 @@ Module
                 {
                   "ctx": "Store", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "a"
                 }, 
                 {
                   "id": "tid_4", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Store", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "b"
                 }, 
                 ")"
               ], 
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }, 
             " ", 
             {
               "id": "tid_5", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -192,35 +192,35 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "c"
                 }, 
                 {
                   "id": "tid_6", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "d"
                 }, 
                 ")"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }, 
         "\n\n", 
         {
           "id": "tid_7", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# multiline"
         }, 
         "\n", 
@@ -232,38 +232,38 @@ Module
                 {
                   "ctx": "Store", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "a"
                 }, 
                 {
                   "id": "tid_8", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Store", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "b"
                 }, 
                 {
                   "id": "tid_9", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 "\n   ", 
                 {
                   "ctx": "Store", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "c"
                 }, 
                 ")"
               ], 
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }, 
             " = \\\n     ", 
             {
@@ -272,37 +272,37 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "c"
                 }, 
                 {
                   "id": "tid_10", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "d"
                 }, 
                 ")"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

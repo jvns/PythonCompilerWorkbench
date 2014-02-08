@@ -35,31 +35,31 @@ Module
   "contents": [
     {
       "id": "tid_1", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# there's an asymmetry when combining an attribute load with a binary"
     }, 
     "\n", 
     {
       "id": "tid_2", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# op, which looks ugly. it's hard to fix since if we extend the extent"
     }, 
     "\n", 
     {
       "id": "tid_3", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# of foo.first_attr to start at 'foo', that would be the same start"
     }, 
     "\n", 
     {
       "id": "tid_4", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# column as LOAD_NAME of 'foo', which would lead to a conflict unless we"
     }, 
     "\n", 
     {
       "id": "tid_5", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# hack Py2crazy even more :/"
     }, 
     "\n\n", 
@@ -70,13 +70,13 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_6", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -88,19 +88,19 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "foo"
                     }, 
                     ".first_attr"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Attribute"
+                  "type": "Attribute"
                 }, 
                 " ", 
                 {
                   "id": "tid_7", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "+"
                 }, 
                 " ", 
@@ -110,36 +110,36 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "bar"
                     }, 
                     ".second_attr"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Attribute"
+                  "type": "Attribute"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Add"
+              "op": "Add", 
+              "type": "BinOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n", 
     {
       "id": "tid_8", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "#      ------------^----------------"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

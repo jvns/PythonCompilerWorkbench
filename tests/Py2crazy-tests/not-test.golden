@@ -35,13 +35,13 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_1", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -54,60 +54,60 @@ Module
                       "contents": [
                         {
                           "id": "id_0", 
-                          "name": "Num", 
+                          "type": "Num", 
                           "value": "1"
                         }, 
                         " ", 
                         {
                           "id": "tid_2", 
-                          "name": "token", 
+                          "type": "token", 
                           "value": "+"
                         }, 
                         " ", 
                         {
                           "id": "id_0", 
-                          "name": "Num", 
+                          "type": "Num", 
                           "value": "3"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp", 
-                      "op": "Add"
+                      "op": "Add", 
+                      "type": "BinOp"
                     }, 
                     " ", 
                     {
                       "id": "tid_3", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "=="
                     }, 
                     " ", 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "5"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare", 
                   "ops": [
                     "Eq"
-                  ]
+                  ], 
+                  "type": "Compare"
                 }
               ], 
               "id": "id_0", 
-              "name": "UnaryOp", 
-              "op": "Not"
+              "op": "Not", 
+              "type": "UnaryOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     ")\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

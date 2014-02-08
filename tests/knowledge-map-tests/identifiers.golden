@@ -67,12 +67,12 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "i"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -80,12 +80,12 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "name"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -93,12 +93,12 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "my_first_name"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -106,12 +106,12 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "PLANCK_CONSTANT"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -119,12 +119,12 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "MyAwesomeClass"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -132,12 +132,12 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "card"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -145,12 +145,12 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "Card"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -158,12 +158,12 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "_private_attr"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -171,12 +171,12 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "javaStyle"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -184,12 +184,12 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "__super_private"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -197,19 +197,19 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "__init__"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

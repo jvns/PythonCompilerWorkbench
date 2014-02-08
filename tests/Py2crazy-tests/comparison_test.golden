@@ -36,13 +36,13 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_1", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -53,57 +53,57 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "foo"
                     }, 
                     " ", 
                     {
                       "id": "tid_2", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "+"
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "bar"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp", 
-                  "op": "Add"
+                  "op": "Add", 
+                  "type": "BinOp"
                 }, 
                 " ", 
                 {
                   "id": "tid_3", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "<"
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "bazzz"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Lt"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

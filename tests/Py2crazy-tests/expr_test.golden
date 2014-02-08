@@ -33,13 +33,13 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_1", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -47,13 +47,13 @@ Module
               "contents": [
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "12"
                 }, 
                 " ", 
                 {
                   "id": "tid_2", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "+"
                 }, 
                 " ", 
@@ -63,58 +63,58 @@ Module
                       "contents": [
                         {
                           "id": "id_0", 
-                          "name": "Num", 
+                          "type": "Num", 
                           "value": "34"
                         }, 
                         " ", 
                         {
                           "id": "tid_3", 
-                          "name": "token", 
+                          "type": "token", 
                           "value": "**"
                         }, 
                         " ", 
                         {
                           "id": "id_0", 
-                          "name": "Num", 
+                          "type": "Num", 
                           "value": "56.0"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp", 
-                      "op": "Pow"
+                      "op": "Pow", 
+                      "type": "BinOp"
                     }, 
                     " ", 
                     {
                       "id": "tid_4", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "/"
                     }, 
                     " ", 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "78"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp", 
-                  "op": "Div"
+                  "op": "Div", 
+                  "type": "BinOp"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Add"
+              "op": "Add", 
+              "type": "BinOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

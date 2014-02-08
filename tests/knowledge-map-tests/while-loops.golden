@@ -268,50 +268,50 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 " ", 
                 {
                   "id": "tid_1", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ">"
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "0"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Gt"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "While"
+          "type": "While"
         }, 
         "):\n    ", 
         {
           "contents": [
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n    ", 
         {
@@ -319,25 +319,25 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_3", 
-              "name": "token", 
+              "type": "token", 
               "value": "-="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "1"
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign", 
-          "op": "Sub"
+          "op": "Sub", 
+          "type": "AugAssign"
         }, 
         "\n\n", 
         {
@@ -348,38 +348,38 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 " ", 
                 {
                   "id": "tid_4", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ">"
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "0"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Gt"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "While"
+          "type": "While"
         }, 
         "):\n    ", 
         {
           "contents": [
             {
               "id": "tid_5", 
-              "name": "token", 
+              "type": "token", 
               "value": "if"
             }, 
             " ", 
@@ -390,52 +390,52 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "x"
                     }, 
                     " ", 
                     {
                       "id": "tid_6", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "%"
                     }, 
                     " ", 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "2"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp", 
-                  "op": "Mod"
+                  "op": "Mod", 
+                  "type": "BinOp"
                 }, 
                 " ", 
                 {
                   "id": "tid_7", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "=="
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "0"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Eq"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "If"
+          "type": "If"
         }, 
         {
           "id": "tid_8", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n        ", 
@@ -443,19 +443,19 @@ Module
           "contents": [
             {
               "id": "tid_9", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n    ", 
         {
@@ -463,25 +463,25 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_10", 
-              "name": "token", 
+              "type": "token", 
               "value": "-="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "1"
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign", 
-          "op": "Sub"
+          "op": "Sub", 
+          "type": "AugAssign"
         }, 
         "\n\n", 
         {
@@ -492,38 +492,38 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 " ", 
                 {
                   "id": "tid_11", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ">"
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "0"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Gt"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "While"
+          "type": "While"
         }, 
         "):\n    ", 
         {
           "contents": [
             {
               "id": "tid_12", 
-              "name": "token", 
+              "type": "token", 
               "value": "if"
             }, 
             " ", 
@@ -534,52 +534,52 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "x"
                     }, 
                     " ", 
                     {
                       "id": "tid_13", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "%"
                     }, 
                     " ", 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "2"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp", 
-                  "op": "Mod"
+                  "op": "Mod", 
+                  "type": "BinOp"
                 }, 
                 " ", 
                 {
                   "id": "tid_14", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "=="
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "0"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Eq"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "If"
+          "type": "If"
         }, 
         {
           "id": "tid_15", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n        ", 
@@ -587,19 +587,19 @@ Module
           "contents": [
             {
               "id": "tid_16", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n    ", 
         {
@@ -607,25 +607,25 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_17", 
-              "name": "token", 
+              "type": "token", 
               "value": "-="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "1"
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign", 
-          "op": "Sub"
+          "op": "Sub", 
+          "type": "AugAssign"
         }, 
         "\n\n", 
         {
@@ -636,38 +636,38 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 " ", 
                 {
                   "id": "tid_18", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ">"
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "0"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Gt"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "While"
+          "type": "While"
         }, 
         "):\n    ", 
         {
           "contents": [
             {
               "id": "tid_19", 
-              "name": "token", 
+              "type": "token", 
               "value": "if"
             }, 
             " ", 
@@ -678,52 +678,52 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "x"
                     }, 
                     " ", 
                     {
                       "id": "tid_20", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "%"
                     }, 
                     " ", 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "2"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp", 
-                  "op": "Mod"
+                  "op": "Mod", 
+                  "type": "BinOp"
                 }, 
                 " ", 
                 {
                   "id": "tid_21", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "=="
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "0"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Eq"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "If"
+          "type": "If"
         }, 
         {
           "id": "tid_22", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n        ", 
@@ -731,31 +731,31 @@ Module
           "contents": [
             {
               "id": "tid_23", 
-              "name": "token", 
+              "type": "token", 
               "value": "continue"
             }
           ], 
           "id": "id_0", 
-          "name": "Continue"
+          "type": "Continue"
         }, 
         "\n    ", 
         {
           "contents": [
             {
               "id": "tid_24", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n    ", 
         {
@@ -763,48 +763,48 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_25", 
-              "name": "token", 
+              "type": "token", 
               "value": "-="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "1"
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign", 
-          "op": "Sub"
+          "op": "Sub", 
+          "type": "AugAssign"
         }, 
         "\n\n", 
         {
           "contents": [
             {
               "id": "tid_26", 
-              "name": "token", 
+              "type": "token", 
               "value": "while"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "True"
             }
           ], 
           "id": "id_0", 
-          "name": "While"
+          "type": "While"
         }, 
         {
           "id": "tid_27", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -812,7 +812,7 @@ Module
           "contents": [
             {
               "id": "tid_28", 
-              "name": "token", 
+              "type": "token", 
               "value": "if"
             }, 
             " ", 
@@ -821,35 +821,35 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 " ", 
                 {
                   "id": "tid_29", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "<"
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "0"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Lt"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "If"
+          "type": "If"
         }, 
         {
           "id": "tid_30", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n        ", 
@@ -857,12 +857,12 @@ Module
           "contents": [
             {
               "id": "tid_31", 
-              "name": "token", 
+              "type": "token", 
               "value": "break"
             }
           ], 
           "id": "id_0", 
-          "name": "Break"
+          "type": "Break"
         }, 
         "\n    ", 
         {
@@ -870,48 +870,48 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_32", 
-              "name": "token", 
+              "type": "token", 
               "value": "-="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "1"
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign", 
-          "op": "Sub"
+          "op": "Sub", 
+          "type": "AugAssign"
         }, 
         "\n\n", 
         {
           "contents": [
             {
               "id": "tid_33", 
-              "name": "token", 
+              "type": "token", 
               "value": "while"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "True"
             }
           ], 
           "id": "id_0", 
-          "name": "While"
+          "type": "While"
         }, 
         {
           "id": "tid_34", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -919,19 +919,19 @@ Module
           "contents": [
             {
               "id": "tid_35", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

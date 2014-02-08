@@ -72,108 +72,108 @@ Module
           "contents": [
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"hello\""
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "'hello'"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"This is a sentence.\""
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"John's cat.\""
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "'He liked watching \"The Matrix\"!'"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"\""
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\" \""
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"\\t \\\\ \\\" \\'"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\"\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"John's\\n\\n\\n\\ndog.\""
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n\n", 
         {
@@ -185,14 +185,14 @@ Module
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Str", 
+                      "type": "Str", 
                       "value": "\",\""
                     }, 
                     ".join"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Attribute"
+                  "type": "Attribute"
                 }, 
                 "(", 
                 {
@@ -200,50 +200,50 @@ Module
                     "[", 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "1"
                     }, 
                     {
                       "id": "tid_1", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ","
                     }, 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "2"
                     }, 
                     {
                       "id": "tid_2", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ","
                     }, 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "3"
                     }, 
                     "]"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "List"
+                  "type": "List"
                 }, 
                 ")"
               ], 
               "id": "id_0", 
-              "name": "Call"
+              "type": "Call"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

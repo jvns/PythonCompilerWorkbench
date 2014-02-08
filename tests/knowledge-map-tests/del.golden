@@ -109,57 +109,57 @@ Module
           "contents": [
             {
               "id": "tid_1", 
-              "name": "token", 
+              "type": "token", 
               "value": "del"
             }, 
             " ", 
             {
               "ctx": "Del", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }
           ], 
           "id": "id_0", 
-          "name": "Delete"
+          "type": "Delete"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "del"
             }, 
             " ", 
             {
               "ctx": "Del", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             {
               "id": "tid_3", 
-              "name": "token", 
+              "type": "token", 
               "value": ","
             }, 
             " ", 
             {
               "ctx": "Del", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "y"
             }
           ], 
           "id": "id_0", 
-          "name": "Delete"
+          "type": "Delete"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_4", 
-              "name": "token", 
+              "type": "token", 
               "value": "del"
             }, 
             " ", 
@@ -169,25 +169,25 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "foo"
                 }, 
                 ".bar"
               ], 
               "ctx": "Del", 
               "id": "id_0", 
-              "name": "Attribute"
+              "type": "Attribute"
             }
           ], 
           "id": "id_0", 
-          "name": "Delete"
+          "type": "Delete"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_5", 
-              "name": "token", 
+              "type": "token", 
               "value": "del"
             }, 
             " ", 
@@ -196,7 +196,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 "[", 
@@ -204,29 +204,29 @@ Module
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "5"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Index"
+                  "type": "Index"
                 }, 
                 "]"
               ], 
               "ctx": "Del", 
               "id": "id_0", 
-              "name": "Subscript"
+              "type": "Subscript"
             }
           ], 
           "id": "id_0", 
-          "name": "Delete"
+          "type": "Delete"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_6", 
-              "name": "token", 
+              "type": "token", 
               "value": "del"
             }, 
             " ", 
@@ -235,7 +235,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "foo"
                 }, 
                 "[", 
@@ -243,29 +243,29 @@ Module
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Str", 
+                      "type": "Str", 
                       "value": "'bar'"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Index"
+                  "type": "Index"
                 }, 
                 "]"
               ], 
               "ctx": "Del", 
               "id": "id_0", 
-              "name": "Subscript"
+              "type": "Subscript"
             }
           ], 
           "id": "id_0", 
-          "name": "Delete"
+          "type": "Delete"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_7", 
-              "name": "token", 
+              "type": "token", 
               "value": "del"
             }, 
             " ", 
@@ -274,7 +274,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "world_map"
                 }, 
                 "[", 
@@ -285,45 +285,45 @@ Module
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "x"
                         }, 
                         {
                           "id": "tid_8", 
-                          "name": "token", 
+                          "type": "token", 
                           "value": ","
                         }, 
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "y"
                         }
                       ], 
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Tuple"
+                      "type": "Tuple"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Index"
+                  "type": "Index"
                 }, 
                 "]"
               ], 
               "ctx": "Del", 
               "id": "id_0", 
-              "name": "Subscript"
+              "type": "Subscript"
             }
           ], 
           "id": "id_0", 
-          "name": "Delete"
+          "type": "Delete"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_9", 
-              "name": "token", 
+              "type": "token", 
               "value": "del"
             }, 
             " ", 
@@ -332,7 +332,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "foo"
                 }, 
                 "[", 
@@ -340,29 +340,29 @@ Module
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "1"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Index"
+                  "type": "Index"
                 }, 
                 "]"
               ], 
               "ctx": "Del", 
               "id": "id_0", 
-              "name": "Subscript"
+              "type": "Subscript"
             }
           ], 
           "id": "id_0", 
-          "name": "Delete"
+          "type": "Delete"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_10", 
-              "name": "token", 
+              "type": "token", 
               "value": "del"
             }, 
             " ", 
@@ -371,7 +371,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "foo"
                 }, 
                 "[", 
@@ -379,39 +379,39 @@ Module
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "1"
                     }, 
                     {
                       "id": "tid_11", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ":"
                     }, 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "5"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Slice"
+                  "type": "Slice"
                 }, 
                 "]"
               ], 
               "ctx": "Del", 
               "id": "id_0", 
-              "name": "Subscript"
+              "type": "Subscript"
             }
           ], 
           "id": "id_0", 
-          "name": "Delete"
+          "type": "Delete"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

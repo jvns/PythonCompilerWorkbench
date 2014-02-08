@@ -31,19 +31,19 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 ".foo"
               ], 
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Attribute"
+              "type": "Attribute"
             }, 
             " ", 
             {
               "id": "tid_1", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -53,25 +53,25 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "y"
                 }, 
                 ".baz"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Attribute"
+              "type": "Attribute"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

@@ -121,12 +121,13 @@ Module
       "contents": [
         {
           "id": "id_0", 
-          "name": "ClassDef", 
+          "name": "Person", 
+          "type": "ClassDef", 
           "value": "class Person"
         }, 
         {
           "id": "tid_1", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -134,12 +135,12 @@ Module
           "contents": [
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }, 
         "\n\n", 
         {
@@ -148,17 +149,18 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "object"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "ClassDef"
+          "name": "Person", 
+          "type": "ClassDef"
         }, 
         {
           "id": "tid_3", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -170,33 +172,34 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "self"
                 }, 
                 {
                   "id": "tid_4", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "grow_older", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_5", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n        ", 
@@ -208,32 +211,32 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "self"
                 }, 
                 ".age"
               ], 
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Attribute"
+              "type": "Attribute"
             }, 
             " ", 
             {
               "id": "tid_6", 
-              "name": "token", 
+              "type": "token", 
               "value": "+="
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign", 
-          "op": "Add"
+          "op": "Add", 
+          "type": "AugAssign"
         }, 
         "\n\n    ", 
         {
@@ -244,21 +247,22 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "self"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "__str__", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_7", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n        ", 
@@ -266,7 +270,7 @@ Module
           "contents": [
             {
               "id": "tid_8", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -274,19 +278,19 @@ Module
               "contents": [
                 {
                   "id": "id_0", 
-                  "name": "Str", 
+                  "type": "Str", 
                   "value": "'Person: '"
                 }, 
                 " + \\\n        ", 
                 {
                   "id": "tid_9", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "\\"
                 }, 
                 "\n", 
                 {
                   "id": "tid_10", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "\\"
                 }, 
                 "\n        ", 
@@ -296,23 +300,23 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "self"
                     }, 
                     ".name"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Attribute"
+                  "type": "Attribute"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Add"
+              "op": "Add", 
+              "type": "BinOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n\n", 
         {
@@ -321,17 +325,18 @@ Module
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "Person"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "ClassDef"
+          "name": "Man", 
+          "type": "ClassDef"
         }, 
         {
           "id": "tid_11", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -340,31 +345,31 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "maximum_age"
             }, 
             " ", 
             {
               "id": "tid_12", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "100"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

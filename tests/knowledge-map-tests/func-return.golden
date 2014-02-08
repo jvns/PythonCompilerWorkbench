@@ -425,12 +425,13 @@ Module
       "contents": [
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_1", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -438,22 +439,23 @@ Module
           "contents": [
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_3", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -461,28 +463,29 @@ Module
           "contents": [
             {
               "id": "tid_4", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "42"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_5", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -490,29 +493,30 @@ Module
           "contents": [
             {
               "id": "tid_6", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "True"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_7", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -520,7 +524,7 @@ Module
           "contents": [
             {
               "id": "tid_8", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -529,40 +533,41 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "a"
                 }, 
                 " ", 
                 {
                   "id": "tid_9", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "+"
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "b"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Add"
+              "op": "Add", 
+              "type": "BinOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_10", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -570,7 +575,7 @@ Module
           "contents": [
             {
               "id": "tid_11", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -579,24 +584,24 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "foo"
                 }, 
                 "(", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "n"
                 }, 
                 ")"
               ], 
               "id": "id_0", 
-              "name": "Call"
+              "type": "Call"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
@@ -607,21 +612,22 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "n"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "fact", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_12", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -629,7 +635,7 @@ Module
           "contents": [
             {
               "id": "tid_13", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -638,13 +644,13 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "n"
                 }, 
                 " ", 
                 {
                   "id": "tid_14", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "*"
                 }, 
                 " ", 
@@ -653,7 +659,7 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "fact"
                     }, 
                     "(", 
@@ -662,47 +668,48 @@ Module
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "n"
                         }, 
                         {
                           "id": "tid_15", 
-                          "name": "token", 
+                          "type": "token", 
                           "value": "-"
                         }, 
                         {
                           "id": "id_0", 
-                          "name": "Num", 
+                          "type": "Num", 
                           "value": "1"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp", 
-                      "op": "Sub"
+                      "op": "Sub", 
+                      "type": "BinOp"
                     }, 
                     ")"
                   ], 
                   "id": "id_0", 
-                  "name": "Call"
+                  "type": "Call"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Mult"
+              "op": "Mult", 
+              "type": "BinOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_16", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -710,7 +717,7 @@ Module
           "contents": [
             {
               "id": "tid_17", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -719,7 +726,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "area"
                 }, 
                 "(", 
@@ -728,75 +735,76 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "distance"
                     }, 
                     "(", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "xc"
                     }, 
                     {
                       "id": "tid_18", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ","
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "yc"
                     }, 
                     {
                       "id": "tid_19", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ","
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "xp"
                     }, 
                     {
                       "id": "tid_20", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ","
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "yp"
                     }, 
                     ")"
                   ], 
                   "id": "id_0", 
-                  "name": "Call"
+                  "type": "Call"
                 }, 
                 ")"
               ], 
               "id": "id_0", 
-              "name": "Call"
+              "type": "Call"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_21", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -804,7 +812,7 @@ Module
           "contents": [
             {
               "id": "tid_22", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -813,7 +821,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "lst"
                 }, 
                 "[", 
@@ -821,32 +829,33 @@ Module
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "3"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Index"
+                  "type": "Index"
                 }, 
                 "]"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Subscript"
+              "type": "Subscript"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_23", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -854,7 +863,7 @@ Module
           "contents": [
             {
               "id": "tid_24", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -863,7 +872,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "lst"
                 }, 
                 "[", 
@@ -871,42 +880,43 @@ Module
                   "contents": [
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "2"
                     }, 
                     {
                       "id": "tid_25", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ":"
                     }, 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "6"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Slice"
+                  "type": "Slice"
                 }, 
                 "]"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Subscript"
+              "type": "Subscript"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_26", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -914,7 +924,7 @@ Module
           "contents": [
             {
               "id": "tid_27", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -924,52 +934,53 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "a"
                 }, 
                 {
                   "id": "tid_28", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "b"
                 }, 
                 {
                   "id": "tid_29", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "c"
                 }, 
                 ")"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_30", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -977,7 +988,7 @@ Module
           "contents": [
             {
               "id": "tid_31", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -986,51 +997,52 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "a"
                 }, 
                 {
                   "id": "tid_32", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "b"
                 }, 
                 {
                   "id": "tid_33", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "c"
                 }
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_34", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -1038,7 +1050,7 @@ Module
           "contents": [
             {
               "id": "tid_35", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -1049,24 +1061,24 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "min"
                     }, 
                     "(", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "t"
                     }, 
                     ")"
                   ], 
                   "id": "id_0", 
-                  "name": "Call"
+                  "type": "Call"
                 }, 
                 {
                   "id": "tid_36", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
@@ -1075,39 +1087,40 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "max"
                     }, 
                     "(", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "t"
                     }, 
                     ")"
                   ], 
                   "id": "id_0", 
-                  "name": "Call"
+                  "type": "Call"
                 }
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_37", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -1115,23 +1128,23 @@ Module
           "contents": [
             {
               "id": "tid_38", 
-              "name": "token", 
+              "type": "token", 
               "value": "while"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "True"
             }
           ], 
           "id": "id_0", 
-          "name": "While"
+          "type": "While"
         }, 
         {
           "id": "tid_39", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n        ", 
@@ -1139,7 +1152,7 @@ Module
           "contents": [
             {
               "id": "tid_40", 
-              "name": "token", 
+              "type": "token", 
               "value": "if"
             }, 
             " ", 
@@ -1148,35 +1161,35 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 " ", 
                 {
                   "id": "tid_41", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "<"
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "0"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Lt"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "If"
+          "type": "If"
         }, 
         {
           "id": "tid_42", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n            ", 
@@ -1184,19 +1197,19 @@ Module
           "contents": [
             {
               "id": "tid_43", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "y"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }, 
         "\n        ", 
         {
@@ -1204,32 +1217,32 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_44", 
-              "name": "token", 
+              "type": "token", 
               "value": "-="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "2"
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign", 
-          "op": "Sub"
+          "op": "Sub", 
+          "type": "AugAssign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

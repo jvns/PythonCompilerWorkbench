@@ -38,13 +38,13 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_1", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -52,7 +52,7 @@ Module
               "contents": [
                 {
                   "id": "tid_2", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "not"
                 }, 
                 " ", 
@@ -60,7 +60,7 @@ Module
                   "contents": [
                     {
                       "id": "tid_3", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "not"
                     }, 
                     " ", 
@@ -68,7 +68,7 @@ Module
                       "contents": [
                         {
                           "id": "tid_4", 
-                          "name": "token", 
+                          "type": "token", 
                           "value": "not"
                         }, 
                         " ", 
@@ -76,7 +76,7 @@ Module
                           "contents": [
                             {
                               "id": "tid_5", 
-                              "name": "token", 
+                              "type": "token", 
                               "value": "-"
                             }, 
                             " ", 
@@ -84,7 +84,7 @@ Module
                               "contents": [
                                 {
                                   "id": "tid_6", 
-                                  "name": "token", 
+                                  "type": "token", 
                                   "value": "+"
                                 }, 
                                 " ", 
@@ -92,7 +92,7 @@ Module
                                   "contents": [
                                     {
                                       "id": "tid_7", 
-                                      "name": "token", 
+                                      "type": "token", 
                                       "value": "-"
                                     }, 
                                     " ", 
@@ -100,7 +100,7 @@ Module
                                       "contents": [
                                         {
                                           "id": "tid_8", 
-                                          "name": "token", 
+                                          "type": "token", 
                                           "value": "-"
                                         }, 
                                         " ", 
@@ -108,66 +108,66 @@ Module
                                           "contents": [
                                             {
                                               "id": "tid_9", 
-                                              "name": "token", 
+                                              "type": "token", 
                                               "value": "~"
                                             }, 
                                             " ", 
                                             {
                                               "ctx": "Load", 
                                               "id": "id_0", 
-                                              "name": "Name", 
+                                              "type": "Name", 
                                               "value": "xxx"
                                             }
                                           ], 
                                           "id": "id_0", 
-                                          "name": "UnaryOp", 
-                                          "op": "Invert"
+                                          "op": "Invert", 
+                                          "type": "UnaryOp"
                                         }
                                       ], 
                                       "id": "id_0", 
-                                      "name": "UnaryOp", 
-                                      "op": "USub"
+                                      "op": "USub", 
+                                      "type": "UnaryOp"
                                     }
                                   ], 
                                   "id": "id_0", 
-                                  "name": "UnaryOp", 
-                                  "op": "USub"
+                                  "op": "USub", 
+                                  "type": "UnaryOp"
                                 }
                               ], 
                               "id": "id_0", 
-                              "name": "UnaryOp", 
-                              "op": "UAdd"
+                              "op": "UAdd", 
+                              "type": "UnaryOp"
                             }
                           ], 
                           "id": "id_0", 
-                          "name": "UnaryOp", 
-                          "op": "USub"
+                          "op": "USub", 
+                          "type": "UnaryOp"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "UnaryOp", 
-                      "op": "Not"
+                      "op": "Not", 
+                      "type": "UnaryOp"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "UnaryOp", 
-                  "op": "Not"
+                  "op": "Not", 
+                  "type": "UnaryOp"
                 }
               ], 
               "id": "id_0", 
-              "name": "UnaryOp", 
-              "op": "Not"
+              "op": "Not", 
+              "type": "UnaryOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

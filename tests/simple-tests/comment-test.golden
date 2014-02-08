@@ -42,7 +42,7 @@ Module
   "contents": [
     {
       "id": "tid_1", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# comment on top"
     }, 
     "\n\n", 
@@ -53,41 +53,41 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "5"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }, 
         " ", 
         {
           "id": "tid_3", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# this is a comment"
         }, 
         "\n  ", 
         {
           "id": "tid_4", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# an another comment"
         }, 
         "\n      ", 
         {
           "id": "tid_5", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# indented even more # with another comment inside"
         }, 
         "\n", 
@@ -96,35 +96,35 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "y"
             }, 
             " ", 
             {
               "id": "tid_6", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "10"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }, 
         " ", 
         {
           "id": "tid_7", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# yet another one with triple hash ###"
         }, 
         "\n", 
         {
           "id": "tid_8", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# oh yeahhhh"
         }, 
         "\n\n", 
@@ -133,37 +133,37 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "z"
             }, 
             " ", 
             {
               "id": "tid_9", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"a hash # within a string shouldn't be a comment\""
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n\n", 
     {
       "id": "tid_10", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# one more"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

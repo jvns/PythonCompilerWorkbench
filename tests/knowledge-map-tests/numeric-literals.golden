@@ -43,103 +43,103 @@ Module
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.0"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.14"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "-3"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "-3.14"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.14159"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3."
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "-3."
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

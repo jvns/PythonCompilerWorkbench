@@ -38,7 +38,7 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " = (", 
@@ -49,7 +49,7 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "tokens"
                     }, 
                     "[", 
@@ -57,66 +57,66 @@ Module
                       "contents": [
                         {
                           "id": "id_0", 
-                          "name": "Num", 
+                          "type": "Num", 
                           "value": "5"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "Index"
+                      "type": "Index"
                     }, 
                     "]"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Subscript"
+                  "type": "Subscript"
                 }, 
                 " ", 
                 {
                   "id": "tid_1", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "=="
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Str", 
+                  "type": "Str", 
                   "value": "'male'"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare", 
               "ops": [
                 "Eq"
-              ]
+              ], 
+              "type": "Compare"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     ")\n", 
     {
       "id": "tid_2", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# this is currently broken since we don't properly track start_col and"
     }, 
     "\n", 
     {
       "id": "tid_3", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# extent of 'tokens[5]'. If we did, then it would conflict with"
     }, 
     "\n", 
     {
       "id": "tid_4", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# LOAD_NAME of 'tokens', since they start at the same column :("
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

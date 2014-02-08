@@ -24,7 +24,7 @@ Module
   "contents": [
     {
       "id": "tid_1", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# with extra spaces ..."
     }, 
     "\n", 
@@ -35,13 +35,13 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "c"
             }, 
             "  ", 
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             "  ", 
@@ -50,43 +50,43 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "a"
                 }, 
                 " ", 
                 {
                   "id": "tid_3", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "+"
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "b"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Add"
+              "op": "Add", 
+              "type": "BinOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "      \n", 
     {
       "id": "tid_4", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# and a trailing line comment"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

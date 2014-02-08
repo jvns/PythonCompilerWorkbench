@@ -41,12 +41,13 @@ Module
       "contents": [
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_1", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n  ", 
@@ -54,7 +55,7 @@ Module
           "contents": [
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -63,75 +64,75 @@ Module
                 "(", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "1"
                 }, 
                 {
                   "id": "tid_3", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "2"
                 }, 
                 {
                   "id": "tid_4", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "3"
                 }, 
                 ")"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n\n", 
     {
       "id": "tid_5", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# the RETURN_VALUE instruction after BUILD_TUPLE should get the benefits"
     }, 
     "\n", 
     {
       "id": "tid_6", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# of hysteresis (i.e., the same start_col and extent as BUILD_TUPLE)."
     }, 
     "\n", 
     {
       "id": "tid_7", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# Right now we have hysteresis only for function calls, and that"
     }, 
     "\n", 
     {
       "id": "tid_8", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# hysteresis might play badly with hysteresis for other types, so think"
     }, 
     "\n", 
     {
       "id": "tid_9", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# carefully about how to gracefully handle these interactions!"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

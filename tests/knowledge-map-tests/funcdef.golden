@@ -241,12 +241,13 @@ Module
       "contents": [
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_1", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -254,36 +255,36 @@ Module
           "contents": [
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "1"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n    ", 
         {
           "contents": [
             {
               "id": "tid_3", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "2"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n\n", 
         {
@@ -294,21 +295,22 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "foo", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_4", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -316,12 +318,12 @@ Module
           "contents": [
             {
               "id": "tid_5", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }, 
         "\n\n", 
         {
@@ -332,45 +334,46 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 {
                   "id": "tid_6", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "y"
                 }, 
                 {
                   "id": "tid_7", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "z"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "foo", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_8", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -378,12 +381,12 @@ Module
           "contents": [
             {
               "id": "tid_9", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }, 
         "\n\n", 
         {
@@ -394,65 +397,66 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }, 
                 {
                   "id": "tid_10", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "y"
                 }, 
                 {
                   "id": "tid_11", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "="
                 }, 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "10"
                 }, 
                 {
                   "id": "tid_12", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "z"
                 }, 
                 {
                   "id": "tid_13", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "="
                 }, 
                 {
                   "id": "id_0", 
-                  "name": "Str", 
+                  "type": "Str", 
                   "value": "\"hello world\""
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "foo", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_14", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -460,22 +464,23 @@ Module
           "contents": [
             {
               "id": "tid_15", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }, 
         "\n\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo(*x)"
         }, 
         {
           "id": "tid_16", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -483,12 +488,12 @@ Module
           "contents": [
             {
               "id": "tid_17", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }, 
         "\n\n", 
         {
@@ -499,26 +504,27 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             {
               "id": "tid_18", 
-              "name": "token", 
+              "type": "token", 
               "value": ","
             }, 
             "\n\n\n        *y)"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "foo", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_19", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -526,12 +532,12 @@ Module
           "contents": [
             {
               "id": "tid_20", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }, 
         "\n\n", 
         {
@@ -542,21 +548,22 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "x"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ", *y, **z)"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "foo", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_21", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -564,12 +571,12 @@ Module
           "contents": [
             {
               "id": "tid_22", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }, 
         "\n\n", 
         {
@@ -580,43 +587,44 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "xxx"
                 }, 
                 {
                   "id": "tid_23", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 "\n        ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "yyy"
                 }, 
                 {
                   "id": "tid_24", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "="
                 }, 
                 {
                   "id": "id_0", 
-                  "name": "Str", 
+                  "type": "Str", 
                   "value": "'default arg'"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ", *zzz,\n        **www)"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "foo", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_25", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -624,12 +632,12 @@ Module
           "contents": [
             {
               "id": "tid_26", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }, 
         "\n\n", 
         {
@@ -640,96 +648,97 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "a"
                 }, 
                 {
                   "id": "tid_27", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "="
                 }, 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "1"
                 }, 
                 {
                   "id": "tid_28", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 "\n        ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "b"
                 }, 
                 {
                   "id": "tid_29", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "="
                 }, 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "2"
                 }, 
                 {
                   "id": "tid_30", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 "\n        ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "c"
                 }, 
                 {
                   "id": "tid_31", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "="
                 }, 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "3"
                 }, 
                 {
                   "id": "tid_32", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "d"
                 }, 
                 {
                   "id": "tid_33", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "="
                 }, 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "4"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ",*x, **y)"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "foo", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_34", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -737,19 +746,19 @@ Module
           "contents": [
             {
               "id": "tid_35", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

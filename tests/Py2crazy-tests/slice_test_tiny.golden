@@ -29,7 +29,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "arr"
                 }, 
                 "[", 
@@ -38,40 +38,40 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "one"
                     }, 
                     {
                       "id": "tid_1", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ":"
                     }, 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "two"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Slice"
+                  "type": "Slice"
                 }, 
                 "]"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Subscript"
+              "type": "Subscript"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

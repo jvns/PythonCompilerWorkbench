@@ -55,7 +55,7 @@ Module
   "contents": [
     {
       "id": "tid_1", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# make sure BUILD_TUPLE works even right after a CALL_FUNCTION bytecode"
     }, 
     "\n", 
@@ -66,13 +66,13 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             " ", 
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -84,7 +84,7 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "int"
                     }, 
                     "(", 
@@ -93,7 +93,7 @@ Module
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "tokens"
                         }, 
                         "[", 
@@ -101,27 +101,27 @@ Module
                           "contents": [
                             {
                               "id": "id_0", 
-                              "name": "Num", 
+                              "type": "Num", 
                               "value": "2"
                             }
                           ], 
                           "id": "id_0", 
-                          "name": "Index"
+                          "type": "Index"
                         }, 
                         "]"
                       ], 
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Subscript"
+                      "type": "Subscript"
                     }, 
                     ")"
                   ], 
                   "id": "id_0", 
-                  "name": "Call"
+                  "type": "Call"
                 }, 
                 {
                   "id": "tid_3", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
@@ -130,7 +130,7 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "int"
                     }, 
                     "(", 
@@ -139,7 +139,7 @@ Module
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "tokens"
                         }, 
                         "[", 
@@ -147,40 +147,40 @@ Module
                           "contents": [
                             {
                               "id": "id_0", 
-                              "name": "Num", 
+                              "type": "Num", 
                               "value": "3"
                             }
                           ], 
                           "id": "id_0", 
-                          "name": "Index"
+                          "type": "Index"
                         }, 
                         "]"
                       ], 
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Subscript"
+                      "type": "Subscript"
                     }, 
                     ")"
                   ], 
                   "id": "id_0", 
-                  "name": "Call"
+                  "type": "Call"
                 }, 
                 ")"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Tuple"
+              "type": "Tuple"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

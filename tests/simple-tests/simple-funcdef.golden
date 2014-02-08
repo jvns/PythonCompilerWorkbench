@@ -41,39 +41,40 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "a"
                 }, 
                 {
                   "id": "tid_1", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "b"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "foo", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_2", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
         {
           "id": "tid_3", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "#c = a + b"
         }, 
         "\n    ", 
@@ -81,26 +82,26 @@ Module
           "contents": [
             {
               "id": "tid_4", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "c"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

@@ -51,13 +51,13 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "w"
             }, 
             " ", 
             {
               "id": "tid_1", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -66,7 +66,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "set"
                 }, 
                 "(", 
@@ -75,12 +75,12 @@ Module
                     "[", 
                     {
                       "id": "id_0", 
-                      "name": "Str", 
+                      "type": "Str", 
                       "value": "\"joe\""
                     }, 
                     {
                       "id": "tid_2", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ","
                     }, 
                     " ", 
@@ -88,29 +88,29 @@ Module
                       "contents": [
                         {
                           "id": "id_0", 
-                          "name": "Num", 
+                          "type": "Num", 
                           "value": "5"
                         }, 
                         " ", 
                         {
                           "id": "tid_3", 
-                          "name": "token", 
+                          "type": "token", 
                           "value": "+"
                         }, 
                         " ", 
                         {
                           "id": "id_0", 
-                          "name": "Num", 
+                          "type": "Num", 
                           "value": "6"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp", 
-                      "op": "Add"
+                      "op": "Add", 
+                      "type": "BinOp"
                     }, 
                     {
                       "id": "tid_4", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ","
                     }, 
                     " ", 
@@ -118,13 +118,13 @@ Module
                       "contents": [
                         {
                           "id": "id_0", 
-                          "name": "Str", 
+                          "type": "Str", 
                           "value": "\"mindy\""
                         }, 
                         " ", 
                         {
                           "id": "tid_5", 
-                          "name": "token", 
+                          "type": "token", 
                           "value": "+"
                         }, 
                         " ", 
@@ -132,52 +132,52 @@ Module
                           "contents": [
                             {
                               "id": "id_0", 
-                              "name": "Str", 
+                              "type": "Str", 
                               "value": "\"jack\""
                             }, 
                             " ", 
                             {
                               "id": "tid_6", 
-                              "name": "token", 
+                              "type": "token", 
                               "value": "*"
                             }, 
                             " ", 
                             {
                               "id": "id_0", 
-                              "name": "Num", 
+                              "type": "Num", 
                               "value": "2"
                             }
                           ], 
                           "id": "id_0", 
-                          "name": "BinOp", 
-                          "op": "Mult"
+                          "op": "Mult", 
+                          "type": "BinOp"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp", 
-                      "op": "Add"
+                      "op": "Add", 
+                      "type": "BinOp"
                     }, 
                     "]"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "List"
+                  "type": "List"
                 }, 
                 ")"
               ], 
               "id": "id_0", 
-              "name": "Call"
+              "type": "Call"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

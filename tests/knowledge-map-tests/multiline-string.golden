@@ -71,12 +71,12 @@ Module
           "contents": [
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"\"\"John's cat liked \"The Matrix\"\nbut his dog\npreferred the sequels.\"\"\""
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n\n", 
         {
@@ -84,24 +84,24 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "foo"
             }, 
             " ", 
             {
               "id": "tid_1", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "'''multi\n    line\n  string'''"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }, 
         "\n\n", 
         {
@@ -109,24 +109,24 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "bar"
             }, 
             " ", 
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "'''\nmulti\nline\nstring\nwith empty\nfirst line\n'''"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }, 
         "\n\n", 
         {
@@ -134,91 +134,91 @@ Module
             {
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "baz"
             }, 
             " ", 
             {
               "id": "tid_3", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"\"\"     \nmulti\nline\nstring\nwith spaces in first line\n\"\"\""
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n\n", 
     {
       "id": "tid_4", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# This doesn't work, but it's nuts!!!"
     }, 
     "\n", 
     {
       "id": "tid_5", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "#\"\"\"multi"
     }, 
     "\n", 
     {
       "id": "tid_6", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "#    line"
     }, 
     "\n", 
     {
       "id": "tid_7", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "#      string"
     }, 
     "\n", 
     {
       "id": "tid_8", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "#        method"
     }, 
     "\n", 
     {
       "id": "tid_9", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "#          call\"\"\".join('''"
     }, 
     "\n", 
     {
       "id": "tid_10", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "#another"
     }, 
     "\n", 
     {
       "id": "tid_11", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "#  multi"
     }, 
     "\n", 
     {
       "id": "tid_12", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "#    line"
     }, 
     "\n", 
     {
       "id": "tid_13", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "#      string''')"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

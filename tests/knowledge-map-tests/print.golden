@@ -169,121 +169,121 @@ Module
           "contents": [
             {
               "id": "tid_1", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"hello world\""
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_3", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"hello world\""
             }, 
             {
               "id": "tid_4", 
-              "name": "token", 
+              "type": "token", 
               "value": ","
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_5", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_6", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"hello\""
             }, 
             {
               "id": "tid_7", 
-              "name": "token", 
+              "type": "token", 
               "value": ","
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             {
               "id": "tid_8", 
-              "name": "token", 
+              "type": "token", 
               "value": ","
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "y"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_9", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
@@ -292,40 +292,40 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "a"
                 }, 
                 " ", 
                 {
                   "id": "tid_10", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "+"
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "b"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Add"
+              "op": "Add", 
+              "type": "BinOp"
             }, 
             {
               "id": "tid_11", 
-              "name": "token", 
+              "type": "token", 
               "value": ","
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n\n", 
         {
           "id": "tid_12", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# format strings"
         }, 
         "\n", 
@@ -333,7 +333,7 @@ Module
           "contents": [
             {
               "id": "tid_13", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
@@ -341,37 +341,37 @@ Module
               "contents": [
                 {
                   "id": "id_0", 
-                  "name": "Str", 
+                  "type": "Str", 
                   "value": "\"Hello, %s\""
                 }, 
                 " ", 
                 {
                   "id": "tid_14", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "%"
                 }, 
                 " ", 
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "name"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Mod"
+              "op": "Mod", 
+              "type": "BinOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_15", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
@@ -379,13 +379,13 @@ Module
               "contents": [
                 {
                   "id": "id_0", 
-                  "name": "Str", 
+                  "type": "Str", 
                   "value": "\"Hi %s %s\""
                 }, 
                 " ", 
                 {
                   "id": "tid_16", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "%"
                 }, 
                 " ", 
@@ -395,47 +395,47 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "first_name"
                     }, 
                     {
                       "id": "tid_17", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ","
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "last_name"
                     }, 
                     ")"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Tuple"
+                  "type": "Tuple"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Mod"
+              "op": "Mod", 
+              "type": "BinOp"
             }, 
             {
               "id": "tid_18", 
-              "name": "token", 
+              "type": "token", 
               "value": ","
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "tid_19", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
@@ -443,13 +443,13 @@ Module
               "contents": [
                 {
                   "id": "id_0", 
-                  "name": "Str", 
+                  "type": "Str", 
                   "value": "\"hello %s %d\""
                 }, 
                 " ", 
                 {
                   "id": "tid_20", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "%"
                 }, 
                 " ", 
@@ -459,40 +459,40 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "x"
                     }, 
                     {
                       "id": "tid_21", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ","
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "y"
                     }, 
                     ")"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Tuple"
+                  "type": "Tuple"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Mod"
+              "op": "Mod", 
+              "type": "BinOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n\n", 
         {
           "id": "tid_22", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# multiline"
         }, 
         "\n", 
@@ -500,7 +500,7 @@ Module
           "contents": [
             {
               "id": "tid_23", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
@@ -508,19 +508,19 @@ Module
               "contents": [
                 {
                   "id": "id_0", 
-                  "name": "Str", 
+                  "type": "Str", 
                   "value": "\"Hi %s %s\""
                 }, 
                 " % \\\n  ", 
                 {
                   "id": "tid_24", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "\\"
                 }, 
                 "\n  ", 
                 {
                   "id": "tid_25", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "\\"
                 }, 
                 "\n       ", 
@@ -530,85 +530,85 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "first_name"
                     }, 
                     {
                       "id": "tid_26", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ","
                     }, 
                     " ", 
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "last_name"
                     }, 
                     ")"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Tuple"
+                  "type": "Tuple"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Mod"
+              "op": "Mod", 
+              "type": "BinOp"
             }, 
             {
               "id": "tid_27", 
-              "name": "token", 
+              "type": "token", 
               "value": ","
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }, 
         "\n\n\n", 
         {
           "contents": [
             {
               "id": "tid_28", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "\"hello\""
             }, 
             ", \\\n  ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "x"
             }, 
             ", \\\n ", 
             {
               "id": "tid_29", 
-              "name": "token", 
+              "type": "token", 
               "value": "\\"
             }, 
             "\n  ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "y"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

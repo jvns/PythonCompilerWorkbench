@@ -80,13 +80,13 @@ Module
   "contents": [
     {
       "id": "tid_1", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# these weird decorators currently don't work so hto ..."
     }, 
     "\n", 
     {
       "id": "tid_2", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# from Lib/threading.py"
     }, 
     "\n", 
@@ -96,7 +96,7 @@ Module
           "contents": [
             {
               "id": "tid_3", 
-              "name": "token", 
+              "type": "token", 
               "value": "@"
             }, 
             {
@@ -105,14 +105,14 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "name"
                 }, 
                 ".setter"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Attribute"
+              "type": "Attribute"
             }, 
             "\ndef name(", 
             {
@@ -120,33 +120,34 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "self"
                 }, 
                 {
                   "id": "tid_4", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "name"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "name", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_5", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -154,17 +155,17 @@ Module
           "contents": [
             {
               "id": "tid_6", 
-              "name": "token", 
+              "type": "token", 
               "value": "pass"
             }
           ], 
           "id": "id_0", 
-          "name": "Pass"
+          "type": "Pass"
         }, 
         "\n\n", 
         {
           "id": "tid_7", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# from Lib/csv.py"
         }, 
         "\n", 
@@ -172,7 +173,7 @@ Module
           "contents": [
             {
               "id": "tid_8", 
-              "name": "token", 
+              "type": "token", 
               "value": "@"
             }, 
             {
@@ -181,14 +182,14 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "fieldnames"
                 }, 
                 ".setter"
               ], 
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Attribute"
+              "type": "Attribute"
             }, 
             "\ndef fieldnames(", 
             {
@@ -196,33 +197,34 @@ Module
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "self"
                 }, 
                 {
                   "id": "tid_9", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 " ", 
                 {
                   "ctx": "Param", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "value"
                 }
               ], 
               "id": "id_0", 
-              "name": "arguments"
+              "type": "arguments"
             }, 
             ")"
           ], 
           "id": "id_0", 
-          "name": "FunctionDef"
+          "name": "fieldnames", 
+          "type": "FunctionDef"
         }, 
         {
           "id": "tid_10", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -234,38 +236,38 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "self"
                 }, 
                 "._fieldnames"
               ], 
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Attribute"
+              "type": "Attribute"
             }, 
             " ", 
             {
               "id": "tid_11", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
             {
               "ctx": "Load", 
               "id": "id_0", 
-              "name": "Name", 
+              "type": "Name", 
               "value": "value"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

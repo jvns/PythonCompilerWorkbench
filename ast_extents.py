@@ -1013,7 +1013,7 @@ def parse_and_add_extents(code_str):
 # wrapper around a native C object. :(
 def get_node_attr_json(node):
     # start with bare bones, and append addition attributes onto this skeleton:
-    s = '"name": %s' % json.dumps(node.__class__.__name__)
+    s = '"type": %s' % json.dumps(node.__class__.__name__)
 
     for a in ('op', 'ctx'):
         if hasattr(node, a):
@@ -1022,7 +1022,7 @@ def get_node_attr_json(node):
                 s += ', "%s": %s' % (a, json.dumps(attr_node.__class__.__name__))
 
     # these values are strings
-    for a in ('arg', 'attr', 'id'):
+    for a in ('arg', 'attr', 'id', 'name'):
         if hasattr(node, a):
             attr_node = getattr(node, a)
             s += ', "%s": %s' % (a, json.dumps(attr_node))
@@ -1158,7 +1158,7 @@ class CodeAst(object):
                 print >> self.outbuf, "," # ugh commas
 
                 # then dump out the comment
-                t = '{"name": "comment", "value": %s, "id": "tid_%d"}'
+                t = '{"type": "comment", "value": %s, "id": "tid_%d"}'
                 print >> self.outbuf, t % (json.dumps(comment_str), self.get_tid())
                 self.gobbled_string_lst.append(comment_str)
             except ValueError:
@@ -1183,7 +1183,7 @@ class CodeAst(object):
                         assert not prefix.strip() # should be ALL whitespace
                         _relex_helper(prefix)
                         print >> self.outbuf, "," # ugh commas
-                    t = '{"name": "token", "value": %s, "id": "tid_%d"}'
+                    t = '{"type": "token", "value": %s, "id": "tid_%d"}'
                     print >> self.outbuf, t % (json.dumps(tok), self.get_tid())
                     self.gobbled_string_lst.append(tok)
                     if suffix:
@@ -1241,7 +1241,7 @@ class CodeAst(object):
 
         self.outbuf = cStringIO.StringIO()
 
-        print >> self.outbuf, '{"name": "ROOT_NODE", "id": "id_ROOT", '
+        print >> self.outbuf, '{"type": "ROOT_NODE", "id": "id_ROOT", '
         print >> self.outbuf, ' "contents": ['
 
         has_leading_text = False
@@ -1418,7 +1418,8 @@ def optimize_output_dict(d):
 
             return ret
         else:
-            assert type(obj) in (str, unicode)
+            if obj:
+                assert type(obj) in (str, unicode), `obj`
             return obj # verbatim
 
     # Phase 2:
@@ -1441,7 +1442,8 @@ def optimize_output_dict(d):
                 ret.append(_opt_helper_2(e))
             return ret
         else:
-            assert type(obj) in (str, unicode)
+            if obj:
+                assert type(obj) in (str, unicode), `obj`
             return obj # verbatim
 
     assert type(d) is dict

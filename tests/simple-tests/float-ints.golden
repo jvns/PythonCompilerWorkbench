@@ -67,48 +67,48 @@ Module
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3."
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "-3."
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "10."
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "-10."
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
@@ -117,132 +117,132 @@ Module
               "contents": [
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "-10."
                 }, 
                 " ", 
                 {
                   "id": "tid_1", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "+"
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "-3."
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Add"
+              "op": "Add", 
+              "type": "BinOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.0"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.00"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.000"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.0000"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.00000"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.0000000000"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.000000000000005"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }, 
         "\n", 
         {
           "contents": [
             {
               "id": "id_0", 
-              "name": "Num", 
+              "type": "Num", 
               "value": "3.00000000000000000000002"
             }
           ], 
           "id": "id_0", 
-          "name": "Expr"
+          "type": "Expr"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

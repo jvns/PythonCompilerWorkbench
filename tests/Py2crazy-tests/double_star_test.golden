@@ -83,7 +83,7 @@ Module
   "contents": [
     {
       "id": "tid_1", 
-      "name": "comment", 
+      "type": "comment", 
       "value": "# from Lib/doctest.py"
     }, 
     "\n", 
@@ -97,19 +97,19 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "self"
                 }, 
                 ".val"
               ], 
               "ctx": "Store", 
               "id": "id_0", 
-              "name": "Attribute"
+              "type": "Attribute"
             }, 
             " ", 
             {
               "id": "tid_2", 
-              "name": "token", 
+              "type": "token", 
               "value": "="
             }, 
             " ", 
@@ -121,51 +121,52 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "self"
                     }, 
                     ".val"
                   ], 
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Attribute"
+                  "type": "Attribute"
                 }, 
                 " ", 
                 {
                   "id": "tid_3", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": "**"
                 }, 
                 " ", 
                 {
                   "id": "id_0", 
-                  "name": "Num", 
+                  "type": "Num", 
                   "value": "2"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp", 
-              "op": "Pow"
+              "op": "Pow", 
+              "type": "BinOp"
             }
           ], 
           "id": "id_0", 
-          "name": "Assign"
+          "type": "Assign"
         }, 
         "\n\n", 
         {
           "id": "tid_4", 
-          "name": "comment", 
+          "type": "comment", 
           "value": "# from Lib/fractions.py"
         }, 
         "\n", 
         {
           "id": "id_0", 
-          "name": "FunctionDef", 
+          "name": "foo", 
+          "type": "FunctionDef", 
           "value": "def foo()"
         }, 
         {
           "id": "tid_5", 
-          "name": "token", 
+          "type": "token", 
           "value": ":"
         }, 
         "\n    ", 
@@ -173,7 +174,7 @@ Module
           "contents": [
             {
               "id": "tid_6", 
-              "name": "token", 
+              "type": "token", 
               "value": "return"
             }, 
             " ", 
@@ -182,7 +183,7 @@ Module
                 {
                   "ctx": "Load", 
                   "id": "id_0", 
-                  "name": "Name", 
+                  "type": "Name", 
                   "value": "Fraction"
                 }, 
                 "(", 
@@ -194,19 +195,19 @@ Module
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "a"
                         }, 
                         "._denominator"
                       ], 
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Attribute"
+                      "type": "Attribute"
                     }, 
                     " ", 
                     {
                       "id": "tid_7", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "**"
                     }, 
                     " ", 
@@ -214,28 +215,28 @@ Module
                       "contents": [
                         {
                           "id": "tid_8", 
-                          "name": "token", 
+                          "type": "token", 
                           "value": "-"
                         }, 
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "power"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "UnaryOp", 
-                      "op": "USub"
+                      "op": "USub", 
+                      "type": "UnaryOp"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp", 
-                  "op": "Pow"
+                  "op": "Pow", 
+                  "type": "BinOp"
                 }, 
                 {
                   "id": "tid_9", 
-                  "name": "token", 
+                  "type": "token", 
                   "value": ","
                 }, 
                 "\n                    ", 
@@ -247,19 +248,19 @@ Module
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "a"
                         }, 
                         "._numerator"
                       ], 
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Attribute"
+                      "type": "Attribute"
                     }, 
                     " ", 
                     {
                       "id": "tid_10", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": "**"
                     }, 
                     " ", 
@@ -267,40 +268,40 @@ Module
                       "contents": [
                         {
                           "id": "tid_11", 
-                          "name": "token", 
+                          "type": "token", 
                           "value": "-"
                         }, 
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "power"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "UnaryOp", 
-                      "op": "USub"
+                      "op": "USub", 
+                      "type": "UnaryOp"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp", 
-                  "op": "Pow"
+                  "op": "Pow", 
+                  "type": "BinOp"
                 }, 
                 ")"
               ], 
               "id": "id_0", 
-              "name": "Call"
+              "type": "Call"
             }
           ], 
           "id": "id_0", 
-          "name": "Return"
+          "type": "Return"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }

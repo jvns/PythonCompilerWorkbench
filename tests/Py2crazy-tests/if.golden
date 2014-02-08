@@ -55,7 +55,7 @@ Module
           "contents": [
             {
               "id": "tid_1", 
-              "name": "token", 
+              "type": "token", 
               "value": "if"
             }, 
             " ", 
@@ -66,13 +66,13 @@ Module
                     {
                       "ctx": "Load", 
                       "id": "id_0", 
-                      "name": "Name", 
+                      "type": "Name", 
                       "value": "foo"
                     }, 
                     "()"
                   ], 
                   "id": "id_0", 
-                  "name": "Call"
+                  "type": "Call"
                 }, 
                 " and (", 
                 {
@@ -82,79 +82,79 @@ Module
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "x"
                         }, 
                         " ", 
                         {
                           "id": "tid_2", 
-                          "name": "token", 
+                          "type": "token", 
                           "value": "+"
                         }, 
                         " ", 
                         {
                           "ctx": "Load", 
                           "id": "id_0", 
-                          "name": "Name", 
+                          "type": "Name", 
                           "value": "y"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp", 
-                      "op": "Add"
+                      "op": "Add", 
+                      "type": "BinOp"
                     }, 
                     " ", 
                     {
                       "id": "tid_3", 
-                      "name": "token", 
+                      "type": "token", 
                       "value": ">"
                     }, 
                     " ", 
                     {
                       "id": "id_0", 
-                      "name": "Num", 
+                      "type": "Num", 
                       "value": "7"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare", 
                   "ops": [
                     "Gt"
-                  ]
+                  ], 
+                  "type": "Compare"
                 }
               ], 
               "id": "id_0", 
-              "name": "BoolOp", 
-              "op": "And"
+              "op": "And", 
+              "type": "BoolOp"
             }
           ], 
           "id": "id_0", 
-          "name": "If"
+          "type": "If"
         }, 
         "):\n  ", 
         {
           "contents": [
             {
               "id": "tid_4", 
-              "name": "token", 
+              "type": "token", 
               "value": "print"
             }, 
             " ", 
             {
               "id": "id_0", 
-              "name": "Str", 
+              "type": "Str", 
               "value": "'YES!'"
             }
           ], 
           "id": "id_0", 
-          "name": "Print"
+          "type": "Print"
         }
       ], 
       "id": "id_0", 
-      "name": "Module"
+      "type": "Module"
     }, 
     "\n"
   ], 
   "id": "id_ROOT", 
-  "name": "ROOT_NODE"
+  "type": "ROOT_NODE"
 }
