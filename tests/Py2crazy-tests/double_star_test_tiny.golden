@@ -30,6 +30,7 @@ Module
         {
           "contents": [
             {
+              "attr": "val", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -53,6 +54,7 @@ Module
             {
               "contents": [
                 {
+                  "attr": "val", 
                   "contents": [
                     {
                       "ctx": "Load", 

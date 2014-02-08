@@ -1103,6 +1103,7 @@ Module
             {
               "contents": [
                 {
+                  "attr": "iteritems", 
                   "contents": [
                     {
                       "ctx": "Load", 
@@ -1186,6 +1187,7 @@ Module
             {
               "contents": [
                 {
+                  "attr": "mro", 
                   "contents": [
                     {
                       "contents": [

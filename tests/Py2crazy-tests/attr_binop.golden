@@ -83,6 +83,7 @@ Module
             {
               "contents": [
                 {
+                  "attr": "first_attr", 
                   "contents": [
                     {
                       "ctx": "Load", 
@@ -104,6 +105,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "attr": "second_attr", 
                   "contents": [
                     {
                       "ctx": "Load", 

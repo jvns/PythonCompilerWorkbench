@@ -92,6 +92,7 @@ Module
         {
           "contents": [
             {
+              "attr": "val", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -115,6 +116,7 @@ Module
             {
               "contents": [
                 {
+                  "attr": "val", 
                   "contents": [
                     {
                       "ctx": "Load", 
@@ -187,6 +189,7 @@ Module
                 {
                   "contents": [
                     {
+                      "attr": "_denominator", 
                       "contents": [
                         {
                           "ctx": "Load", 
@@ -239,6 +242,7 @@ Module
                 {
                   "contents": [
                     {
+                      "attr": "_numerator", 
                       "contents": [
                         {
                           "ctx": "Load", 

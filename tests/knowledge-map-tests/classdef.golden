@@ -203,6 +203,7 @@ Module
         {
           "contents": [
             {
+              "attr": "age", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -290,6 +291,7 @@ Module
                 }, 
                 "\n        ", 
                 {
+                  "attr": "name", 
                   "contents": [
                     {
                       "ctx": "Load", 

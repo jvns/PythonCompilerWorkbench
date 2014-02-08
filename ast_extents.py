@@ -1022,7 +1022,7 @@ def get_node_attr_json(node):
                 s += ', "%s": %s' % (a, json.dumps(attr_node.__class__.__name__))
 
     # these values are strings
-    for a in ('arg',):
+    for a in ('arg', 'attr', 'id'):
         if hasattr(node, a):
             attr_node = getattr(node, a)
             s += ', "%s": %s' % (a, json.dumps(attr_node))

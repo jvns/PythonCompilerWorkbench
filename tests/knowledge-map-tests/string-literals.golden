@@ -181,6 +181,7 @@ Module
             {
               "contents": [
                 {
+                  "attr": "join", 
                   "contents": [
                     {
                       "id": "id_0", 

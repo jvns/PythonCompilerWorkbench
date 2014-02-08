@@ -26,6 +26,7 @@ Module
         {
           "contents": [
             {
+              "attr": "foo", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -47,6 +48,7 @@ Module
             }, 
             " ", 
             {
+              "attr": "baz", 
               "contents": [
                 {
                   "ctx": "Load", 

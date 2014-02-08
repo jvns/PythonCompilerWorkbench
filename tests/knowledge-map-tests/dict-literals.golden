@@ -432,6 +432,7 @@ Module
                 {
                   "contents": [
                     {
+                      "attr": "get_age", 
                       "contents": [
                         {
                           "ctx": "Load", 
@@ -470,6 +471,7 @@ Module
                 {
                   "contents": [
                     {
+                      "attr": "get_age", 
                       "contents": [
                         {
                           "ctx": "Load", 
@@ -508,6 +510,7 @@ Module
                 {
                   "contents": [
                     {
+                      "attr": "get_age", 
                       "contents": [
                         {
                           "ctx": "Load", 

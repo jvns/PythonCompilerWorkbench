@@ -220,6 +220,7 @@ Module
         {
           "contents": [
             {
+              "attr": "pi", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -243,6 +244,7 @@ Module
             {
               "contents": [
                 {
+                  "attr": "sin", 
                   "contents": [
                     {
                       "ctx": "Load", 
@@ -275,6 +277,7 @@ Module
         {
           "contents": [
             {
+              "attr": "maximum_age", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -296,8 +299,10 @@ Module
         {
           "contents": [
             {
+              "attr": "h", 
               "contents": [
                 {
+                  "attr": "g", 
                   "contents": [
                     {
                       "ctx": "Load", 
@@ -327,8 +332,10 @@ Module
             {
               "contents": [
                 {
+                  "attr": "abspath", 
                   "contents": [
                     {
+                      "attr": "path", 
                       "contents": [
                         {
                           "ctx": "Load", 
@@ -369,10 +376,12 @@ Module
             {
               "contents": [
                 {
+                  "attr": "h", 
                   "contents": [
                     {
                       "contents": [
                         {
+                          "attr": "g", 
                           "contents": [
                             {
                               "contents": [
@@ -440,6 +449,7 @@ Module
             {
               "contents": [
                 {
+                  "attr": "append", 
                   "contents": [
                     {
                       "ctx": "Load", 
@@ -457,6 +467,7 @@ Module
                 {
                   "contents": [
                     {
+                      "attr": "capitalize", 
                       "contents": [
                         {
                           "ctx": "Load", 
@@ -488,6 +499,7 @@ Module
         {
           "contents": [
             {
+              "attr": "f", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -521,6 +533,7 @@ Module
         {
           "contents": [
             {
+              "attr": "f", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -555,6 +568,7 @@ Module
         {
           "contents": [
             {
+              "attr": "x", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -578,6 +592,7 @@ Module
             {
               "contents": [
                 {
+                  "attr": "x", 
                   "contents": [
                     {
                       "ctx": "Load", 
@@ -601,6 +616,7 @@ Module
                 {
                   "contents": [
                     {
+                      "attr": "width", 
                       "contents": [
                         {
                           "ctx": "Load", 
@@ -644,6 +660,7 @@ Module
         {
           "contents": [
             {
+              "attr": "age", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -691,6 +708,7 @@ Module
             }, 
             " ", 
             {
+              "attr": "age", 
               "contents": [
                 {
                   "ctx": "Load", 

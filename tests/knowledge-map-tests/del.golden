@@ -164,6 +164,7 @@ Module
             }, 
             " ", 
             {
+              "attr": "bar", 
               "contents": [
                 {
                   "ctx": "Load", 

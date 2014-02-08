@@ -100,6 +100,7 @@ Module
               "value": "@"
             }, 
             {
+              "attr": "setter", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -175,6 +176,7 @@ Module
               "value": "@"
             }, 
             {
+              "attr": "setter", 
               "contents": [
                 {
                   "ctx": "Load", 
@@ -227,6 +229,7 @@ Module
         {
           "contents": [
             {
+              "attr": "_fieldnames", 
               "contents": [
                 {
                   "ctx": "Load", 

@@ -625,6 +625,7 @@ Module
                     {
                       "contents": [
                         {
+                          "attr": "index", 
                           "contents": [
                             {
                               "ctx": "Load", 
@@ -669,6 +670,7 @@ Module
             {
               "contents": [
                 {
+                  "attr": "append", 
                   "contents": [
                     {
                       "contents": [
