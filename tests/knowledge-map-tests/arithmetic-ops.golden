@@ -145,7 +145,8 @@ Module
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Div"
             }
           ], 
           "id": "id_0", 
@@ -175,7 +176,8 @@ Module
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Add"
             }
           ], 
           "id": "id_0", 
@@ -205,7 +207,8 @@ Module
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Mult"
             }
           ], 
           "id": "id_0", 
@@ -217,6 +220,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "x"
@@ -229,13 +233,15 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Add"
             }
           ], 
           "id": "id_0", 
@@ -249,6 +255,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "x"
@@ -261,13 +268,15 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "y"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Mult"
                 }, 
                 " ", 
                 {
@@ -277,13 +286,15 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "z"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Add"
             }
           ], 
           "id": "id_0", 
@@ -298,6 +309,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "x"
@@ -316,12 +328,14 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }, 
                 ") * (", 
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "y"
@@ -334,17 +348,20 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "z"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Mult"
             }
           ], 
           "id": "id_0", 
@@ -356,6 +373,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "one"
@@ -364,6 +382,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "two"
@@ -382,11 +401,13 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Mult"
             }
           ], 
           "id": "id_0", 
@@ -416,7 +437,8 @@ Module
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Add"
             }
           ], 
           "id": "id_0", 
@@ -428,6 +450,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "one"
@@ -442,6 +465,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "two"
@@ -460,11 +484,13 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Mult"
             }
           ], 
           "id": "id_0", 

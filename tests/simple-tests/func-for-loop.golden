@@ -117,6 +117,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Param", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "a"
@@ -128,6 +129,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Param", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "b"
@@ -139,6 +141,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Param", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "c"
@@ -171,6 +174,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "d"
@@ -187,6 +191,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "a"
@@ -201,6 +206,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "b"
@@ -213,17 +219,20 @@ Module
                         }, 
                         " ", 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "c"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Mult"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }, 
                 " ", 
                 {
@@ -235,6 +244,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "bar"
@@ -246,7 +256,8 @@ Module
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Sub"
             }
           ], 
           "id": "id_0", 
@@ -262,6 +273,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "i"
@@ -276,6 +288,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "range"
@@ -310,6 +323,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "i"
@@ -321,6 +335,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "d"
@@ -341,6 +356,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "c"
@@ -352,11 +368,13 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "d"
                 }
               ], 
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Tuple"
             }

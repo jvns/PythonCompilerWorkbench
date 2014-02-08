@@ -43,6 +43,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "str"
@@ -74,12 +75,14 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "self"
                         }, 
                         ".x"
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 
@@ -92,12 +95,14 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "self"
                         }, 
                         ".y"
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 
@@ -110,23 +115,27 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "self"
                         }, 
                         ".z"
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 
                     ")"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Tuple"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Mod"
             }
           ], 
           "id": "id_0", 

@@ -1006,6 +1006,38 @@ def parse_and_add_extents(code_str):
     return root_node
 
 
+# get a summary of each node's relevant attributes in JSON format:
+#
+# a more elegant solution is to monkey-patch methods in individual ast.*
+# classes, but ast.AST can't be monkey-patched, I think because it's a
+# wrapper around a native C object. :(
+def get_node_attr_json(node):
+    # start with bare bones, and append addition attributes onto this skeleton:
+    s = '"name": %s' % json.dumps(node.__class__.__name__)
+
+    for a in ('op', 'ctx'):
+        if hasattr(node, a):
+            attr_node = getattr(node, a)
+            if isinstance(attr_node, ast.AST):
+                s += ', "%s": %s' % (a, json.dumps(attr_node.__class__.__name__))
+
+    # these values are strings
+    for a in ('arg',):
+        if hasattr(node, a):
+            attr_node = getattr(node, a)
+            s += ', "%s": %s' % (a, json.dumps(attr_node))
+
+    # 'ops' is a list of ops
+    if hasattr(node, 'ops'):
+        ops_names = [e.__class__.__name__ for e in node.ops]
+        s += ', "%s": %s' % ('ops', json.dumps(ops_names))
+
+    # TODO: what we might also want is the attribute name of the parent
+    # that brought us to this node. e.g., an ast.Dict has keys and values
+    # attrs, which point to, say, identifiers, or other expressions
+
+    return s
+
 
 class CodeAst(object):
     def __init__(self, code_str):
@@ -1137,6 +1169,11 @@ class CodeAst(object):
                 # looking for one single token:
                 # http://www.dabeaz.com/ply/ply.html#ply_nn3
 
+                # or whaaaaaa?!? Python has a Python-based tokenizer in
+                # its standard library, wha?!?
+                # http://docs.python.org/2/library/tokenize.html
+                # OMG this handles comments as well ... WTF?!?
+
                 # okay, the SIMPLE case is if there's exactly ONE token
                 # in the line (after stripping all whitespace)
                 tok = line.strip()
@@ -1239,7 +1276,7 @@ class CodeAst(object):
                 self.all_ids.add(_id)
  
             print >> self.outbuf, ind_str + c,
-            print >> self.outbuf, '{"name": %s, "id": "id_%d",' % (json.dumps(node.__class__.__name__), _id)
+            print >> self.outbuf, '{%s, "id": "id_%d",' % (get_node_attr_json(node), _id)
             print >> self.outbuf, ind_str + ' "contents": ['
 
             if self.cur_index < node.abs_start_index:

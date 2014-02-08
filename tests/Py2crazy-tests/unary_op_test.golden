@@ -36,6 +36,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -112,41 +113,50 @@ Module
                                             }, 
                                             " ", 
                                             {
+                                              "ctx": "Load", 
                                               "id": "id_0", 
                                               "name": "Name", 
                                               "value": "xxx"
                                             }
                                           ], 
                                           "id": "id_0", 
-                                          "name": "UnaryOp"
+                                          "name": "UnaryOp", 
+                                          "op": "Invert"
                                         }
                                       ], 
                                       "id": "id_0", 
-                                      "name": "UnaryOp"
+                                      "name": "UnaryOp", 
+                                      "op": "USub"
                                     }
                                   ], 
                                   "id": "id_0", 
-                                  "name": "UnaryOp"
+                                  "name": "UnaryOp", 
+                                  "op": "USub"
                                 }
                               ], 
                               "id": "id_0", 
-                              "name": "UnaryOp"
+                              "name": "UnaryOp", 
+                              "op": "UAdd"
                             }
                           ], 
                           "id": "id_0", 
-                          "name": "UnaryOp"
+                          "name": "UnaryOp", 
+                          "op": "USub"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "UnaryOp"
+                      "name": "UnaryOp", 
+                      "op": "Not"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "UnaryOp"
+                  "name": "UnaryOp", 
+                  "op": "Not"
                 }
               ], 
               "id": "id_0", 
-              "name": "UnaryOp"
+              "name": "UnaryOp", 
+              "op": "Not"
             }
           ], 
           "id": "id_0", 

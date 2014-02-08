@@ -189,6 +189,7 @@ Module
                     }, 
                     ".join"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
@@ -223,6 +224,7 @@ Module
                     }, 
                     "]"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "List"
                 }, 

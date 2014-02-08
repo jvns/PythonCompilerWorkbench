@@ -91,6 +91,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Store", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "a"
@@ -102,11 +103,13 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Store", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "b"
                 }
               ], 
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Tuple"
             }, 
@@ -120,6 +123,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "c"
@@ -131,11 +135,13 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "d"
                 }
               ], 
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Tuple"
             }
@@ -150,6 +156,7 @@ Module
               "contents": [
                 "(", 
                 {
+                  "ctx": "Store", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "a"
@@ -161,12 +168,14 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Store", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "b"
                 }, 
                 ")"
               ], 
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Tuple"
             }, 
@@ -181,6 +190,7 @@ Module
               "contents": [
                 "(", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "c"
@@ -192,12 +202,14 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "d"
                 }, 
                 ")"
               ], 
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Tuple"
             }
@@ -218,6 +230,7 @@ Module
               "contents": [
                 "(", 
                 {
+                  "ctx": "Store", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "a"
@@ -229,6 +242,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Store", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "b"
@@ -240,12 +254,14 @@ Module
                 }, 
                 "\n   ", 
                 {
+                  "ctx": "Store", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "c"
                 }, 
                 ")"
               ], 
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Tuple"
             }, 
@@ -254,6 +270,7 @@ Module
               "contents": [
                 "(", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "c"
@@ -265,12 +282,14 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "d"
                 }, 
                 ")"
               ], 
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Tuple"
             }

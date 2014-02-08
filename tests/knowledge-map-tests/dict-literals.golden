@@ -330,6 +330,7 @@ Module
                     }, 
                     ")"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Tuple"
                 }, 
@@ -373,6 +374,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "a"
@@ -385,13 +387,15 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "b"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }, 
                 "}"
               ], 
@@ -430,12 +434,14 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "joe"
                         }, 
                         ".get_age"
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 
@@ -466,12 +472,14 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "carol"
                         }, 
                         ".get_age"
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 
@@ -502,12 +510,14 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "bob"
                         }, 
                         ".get_age"
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 

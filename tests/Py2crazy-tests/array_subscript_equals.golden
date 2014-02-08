@@ -36,6 +36,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -46,6 +47,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "tokens"
@@ -64,6 +66,7 @@ Module
                     }, 
                     "]"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Subscript"
                 }, 
@@ -81,7 +84,10 @@ Module
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare"
+              "name": "Compare", 
+              "ops": [
+                "Eq"
+              ]
             }
           ], 
           "id": "id_0", 

@@ -102,12 +102,14 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "name"
                 }, 
                 ".setter"
               ], 
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Attribute"
             }, 
@@ -115,6 +117,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Param", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "self"
@@ -126,6 +129,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Param", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "name"
@@ -173,12 +177,14 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "fieldnames"
                 }, 
                 ".setter"
               ], 
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Attribute"
             }, 
@@ -186,6 +192,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Param", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "self"
@@ -197,6 +204,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Param", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "value"
@@ -221,12 +229,14 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "self"
                 }, 
                 "._fieldnames"
               ], 
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Attribute"
             }, 
@@ -238,6 +248,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "value"

@@ -134,7 +134,8 @@ Module
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Add"
             }
           ], 
           "id": "id_0", 

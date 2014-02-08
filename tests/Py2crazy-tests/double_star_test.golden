@@ -94,12 +94,14 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "self"
                 }, 
                 ".val"
               ], 
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Attribute"
             }, 
@@ -115,12 +117,14 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "self"
                     }, 
                     ".val"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
@@ -138,7 +142,8 @@ Module
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Pow"
             }
           ], 
           "id": "id_0", 
@@ -173,6 +178,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "Fraction"
@@ -183,12 +189,14 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "a"
                         }, 
                         "._denominator"
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 
@@ -207,17 +215,20 @@ Module
                           "value": "-"
                         }, 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "power"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "UnaryOp"
+                      "name": "UnaryOp", 
+                      "op": "USub"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Pow"
                 }, 
                 {
                   "id": "tid_9", 
@@ -230,12 +241,14 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "a"
                         }, 
                         "._numerator"
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Attribute"
                     }, 
@@ -254,17 +267,20 @@ Module
                           "value": "-"
                         }, 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "power"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "UnaryOp"
+                      "name": "UnaryOp", 
+                      "op": "USub"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Pow"
                 }, 
                 ")"
               ], 

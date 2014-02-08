@@ -49,6 +49,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "w"
@@ -63,6 +64,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "set"
@@ -103,7 +105,8 @@ Module
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Add"
                     }, 
                     {
                       "id": "tid_4", 
@@ -146,14 +149,17 @@ Module
                             }
                           ], 
                           "id": "id_0", 
-                          "name": "BinOp"
+                          "name": "BinOp", 
+                          "op": "Mult"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Add"
                     }, 
                     "]"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "List"
                 }, 

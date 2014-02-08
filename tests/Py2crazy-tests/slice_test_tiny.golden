@@ -27,6 +27,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "arr"
@@ -35,6 +36,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "one"
@@ -45,6 +47,7 @@ Module
                       "value": ":"
                     }, 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "two"
@@ -55,6 +58,7 @@ Module
                 }, 
                 "]"
               ], 
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Subscript"
             }

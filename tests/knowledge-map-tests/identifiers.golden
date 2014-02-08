@@ -65,6 +65,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "i"
@@ -77,6 +78,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "name"
@@ -89,6 +91,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "my_first_name"
@@ -101,6 +104,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "PLANCK_CONSTANT"
@@ -113,6 +117,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "MyAwesomeClass"
@@ -125,6 +130,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "card"
@@ -137,6 +143,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "Card"
@@ -149,6 +156,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "_private_attr"
@@ -161,6 +169,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "javaStyle"
@@ -173,6 +182,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "__super_private"
@@ -185,6 +195,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "__init__"

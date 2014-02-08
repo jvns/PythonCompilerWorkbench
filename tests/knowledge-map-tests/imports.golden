@@ -159,6 +159,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -177,7 +178,8 @@ Module
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign"
+          "name": "AugAssign", 
+          "op": "Add"
         }, 
         {
           "id": "tid_4", 
@@ -188,6 +190,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "y"
@@ -206,7 +209,8 @@ Module
             }
           ], 
           "id": "id_0", 
-          "name": "AugAssign"
+          "name": "AugAssign", 
+          "op": "Sub"
         }, 
         "\n", 
         {
@@ -225,6 +229,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "baz"

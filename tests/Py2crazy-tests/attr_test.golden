@@ -28,12 +28,14 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "x"
                 }, 
                 ".foo"
               ], 
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Attribute"
             }, 
@@ -47,12 +49,14 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
                 }, 
                 ".baz"
               ], 
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Attribute"
             }

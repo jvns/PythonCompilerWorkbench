@@ -91,12 +91,14 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "func1"
                     }, 
                     "(", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "x"
@@ -108,6 +110,7 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "y"
@@ -126,12 +129,14 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "func2"
                     }, 
                     "(", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "z"
@@ -143,6 +148,7 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "w"
@@ -154,6 +160,7 @@ Module
                 }, 
                 ")"
               ], 
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Tuple"
             }

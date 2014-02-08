@@ -170,13 +170,15 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "x"
                 }
               ], 
               "id": "id_0", 
-              "name": "UnaryOp"
+              "name": "UnaryOp", 
+              "op": "Not"
             }
           ], 
           "id": "id_0", 
@@ -191,6 +193,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "x"
@@ -203,17 +206,20 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "y"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BoolOp"
+                  "name": "BoolOp", 
+                  "op": "Or"
                 }
               ], 
               "id": "id_0", 
-              "name": "UnaryOp"
+              "name": "UnaryOp", 
+              "op": "Not"
             }
           ], 
           "id": "id_0", 
@@ -225,6 +231,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "x"
@@ -237,13 +244,17 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare"
+              "name": "Compare", 
+              "ops": [
+                "Is"
+              ]
             }
           ], 
           "id": "id_0", 
@@ -255,19 +266,24 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "x"
                 }, 
                 " is not ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare"
+              "name": "Compare", 
+              "ops": [
+                "IsNot"
+              ]
             }
           ], 
           "id": "id_0", 
@@ -279,6 +295,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "x"
@@ -291,13 +308,17 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare"
+              "name": "Compare", 
+              "ops": [
+                "In"
+              ]
             }
           ], 
           "id": "id_0", 
@@ -309,19 +330,24 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "x"
                 }, 
                 " not in ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare"
+              "name": "Compare", 
+              "ops": [
+                "NotIn"
+              ]
             }
           ], 
           "id": "id_0", 
@@ -348,18 +374,23 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "age"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare"
+                  "name": "Compare", 
+                  "ops": [
+                    "Lt"
+                  ]
                 }, 
                 ") and (", 
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "age"
@@ -378,11 +409,15 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare"
+                  "name": "Compare", 
+                  "ops": [
+                    "Lt"
+                  ]
                 }
               ], 
               "id": "id_0", 
-              "name": "BoolOp"
+              "name": "BoolOp", 
+              "op": "And"
             }
           ], 
           "id": "id_0", 
@@ -406,6 +441,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "age"
@@ -424,7 +460,10 @@ Module
                 }
               ], 
               "id": "id_0", 
-              "name": "Compare"
+              "name": "Compare", 
+              "ops": [
+                "LtLt"
+              ]
             }
           ], 
           "id": "id_0", 
@@ -457,18 +496,23 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "age"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare"
+                  "name": "Compare", 
+                  "ops": [
+                    "Lt"
+                  ]
                 }, 
                 ") and\n (", 
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "age"
@@ -487,11 +531,15 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare"
+                  "name": "Compare", 
+                  "ops": [
+                    "Lt"
+                  ]
                 }
               ], 
               "id": "id_0", 
-              "name": "BoolOp"
+              "name": "BoolOp", 
+              "op": "And"
             }
           ], 
           "id": "id_0", 

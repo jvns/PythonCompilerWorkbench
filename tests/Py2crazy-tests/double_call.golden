@@ -74,6 +74,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -93,6 +94,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "f"
@@ -101,6 +103,7 @@ Module
                         {
                           "contents": [
                             {
+                              "ctx": "Load", 
                               "id": "id_0", 
                               "name": "Name", 
                               "value": "xs"
@@ -119,6 +122,7 @@ Module
                             }, 
                             "]"
                           ], 
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Subscript"
                         }, 
@@ -129,6 +133,7 @@ Module
                     }, 
                     "]"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "List"
                 }, 
@@ -142,6 +147,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "list"
@@ -150,12 +156,14 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "map"
                         }, 
                         "(", 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "f"
@@ -169,6 +177,7 @@ Module
                         {
                           "contents": [
                             {
+                              "ctx": "Load", 
                               "id": "id_0", 
                               "name": "Name", 
                               "value": "xs"
@@ -192,6 +201,7 @@ Module
                             }, 
                             "]"
                           ], 
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Subscript"
                         }, 
@@ -207,7 +217,8 @@ Module
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Add"
             }
           ], 
           "id": "id_0", 

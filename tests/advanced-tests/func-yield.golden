@@ -252,6 +252,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "True"
@@ -289,6 +290,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "a"
@@ -301,13 +303,15 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "b"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }
               ], 
               "id": "id_0", 
@@ -342,12 +346,14 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "foo"
                     }, 
                     "(", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "n"
@@ -372,6 +378,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Param", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "n"
@@ -404,6 +411,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "n"
@@ -418,6 +426,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "fact"
@@ -426,6 +435,7 @@ Module
                         {
                           "contents": [
                             {
+                              "ctx": "Load", 
                               "id": "id_0", 
                               "name": "Name", 
                               "value": "n"
@@ -442,7 +452,8 @@ Module
                             }
                           ], 
                           "id": "id_0", 
-                          "name": "BinOp"
+                          "name": "BinOp", 
+                          "op": "Sub"
                         }, 
                         ")"
                       ], 
@@ -451,7 +462,8 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Mult"
                 }
               ], 
               "id": "id_0", 

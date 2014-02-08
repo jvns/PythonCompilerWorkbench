@@ -227,6 +227,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -256,6 +257,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -267,6 +269,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "y"
@@ -287,6 +290,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "a"
@@ -299,13 +303,15 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "b"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Add"
             }, 
             {
               "id": "tid_11", 
@@ -346,13 +352,15 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "name"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Mod"
             }
           ], 
           "id": "id_0", 
@@ -385,6 +393,7 @@ Module
                   "contents": [
                     "(", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "first_name"
@@ -396,18 +405,21 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "last_name"
                     }, 
                     ")"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Tuple"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Mod"
             }, 
             {
               "id": "tid_18", 
@@ -445,6 +457,7 @@ Module
                   "contents": [
                     "(", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "x"
@@ -456,18 +469,21 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "y"
                     }, 
                     ")"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Tuple"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Mod"
             }
           ], 
           "id": "id_0", 
@@ -512,6 +528,7 @@ Module
                   "contents": [
                     "(", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "first_name"
@@ -523,18 +540,21 @@ Module
                     }, 
                     " ", 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "last_name"
                     }, 
                     ")"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Tuple"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Mod"
             }, 
             {
               "id": "tid_27", 
@@ -561,6 +581,7 @@ Module
             }, 
             ", \\\n  ", 
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -573,6 +594,7 @@ Module
             }, 
             "\n  ", 
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "y"

@@ -68,6 +68,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -84,12 +85,14 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "foo"
                     }, 
                     ".first_attr"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Attribute"
                 }, 
@@ -103,18 +106,21 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "bar"
                     }, 
                     ".second_attr"
                   ], 
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Attribute"
                 }
               ], 
               "id": "id_0", 
-              "name": "BinOp"
+              "name": "BinOp", 
+              "op": "Add"
             }
           ], 
           "id": "id_0", 

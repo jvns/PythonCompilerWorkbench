@@ -119,6 +119,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Name", 
               "value": "True"
@@ -131,6 +132,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -155,6 +157,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "y"
@@ -189,6 +192,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "foo"
@@ -204,6 +208,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "x"
@@ -216,13 +221,15 @@ Module
                         }, 
                         " ", 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "y"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Add"
                     }, 
                     " ", 
                     {
@@ -238,11 +245,15 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare"
+                  "name": "Compare", 
+                  "ops": [
+                    "Gt"
+                  ]
                 }
               ], 
               "id": "id_0", 
-              "name": "BoolOp"
+              "name": "BoolOp", 
+              "op": "And"
             }
           ], 
           "id": "id_0", 

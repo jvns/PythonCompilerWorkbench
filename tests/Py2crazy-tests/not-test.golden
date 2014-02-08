@@ -33,6 +33,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -70,7 +71,8 @@ Module
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Add"
                     }, 
                     " ", 
                     {
@@ -86,11 +88,15 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "Compare"
+                  "name": "Compare", 
+                  "ops": [
+                    "Eq"
+                  ]
                 }
               ], 
               "id": "id_0", 
-              "name": "UnaryOp"
+              "name": "UnaryOp", 
+              "op": "Not"
             }
           ], 
           "id": "id_0", 

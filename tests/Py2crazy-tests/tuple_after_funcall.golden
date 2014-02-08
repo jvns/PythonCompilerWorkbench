@@ -64,6 +64,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -81,6 +82,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "int"
@@ -89,6 +91,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "tokens"
@@ -107,6 +110,7 @@ Module
                         }, 
                         "]"
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Subscript"
                     }, 
@@ -124,6 +128,7 @@ Module
                 {
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "int"
@@ -132,6 +137,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "tokens"
@@ -150,6 +156,7 @@ Module
                         }, 
                         "]"
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Subscript"
                     }, 
@@ -160,6 +167,7 @@ Module
                 }, 
                 ")"
               ], 
+              "ctx": "Load", 
               "id": "id_0", 
               "name": "Tuple"
             }

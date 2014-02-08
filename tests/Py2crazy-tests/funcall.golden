@@ -228,6 +228,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "one"
@@ -242,6 +243,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "call_foo"
@@ -268,7 +270,8 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }, 
                 {
                   "id": "tid_3", 
@@ -277,6 +280,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
@@ -292,6 +296,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "z"
@@ -302,13 +307,15 @@ Module
                           "value": "+"
                         }, 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "w"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Add"
                     }, 
                     {
                       "id": "tid_6", 
@@ -322,7 +329,8 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Sub"
                 }, 
                 ")"
               ], 
@@ -337,6 +345,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "two"
@@ -351,6 +360,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "call_foo"
@@ -377,7 +387,8 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }, 
                 {
                   "id": "tid_9", 
@@ -386,6 +397,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
@@ -401,6 +413,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "z"
@@ -411,13 +424,15 @@ Module
                           "value": "+"
                         }, 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "w"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Add"
                     }, 
                     {
                       "id": "tid_12", 
@@ -431,12 +446,15 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Sub"
                 }, 
                 ", optional1=", 
                 {
+                  "arg": "optional1", 
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "True"
@@ -447,12 +465,14 @@ Module
                 }, 
                 ", optional2=", 
                 {
+                  "arg": "optional2", 
                   "contents": [
                     {
                       "contents": [
                         {
                           "contents": [
                             {
+                              "ctx": "Load", 
                               "id": "id_0", 
                               "name": "Name", 
                               "value": "two"
@@ -463,13 +483,15 @@ Module
                               "value": "/"
                             }, 
                             {
+                              "ctx": "Load", 
                               "id": "id_0", 
                               "name": "Name", 
                               "value": "one"
                             }
                           ], 
                           "id": "id_0", 
-                          "name": "BinOp"
+                          "name": "BinOp", 
+                          "op": "Div"
                         }, 
                         {
                           "id": "tid_14", 
@@ -477,13 +499,15 @@ Module
                           "value": "+"
                         }, 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "four"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Add"
                     }
                   ], 
                   "id": "id_0", 
@@ -502,6 +526,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "three"
@@ -516,6 +541,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "call_foo"
@@ -542,7 +568,8 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }, 
                 {
                   "id": "tid_17", 
@@ -551,6 +578,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
@@ -566,6 +594,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "z"
@@ -576,13 +605,15 @@ Module
                           "value": "+"
                         }, 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "w"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Add"
                     }, 
                     {
                       "id": "tid_20", 
@@ -596,12 +627,15 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Sub"
                 }, 
                 ", optional1=", 
                 {
+                  "arg": "optional1", 
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "True"
@@ -612,6 +646,7 @@ Module
                 }, 
                 ", *", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "stararg"
@@ -627,12 +662,14 @@ Module
             }, 
             " optional2=", 
             {
+              "arg": "optional2", 
               "contents": [
                 {
                   "contents": [
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "two"
@@ -643,13 +680,15 @@ Module
                           "value": "/"
                         }, 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "one"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Div"
                     }, 
                     {
                       "id": "tid_23", 
@@ -657,13 +696,15 @@ Module
                       "value": "+"
                     }, 
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "four"
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }
               ], 
               "id": "id_0", 
@@ -677,6 +718,7 @@ Module
         {
           "contents": [
             {
+              "ctx": "Store", 
               "id": "id_0", 
               "name": "Name", 
               "value": "four"
@@ -691,6 +733,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "call_foo"
@@ -717,7 +760,8 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Add"
                 }, 
                 {
                   "id": "tid_26", 
@@ -726,6 +770,7 @@ Module
                 }, 
                 " ", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "y"
@@ -741,6 +786,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "z"
@@ -751,13 +797,15 @@ Module
                           "value": "+"
                         }, 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "w"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Add"
                     }, 
                     {
                       "id": "tid_29", 
@@ -771,12 +819,15 @@ Module
                     }
                   ], 
                   "id": "id_0", 
-                  "name": "BinOp"
+                  "name": "BinOp", 
+                  "op": "Sub"
                 }, 
                 ", optional1=", 
                 {
+                  "arg": "optional1", 
                   "contents": [
                     {
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Name", 
                       "value": "True"
@@ -787,18 +838,21 @@ Module
                 }, 
                 ", *", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "stararg"
                 }, 
                 ", optional2=", 
                 {
+                  "arg": "optional2", 
                   "contents": [
                     {
                       "contents": [
                         {
                           "contents": [
                             {
+                              "ctx": "Load", 
                               "id": "id_0", 
                               "name": "Name", 
                               "value": "two"
@@ -809,13 +863,15 @@ Module
                               "value": "/"
                             }, 
                             {
+                              "ctx": "Load", 
                               "id": "id_0", 
                               "name": "Name", 
                               "value": "one"
                             }
                           ], 
                           "id": "id_0", 
-                          "name": "BinOp"
+                          "name": "BinOp", 
+                          "op": "Div"
                         }, 
                         {
                           "id": "tid_31", 
@@ -823,13 +879,15 @@ Module
                           "value": "+"
                         }, 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "four"
                         }
                       ], 
                       "id": "id_0", 
-                      "name": "BinOp"
+                      "name": "BinOp", 
+                      "op": "Add"
                     }
                   ], 
                   "id": "id_0", 
@@ -837,6 +895,7 @@ Module
                 }, 
                 ", **", 
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "my_kwargs"

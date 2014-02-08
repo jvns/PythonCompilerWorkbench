@@ -114,6 +114,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Del", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -132,6 +133,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Del", 
               "id": "id_0", 
               "name": "Name", 
               "value": "x"
@@ -143,6 +145,7 @@ Module
             }, 
             " ", 
             {
+              "ctx": "Del", 
               "id": "id_0", 
               "name": "Name", 
               "value": "y"
@@ -163,12 +166,14 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "foo"
                 }, 
                 ".bar"
               ], 
+              "ctx": "Del", 
               "id": "id_0", 
               "name": "Attribute"
             }
@@ -188,6 +193,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "x"
@@ -206,6 +212,7 @@ Module
                 }, 
                 "]"
               ], 
+              "ctx": "Del", 
               "id": "id_0", 
               "name": "Subscript"
             }
@@ -225,6 +232,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "foo"
@@ -243,6 +251,7 @@ Module
                 }, 
                 "]"
               ], 
+              "ctx": "Del", 
               "id": "id_0", 
               "name": "Subscript"
             }
@@ -262,6 +271,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "world_map"
@@ -272,6 +282,7 @@ Module
                     {
                       "contents": [
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "x"
@@ -282,11 +293,13 @@ Module
                           "value": ","
                         }, 
                         {
+                          "ctx": "Load", 
                           "id": "id_0", 
                           "name": "Name", 
                           "value": "y"
                         }
                       ], 
+                      "ctx": "Load", 
                       "id": "id_0", 
                       "name": "Tuple"
                     }
@@ -296,6 +309,7 @@ Module
                 }, 
                 "]"
               ], 
+              "ctx": "Del", 
               "id": "id_0", 
               "name": "Subscript"
             }
@@ -315,6 +329,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "foo"
@@ -333,6 +348,7 @@ Module
                 }, 
                 "]"
               ], 
+              "ctx": "Del", 
               "id": "id_0", 
               "name": "Subscript"
             }
@@ -352,6 +368,7 @@ Module
             {
               "contents": [
                 {
+                  "ctx": "Load", 
                   "id": "id_0", 
                   "name": "Name", 
                   "value": "foo"
@@ -380,6 +397,7 @@ Module
                 }, 
                 "]"
               ], 
+              "ctx": "Del", 
               "id": "id_0", 
               "name": "Subscript"
             }
