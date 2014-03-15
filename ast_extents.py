@@ -535,6 +535,11 @@ class AddExtentsVisitor(ast.NodeVisitor):
             node.end_col = node.start_col + len(repr(node.s))
             node.end_lineno = node.lineno
 
+            # The one exception is \' and \" characters, which repr()
+            # doesn't take into account; so those offsets will be wrong.
+            # TODO: fixme ... however, it's not as straightforward as it
+            # first seems
+
             # special case for triple-quoted strings that fit on a single line
             starting_str = self.code_lines[node.lineno][node.start_col:]
             if starting_str.startswith('"""') or starting_str.startswith("'''"):
