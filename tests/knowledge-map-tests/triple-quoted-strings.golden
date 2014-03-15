@@ -1,0 +1,92 @@
+# triple-quoted strings on one single line
+x = '''h e llo'''
+y = """ world """
+===
+Module
+  body: [
+    Assign >> "x = '''h e llo'''"
+      targets: [
+        Name >> 'x'
+          id: 'x'
+          ctx: Store
+      ]
+      value: Str >> "'''h e llo'''"
+        s: 'h e llo'
+    Assign >> 'y = """ world """'
+      targets: [
+        Name >> 'y'
+          id: 'y'
+          ctx: Store
+      ]
+      value: Str >> '""" world """'
+        s: ' world '
+  ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "id": "tid_1", 
+      "type": "comment", 
+      "value": "# triple-quoted strings on one single line"
+    }, 
+    "\n", 
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "ctx": "Store", 
+              "id": "id_0", 
+              "type": "Name", 
+              "value": "x"
+            }, 
+            " ", 
+            {
+              "id": "tid_2", 
+              "type": "token", 
+              "value": "="
+            }, 
+            " ", 
+            {
+              "id": "id_0", 
+              "type": "Str", 
+              "value": "'''h e llo'''"
+            }
+          ], 
+          "id": "id_0", 
+          "type": "Assign"
+        }, 
+        "\n", 
+        {
+          "contents": [
+            {
+              "ctx": "Store", 
+              "id": "id_0", 
+              "type": "Name", 
+              "value": "y"
+            }, 
+            " ", 
+            {
+              "id": "tid_3", 
+              "type": "token", 
+              "value": "="
+            }, 
+            " ", 
+            {
+              "id": "id_0", 
+              "type": "Str", 
+              "value": "\"\"\" world \"\"\""
+            }
+          ], 
+          "id": "id_0", 
+          "type": "Assign"
+        }
+      ], 
+      "id": "id_0", 
+      "type": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "type": "ROOT_NODE"
+}

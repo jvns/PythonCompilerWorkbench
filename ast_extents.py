@@ -534,6 +534,11 @@ class AddExtentsVisitor(ast.NodeVisitor):
             # repr() will take escape characters and enclosing quotes into account!
             node.end_col = node.start_col + len(repr(node.s))
             node.end_lineno = node.lineno
+
+            # special case for triple-quoted strings that fit on a single line
+            starting_str = self.code_lines[node.lineno][node.start_col:]
+            if starting_str.startswith('"""') or starting_str.startswith("'''"):
+                node.end_col += 4
         else:
             # multiline strings, which come with weird -1 column offsets!
             # UGH THIS IS REALLY AGGRAVATING with tons of corner cases

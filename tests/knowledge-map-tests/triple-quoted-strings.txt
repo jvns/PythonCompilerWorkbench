@@ -1,0 +1,3 @@
+# triple-quoted strings on one single line
+x = '''h e llo'''
+y = """ world """
