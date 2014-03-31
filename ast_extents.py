@@ -1052,6 +1052,11 @@ def get_node_attr_json(node):
 class CodeAst(object):
     def __init__(self, code_str):
         self.code_str = code_str
+
+        # add sentinel to support one-indexing
+        # NB: do NOT call splitlines() since that omits the trailing '\n'
+        self.code_lines = [''] + code_str.split('\n')
+
         self.ast_root = parse_and_add_extents(code_str)
         self.all_ids = set()
         self._tid = 0 # unique token IDs accessed using self.get_tid()
