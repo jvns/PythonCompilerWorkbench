@@ -1051,6 +1051,10 @@ def get_node_attr_json(node):
 
 class CodeAst(object):
     def __init__(self, code_str):
+        # UGH, we have a precondition to NOT use dos-style line endings
+        # since that screws us up sometimes ...
+        assert '\r' not in code_str, "DON'T USE DOS-STYLE LINE ENDINGS! Open your file in 'U' mode!"
+
         self.code_str = code_str
 
         # add sentinel to support one-indexing
