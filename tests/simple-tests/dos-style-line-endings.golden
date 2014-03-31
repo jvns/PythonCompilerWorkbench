@@ -1,0 +1,41 @@
+# DOS-style line endings with \r\n to end each line
+'''
+x'''
+===
+Module
+  body: [
+    Expr
+      value: Str ML>> "'''\nx'''"
+        s: '\nx'
+  ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "id": "tid_1", 
+      "type": "comment", 
+      "value": "# DOS-style line endings with \\r\\n to end each line"
+    }, 
+    "\n", 
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "id": "id_0", 
+              "type": "Str", 
+              "value": "'''\nx'''"
+            }
+          ], 
+          "id": "id_0", 
+          "type": "Expr"
+        }
+      ], 
+      "id": "id_0", 
+      "type": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "type": "ROOT_NODE"
+}
