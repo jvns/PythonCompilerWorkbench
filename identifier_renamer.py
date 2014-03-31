@@ -12,7 +12,7 @@
 # returns a new string similar to  src_code except with ALL OCCURRENCES
 # of id_name renamed to new_id_name
 
-__all__ = ['rename_identifier']
+__all__ = ['rename_identifier', 'rename_identifier_JSON_version']
 
 
 import ast
