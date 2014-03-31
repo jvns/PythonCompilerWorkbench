@@ -99,7 +99,7 @@ class AddExtentsVisitor(ast.NodeVisitor):
     def __init__(self, code_str):
         ast.NodeVisitor.__init__(self)
         # add sentinel to support one-indexing
-        self.code_lines = [''] + code_str.split('\n')
+        self.code_lines = [''] + code_str.splitlines() # use splitlines to handle \r\n case too
 
     # this should NEVER be called, since all cases should be exhaustively handled
     def generic_visit(self, node):
@@ -741,7 +741,7 @@ class AddAbsoluteExtentsVisitor(ast.NodeVisitor):
     def __init__(self, code_str):
         ast.NodeVisitor.__init__(self)
         # add sentinel to support one-indexing
-        self.code_lines = [''] + code_str.split('\n')
+        self.code_lines = [''] + code_str.splitlines() # use splitlines to handle \r\n case too
 
     def visit(self, node):
         super(AddAbsoluteExtentsVisitor, self).visit(node) # POSTORDER
@@ -1054,8 +1054,7 @@ class CodeAst(object):
         self.code_str = code_str
 
         # add sentinel to support one-indexing
-        # NB: do NOT call splitlines() since that omits the trailing '\n'
-        self.code_lines = [''] + code_str.split('\n')
+        self.code_lines = [''] + code_str.splitlines() # use splitlines to handle \r\n case too
 
         self.ast_root = parse_and_add_extents(code_str)
         self.all_ids = set()
@@ -1071,8 +1070,7 @@ class CodeAst(object):
     # adapted from ast.dump
     def pretty_dump(self):
         node = self.ast_root
-        # add sentinel to support one-indexing
-        lines = [''] + self.code_str.split('\n')
+        lines = self.code_lines
 
         def _format(node, indent=0, newline=False):
             ind = ('  ' * indent)
