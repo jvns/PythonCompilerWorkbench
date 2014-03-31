@@ -33,7 +33,7 @@ class FindIdentifierVisitor(ast.NodeVisitor):
 
 
 def rename_identifier(src_code, id_name, new_id_name):
-    obj = ast_extents.CodeAst(code_str)
+    obj = ast_extents.CodeAst(src_code)
 
     new_codelines = obj.code_lines[:] # COPY the original list
 
