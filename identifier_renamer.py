@@ -18,6 +18,7 @@ __all__ = ['rename_identifier']
 import ast
 import ast_extents
 from collections import defaultdict
+import json
 
 class FindIdentifierVisitor(ast.NodeVisitor):
     def __init__(self, id_name):
@@ -87,6 +88,43 @@ def rename_identifier(src_code, id_name, new_id_name):
     return '\n'.join(new_codelines)
 
 
+# alternative experimental approach -- use the JSON format to do the renaming
+def rename_identifier_JSON_version(src_code, id_name, new_id_name):
+    obj = ast_extents.CodeAst(src_code)
+    obj_json = obj.to_renderable_json(ignore_id=True)
+
+    obj_dict = json.loads(obj_json)
+
+    #print obj_json
+    #print '---'
+
+    outbuf = []
+
+    def render(o):
+        if type(o) is dict:
+            try:
+                c = o["contents"]
+                for elt in c:
+                    if type(elt) is dict:
+                        render(elt)
+                    else:
+                        assert type(elt) is unicode
+                        outbuf.append(elt)
+            except KeyError:
+                v = o["value"]
+                assert type(v) is unicode
+
+                # renamer:
+                if o["type"] == 'Name' and v == id_name:
+                    outbuf.append(new_id_name)
+                else:
+                    outbuf.append(v)
+
+    render(obj_dict)
+
+    return ''.join(outbuf)
+
+
 TEST_PROGRAM = '''
 # This nasty program contains
 # 24 total identifiers, with 13 occurrences of 'i'
@@ -103,4 +141,7 @@ i += i**i
 if __name__ == "__main__":
     code_str = TEST_PROGRAM
     print rename_identifier(code_str, 'i', 'elena')
+
+    # experimental JSON version
+    #print rename_identifier_JSON_version(code_str, 'i', 'elena')
 
