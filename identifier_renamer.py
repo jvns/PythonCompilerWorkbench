@@ -132,10 +132,11 @@ i=10
 for i in range(len(x)):
     print foo(i, i(_i(i(_i(i)))), i**2, 3+i)
     print bar(i)
-    print(_i, __i,i,ii,iii)
+    print(_i, __i,i,ii,iii, 'i', "i", """i""") # i's in strings not renamed
 i += i**i
 
 # let's rename every 'i' to 'elena'
+# i i i i i i i i should not be renamed!
 '''
 
 if __name__ == "__main__":
