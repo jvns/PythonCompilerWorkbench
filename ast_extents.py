@@ -60,7 +60,8 @@ NOP_CLASSES = [ast.expr_context, ast.cmpop, ast.boolop,
                ast.alias,
                ast.excepthandler,
                ast.Set, # are these 'set' literals?
-               ast.arguments,
+               ast.arguments, # TODO: support vararg & kwarg arguments like in
+                              # "def foo(x, *y, **z):"
                ast.IfExp,
                ast.Ellipsis, # a rarely-occuring bad egg; it doesn't have col_offset, ugh
                # TODO: is this still a legit comment?
