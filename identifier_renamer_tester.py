@@ -36,7 +36,7 @@ def cross_check_renamers(src_code):
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         # test just one file
-        src_code = open(sys.argv[1]).read()
+        src_code = open(sys.argv[1], 'U').read()
         print cross_check_renamers(src_code)
     else:
         # test everything
@@ -57,7 +57,7 @@ if __name__ == "__main__":
 
             print "======"
             print "Testing", t
-            src_code = open(t).read()
+            src_code = open(t, 'U').read()
             try:
                 print cross_check_renamers(src_code)
             # some files don't properly parse ...
