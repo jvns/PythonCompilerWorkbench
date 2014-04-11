@@ -708,6 +708,11 @@ class PlaceholderNodesVisitor(ast.NodeVisitor):
                         setattr(node, attr, getattr(child, attr))
                     is_first_child = False
 
+                # to make weird test cases like this one work:
+                # result += xxx if yyy else zzz
+                if not hasattr(child, 'lineno'):
+                    continue
+
                 # make it span as far as possible across all children
 
                 # really tricky because we want to make sure that

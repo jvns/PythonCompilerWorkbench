@@ -1,0 +1,92 @@
+result += xxx if yyy else zzz
+===
+Module
+  body: [
+    AugAssign
+      target: Name >> 'result'
+        id: 'result'
+        ctx: Store
+      op: Add
+      value: IfExp
+        test: Name >> 'yyy'
+          id: 'yyy'
+          ctx: Load
+        body: Name >> 'xxx'
+          id: 'xxx'
+          ctx: Load
+        orelse: Name >> 'zzz'
+          id: 'zzz'
+          ctx: Load
+  ]
+--- JSON ---
+{
+  "contents": [
+    {
+      "contents": [
+        {
+          "contents": [
+            {
+              "ctx": "Store", 
+              "id": "id_0", 
+              "type": "Name", 
+              "value": "result"
+            }, 
+            " ", 
+            {
+              "id": "tid_1", 
+              "type": "token", 
+              "value": "+="
+            }, 
+            " ", 
+            {
+              "contents": [
+                {
+                  "ctx": "Load", 
+                  "id": "id_0", 
+                  "type": "Name", 
+                  "value": "xxx"
+                }, 
+                " ", 
+                {
+                  "id": "tid_2", 
+                  "type": "token", 
+                  "value": "if"
+                }, 
+                " ", 
+                {
+                  "ctx": "Load", 
+                  "id": "id_0", 
+                  "type": "Name", 
+                  "value": "yyy"
+                }, 
+                " ", 
+                {
+                  "id": "tid_3", 
+                  "type": "token", 
+                  "value": "else"
+                }, 
+                " ", 
+                {
+                  "ctx": "Load", 
+                  "id": "id_0", 
+                  "type": "Name", 
+                  "value": "zzz"
+                }
+              ], 
+              "id": "id_0", 
+              "type": "IfExp"
+            }
+          ], 
+          "id": "id_0", 
+          "op": "Add", 
+          "type": "AugAssign"
+        }
+      ], 
+      "id": "id_0", 
+      "type": "Module"
+    }, 
+    "\n"
+  ], 
+  "id": "id_ROOT", 
+  "type": "ROOT_NODE"
+}
