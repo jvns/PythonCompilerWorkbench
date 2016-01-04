@@ -14,9 +14,15 @@ import byteplay
 import json
 
 from bottle import route, get, request, run, template, static_file
+from bottle import default_app, redirect
 from pg_astmonkey import PGGraphvizCreator
 from ast_extents import CodeAst
 
+app = default_app()
+
+@route('/')
+def main():
+    redirect('/index.html')
 
 @route('/<filepath:path>')
 def index(filepath):
@@ -54,4 +60,4 @@ def get_compile():
 
 
 if __name__ == "__main__":
-    run(host='localhost', port=8080, reloader=True)
+    run(host='localhost', port=8080, reloader=True, debug=True)
